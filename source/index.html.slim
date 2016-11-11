@@ -16,11 +16,12 @@ div[class='avatar-personal']
     div
       = image_tag 'social-media-icons/location.svg'
       = data.website.location
-      =>
-      |&
-      =>
-      a[href='https://drive.google.com/open?id=1nZ48nqochKUGmoVfKIucpvGo9ms' target='_blank']
-        |Remote Working
+      span[id='remote-work']
+        =>
+        |&
+        =>
+        a[href='https://drive.google.com/open?id=1nZ48nqochKUGmoVfKIucpvGo9ms' target='_blank']
+          |Remote Working
 
 div[class='avatar-social-media']
   = partial 'partials/layout/components/social-media-icons'
