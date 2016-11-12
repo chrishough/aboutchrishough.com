@@ -41,20 +41,5 @@
       width: 15px;
       padding-right: 5px;
     }
-
-    a {
-      color: #fff;
-
-    }
-
-    #remote-work {
-      visibility: hidden;
-    }
-
-    @include min-screen(768px) {
-      #remote-work {
-        visibility: visible;
-      }
-    }
   }
 }

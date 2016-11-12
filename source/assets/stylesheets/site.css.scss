@@ -8,16 +8,18 @@
 // Global
 html,
 body {
-  height: 100vh;
-  min-height: 100vh;
-}
-
-body {
   background-color: #000;
   background: image-url('background.jpg') no-repeat 50% 50% fixed;
   background-position: top center;
   background-size: cover;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .about-wrapper {
@@ -30,6 +32,8 @@ body {
   @include rgba-background(rgba(0, 0, 0, .6));
   @include box-shadow(rgba(#fff, .9) 0 0 35px, rgba(#000, .2) 0 0 3px 1px inset);
   margin: auto;
+  padding-bottom: 15px;
+
   @include min-screen(768px) {
     @include border-radius(15px);
     max-width: 600px;
@@ -45,7 +49,7 @@ body {
   color: #fff;
 
   > :not(:last-child) {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   @include min-screen(768px) {
