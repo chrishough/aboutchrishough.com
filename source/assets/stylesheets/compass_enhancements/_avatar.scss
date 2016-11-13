@@ -28,6 +28,11 @@
     line-height: 1.5;
   }
 
+  img {
+    height: 20px;
+    padding-left: 10px;
+  }
+
   .avatar-location {
     @include justify-content(space-between);
     @include align-self(stretch);
