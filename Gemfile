@@ -15,7 +15,6 @@ gem 'middleman-deploy'
 gem 'middleman-minify-html'
 gem 'middleman-compass'
 gem 'middleman-sprockets'
-gem "middleman-minify-html"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
