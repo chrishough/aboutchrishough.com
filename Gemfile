@@ -19,4 +19,4 @@ gem 'middleman-sprockets'
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
   gem 'rails-assets-pace'
-end
+endremo
