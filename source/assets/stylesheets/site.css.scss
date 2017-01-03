@@ -36,8 +36,6 @@ body {
 
   @include min-screen(768px) {
     max-width: 600px;
-    margin-top: 0;
-    margin-bottom: 0;
   }
 
   @include min-screen-height(900px) {
