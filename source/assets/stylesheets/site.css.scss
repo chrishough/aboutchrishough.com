@@ -30,7 +30,7 @@ body {
 
 .about-container-outer {
   @include rgba-background(rgba(0, 0, 0, .6));
-  @include box-shadow(rgba(#fff, .9) 0 0 35px, rgba(#000, .2) 0 0 3px 1px inset);
+  @include box-shadow(rgba(purple, .9) 0 0 35px, rgba(#000, .2) 0 0 3px 1px inset);
   margin: auto;
   padding-bottom: 15px;
 
