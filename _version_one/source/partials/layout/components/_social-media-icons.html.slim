@@ -1,0 +1,14 @@
+div[class='social-media-icons']
+  div[class='top-group']
+    a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question"]
+      = image_tag 'social-media-icons/email.svg'
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'resume' }
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'twitter' }
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'instagram' }
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'github' }
+  div[class='bottom-group']
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'facebook' }
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'linkedin' }
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'soundcloud' }
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'medium' }
+    = partial 'partials/builders/social-media-icon', locals: { icon: 'configurations' }

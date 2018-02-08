@@ -1,0 +1,5 @@
+ruby:
+  social_href = eval("data.social.#{locals[:icon]}")
+   
+= link_to social_href, target: '_blank', alt: locals[:icon] do
+  = image_tag "social-media-icons/#{locals[:icon]}.svg"
