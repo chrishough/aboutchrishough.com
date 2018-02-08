@@ -1,5 +1,6 @@
 activate :relative_assets
 activate :sprockets
+activate :directory_indexes
 
 if defined? RailsAssets
   RailsAssets.load_paths.each do |path|
