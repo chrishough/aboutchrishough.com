@@ -3,14 +3,14 @@ namespace :utilities do
     namespace :purge do
       desc 'Remove temporary, build, and cache directories.'
       task :middleman_files do
-        msg('Removing temporary, build, and cache directories')
+        puts('Removing temporary, build, and cache directories')
         FileUtils.rm_rf ['build']
       end
 
       desc 'Remove OSX operating system files'
       task :osx_files do
-        msg('Removing osx files')
-        shell('find source/ -name .DS_Store -delete')
+        puts('Removing osx files')
+        system('find source/ -name .DS_Store -delete')
       end
 
       desc 'Remove all build files'
