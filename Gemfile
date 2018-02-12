@@ -13,10 +13,10 @@ gem 'middleman'
 gem 'middleman-livereload'
 gem 'middleman-deploy'
 gem 'middleman-minify-html'
-gem 'middleman-compass'
 gem 'middleman-sprockets'
 
+gem 'bootstrap', '~> 4.0.0'
+
 source 'https://rails-assets.org' do
-  gem 'rails-assets-jquery'
   gem 'rails-assets-pace'
 end
