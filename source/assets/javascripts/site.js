@@ -1,6 +1,5 @@
-//= require jquery.js
-//= require pace.js
+require('jquery');
+require('popper.js');
+require('bootstrap');
 
-Pace.on("done", function(){
-  $("#cover").fadeOut(2000);
-});
+console.log('TEST')

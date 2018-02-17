@@ -1,11 +1,8 @@
-css:
-  #index-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100%    !important;
-    height: auto   !important;
-  }
+head
+  == stylesheet_link_tag(webpack_asset_path("site.scss"))
 
-video[autoplay muted loop id="index-video"]
-  source[src="assets/movies/home-page-background.mp4" type="video/mp4"]
+body
+  video[autoplay muted loop id="index-video"]
+    source[src="assets/movies/home-page-background.mp4" type="video/mp4"]
+
+  == javascript_include_tag(webpack_asset_path("site.js"))
