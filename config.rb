@@ -1,4 +1,5 @@
 require 'lib/helpers/webpack_asset_helper'
+require 'slim'
 
 activate :directory_indexes
 
