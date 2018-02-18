@@ -3,9 +3,9 @@
 const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
-const outputPath = path.join(__dirname, 'build');
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const ManifestPlugin = require("webpack-manifest-plugin");
+const outputPath = path.join(__dirname, "build/assets");
 
 module.exports = {
   entry: {
@@ -36,7 +36,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 5000,
-              name: './assets/[name]-[hash].[ext]'
+              name: path.join(__dirname, "/assets/[name]-[hash].[ext]")
             }
           }
         ]

@@ -60,6 +60,3 @@ page '/*.txt', layout: false
 #   deploy.branch         = 'gh-pages'
 # end
 #
-# after_build do
-#   FileUtils.cp('source/CNAME', 'build/CNAME')
-# end

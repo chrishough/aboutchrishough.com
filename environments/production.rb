@@ -10,6 +10,9 @@ if rev_manifest
   end
 end
 
-ignore 'stylesheets/**'
-ignore 'javascripts/**'
-ignore 'rev-manifest.json'
+ignore 'assets/**/*'
+ignore 'partials/**/*'
+
+after_build do
+  FileUtils.cp('source/CNAME', 'build/CNAME')
+end
