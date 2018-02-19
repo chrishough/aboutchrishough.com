@@ -36,7 +36,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 5000,
-              name: path.join(__dirname, "/assets/[name]-[hash].[ext]")
+              name: "[name]-[hash].[ext]"
             }
           }
         ]
