@@ -1,12 +1,13 @@
 head
-  == stylesheet_link_tag("assets#{webpack_asset_path('site.scss')}")
+  == stylesheet_link_tag(webpack_asset_path('site.scss'))
 
 body
-
+  |TEST
+  
   span[id="logo-image"]
-    |TEST
+    |LOGO
 
   / video[autoplay muted loop id="index-video"]
   /   source[src="assets/movies/home-page-background.mp4" type="video/mp4"]
 
-  == javascript_include_tag("assets#{webpack_asset_path('site.js')}")
+  == javascript_include_tag(webpack_asset_path('site.js'))

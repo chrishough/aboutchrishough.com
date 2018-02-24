@@ -18,7 +18,7 @@ module.exports = {
   output: {
     path: outputPath,
     filename: '[name]-[hash].js',
-    publicPath: '/'
+    publicPath: '/assets/'
   },
 
   resolve: {
@@ -36,7 +36,8 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 5000,
-              name: "[name]-[hash].[ext]"
+              name: "[name]-[hash].[ext]",
+              publicPath: '/assets/'
             }
           }
         ]
@@ -59,7 +60,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name]-[hash].css'
+              name: '[name]-[hash].css',
+              publicPath: '/assets/'
             }
           },
           {

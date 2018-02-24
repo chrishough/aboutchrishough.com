@@ -1,4 +1,5 @@
-DIST_PATH = File.join(Dir.pwd, 'build/assets')
+ASSET_FOLDER = 'assets'
+DIST_PATH = File.join(Dir.pwd, 'build' + '/' + ASSET_FOLDER)
 REV_MANIFEST_PATH = File.join(DIST_PATH, 'rev-manifest.json')
 
 module WebpackAssetHelper
@@ -9,6 +10,6 @@ module WebpackAssetHelper
     asset_path = rev_manifest[path]
     raise "Can't find #{path} in webpack assets. See rev-manifest.json for complete list." unless asset_path
 
-    File.absolute_path(asset_path, '/')
+    ASSET_FOLDER + '/' + asset_path
   end
 end
