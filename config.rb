@@ -15,17 +15,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 
-
-
 # activate :relative_assets
-# activate :sprockets
-# activate :directory_indexes
-#
-# if defined? RailsAssets
-#   RailsAssets.load_paths.each do |path|
-#     sprockets.append_path path
-#   end
-# end
 #
 # configure :development do
 #   set :css_dir, 'assets/stylesheets'
@@ -37,13 +27,6 @@ page '/*.txt', layout: false
 #            host: '127.0.0.1',
 #            apply_js_live: false,
 #            apply_css_live: false
-# end
-#
-# configure :production do
-#   set :css_dir, 'assets/stylesheets'
-#   set :js_dir, 'assets/javascripts'
-#   set :images_dir, 'assets/images'
-#   set :fonts_dir, 'assets/fonts'
 # end
 #
 # configure :build do
@@ -59,4 +42,3 @@ page '/*.txt', layout: false
 #   deploy.deploy_method  = :git
 #   deploy.branch         = 'gh-pages'
 # end
-#

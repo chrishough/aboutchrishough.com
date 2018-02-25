@@ -12,6 +12,13 @@ end
 
 ignore 'assets/**/*'
 ignore 'partials/*'
+ignore 'rev-manifest.json'
+
+activate :minify_html do |html|
+  html.remove_quotes = false
+  html.remove_intertag_spaces = true
+  html.remove_http_protocol = true
+end
 
 after_build do
   FileUtils.cp('source/CNAME', 'build/CNAME')
