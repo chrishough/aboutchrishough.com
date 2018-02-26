@@ -15,19 +15,13 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 
+activate :deploy do |deploy|
+  deploy.build_before   = true
+  deploy.deploy_method  = :git
+  deploy.branch         = 'TEST-BRANCH'
+end
+
 # activate :relative_assets
-#
-# configure :development do
-#   set :css_dir, 'assets/stylesheets'
-#   set :js_dir, 'assets/javascripts'
-#   set :images_dir, 'assets/images'
-#   set :fonts_dir, 'assets/fonts'
-#
-#   activate :livereload,
-#            host: '127.0.0.1',
-#            apply_js_live: false,
-#            apply_css_live: false
-# end
 #
 # configure :build do
 #   activate :minify_css

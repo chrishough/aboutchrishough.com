@@ -1,7 +1,7 @@
 activate :external_pipeline,
-  name: :webpack,
-  command: 'npm run build',
-  source: 'build'
+          name: :webpack,
+          command: 'npm run build',
+          source: 'build'
 
 rev_manifest = REV_MANIFEST if defined?(REV_MANIFEST)
 if rev_manifest

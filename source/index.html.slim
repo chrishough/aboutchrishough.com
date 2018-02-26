@@ -2,6 +2,16 @@ head
   == stylesheet_link_tag(webpack_asset_path('site.scss'))
 
 body
-  |TEST V2 BUILDER
+  p
+    |TEST V2 BUILDER TOP
+
+  p
+    |ICON:
+    i[class='fa faUser']
+    i[class='fa faCircle']
+    i[class='fa faFacebook']
+
+  p
+    |TEST V2 BUILDER BOTTOM
 
   == javascript_include_tag(webpack_asset_path('site.js'))

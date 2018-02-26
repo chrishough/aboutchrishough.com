@@ -4,6 +4,6 @@ namespace :deploy do
     puts('---------------------------------------------------------->>')
     puts('Building the production static version of the application')
     puts('---------------------------------------------------------->>')
-    system('time bundle exec middleman deploy --verbose')
+    system('time bundle exec middleman deploy -e production --verbose')
   end
 end
