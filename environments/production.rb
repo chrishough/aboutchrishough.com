@@ -10,10 +10,6 @@ if rev_manifest
   end
 end
 
-ignore 'assets/**/*'
-ignore 'partials/*'
-ignore 'rev-manifest.json'
-
 activate :minify_html do |html|
   html.remove_quotes = false
   html.remove_intertag_spaces = true
