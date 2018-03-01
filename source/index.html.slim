@@ -1,18 +1,16 @@
-head
-  == stylesheet_link_tag(webpack_asset_path("site.scss"))
+---
+layout: index
+---
 
-body
-  p[class='test-font-one']
-    |TEST V2 BUILDER TOP
+p[class='test-font-one']
+  |TEST V2 BUILDER TOP
 
-  p
-    |ICON:
-    =<
-    =<
-    i[class="fab fa-facebook-square fa-2x"]
-    i[class="fas fa-phone-square fa-2x"]
+p
+  |ICON:
+  =<
+  =<
+  i[class="fab fa-facebook-square fa-2x"]
+  i[class="fas fa-phone-square fa-2x"]
 
-  p[class='test-font-two']
-    |TEST V2 BUILDER BOTTOM
-
-  == javascript_include_tag(webpack_asset_path("site.js"))
+p[class='test-font-two']
+  |TEST V2 BUILDER BOTTOM
