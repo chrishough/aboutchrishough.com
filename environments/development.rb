@@ -1,4 +1,4 @@
-Bundler.require(:default, :development)
+Bundler.require(:development)
 
 activate :external_pipeline,
           name: :webpack,

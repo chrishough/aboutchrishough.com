@@ -1,7 +1,13 @@
-require 'lib/helpers/webpack_asset_helper'
+Bundler.require(:default)
+
 require 'slim'
+Slim::Engine.disable_option_validator!
+
+require_all 'lib/helpers'
+autoload_all 'lib/helpers'
 
 activate :directory_indexes
+activate :relative_assets
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
