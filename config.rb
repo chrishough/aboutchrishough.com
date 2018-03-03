@@ -7,7 +7,6 @@ require_all 'lib/helpers'
 autoload_all 'lib/helpers'
 
 activate :directory_indexes
-activate :relative_assets
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
@@ -26,7 +25,7 @@ ignore 'rev-manifest.json'
 activate :blog do |blog|
   blog.sources = "articles/{year}-{month}-{day}-{title}.html"
   blog.permalink = "articles/{title}/index.html"
-  blog.layout = 'index'
+  blog.layout = 'article'
 end
 
 activate :deploy do |deploy|
