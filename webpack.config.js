@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
 const outputPath = path.join(__dirname, "build/assets");
 
-module.exports = {
+const site_js_css = {
   entry: {
     site: [
       path.join(__dirname, "/source/assets/stylesheets/site.scss"),
@@ -96,3 +96,5 @@ module.exports = {
     })
   ]
 };
+
+module.exports = [site_js_css];
