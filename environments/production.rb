@@ -2,6 +2,8 @@ activate :external_pipeline,
           name: :webpack,
           command: 'npm run build',
           source: 'build'
+          
+activate :asset_hash
 
 rev_manifest = REV_MANIFEST if defined?(REV_MANIFEST)
 if rev_manifest
