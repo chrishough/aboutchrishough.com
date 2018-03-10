@@ -1,5 +1,6 @@
 "use strict";
-
+// https://zacky1972.github.io/tech/2017/11/29/03-middleman-bootstrap.html
+// https://github.com/toadle/middleman-webpack
 const path = require("path");
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -7,7 +8,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
 const outputPath = path.join(__dirname, "build/assets");
 
-const site_js_css = {
+module.exports = {
   entry: {
     site: [
       path.join(__dirname, "/source/assets/stylesheets/site.scss"),
@@ -29,6 +30,22 @@ const site_js_css = {
 
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        exclude: /(assets)/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true,
+              removeComments: false,
+              collapseWhitespace: false,
+              name: "[name]-[hash].[ext]",
+              publicPath: '/assets/'
+            }
+          }
+        ]
+      },
       {
         test: /\.(woff|woff2|eot|ttf|svg|ico|jpg|jpeg|png)$/,
         use: [
@@ -91,10 +108,13 @@ const site_js_css = {
     new ManifestPlugin({
       fileName: 'rev-manifest.json'
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
     new CleanWebpackPlugin([outputPath], {
       root: __dirname
     })
   ]
 };
-
-module.exports = [site_js_css];

@@ -25,7 +25,6 @@ build
 *.exe
 *.o
 *.so
-*.psd
 *.ai
 *.ase
 
