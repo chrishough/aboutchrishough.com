@@ -6,6 +6,7 @@ _theme
 build
 .bundle/*
 !.bundle/config
+backup
 
 ###############################################################################################
 # Ignore all logfiles, tempfiles, and databases.
