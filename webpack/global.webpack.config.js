@@ -8,23 +8,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ManifestPlugin = require("webpack-manifest-plugin");
 const outputPath = path.join(__dirname, "build/assets");
 
-
-const uglifyJsPluginConfig = new UglifyJsPlugin({
-  sourceMap: true,
-  uglifyOptions: {
-    ecma: 8,
-    compress: false,
-    mangle: false,
-    keep_fnames: true,
-    output: {
-      comments: true,
-      beautify: true,
-      indent_level: 2,
-      indent_start: 0
-    }
-  }
-});
-
+{{insert-webpack-plugins}}
 
 const siteConfig = {
   entry: {
@@ -165,7 +149,7 @@ const siteConfig = {
     new CleanWebpackPlugin([outputPath], {
       root: __dirname,
       verbose: false
-    }),uglifyJsPluginConfig
+    }){{insert-webpack-plugin-merges}}
   ]
 };
 

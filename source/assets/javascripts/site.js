@@ -1,5 +1,3 @@
-require('script-loader!jquery');
-require('script-loader!bootstrap');
-require('./vendor/fontawesome');
-
-console.log('TESTGLOBAL');
+$(document).ready(() => {
+  console.log('TEST-GLOBAL-LOCAL');
+});

@@ -6,6 +6,7 @@ _theme
 build
 .bundle/*
 !.bundle/config
+webpack.config.js
 
 ###############################################################################################
 # Ignore all logfiles, tempfiles, and databases.
