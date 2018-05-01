@@ -19,7 +19,7 @@ class ProcessWebpackConfigurations
   end
 
   def run
-    write_out_plugins
+    substitute_plugins
     write_out_configuration
   end
 
@@ -30,7 +30,7 @@ class ProcessWebpackConfigurations
               :global_webpack_config_js,
               :mode
 
-  def write_out_plugins
+  def substitute_plugins
     return remove_plugins unless development?
     append_plugins
     process_substitution(insert_webpack_plugins, '{{insert-webpack-plugins}}')
