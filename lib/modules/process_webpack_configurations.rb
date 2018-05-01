@@ -29,7 +29,6 @@ class ProcessWebpackConfigurations
               :global_webpack_config_js,
               :mode
 
-  # rubocop:disable Metrics/AbcSize
   def append_plugins
     return remove_plugins unless development?
     Dir.glob('webpack/plugins/*.js') do |file|
@@ -39,7 +38,6 @@ class ProcessWebpackConfigurations
     process_substitution(insert_webpack_plugins, '{{insert-webpack-plugins}}')
     process_substitution(insert_webpack_plugin_merges, '{{insert-webpack-plugin-merges}}')
   end
-  # rubocop:enable Metrics/AbcSize
 
   def remove_plugins
     process_substitution('', '{{insert-webpack-plugins}}')

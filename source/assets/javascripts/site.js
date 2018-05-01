@@ -1,3 +1,3 @@
-$(document).ready(() => {
-  console.log('TEST-GLOBAL-LOCAL');
+$(document).ready(function() {
+  console.log("TEST-SITE-JS");
 });
