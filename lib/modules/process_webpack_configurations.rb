@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'yaml'
 require_relative '../helpers/string_helpers'
 
@@ -18,7 +19,7 @@ class ProcessWebpackConfigurations
   end
 
   def run
-    append_plugins
+    write_out_plugins
     write_out_configuration
   end
 
@@ -29,14 +30,18 @@ class ProcessWebpackConfigurations
               :global_webpack_config_js,
               :mode
 
-  def append_plugins
+  def write_out_plugins
     return remove_plugins unless development?
+    append_plugins
+    process_substitution(insert_webpack_plugins, '{{insert-webpack-plugins}}')
+    process_substitution(insert_webpack_plugin_merges, '{{insert-webpack-plugin-merges}}')
+  end
+
+  def append_plugins
     Dir.glob('webpack/plugins/*.js') do |file|
       self.insert_webpack_plugins = insert_webpack_plugins + "\n" + File.read(file)
       self.insert_webpack_plugin_merges = insert_webpack_plugin_merges + ',' + format_constant_name(File.basename(file, '.*'))
     end
-    process_substitution(insert_webpack_plugins, '{{insert-webpack-plugins}}')
-    process_substitution(insert_webpack_plugin_merges, '{{insert-webpack-plugin-merges}}')
   end
 
   def remove_plugins
