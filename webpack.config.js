@@ -48,7 +48,8 @@ const siteConfig = {
       "source/assets/javascripts/vendor"
     ],
     alias: {
-      "fontawesome": "fontawesome"
+      "fontawesome": "fontawesome",
+      "jquery": "jquery/src/jquery.js"
     }
   },
 
