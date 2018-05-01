@@ -44,8 +44,12 @@ const siteConfig = {
 
   resolve: {
     modules: [
-      "node_modules"
-    ]
+      "node_modules",
+      "source/assets/javascripts/vendor"
+    ],
+    alias: {
+      "fontawesome": "fontawesome"
+    }
   },
 
   module: {
