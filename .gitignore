@@ -7,6 +7,7 @@ build
 .bundle/*
 !.bundle/config
 backup
+webpack.config.js
 
 ###############################################################################################
 # Ignore all logfiles, tempfiles, and databases.
@@ -26,7 +27,6 @@ backup
 *.exe
 *.o
 *.so
-*.psd
 *.ai
 *.ase
 
@@ -66,3 +66,4 @@ Thumbs.db
 codekit-config.json
 node_modules
 _TESTME
+backup

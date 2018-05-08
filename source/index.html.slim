@@ -2,20 +2,19 @@
 layout: index
 ---
 
-div[class='avatar-author']
-  = data.website.title
+p[class='test-font-one']
+  |TEST V2 BUILDER TOP
 
-div[class='avatar-image']
-  img src="#{data.social.avatar}"
+p
+  |ICON:
+  =<
+  =<
+  i[class="fab fa-facebook-square fa-2x"]
+  i[class="fas fa-phone-square fa-2x"]
 
-div[class='avatar-personal']
-  div[class='avatar-slogan']
-    = data.website.slogan
+p[class='test-font-two']
+  |TEST V2 BUILDER BOTTOM
 
-  div[class='avatar-location']
-    div
-      = image_tag 'social-media-icons/location.svg'
-      = data.website.location
+hr
 
-div[class='avatar-social-media']
-  = partial 'partials/layout/components/social-media-icons'
+= image_tag image_url("favicons/android-icon-192x192.png")
