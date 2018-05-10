@@ -33,7 +33,9 @@ const siteConfig = {
     ],
     alias: {
       "fontawesome": "fontawesome",
-      "jquery": "jquery/src/jquery.js"
+      "jquery": "jquery/src/jquery.js",
+      "popper": "popper.js/dist/popper.js",
+      "bootstrap": "bootstrap/dist/js/bootstrap.js"
     }
   },
 
