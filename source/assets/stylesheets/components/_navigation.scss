@@ -1,3 +1,6 @@
-.navbar-dark .navbar-toggler {
-  outline-color: $purple-lightest;
+.navbar {
+  .navbar-toggler {
+    outline: none;
+    color: $white;
+  }
 }
