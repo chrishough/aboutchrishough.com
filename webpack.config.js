@@ -142,6 +142,12 @@ const siteConfig = {
   },
 
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       name: "vendor",
       filename: "site-vendor-[hash].js",
