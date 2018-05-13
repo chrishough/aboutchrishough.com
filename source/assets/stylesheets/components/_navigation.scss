@@ -3,4 +3,22 @@
     outline: none;
     color: $white;
   }
+
+  @include media-breakpoint-down(sm) {
+    .navbar-brand {
+      white-space: normal;
+      max-width: 150px;
+    }
+  }
+  @include media-breakpoint-down(minimium) {
+    .collapse {
+      display: none !important;
+    }
+  }
+  @include media-breakpoint-up(minimium) {
+    .navbar-brand {
+      white-space: wrap;
+      max-width: inherit;
+    }
+  }
 }

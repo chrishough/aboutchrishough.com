@@ -3,3 +3,12 @@ $purple-medium-light: #84359c;
 $purple-medium-dark: #441b51;
 $purple-dark: #2d1135;
 $purple-darkest: #040105;
+
+$grid-breakpoints: (
+  xs: 0,
+  minimium: 350px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
