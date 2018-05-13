@@ -1,11 +1,11 @@
 nav[class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"]
-  div[class="navbar-header d-flex"]
+  div[class="navbar-toggler d-flex navbar-header" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation"]
     div[class="navbar-brand mr-auto"]
       |Want to learn more about me?
-    button[class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"]
+    button[type="button" class="navbar-toggler"]
       i[class="fa fa-angle-double-up"]
   div[class="navbar-collapse collapse" id="navbarCollapse"]
-    ul[class="navbar-nav navbar-nav-wrapper mr-auto"]
+    ul[class="navbar-nav mr-auto navbar-nav-wrapper"]
       li[class="nav-item"]
         = link_to "Vision & Passion", "/pages/vision-and-passion/", class: "nav-link"
       li[class="nav-item"]

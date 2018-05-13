@@ -4,27 +4,38 @@
   .navbar-header {
     width: 100%;
     padding: 0 1rem;
+    color: white;
+    border: none;
+
+    .navbar-brand {
+      line-height: 1.75rem;
+    }
+
+    .navbar-toggler {
+      color: $white;
+    }
+
+    > button {
+      outline: none;
+    }
   }
 
   .navbar-nav-wrapper {
     margin-top: 0.50rem;
     border-top: 0.15rem solid $purple-dark;
-    > li {
+    
+    .nav-item {
       width: 100%;
       padding: 0 1rem;
 
       &:hover {
         background-color: $purple-medium-dark;
-        > a {
-          color: $white;
-        }
+      }
+
+      a:hover {
+        color: $white;
       }
     }
-  }
-
-  .navbar-toggler {
-    outline: none;
-    color: $white;
   }
 
   @include media-breakpoint-down(sm) {
