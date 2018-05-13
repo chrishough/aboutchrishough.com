@@ -1,22 +1,18 @@
 nav[class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"]
-  a[class="navbar-brand" href="#"]
-    |Want to learn more about me?
-  button[class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"]
-    i[class="fa fa-angle-double-down"]
+  div[class="navbar-header d-flex"]
+    div[class="navbar-brand mr-auto"]
+      |Want to learn more about me?
+    button[class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"]
+      i[class="fa fa-angle-double-up"]
   div[class="navbar-collapse collapse" id="navbarCollapse"]
-    ul[class="navbar-nav mr-auto"]
+    ul[class="navbar-nav navbar-nav-wrapper mr-auto"]
       li[class="nav-item"]
-        a[class="nav-link" href="#"]
-          |Vision & Passion
+        = link_to "Vision & Passion", "/pages/vision-and-passion/", class: "nav-link"
       li[class="nav-item"]
-        a[class="nav-link" href="#"]
-          |Career Path
+        = link_to "Career Path", "/pages/career-path/", class: "nav-link"
       li[class="nav-item"]
-        a[class="nav-link" href="#"]
-          |Working Together
+        = link_to "Working Together", "/pages/working-together/", class: "nav-link"
       li[class="nav-item"]
-        a[class="nav-link" href="#"]
-          |Family Journey
+        = link_to "Family Journey", "/pages/family-journey/", class: "nav-link"
       li[class="nav-item"]
-        a[class="nav-link" href="#"]
-          |Thoughts on Paper
+        = link_to "Thoughts on Paper", "/pages/thoughts-on-paper/", class: "nav-link"

@@ -1,4 +1,27 @@
 .navbar {
+  padding: 0.5rem 0;
+
+  .navbar-header {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .navbar-nav-wrapper {
+    margin-top: 0.50rem;
+    border-top: 0.15rem solid $purple-dark;
+    > li {
+      width: 100%;
+      padding: 0 1rem;
+
+      &:hover {
+        background-color: $purple-medium-dark;
+        > a {
+          color: $white;
+        }
+      }
+    }
+  }
+
   .navbar-toggler {
     outline: none;
     color: $white;
@@ -8,11 +31,6 @@
     .navbar-brand {
       white-space: normal;
       max-width: 150px;
-    }
-  }
-  @include media-breakpoint-down(minimium) {
-    .collapse {
-      display: none !important;
     }
   }
   @include media-breakpoint-up(minimium) {
