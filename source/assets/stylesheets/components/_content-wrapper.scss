@@ -1,6 +1,6 @@
 html,
 body {
-  padding: 0!important;
+  padding: 0 !important;
   margin: 0 !important;
 }
 
@@ -9,8 +9,12 @@ body,
 .container-fluid {
   height: 100% !important;
   min-width: map-get($grid-breakpoints, 'minimium') !important;
+  min-height: 100%;
 }
 
-.content-wrapper {
-  
+body {
+  background-color: #000;
+  background: image-url('backgrounds/hough-collage.jpg') no-repeat 50% 50% fixed;
+  background-position: top center;
+  background-size: cover;
 }
