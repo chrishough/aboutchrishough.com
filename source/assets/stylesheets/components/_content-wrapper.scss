@@ -1,0 +1,16 @@
+html,
+body {
+  padding: 0!important;
+  margin: 0 !important;
+}
+
+html,
+body,
+.container-fluid {
+  height: 100% !important;
+  min-width: map-get($grid-breakpoints, 'minimium') !important;
+}
+
+.content-wrapper {
+  
+}

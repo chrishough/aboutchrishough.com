@@ -4,7 +4,4 @@
 @import "vendor/bootstrap";
 @import "vendor/google_fonts";
 @import "components/navigation";
-
-body {
-  min-width: map-get($grid-breakpoints, 'minimium') !important;
-}
+@import "components/content-wrapper";

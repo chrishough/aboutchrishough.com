@@ -1,7 +1,7 @@
 = partial "partials/layout/html" do
   = partial "partials/layout/header"
   = partial "partials/layout/body" do
-    div[class="container-fluid"]
+    div[class="container-fluid content-wrapper"]
       == yield
     = partial "partials/layout/components/navigation"
-    = partial "partials/layout/footer"
+    = partial "partials/layout/components/javascript"
