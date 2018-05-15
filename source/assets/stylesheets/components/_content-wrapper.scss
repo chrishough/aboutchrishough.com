@@ -13,7 +13,7 @@ body,
 }
 
 body {
-  background-color: #000;
+  background-color: $gray-900;
   background: image-url('backgrounds/hough-collage.jpg') no-repeat 50% 50% fixed;
   background-position: top center;
   background-size: cover;
