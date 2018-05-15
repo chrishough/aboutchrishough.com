@@ -14,7 +14,10 @@ body,
 
 body {
   background-color: $gray-900;
-  background: image-url('backgrounds/hough-collage.jpg') no-repeat 50% 50% fixed;
+}
+
+.content-wrapper {
+  background: url('#{$image-path}/backgrounds/hough-collage.jpg') no-repeat 50% 50% fixed;
   background-position: top center;
   background-size: cover;
 }
