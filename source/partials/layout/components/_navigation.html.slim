@@ -1,18 +1,23 @@
 nav[class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"]
-  div[class="navbar-toggler d-flex navbar-header" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation"]
-    div[class="navbar-brand mr-auto"]
-      |Want to learn more about me?
-    button[type="button" class="navbar-toggler"]
-      i[id="nav-button" class="fa fa-angle-double-up"]
-  div[class="navbar-collapse collapse" id="navbarCollapse"]
-    ul[class="navbar-nav mr-auto navbar-nav-wrapper"]
-      li[class="nav-item"]
-        = link_to "Vision & Passion", "/pages/vision-and-passion/", class: "nav-link"
-      li[class="nav-item"]
-        = link_to "Career Path", "/pages/career-path/", class: "nav-link"
-      li[class="nav-item"]
-        = link_to "Working Together", "/pages/working-together/", class: "nav-link"
-      li[class="nav-item"]
-        = link_to "Family Journey", "/pages/family-journey/", class: "nav-link"
-      li[class="nav-item"]
-        = link_to "Thoughts on Paper", "/pages/thoughts-on-paper/", class: "nav-link"
+  div[class="container"]
+    div[class="row flex-fill"]
+      div[class="col-sm-6 navbar-header-wrapper"]
+        div[class="row navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation"]
+          div[class="col-10 align-middle navbar-title"]
+            |Want to learn more about me?
+          div[class="col-2"]
+            button[type="button" class="float-right"]
+              i[id="nav-button" class="fa fa-angle-double-up"]
+      div[class="col-sm-6 navbar-nav-item-wrapper"]
+        div[class="navbar-collapse collapse" id="navbarCollapse"]
+          ul[class="navbar-nav"]
+            li[class="nav-item"]
+              = link_to "Vision & Passion", "/pages/vision-and-passion/", class: "nav-link"
+            li[class="nav-item"]
+              = link_to "Career Path", "/pages/career-path/", class: "nav-link"
+            li[class="nav-item"]
+              = link_to "Working Together", "/pages/working-together/", class: "nav-link"
+            li[class="nav-item"]
+              = link_to "Family Journey", "/pages/family-journey/", class: "nav-link"
+            li[class="nav-item"]
+              = link_to "Thoughts on Paper", "/pages/thoughts-on-paper/", class: "nav-link"

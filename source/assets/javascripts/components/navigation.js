@@ -1,13 +1,14 @@
-$(document).ready(() => {
-  const $navBarHeader = $(".navbar-header");
-  const $navButton = $("#nav-button");
-  const $navToggler = $(".navbar-toggler");
+export let navigation = () => {
+  let $navHeaderWrapper = $(".navbar-header-wrapper");
 
-  $navBarHeader.on('click', () => {
-    if($navToggler.find('svg').attr('data-icon') === "angle-double-up") {
-      $navToggler.find('svg').attr('data-icon', "angle-double-down");
+  $navHeaderWrapper.on('click', () => {
+    console.log('TESTA');
+    if($navHeaderWrapper.find('svg').attr('data-icon') === "angle-double-up") {
+      $navHeaderWrapper.find('svg').attr('data-icon', "angle-double-down");
+      console.log('TESTB');
     } else {
-      $navToggler.find('svg').attr('data-icon', "angle-double-up");
+      $navHeaderWrapper.find('svg').attr('data-icon', "angle-double-up");
+      console.log('TESTC');
     }
   });
-});
+};

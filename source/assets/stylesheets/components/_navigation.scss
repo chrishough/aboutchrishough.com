@@ -1,62 +1,56 @@
 .navbar {
   min-width: map-get($grid-breakpoints, 'minimium') !important;
-  padding: 0.5rem 0;
 
-  .navbar-header {
-    width: 100%;
-    padding: 0 1rem;
-    color: white;
+  .navbar-toggler {
+    color: $white;
     border: none;
+    border-radius: 0;
+    padding: 0.25rem 0;
 
-    .navbar-brand {
-      line-height: 1.75rem;
-    }
-
-    .navbar-toggler {
+    button {
       color: $white;
-    }
-
-    > button {
+      padding: .75rem 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 1px solid $white;
+      border-radius: .25rem;
+      cursor: pointer;
       outline: none;
     }
   }
 
-  .navbar-nav-wrapper {
-    margin-top: 0.50rem;
+  .navbar-title {
+    color: $white;
+    line-height: 2.5rem;
+  }
 
-    .nav-item {
-      width: 100%;
-      padding: 0 1rem;
+  .navbar-nav-item-wrapper {
+    padding-right: 0;
+    padding-left: 0;
 
-      &:hover {
-        background-color: $purple-medium-dark;
+    .navbar-nav {
+      border: none;
+
+      li {
+        &:hover {
+          background-color: $purple-medium-dark;
+          color: $white;
+        }
+
+        .nav-link {
+          padding: 1.25rem 1rem;
+
+          &:hover {
+            color: $white;
+          }
+        }
       }
 
-      a:hover {
-        color: $white;
+      @include media-breakpoint-down(sm) {
+        border-top: 0.15rem solid $purple-lightest;
+        margin-top: 0.75rem;
       }
-    }
-  }
-
-  @include media-breakpoint-down(sm) {
-    .navbar-nav-wrapper {
-      border-top: 0.15rem solid $purple-dark;
-    }
-
-    .navbar-brand {
-      white-space: normal;
-      max-width: 150px;
-    }
-  }
-  @include media-breakpoint-up(sm) {
-    .navbar-nav-wrapper {
-      border-top: none;
-    }
-  }
-  @include media-breakpoint-up(minimium) {
-    .navbar-brand {
-      white-space: wrap;
-      max-width: inherit;
     }
   }
 }
