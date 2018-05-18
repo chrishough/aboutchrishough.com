@@ -1,3 +1,3 @@
-export let movie = () => {
+export const movie = () => {
   console.log('TESTD');
 };

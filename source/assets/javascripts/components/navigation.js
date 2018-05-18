@@ -1,5 +1,5 @@
-export let navigation = () => {
-  let $navHeaderWrapper = $(".navbar-header-wrapper");
+export const navigation = () => {
+  const $navHeaderWrapper = $(".navbar-header-wrapper");
 
   $navHeaderWrapper.on('click', () => {
     console.log('TESTA');
