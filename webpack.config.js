@@ -99,6 +99,11 @@ const siteConfig = {
         ]
       },
       {
+        test: /.scss/,
+        enforce: "pre",
+        loader: "import-glob-loader"
+      },
+      {
         test: /\.(css|scss)$/,
         use: [
           {
