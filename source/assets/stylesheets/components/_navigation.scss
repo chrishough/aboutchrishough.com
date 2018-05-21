@@ -56,6 +56,17 @@
           &:hover {
             color: $white;
           }
+
+          @include media-breakpoint-down(sm) {
+            span {
+              visibility: visible;
+            }
+          }
+          @include media-breakpoint-up(sm) {
+            span {
+              visibility: hidden;
+            }
+          }
         }
       }
       @include media-breakpoint-down(sm) {
