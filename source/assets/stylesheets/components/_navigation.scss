@@ -9,7 +9,6 @@
 
     button {
       color: $white;
-      padding: .75rem 1.25rem;
       font-size: 1.25rem;
       line-height: 1;
       background-color: transparent;
@@ -17,7 +16,12 @@
       border-radius: .25rem;
       cursor: pointer;
       outline: none;
-
+      @include media-breakpoint-up(xs) {
+        padding: .50rem 1rem;
+      }
+      @include media-breakpoint-up(minimium) {
+        padding: .75rem 1.25rem;
+      }
       @include media-breakpoint-up(sm) {
         display: none;
       }
@@ -26,10 +30,22 @@
     .navbar-title {
       color: $white;
       line-height: 2.5rem;
-    }
 
+      @include media-breakpoint-up(sm) {
+        font-size: 1.5rem;
+      }
+    }
     @include media-breakpoint-up(xs) {
       display: flex;
+
+      #nav-description {
+        display: none;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      #nav-description {
+        display: inline;
+      }
     }
   }
 
@@ -49,6 +65,11 @@
         .nav-icon {
           margin-right: 0.50rem;
         }
+        @include media-breakpoint-up(sm) {
+          .nav-icon {
+            margin-right: 0;
+          }
+        }
 
         .nav-link {
           padding: 1.25rem 1rem;
@@ -56,27 +77,63 @@
           &:hover {
             color: $white;
           }
-
-          @include media-breakpoint-down(sm) {
+          @include media-breakpoint-up(xs) {
             span {
-              visibility: visible;
+              display: inline;
             }
           }
           @include media-breakpoint-up(sm) {
+            font-size: 1.5rem;
+            padding: 2rem;
+
             span {
-              visibility: hidden;
+              display: none;
             }
           }
         }
+
+        @include media-breakpoint-up(xs) {
+          text-align: left;
+        }
+        @include media-breakpoint-up(sm) {
+          text-align: center;
+
+        }
       }
       @include media-breakpoint-down(sm) {
-        border-top: 0.15rem solid $purple-lightest;
+        border-top: 0.15rem solid $purple-medium-dark;
         margin-top: 0.75rem;
       }
       @include media-breakpoint-up(sm) {
         border-top: 0;
         margin-top: 0;
+        align-items: stretch;
+        justify-content: space-around;
       }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 0.5rem 0 0 0;
+    margin-bottom: 0;
+
+    .navbar-header-wrapper {
+      border-bottom: 0.15rem solid $purple-medium-dark;
+    }
+
+    .container {
+      margin: 0;
+      max-width: inherit;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .navbar-header-wrapper {
+      border-bottom: 0;
+    }
+
+    .container {
+      margin: auto;
+      max-width: map-get($grid-breakpoints, "md");
     }
   }
 }
