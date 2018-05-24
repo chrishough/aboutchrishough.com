@@ -9,8 +9,10 @@ $image-path: '../../assets/images/';
 $grid-breakpoints: (
   xs: 0,
   minimium: 350px,
+  transition: 450px,
   sm: 576px,
   md: 768px,
   lg: 992px,
+  maximum: 1000px,
   xl: 1200px
 ) !default;
