@@ -9,6 +9,8 @@ import faHeart from '@fortawesome/fontawesome-free-solid/faHeart';
 import faEye from '@fortawesome/fontawesome-free-solid/faEye';
 import faMapSigns from '@fortawesome/fontawesome-free-solid/faMapSigns';
 import faMapMarkerAlt from '@fortawesome/fontawesome-free-solid/faMapMarkerAlt';
+import faArrowAltCircleDown from '@fortawesome/fontawesome-free-solid/faArrowAltCircleDown';
+import faArrowAltCircleRight from '@fortawesome/fontawesome-free-solid/faArrowAltCircleRight';
 // This enables using FontAwesome in CSS pseudo elements
 // see: https://fontawesome.com/how-to-use/svg-with-js#pseudo-elements
 fontawesome.config.searchPseudoElements = true;
@@ -19,6 +21,8 @@ fontawesome.library.add(faAngleDoubleDown,
                         faLightbulb,
                         faMapSigns,
                         faMapMarkerAlt,
+                        faArrowAltCircleRight,
+                        faArrowAltCircleDown,
                         faHeart,
                         faEye);
 

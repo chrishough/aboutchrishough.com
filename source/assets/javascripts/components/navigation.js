@@ -1,7 +1,9 @@
 export const navigation = () => {
   const $navHeaderWrapper = $(".navbar-header-wrapper");
   const $navItems = $(".navbar-nav > li");
-  const $navDescription = $("#nav-description");
+  const $navbarNavItemWrapper = $(".navbar-nav-item-wrapper");
+  const $navDescription = $("#navbar-description");
+  const $navDescriptionDefaultValue = $navDescription.html();
 
   $navHeaderWrapper.on('click', () => {
     if($navHeaderWrapper.find('svg').attr('data-icon') === "angle-double-up") {
@@ -11,13 +13,11 @@ export const navigation = () => {
     }
   });
 
-  // $navItems.hover(
-  //   function() {
-  //     $navDescription.html($(this).find("span").html());
-  //     $navDescription.stop(true,true).fadeIn("slow");
-  //   }, function() {
-  //     $navDescription.stop(true,true).fadeOut();
-  //     $navDescription.html('&nbsp;');
-  //   }
-  // );
+  $navItems.on('mouseover', function() {
+    $navDescription.html($(this).find("span").html());
+  });
+
+  $navbarNavItemWrapper.on('mouseout', function() {
+    $navDescription.html($navDescriptionDefaultValue);
+  });
 };
