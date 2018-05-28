@@ -14,6 +14,8 @@ import faArrowAltCircleRight from '@fortawesome/fontawesome-free-solid/faArrowAl
 // This enables using FontAwesome in CSS pseudo elements
 // see: https://fontawesome.com/how-to-use/svg-with-js#pseudo-elements
 fontawesome.config.searchPseudoElements = true;
+// https://stackoverflow.com/questions/48358529/failed-to-execute-removechild-on-node-with-fontawesome-in-react/48552226#48552226
+fontawesome.config.autoReplaceSvg = 'nest'
 
 // Icons should be imported individually to keep bundle size down
 fontawesome.library.add(faAngleDoubleDown,
