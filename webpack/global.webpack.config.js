@@ -35,7 +35,8 @@ const siteConfig = {
       "fontawesome": "fontawesome",
       "jquery": "jquery/src/jquery.js",
       "popper": "popper.js/dist/popper.js",
-      "bootstrap": "bootstrap/dist/js/bootstrap.js"
+      "bootstrap": "bootstrap/dist/js/bootstrap.js",
+      "breakpoints": "breakpoints-js/dist/breakpoints.min.js"
     }
   },
 

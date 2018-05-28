@@ -65,10 +65,7 @@
             box-shadow: 0 0 1rem 0 $purple-medium-dark;
           }
           @include media-breakpoint-up(lg) {
-            box-shadow: 0 0 0.5rem 0.75rem $purple-medium-dark;
-            font-size: 2rem;
-            line-height: 0;
-            border-radius: 0.1rem 0.1rem 0 0;
+            box-shadow: 0 0 1rem 0 $purple-medium-dark, 0 0 0.25rem 0.25rem $purple-darkest;
           }
         }
 
