@@ -3,6 +3,7 @@ export const navigation = () => {
   const $navItems = $(".navbar-nav > li");
   const $navbarNavItemWrapper = $(".navbar-nav-item-wrapper");
   const $navDescriptionDefault = $("#navbar-description-default");
+  const $navDescriptionDefaultIcon = $("#navbar-description-default-icon");
   const $navDescriptionSet = $("#navbar-description-set");
 
   Breakpoints.on('sm md lg xl', {
@@ -12,7 +13,7 @@ export const navigation = () => {
       $navItems.on('mouseover', function() {
         $navDescriptionDefault.hide();
         $navDescriptionSet.html($(this).find("span").html());
-        $navDescriptionSet.fadeIn();
+        $navDescriptionSet.fadeIn("fast");
       });
 
       $navbarNavItemWrapper.on('mouseout', function() {
@@ -33,5 +34,24 @@ export const navigation = () => {
         }
       });
     }
+  });
+
+  Breakpoints.on('xs', "enter", function() {
+    $navDescriptionDefaultIcon.html('');
+    console.log('xs');
+  });
+
+  Breakpoints.on('sm md', "enter", function() {
+    $navDescriptionDefaultIcon.html("");
+    $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-down'>");
+    FontAwesome.dom.i2svg();
+    console.log('sm md');
+  });
+
+  Breakpoints.on('lg xl', "enter", function() {
+    $navDescriptionDefaultIcon.html("");
+    $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-right'>");
+    FontAwesome.dom.i2svg();
+    console.log('lg xl');
   });
 };

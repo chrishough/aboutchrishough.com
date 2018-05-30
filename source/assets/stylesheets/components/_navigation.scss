@@ -65,7 +65,10 @@
             box-shadow: 0 0 1rem 0 $purple-medium-dark;
           }
           @include media-breakpoint-up(lg) {
-            box-shadow: 0 0 1rem 0 $purple-medium-dark, 0 0 0.25rem 0.25rem $purple-darkest;
+            margin-top: -1rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            margin-bottom: -1rem;
+            padding-top: 1rem;
           }
         }
 
@@ -161,10 +164,10 @@
     @include media-breakpoint-up(xs) {
       display: none;
 
-      .fa-arrow-alt-circle-down {
+      .fa-arrow-circle-down {
         display: inline;
       }
-      .fa-arrow-alt-circle-right {
+      .fa-arrow-circle-right{
         display: none;
       }
     }
@@ -180,10 +183,10 @@
       line-height: 1.5rem;
       min-height: 2rem;
 
-      .fa-arrow-alt-circle-down {
+      .fa-arrow-circle-down {
         display: none;
       }
-      .fa-arrow-alt-circle-right {
+      .fa-arrow-circle-right{
         display: inline;
       }
     }
