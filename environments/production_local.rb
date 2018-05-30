@@ -10,3 +10,7 @@ Slim::Engine.set_default_options(pretty: true)
 set :relative_links, true
 
 activate :relative_assets
+
+set :protocol, 'http://'
+set :host, 'aboutchrishough.com'
+set :port, 80

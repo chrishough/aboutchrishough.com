@@ -49,7 +49,10 @@ const siteConfig = {
     ],
     alias: {
       "fontawesome": "fontawesome",
-      "jquery": "jquery/src/jquery.js"
+      "jquery": "jquery/src/jquery.js",
+      "popper": "popper.js/dist/popper.js",
+      "bootstrap": "bootstrap/dist/js/bootstrap.js",
+      "breakpoints": "breakpoints-js/dist/breakpoints.min.js"
     }
   },
 
@@ -91,10 +94,15 @@ const siteConfig = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["es2015"]
+              presets: ["@babel/preset-env"]
             }
           }
         ]
+      },
+      {
+        test: /.scss/,
+        enforce: "pre",
+        loader: "import-glob-loader"
       },
       {
         test: /\.(css|scss)$/,
@@ -140,6 +148,12 @@ const siteConfig = {
   },
 
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       name: "vendor",
       filename: "site-vendor-[hash].js",
