@@ -44,9 +44,10 @@ helpers do
     config[:protocol] + host_with_port + image_path(source)
   end
 
-  def link_to(description, destination, **args)
-    return super(description, destination, args) unless external_site_configured?
-    super(description, external_destination(destination), args)
+  def link_to(*args, &block)
+    return super(*args, &block) unless external_site_configured?
+    args[0] = external_destination(args[0])
+    super(*args, &block)
   end
 
   def stylesheet_link_tag(destination)

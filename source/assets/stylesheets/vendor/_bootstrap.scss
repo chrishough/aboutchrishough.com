@@ -1,5 +1,5 @@
 @import 'bootstrap/scss/functions';
-@import 'bootstrap/scss/variables';
+@import 'bootstrap_variables';
 
 // Webpack + Autoprefixer Overrides for broken icons!
 $navbar-dark-toggler-icon-bg: none;
@@ -44,7 +44,6 @@ $navbar-light-toggler-icon-bg: none;
 @import "bootstrap/scss/mixins/grid-framework";
 @import "bootstrap/scss/mixins/grid";
 @import "bootstrap/scss/mixins/float";
-
 
 @import 'bootstrap/scss/root';
 @import 'bootstrap/scss/reboot';
