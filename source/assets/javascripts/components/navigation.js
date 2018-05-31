@@ -38,20 +38,17 @@ export const navigation = () => {
 
   Breakpoints.on('xs', "enter", function() {
     $navDescriptionDefaultIcon.html('');
-    console.log('xs');
   });
 
   Breakpoints.on('sm md', "enter", function() {
     $navDescriptionDefaultIcon.html("");
     $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-down'>");
     FontAwesome.dom.i2svg();
-    console.log('sm md');
   });
 
   Breakpoints.on('lg xl', "enter", function() {
     $navDescriptionDefaultIcon.html("");
     $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-right'>");
     FontAwesome.dom.i2svg();
-    console.log('lg xl');
   });
 };

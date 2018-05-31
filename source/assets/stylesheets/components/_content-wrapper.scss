@@ -2,22 +2,17 @@ html,
 body {
   padding: 0 !important;
   margin: 0 !important;
-}
-
-html,
-body,
-.container-fluid {
   height: 100% !important;
+  background-color: $gray-900;
   min-width: map-get($grid-breakpoints, 'minimium') !important;
   min-height: 100%;
-}
-
-body {
-  background-color: $gray-900;
 }
 
 .content-wrapper {
   background: url('#{$image-path}/backgrounds/hough-collage.jpg') no-repeat 50% 50% fixed;
   background-position: top center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
