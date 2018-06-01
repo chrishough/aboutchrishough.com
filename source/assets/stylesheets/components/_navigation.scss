@@ -1,6 +1,7 @@
 .navbar {
   min-width: map-get($grid-breakpoints, 'minimium') !important;
   box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
+  @include primary-font();
 
   .navbar-toggler {
     color: $white;
@@ -30,9 +31,11 @@
 
     .navbar-title {
       color: $white;
+      @include secondary-font();
 
       @include media-breakpoint-up(xs) {
         line-height: 2.5rem;
+        font-size: 1.35rem;
       }
       @include media-breakpoint-up(transition) {
         line-height: 3.2rem;
@@ -41,6 +44,7 @@
       @include media-breakpoint-up(lg) {
         line-height: inherit;
         text-align: right;
+        white-space: nowrap;
       }
     }
 
