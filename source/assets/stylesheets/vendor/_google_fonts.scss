@@ -1,6 +1,7 @@
 // https://fonts.google.com/
 
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Playfair+Display|Bowlby+One+SC");
 
 @mixin primary-font { font-family: "Merriweather", serif; }
 @mixin secondary-font { font-family: "Playfair Display", serif; }
+@mixin impact-font { font-family: "Empty Clipboard Text", cursive; }
