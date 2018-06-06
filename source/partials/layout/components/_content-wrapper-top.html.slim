@@ -1,0 +1,10 @@
+div[class="container-fluid"]
+  div[class="row flex-fill"]
+    div[class="col content-wrapper-top"]
+      = link_to("/", class: "home-link") do
+        div[class="flex-fill"]
+          span[class="prefix"]
+            |About
+          span[class="username"]
+            = data.website.author
+          i[class="em-svg em-face_with_monocle"]

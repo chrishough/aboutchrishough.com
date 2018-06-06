@@ -2,6 +2,7 @@
   = partial "partials/layout/header"
   = partial "partials/layout/body" do
     div[class="container-fluid content-wrapper"]
+      = partial "partials/layout/components/content-wrapper-top"
       == yield
     = partial "partials/layout/components/navigation"
     = partial "partials/layout/components/javascript"

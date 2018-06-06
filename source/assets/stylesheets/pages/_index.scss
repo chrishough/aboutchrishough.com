@@ -1,13 +1,6 @@
 #index {
-  .header-wrapper,
-  .body-wrapper,
-  .footer-wrapper {
-    color: white;
-    @include primary-font();
-  }
-
   .content-wrapper,
-  .body-wrapper {
+  .content-wrapper-body {
     padding: 0;
   }
 }

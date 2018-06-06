@@ -9,7 +9,6 @@ $(document).ready(() => {
 
   breakpoints();
   navigation();
-
   index();
 
   // https://stackoverflow.com/questions/23800165/remove-move-the-google-chrome-bottom-left-status-bar-link-address-bar
