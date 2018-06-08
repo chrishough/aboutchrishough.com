@@ -35,7 +35,7 @@
 
       @include media-breakpoint-up(xs) {
         line-height: 2.5rem;
-        font-size: 1.25rem;
+        font-size: 1.20rem;
       }
       @include media-breakpoint-up(transition) {
         line-height: 3.2rem;
@@ -45,11 +45,17 @@
         line-height: inherit;
         text-align: right;
         white-space: nowrap;
+        padding-top: 1rem;
       }
     }
 
     @include media-breakpoint-up(xs) {
       display: flex;
+    }
+    @include media-breakpoint-up(sm) {
+      &:not(:disabled) {
+        cursor: default;
+      }
     }
   }
 
