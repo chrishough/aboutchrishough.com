@@ -1,9 +1,11 @@
 .content-wrapper {
-  background: url('#{$image-path}/backgrounds/hough-collage.jpg') no-repeat 50% 50% fixed;
-  background-position: top center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  color: white;
+  padding: 0;
+
+  min-height: 100%;
+
+  background: url('#{$image-path}/backgrounds/hough-collage.jpg') repeat 50% 50% fixed;
+  background-position: top center;
+  background-size: contain;
 }
