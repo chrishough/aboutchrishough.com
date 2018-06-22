@@ -5,28 +5,55 @@ div[class="container-fluid content-wrapper-body"]
   div[class="d-flex"]
     div[class="personal-data-wrapper-left-stack"]
       div[class="personal-data-wrapper"]
-        i[class="fab fa-linkedin-in"]
+        = link_to(data.social.linkedin, target: :_blank) do
+          i[class="fab fa-linkedin-in"]
       div[class="personal-data-wrapper"]
-        i[class="fab fa-github"]
+        = link_to(data.social.github, target: :_blank) do
+          i[class="fab fa-github"]
       div[class="personal-data-wrapper"]
-        i[class="fas fa-road"]
+        = link_to(data.social.resume, target: :_blank) do
+          i[class="fas fa-road"]
       div[class="personal-data-wrapper"]
-        i[class="fas fa-wrench"]
+        = link_to(data.social.configurations, target: :_blank) do
+          i[class="fas fa-wrench"]
 
-    div[class="personal-data-wrapper-center-stack"]
-      |TEST
+    div[class="personal-data-wrapper-center-stack d-flex flex-column justify-content-center align-items-center"]
+      div[class="personal-data-avatar"]
+        img[src="#{data.social.avatar}"]
+      div[class="personal-data-location"]
+        i[class="em-svg em-earth_americas"]
+        |Remote. Global.
+      div[class="personal-data-location"]
+        = data.website.city
+        =>
+        |-
+        =>
+        = data.website.state
 
     div[class="personal-data-wrapper-right-stack"]
       div[class="personal-data-wrapper"]
-        i[class="fab fa-instagram"]
+        = link_to(data.social.instagram, target: :_blank) do
+          i[class="fab fa-instagram"]
       div[class="personal-data-wrapper"]
-        i[class="fab fa-facebook-f"]
+        = link_to(data.social.facebook, target: :_blank) do
+          i[class="fab fa-facebook-f"]
       div[class="personal-data-wrapper"]
-        i[class="fab fa-twitter"]
+        = link_to(data.social.twitter, target: :_blank) do
+          i[class="fab fa-twitter"]
       div[class="personal-data-wrapper"]
-        i[class="far fa-envelope"]
+        a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question"]
+          i[class="far fa-envelope"]
 
 div[class="container-fluid content-wrapper-footer"]
   div[class="row flex-fill"]
     div[class="col"]
-      | Lorem ipsum dolor amet polaroid literally lyft health goth, sartorial pour-over letterpress succulents pabst snackwave. Activated charcoal meggings shabby chic humblebrag, sriracha kinfolk cred iPhone irony DIY marfa shoreditch. Twee cred vape letterpress bespoke. Glossier coloring book food truck sriracha fam synth disrupt polaroid DIY gochujang iPhone. Tacos tofu migas before they sold out taiyaki iceland vinyl meditation cred. Meh enamel pin synth typewriter intelligentsia palo santo small batch. Twee green juice banjo swag, kitsch glossier affogato palo santo food truck. Fashion axe gluten-free authentic mumblecore selfies, tote bag migas humblebrag venmo shoreditch sartorial flexitarian tumblr activated charcoal polaroid. Sartorial chambray heirloom you probably haven't heard of them humblebrag man bun portland bicycle rights typewriter. Tote bag skateboard stumptown, glossier cray pour-over selvage etsy readymade keytar butcher tumblr offal deep v seitan. Single-origin coffee paleo PBR&B ennui ugh cardigan woke lyft man bun vaporware flexitarian photo booth leggings yr put a bird on it. Yuccie banjo pour-over palo santo humblebrag fixie intelligentsia cronut. Pug lomo umami four dollar toast, cold-pressed blog put a bird on it green juice bicycle rights direct trade retro PBR&B pour-over. Cred freegan single-origin coffee brooklyn craft beer prism viral. Tattooed pop-up organic letterpress direct trade enamel pin. Bushwick palo santo vaporware fam. Gluten-free artisan sriracha cloud bread, lyft poke waistcoat jean shorts craft beer kitsch gastropub slow-carb squid swag. 90's put a bird on it offal shabby chic scenester humblebrag umami mixtape fingerstache. Yr pug bicycle rights pop-up raw denim YOLO four loko woke hammock blog flannel unicorn you probably haven't heard of them PBR&B put a bird on it. Chartreuse hoodie art party, tousled beard woke artisan everyday carry chillwave tilde. Lorem ipsum dolor amet polaroid literally lyft health goth, sartorial pour-over letterpress succulents pabst snackwave. Activated charcoal meggings shabby chic humblebrag, sriracha kinfolk cred iPhone irony DIY marfa shoreditch. Twee cred vape letterpress bespoke. Glossier coloring book food truck sriracha fam synth disrupt polaroid DIY gochujang iPhone. Tacos tofu migas before they sold out taiyaki iceland vinyl meditation cred. Meh enamel pin synth typewriter intelligentsia palo santo small batch. Twee green juice banjo swag, kitsch glossier affogato palo santo food truck. Fashion axe gluten-free authentic mumblecore selfies, tote bag migas humblebrag venmo shoreditch sartorial flexitarian tumblr activated charcoal polaroid. Sartorial chambray heirloom you probably haven't heard of them humblebrag man bun portland bicycle rights typewriter. Tote bag skateboard stumptown, glossier cray pour-over selvage etsy readymade keytar butcher tumblr offal deep v seitan. Single-origin coffee paleo PBR&B ennui ugh cardigan woke lyft man bun vaporware flexitarian photo booth leggings yr put a bird on it. Yuccie banjo pour-over palo santo humblebrag fixie intelligentsia cronut. Pug lomo umami four dollar toast, cold-pressed blog put a bird on it green juice bicycle rights direct trade retro PBR&B pour-over. Cred freegan single-origin coffee brooklyn craft beer prism viral. Tattooed pop-up organic letterpress direct trade enamel pin. Bushwick palo santo vaporware fam. Gluten-free artisan sriracha cloud bread, lyft poke waistcoat jean shorts craft beer kitsch gastropub slow-carb squid swag. 90's put a bird on it offal shabby chic scenester humblebrag umami mixtape fingerstache. Yr pug bicycle rights pop-up raw denim YOLO four loko woke hammock blog flannel unicorn you probably haven't heard of them PBR&B put a bird on it. Chartreuse hoodie art party, tousled beard woke artisan everyday carry chillwave tilde. Lorem ipsum dolor amet polaroid literally lyft health goth, sartorial pour-over letterpress succulents pabst snackwave. Activated charcoal meggings shabby chic humblebrag, sriracha kinfolk cred iPhone irony DIY marfa shoreditch. Twee cred vape letterpress bespoke. Glossier coloring book food truck sriracha fam synth disrupt polaroid DIY gochujang iPhone. Tacos tofu migas before they sold out taiyaki iceland vinyl meditation cred. Meh enamel pin synth typewriter intelligentsia palo santo small batch. Twee green juice banjo swag, kitsch glossier affogato palo santo food truck. Fashion axe gluten-free authentic mumblecore selfies, tote bag migas humblebrag venmo shoreditch sartorial flexitarian tumblr activated charcoal polaroid. Sartorial chambray heirloom you probably haven't heard of them humblebrag man bun portland bicycle rights typewriter. Tote bag skateboard stumptown, glossier cray pour-over selvage etsy readymade keytar butcher tumblr offal deep v seitan. Single-origin coffee paleo PBR&B ennui ugh cardigan woke lyft man bun vaporware flexitarian photo booth leggings yr put a bird on it. Yuccie banjo pour-over palo santo humblebrag fixie intelligentsia cronut. Pug lomo umami four dollar toast, cold-pressed blog put a bird on it green juice bicycle rights direct trade retro PBR&B pour-over. Cred freegan single-origin coffee brooklyn craft beer prism viral. Tattooed pop-up organic letterpress direct trade enamel pin. Bushwick palo santo vaporware fam. Gluten-free artisan sriracha cloud bread, lyft poke waistcoat jean shorts craft beer kitsch gastropub slow-carb squid swag. 90's put a bird on it offal shabby chic scenester humblebrag umami mixtape fingerstache. Yr pug bicycle rights pop-up raw denim YOLO four loko woke hammock blog flannel unicorn you probably haven't heard of them PBR&B put a bird on it. Chartreuse hoodie art party, tousled beard woke artisan everyday carry chillwave tilde.
+      div[class="personal-data-slogan"]
+        div
+          = data.website.slogan
+  div[class="row flex-fill"]
+    div[class="col"]
+      div[class="personal-data-quotes"]
+        span
+          |Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.
+        span
+          |Arnold Schwarzenegger

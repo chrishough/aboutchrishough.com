@@ -1,6 +1,31 @@
 #index {
   .content-wrapper-body {
-    padding: 5.5rem 0 2rem 0;
+    padding: 5.5rem 0 1rem 0;
+  }
+
+  .content-wrapper-footer {
+    padding: 0;
+
+    .row {
+      &:first-child {
+        padding: 0 1rem 1rem 1rem;
+      }
+    }
+  }
+
+  .personal-data-wrapper {
+    a {
+      color: $white;
+      display: block;
+      @include background-color(rgba(4, 1, 5, $backdrop-opacity), $purple-darkest);
+      padding: 1rem;
+      font-size: 2rem;
+
+      &:hover {
+        color: $white;
+        background-color: $purple-medium-dark;
+      }
+    }
   }
 
   .personal-data-wrapper-left-stack,
@@ -16,11 +41,14 @@
 
   .personal-data-wrapper-left-stack {
     flex: 1;
+    min-width: 70px;
 
     > .personal-data-wrapper {
       &:first-child {
         border-top: 0.1rem $white solid;
         border-right: 0.1rem $white solid;
+        border-radius: 0 1rem 0 0;
+        a { border-radius: 0 1rem 0 0; }
       }
       &:nth-of-type(2),
       &:nth-of-type(3) {
@@ -31,21 +59,50 @@
         border-top: 0.1rem $white solid;
         border-right: 0.1rem $white solid;
         border-bottom: 0.1rem $white solid;
+        border-radius: 0 0 1rem 0;
+        a { border-radius: 0 0 1rem 0; }
       }
     }
   }
 
   .personal-data-wrapper-center-stack {
     flex: 5;
+    padding: 0 2rem;
+
+    .personal-data-avatar {
+      border: 0.1rem $white solid;
+      border-radius: 1rem;
+
+      img {
+        max-width: 175px;
+        text-align: center;
+        border-radius: 1rem;
+      }
+    }
+
+    .personal-data-location {
+      text-align: center;
+      padding-top: 0.5rem;
+      font-size: 1rem;
+
+      i {
+        font-size: 0.5rem;
+        margin-right: 0.4rem;
+        vertical-align: text-top;
+      }
+    }
   }
 
   .personal-data-wrapper-right-stack {
     flex: 1;
+    min-width: 70px;
 
     > .personal-data-wrapper {
       &:first-child {
         border-top: 0.1rem $white solid;
         border-left: 0.1rem $white solid;
+        border-radius: 1rem 0 0 0;
+        a { border-radius: 1rem 0 0 0; }
       }
       &:nth-of-type(2),
       &:nth-of-type(3) {
@@ -56,12 +113,54 @@
         border-top: 0.1rem $white solid;
         border-left: 0.1rem $white solid;
         border-bottom: 0.1rem $white solid;
+        border-radius: 0 0 0 1rem;
+        a { border-radius: 0 0 0 1rem; }
       }
     }
   }
 
-  .personal-data-wrapper {
+  .personal-data-slogan {
+  	position: relative;
+  	background: $purple-darkest;
+  	border-radius: 1rem;
+    color: $white;
+    padding: 0.5rem;
+
+    div {
+      border: 0.1rem solid $purple-medium-dark;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
+
+    &:after {
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	left: 50%;
+    	width: 0;
+    	height: 0;
+    	border: 2rem solid transparent;
+    	border-bottom-color: $purple-darkest;
+    	border-top: 0;
+    	margin-left: -2rem;
+    	margin-top: -2rem;
+    }
+  }
+
+  .personal-data-quotes {
+    background-color: $purple-darkest;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 0.8rem;
+
+    span {
+      &:first-child {
+        font-style: italic;
+        padding-bottom: 1rem;
+      }
+      &:last-child:before {
+        content: "\2014";
+      }
+      display: block;
+    }
   }
 }
