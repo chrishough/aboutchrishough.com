@@ -80,15 +80,28 @@
       }
     }
 
-    .personal-data-location {
+    .personal-data-location,
+    .personal-data-city,
+    .personal-data-funny {
       text-align: center;
-      padding-top: 0.5rem;
       font-size: 0.9rem;
+    }
+    .personal-data-location {
+      padding-top: 0.5rem;
 
       i {
         font-size: 0.5rem;
         margin-right: 0.4rem;
         vertical-align: baseline;
+      }
+    }
+    .personal-data-city,
+    .personal-data-funny {
+      padding-top: 0.1rem;
+    }
+    .personal-data-funny {
+      i {
+        font-size: 0.3rem;
       }
     }
   }
