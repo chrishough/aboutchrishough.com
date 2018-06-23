@@ -19,7 +19,7 @@ div[class="container-fluid content-wrapper-body"]
 
     div[class="personal-data-wrapper-center-stack d-flex flex-column justify-content-center align-items-center"]
       div[class="personal-data-avatar"]
-        img[src="#{data.social.avatar}"]
+        img[src="#{image_path('avatar.png')}"]
       div[class="personal-data-location"]
         i[class="em-svg em-earth_americas"]
         |Remote. Global.
@@ -53,7 +53,6 @@ div[class="container-fluid content-wrapper-footer"]
   div[class="row flex-fill"]
     div[class="col"]
       div[class="personal-data-quotes"]
-        span
-          |Strength does not come from winning. Your struggles develop your strengths. When you go through hardships and decide not to surrender, that is strength.
-        span
-          |Arnold Schwarzenegger
+        div
+          span[id="personal-data-quotes-text"]
+          span[id="personal-data-quotes-author"]
