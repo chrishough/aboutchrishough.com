@@ -1,6 +1,11 @@
 #index {
   .content-wrapper-body {
-    padding: 5.5rem 0 1rem 0;
+    @include media-breakpoint-up(xs) {
+      padding: 5.5rem 0 1rem 0;
+    }
+    @include media-breakpoint-up(transition) {
+      padding: 5.5rem 0 3rem 0;
+    }
   }
 
   .content-wrapper-footer {
@@ -8,7 +13,7 @@
 
     .row {
       &:first-child {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1rem 2rem 1rem;
       }
     }
   }
@@ -74,9 +79,17 @@
       border-radius: 1rem;
 
       img {
-        max-width: 175px;
         text-align: center;
         border-radius: 1rem;
+        @include media-breakpoint-up(xs) {
+          max-width: 175px;
+        }
+        @include media-breakpoint-up(transition) {
+          max-width: 245px;
+        }
+        @include media-breakpoint-up(sm) {
+          max-width: 300px;
+        }
       }
     }
 
@@ -84,15 +97,27 @@
     .personal-data-city,
     .personal-data-funny {
       text-align: center;
-      font-size: 0.9rem;
+
+      @include media-breakpoint-up(xs) {
+        font-size: 0.9rem;
+      }
+      @include media-breakpoint-up(sm) {
+        font-size: 1.2rem;
+      }
     }
     .personal-data-location {
       padding-top: 0.5rem;
 
       i {
-        font-size: 0.5rem;
         margin-right: 0.4rem;
         vertical-align: baseline;
+
+        @include media-breakpoint-up(xs) {
+          font-size: 0.5rem;
+        }
+        @include media-breakpoint-up(sm) {
+          font-size: 0.7rem;
+        }
       }
     }
     .personal-data-city,
@@ -101,7 +126,14 @@
     }
     .personal-data-funny {
       i {
-        font-size: 0.3rem;
+        margin-right: 0.1rem;
+
+        @include media-breakpoint-up(xs) {
+          font-size: 0.3rem;
+        }
+        @include media-breakpoint-up(sm) {
+          font-size: 0.9rem;
+        }
       }
     }
   }
@@ -144,7 +176,13 @@
       border: 0.1rem solid $purple-medium-dark;
       padding: 1rem;
       border-radius: 1rem;
-      font-size: 0.9rem;
+
+      @include media-breakpoint-up(xs) {
+        font-size: 0.9rem;
+      }
+      @include media-breakpoint-up(sm) {
+        font-size: 1.2rem;
+      }
 
       &:after {
         content: '';
@@ -181,7 +219,13 @@
     box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
     background-color: $purple-darkest;
     padding: 0.5rem 0;
-    font-size: 0.9rem;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 0.9rem;
+    }
+    @include media-breakpoint-up(sm) {
+      font-size: 1.2rem;
+    }
 
     div {
       padding: 1rem;
