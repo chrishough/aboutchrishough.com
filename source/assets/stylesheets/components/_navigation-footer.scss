@@ -70,6 +70,7 @@
         &:hover {
           box-shadow: 0 0 0.25rem 0.25rem $purple-medium-dark;
           background-color: $purple-medium-dark;
+          font-weight: bold;
           color: $white;
           @include media-breakpoint-up(sm) {
             box-shadow: 0 0 1rem 0 $purple-medium-dark;
@@ -96,6 +97,7 @@
 
           &:hover {
             color: $white;
+            font-weight: bold;
           }
           @include media-breakpoint-up(xs) {
             span {
