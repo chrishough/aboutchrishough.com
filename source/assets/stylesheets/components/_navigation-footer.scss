@@ -1,6 +1,6 @@
 .navbar {
   min-width: map-get($grid-breakpoints, 'minimium') !important;
-  box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
+  box-shadow: 0 0 0.5rem 0.25rem $purple-dark;
   @include primary-font();
 
   .navbar-toggler {
@@ -67,8 +67,18 @@
       border: none;
 
       li {
+        @include media-breakpoint-up(xs) {
+          &:not(:last-child) {
+            border-bottom: 0.15rem solid $purple-medium-dark;
+          }
+        }
+        @include media-breakpoint-up(sm) {
+          &:not(:last-child) {
+            border-bottom: 0;
+          }
+        }
+
         &:hover {
-          box-shadow: 0 0 0.25rem 0.25rem $purple-medium-dark;
           background-color: $purple-medium-dark;
           font-weight: bold;
           color: $white;
@@ -93,6 +103,7 @@
         }
 
         .nav-link {
+          color: $gray-300;
           padding: 1.25rem 1rem;
 
           &:hover {
@@ -119,7 +130,6 @@
         }
         @include media-breakpoint-up(sm) {
           text-align: center;
-
         }
       }
       @include media-breakpoint-down(sm) {
@@ -170,7 +180,7 @@
   }
 
   .navbar-description-wrapper {
-    color: $gray-600;
+    color: $gray-100;
     text-align: right;
 
     @include media-breakpoint-up(xs) {

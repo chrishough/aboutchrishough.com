@@ -1,10 +1,17 @@
 #index {
   .content-wrapper-body {
     @include media-breakpoint-up(xs) {
-      padding: 5.5rem 0 1rem 0;
+      padding: 6rem 0 2rem 0;
     }
     @include media-breakpoint-up(transition) {
       padding: 5.5rem 0 3rem 0;
+    }
+
+    .row {
+      &:first-child {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
   }
 
@@ -22,13 +29,14 @@
     a {
       color: $white;
       display: block;
-      @include background-color(rgba(4, 1, 5, $backdrop-opacity), $purple-darkest);
+      background-color: $purple-dark;
       padding: 1rem;
       font-size: 2rem;
 
       &:hover {
         color: $white;
         background-color: $purple-medium-dark;
+        box-shadow: 0 0 1rem 0 $purple-medium-dark;
       }
     }
   }
@@ -50,39 +58,47 @@
 
     > .personal-data-wrapper {
       &:first-child {
-        border-top: 0.1rem $white solid;
-        border-right: 0.1rem $white solid;
-        border-radius: 0 1rem 0 0;
-        a { border-radius: 0 1rem 0 0; }
+          a {
+          border-top: 0.15rem $purple-medium-dark solid;
+          border-right: 0.15rem $purple-medium-dark solid;
+          border-radius: 0 1rem 0 0;
+        }
       }
       &:nth-of-type(2),
       &:nth-of-type(3) {
-        border-top: 0.1rem $white solid;
-        border-right: 0.1rem $white solid;
+        a {
+          border-top: 0.15rem $purple-medium-dark solid;
+          border-right: 0.15rem $purple-medium-dark solid;
+        }
        }
       &:last-child {
-        border-top: 0.1rem $white solid;
-        border-right: 0.1rem $white solid;
-        border-bottom: 0.1rem $white solid;
-        border-radius: 0 0 1rem 0;
-        a { border-radius: 0 0 1rem 0; }
+        a {
+          border-top: 0.15rem $purple-medium-dark solid;
+          border-right: 0.15rem $purple-medium-dark solid;
+          border-bottom: 0.15rem $purple-medium-dark solid;
+          border-radius: 0 0 1rem 0;
+        }
       }
     }
   }
 
   .personal-data-wrapper-center-stack {
     flex: 5;
-    padding: 0 2rem;
+    @include media-breakpoint-up(sm) {
+      padding: 1rem 2rem 0 2rem;
+    }
 
     .personal-data-avatar {
-      border: 0.1rem $white solid;
-      border-radius: 1rem;
-
       img {
         text-align: center;
-        border-radius: 1rem;
+        border: 0.25rem $purple-dark solid;
+        box-shadow: 0 0 2rem 0.25rem $purple-dark;
+        border-radius: 50%;
         @include media-breakpoint-up(xs) {
           max-width: 175px;
+        }
+        @include media-breakpoint-up(minimium) {
+          max-width: 215px;
         }
         @include media-breakpoint-up(transition) {
           max-width: 245px;
@@ -144,22 +160,26 @@
 
     > .personal-data-wrapper {
       &:first-child {
-        border-top: 0.1rem $white solid;
-        border-left: 0.1rem $white solid;
-        border-radius: 1rem 0 0 0;
-        a { border-radius: 1rem 0 0 0; }
+        a {
+          border-top: 0.15rem $purple-medium-dark solid;
+          border-left: 0.15rem $purple-medium-dark solid;
+          border-radius: 1rem 0 0 0;
+        }
       }
       &:nth-of-type(2),
       &:nth-of-type(3) {
-        border-top: 0.1rem $white solid;
-        border-left: 0.1rem $white solid;
+        a {
+          border-top: 0.15rem $purple-medium-dark solid;
+          border-left: 0.15rem $purple-medium-dark solid;
+        }
        }
       &:last-child {
-        border-top: 0.1rem $white solid;
-        border-left: 0.1rem $white solid;
-        border-bottom: 0.1rem $white solid;
-        border-radius: 0 0 0 1rem;
-        a { border-radius: 0 0 0 1rem; }
+        a {
+          border-top: 0.15rem $purple-medium-dark solid;
+          border-left: 0.15rem $purple-medium-dark solid;
+          border-bottom: 0.15rem $purple-medium-dark solid;
+          border-radius: 0 0 0 1rem;
+        }
       }
     }
   }
@@ -241,16 +261,19 @@
           content: '\201C';
           margin-right: 4px;
           margin-left: -8px;
-          font-size: 1rem;
+          font-size: 1.2rem;
+          font-weight: bold;
         }
         &:first-child:after {
           content: '\201D';
           margin-left: 4px;
           margin-right: -8px;
-          font-size: 1rem;
+          font-size: 1.2rem;
+          font-weight: bold;
         }
         &:last-child:before {
           content: "\2014";
+          font-weight: bold;
         }
         display: block;
       }

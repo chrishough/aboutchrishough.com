@@ -1,6 +1,11 @@
+.navigation-header-wrapper {
+  min-width: map-get($grid-breakpoints, 'minimium') !important;
+}
+
 .navigation-header {
   background-color: $purple-darkest;
-  box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
+  box-shadow: 0 0 0.5rem 0.25rem $purple-darkest;
+
   font-size: 1.25rem;
   text-align: center;
   padding: 0;

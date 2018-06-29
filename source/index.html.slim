@@ -2,8 +2,8 @@
 layout: index
 ---
 div[class="container-fluid content-wrapper-body"]
-  div[class="d-flex"]
-    div[class="personal-data-wrapper-left-stack"]
+  div[class="row flex-fill"]
+    div[class="col-2 personal-data-wrapper-left-stack"]
       div[class="personal-data-wrapper"]
         = link_to(data.social.linkedin, target: :_blank) do
           i[class="fab fa-linkedin-in"]
@@ -17,7 +17,7 @@ div[class="container-fluid content-wrapper-body"]
         = link_to(data.social.configurations, target: :_blank) do
           i[class="fas fa-wrench"]
 
-    div[class="personal-data-wrapper-center-stack d-flex flex-column justify-content-center align-items-center"]
+    div[class="col-10 personal-data-wrapper-center-stack d-flex flex-column justify-content-center align-items-center"]
       div[class="personal-data-avatar"]
         img[src="#{image_path('avatar.png')}"]
       div[class="personal-data-location"]
@@ -41,7 +41,7 @@ div[class="container-fluid content-wrapper-body"]
         i[class="em-svg em-b"]
         i[class="em-svg em-a"]
 
-    div[class="personal-data-wrapper-right-stack"]
+    div[class="col-2 personal-data-wrapper-right-stack"]
       div[class="personal-data-wrapper"]
         = link_to(data.social.instagram, target: :_blank) do
           i[class="fab fa-instagram"]
@@ -56,8 +56,8 @@ div[class="container-fluid content-wrapper-body"]
           i[class="far fa-envelope"]
 
 div[class="container-fluid content-wrapper-footer"]
-  div[class="row flex-fill"]
-    div[class="col"]
+  div[class="row justify-content-center"]
+    div[class="col-10"]
       div[class="personal-data-slogan"]
         div
           = data.website.slogan
