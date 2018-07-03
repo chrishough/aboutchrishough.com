@@ -127,9 +127,9 @@ export const index = () => {
     init: function() {
       shuffleArray($personalDataQuotesData);
 
-      const initialFadeIn = 1000;
-      const itemInterval = 5000;
-      const fadeTime = 2500;
+      const initialFadeIn = 1500;
+      const itemInterval = 7000;
+      const fadeTime = 3500;
       const numberOfItems = $personalDataQuotesData.length;
 
       var currentItem = 0;

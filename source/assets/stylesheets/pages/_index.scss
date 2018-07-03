@@ -19,8 +19,13 @@
     padding: 0;
 
     .row {
-      &:first-child {
-        padding: 0 1rem 2rem 1rem;
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(4) {
+        padding: 0 1rem 1rem 1rem;
+      }
+      &:nth-child(3) {
+        padding: 0 0 1rem 0;
       }
     }
   }
@@ -91,14 +96,11 @@
     .personal-data-avatar {
       img {
         text-align: center;
-        border: 0.25rem $purple-dark solid;
-        box-shadow: 0 0 2rem 0.25rem $purple-dark;
+        border: 0.25rem $purple-darkest solid;
+        box-shadow: 0 0 2rem 0.25rem $purple-darkest;
         border-radius: 50%;
         @include media-breakpoint-up(xs) {
           max-width: 175px;
-        }
-        @include media-breakpoint-up(minimium) {
-          max-width: 215px;
         }
         @include media-breakpoint-up(transition) {
           max-width: 245px;
@@ -110,8 +112,7 @@
     }
 
     .personal-data-location,
-    .personal-data-city,
-    .personal-data-funny {
+    .personal-data-city {
       text-align: center;
 
       @include media-breakpoint-up(xs) {
@@ -136,21 +137,8 @@
         }
       }
     }
-    .personal-data-city,
-    .personal-data-funny {
+    .personal-data-city {
       padding-top: 0.1rem;
-    }
-    .personal-data-funny {
-      i {
-        margin-right: 0.1rem;
-
-        @include media-breakpoint-up(xs) {
-          font-size: 0.3rem;
-        }
-        @include media-breakpoint-up(sm) {
-          font-size: 0.9rem;
-        }
-      }
     }
   }
 
@@ -235,6 +223,31 @@
     }
   }
 
+  .personal-data-help,
+  .personal-data-connect {
+    @include impact-font();
+    text-align: center;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    transform: scaleX(1);
+  }
+  .personal-data-help {
+    @include media-breakpoint-up(xs) {
+      font-size: 1.1rem;
+    }
+    @include media-breakpoint-up(transition) {
+      font-size: 1.4rem;
+    }
+  }
+  .personal-data-connect {
+    @include media-breakpoint-up(xs) {
+      font-size: 1.1rem;
+    }
+    @include media-breakpoint-up(transition) {
+      font-size: 1.4rem;
+    }
+  }
+
   .personal-data-quotes {
     box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
     background-color: $purple-darkest;
@@ -277,6 +290,33 @@
         }
         display: block;
       }
+    }
+  }
+
+  .text-container-wrapper {
+    > div {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .text-container-right {
+    border-right: 0.1rem $white solid;
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
+    }
+    &:after {
+      content:'';
+    }
+  }
+  .text-container-left {
+    border-left: 0.1rem $white solid;
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
+    }
+    &:before {
+      content:'';
     }
   }
 }
