@@ -10,6 +10,7 @@ import faRoad from '@fortawesome/fontawesome-free-solid/faRoad';
 import faEye from '@fortawesome/fontawesome-free-solid/faEye';
 import faMapSigns from '@fortawesome/fontawesome-free-solid/faMapSigns';
 import faMapMarkerAlt from '@fortawesome/fontawesome-free-solid/faMapMarkerAlt';
+import faSync from '@fortawesome/fontawesome-free-solid/faSync';
 import faArrowCircleDown from '@fortawesome/fontawesome-free-solid/faArrowCircleDown';
 import faWrench from '@fortawesome/fontawesome-free-solid/faWrench';
 import faArrowCircleRight from '@fortawesome/fontawesome-free-solid/faArrowCircleRight';
@@ -41,6 +42,7 @@ fontawesome.library.add(faAngleDoubleDown,
                         faFacebookF,
                         faRoad,
                         faHeart,
+                        faSync,
                         faEye);
 
 // If really necessary, entire styles can be loaded instead of specifying individual icons

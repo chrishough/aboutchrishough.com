@@ -253,42 +253,51 @@
     background-color: $purple-darkest;
     padding: 0.5rem 0;
 
-    @include media-breakpoint-up(xs) {
-      font-size: 0.9rem;
-    }
-    @include media-breakpoint-up(sm) {
-      font-size: 1.2rem;
-    }
-
     div {
-      padding: 1rem;
       border-top: 0.1rem $purple-medium-dark solid;
       border-bottom: 0.1rem $purple-medium-dark solid;
+      text-align: center;
+      padding: 1rem;
+
+      i {
+        @include media-breakpoint-up(xs) {
+          font-size: 2rem;
+        }
+      }
 
       span {
-        &:first-child {
-          font-style: italic;
-          padding-bottom: 1rem;
+        display: block;
+        text-align: left;
+
+        @include media-breakpoint-up(xs) {
+          font-size: 0.9rem;
         }
-        &:first-child:before {
+      }
+
+      #personal-data-quotes-text {
+        font-style: italic;
+        padding-bottom: 1rem;
+
+        &:before {
           content: '\201C';
           margin-right: 4px;
           margin-left: -8px;
           font-size: 1.2rem;
           font-weight: bold;
         }
-        &:first-child:after {
+        &:after {
           content: '\201D';
           margin-left: 4px;
           margin-right: -8px;
           font-size: 1.2rem;
           font-weight: bold;
         }
-        &:last-child:before {
+      }
+      #personal-data-quotes-author {
+        &:before {
           content: "\2014";
           font-weight: bold;
         }
-        display: block;
       }
     }
   }
