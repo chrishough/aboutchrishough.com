@@ -98,7 +98,6 @@
         text-align: center;
         border: 0.25rem $purple-darkest solid;
         box-shadow: 0 0 2rem 0.25rem $purple-darkest;
-        border-radius: 50%;
         @include media-breakpoint-up(xs) {
           max-width: 175px;
         }
@@ -247,69 +246,36 @@
       font-size: 1.4rem;
     }
   }
+  .personal-data-help-graphic {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
 
-  .personal-data-quotes {
-    box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
-    background-color: $purple-darkest;
-    padding: 0.5rem 0;
-
-    div {
-      border-top: 0.1rem $purple-medium-dark solid;
-      border-bottom: 0.1rem $purple-medium-dark solid;
-      text-align: center;
-      padding: 1rem;
-
-      i {
-        @include media-breakpoint-up(xs) {
-          font-size: 2rem;
-        }
+    > embed {
+      @include media-breakpoint-up(xs) {
+        max-height: 250px;
       }
-
-      span {
-        display: block;
-        text-align: left;
-
-        @include media-breakpoint-up(xs) {
-          font-size: 0.9rem;
-        }
+      @include media-breakpoint-up(minimium) {
+        max-height: 350px;
       }
-
-      #personal-data-quotes-text {
-        font-style: italic;
-        padding-bottom: 1rem;
-
-        &:before {
-          content: '\201C';
-          margin-right: 4px;
-          margin-left: -8px;
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
-        &:after {
-          content: '\201D';
-          margin-left: 4px;
-          margin-right: -8px;
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
-      }
-      #personal-data-quotes-author {
-        &:before {
-          content: "\2014";
-          font-weight: bold;
-        }
+      @include media-breakpoint-up(sm) {
+        max-height: 400px;
       }
     }
   }
 
-  .text-container-wrapper {
+  .personal-values-container-wrapper {
+    @include media-breakpoint-up(xs) {
+      padding: 0;
+    }
+    
     > div {
       padding: 0;
       margin: 0;
     }
   }
-  .text-container-right {
-    border-right: 0.1rem $white solid;
+  .personal-values-container-right-first,
+  .personal-values-container-right-second {
     div {
       border-bottom: 0.1rem $white solid;
       height: 50%;
@@ -318,7 +284,10 @@
       content:'';
     }
   }
-  .text-container-left {
+  .personal-values-container-right-second {
+    border-right: 0.1rem $white solid;
+  }
+  .personal-values-container-left {
     border-left: 0.1rem $white solid;
     div {
       border-bottom: 0.1rem $white solid;
@@ -326,6 +295,73 @@
     }
     &:before {
       content:'';
+    }
+  }
+
+  .personal-data-quotes-container {
+    box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
+    background-color: $purple-darkest;
+    padding: 0.5rem 0;
+
+    .personal-data-quotes-wrapper {
+      border-top: 0.2rem $purple-medium-dark solid;
+      border-bottom: 0.2rem $purple-medium-dark solid;
+      min-height: 12em;
+
+      .progress {
+        background-color: $gray-900;
+        max-height: 0.3rem;
+      }
+
+      .progress-bar {
+        background-color: $purple-medium-dark;
+      }
+
+      .personal-data-quotes {
+        padding: 2rem;
+        min-height: 12em;
+
+        span {
+          display: block;
+          text-align: left;
+
+          @include media-breakpoint-up(xs) {
+            font-size: 0.9rem;
+          }
+        }
+        #personal-data-quotes-text {
+          font-style: italic;
+          padding-bottom: 1rem;
+
+          &:before {
+            content: '\201C';
+            margin-right: 4px;
+            margin-left: -8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          &:after {
+            content: '\201D';
+            margin-left: 4px;
+            margin-right: -8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+        #personal-data-quotes-text-read-more {
+          font-style: normal;
+          color: $purple-lightest;
+        }
+        #personal-data-quotes-more-text {
+          display: none;
+        }
+        #personal-data-quotes-author {
+          &:before {
+            content: "\2014\00a0\00a0";
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
 }

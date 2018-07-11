@@ -44,7 +44,7 @@ div[class="container-fluid content-wrapper-body"]
         a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question"]
           i[class="far fa-envelope"]
 
-div[class="container-fluid content-wrapper-footer"]
+div[class="container-fluid content-wrapper-footer d-flex flex-fill flex-column"]
   div[class="row justify-content-center"]
     div[class="col-10"]
       div[class="personal-data-slogan"]
@@ -52,28 +52,45 @@ div[class="container-fluid content-wrapper-footer"]
           = data.website.slogan
 
 
-  div[class="row flex-fill text-container-wrapper"]
-    div[class="col-2 text-container-right"]
+  div[class="row personal-values-container-wrapper"]
+    div[class="col-2 col-md-3 personal-values-container-right"]
       div
-    div[class="col-8"]
-      div[class="personal-data-help"]
-        |How can I help you?
-    div[class="col-2 text-container-left"]
-      div
-
-  div[class="row flex-fill"]
-    div[class="col"]
-      div[class="personal-data-quotes"]
-        div[id="personal-data-quotes-wrapper" class="d-flex flex-column align-items-center justify-content-center"]
-          i[id="personal-data-quotes-spinner" class="fas fa-sync fa-spin"]
-          span[id="personal-data-quotes-text"]
-          span[id="personal-data-quotes-author"]
-
-  div[class="row flex-fill text-container-wrapper"]
-    div[class="col-2 text-container-right"]
-      div
-    div[class="col-8"]
+    div[class="col-8 col-md-6"]
       div[class="personal-data-connect"]
         |Let's Connect!
-    div[class="col-2 text-container-left"]
+    div[class="col-2 col-md-3 personal-values-container-left"]
       div
+
+  div[class="row"]
+    div[class="col"]
+      div[class="personal-data-quotes-container"]
+        div[class="personal-data-quotes-wrapper"]
+          div[class="progress"]
+            div[id="personal-data-quotes-progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"]
+          div[id="personal-data-quotes" class="d-flex flex-column justify-content-center personal-data-quotes"]
+            span[id="personal-data-quotes-text"]
+            span[id="personal-data-quotes-author"]
+
+
+
+
+  div[class="row"]
+    div[class="col-sm-12 col-lg-9 my-auto"]
+      div[class="row personal-values-container-wrapper"]
+        div[class="col-1 col-md-1 personal-values-container-right-first"]
+          div
+        div[class="col-1 col-md-1 personal-data-help-graphic"]
+            embed[src="#{image_path('backgrounds/connect-portrait-pointer.svg')}"]
+        div[class="col-1 col-md-2 personal-values-container-right-second"]
+          div
+        div[class="col-8 col-md-4"]
+          div[class="personal-data-help"]
+            |How can I help you?
+        div[class="col-2 col-md-2 personal-values-container-left"]
+          div
+
+    / div[class="col-sm-12 col-lg-3 order-1"]
+    /   div[class="row flex-fill"]
+    /     div[class="personal-data-help-graphic"]
+    /       / embed[src="#{image_path('backgrounds/connect-portrait.svg')}"]
+    /       embed[src="#{image_path('backgrounds/connect-portrait-pointer.svg')}"]
