@@ -18,16 +18,16 @@
   .content-wrapper-footer {
     padding: 0;
 
-    .row {
-      &:first-child,
-      &:nth-child(2),
-      &:nth-child(4) {
-        padding: 0 1rem 1rem 1rem;
-      }
-      &:nth-child(3) {
-        padding: 0 0 1rem 0;
-      }
-    }
+    //  TODO!
+    // .row {
+    //   &:first-child,
+    //   &:nth-child(2) {
+    //     padding: 0 1rem 1rem 1rem;
+    //   }
+    //   &:nth-child(3) {
+    //     padding: 0 0 1rem 0;
+    //   }
+    // }
   }
 
   .personal-data-wrapper {
@@ -251,7 +251,27 @@
     margin-left: auto;
     margin-right: auto;
 
+    @include media-breakpoint-up(xs) {
+      #connect-portrait {
+        display: block;
+      }
+      #connect-portrait-pointer {
+        display: none;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      #connect-portrait {
+        display: none;
+      }
+      #connect-portrait-pointer {
+        display: block;
+      }
+    }
+
     > embed {
+      margin-left: auto;
+      margin-right: auto;
+
       @include media-breakpoint-up(xs) {
         max-height: 250px;
       }
@@ -268,7 +288,10 @@
     @include media-breakpoint-up(xs) {
       padding: 0;
     }
-    
+    @include media-breakpoint-up(sm) {
+      padding-top: 1rem;
+    }
+
     > div {
       padding: 0;
       margin: 0;
@@ -286,9 +309,11 @@
   }
   .personal-values-container-right-second {
     border-right: 0.1rem $white solid;
+    height: 5rem;
   }
   .personal-values-container-left {
     border-left: 0.1rem $white solid;
+    height: 5rem;
     div {
       border-bottom: 0.1rem $white solid;
       height: 50%;
@@ -306,7 +331,7 @@
     .personal-data-quotes-wrapper {
       border-top: 0.2rem $purple-medium-dark solid;
       border-bottom: 0.2rem $purple-medium-dark solid;
-      min-height: 12em;
+      min-height: 12rem;
 
       .progress {
         background-color: $gray-900;
@@ -319,7 +344,7 @@
 
       .personal-data-quotes {
         padding: 2rem;
-        min-height: 12em;
+        min-height: 12rem;
 
         span {
           display: block;

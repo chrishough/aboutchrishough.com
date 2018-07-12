@@ -121,7 +121,6 @@ export const index = () => {
   var $personalDataQuotePointer = 0;
   const $personalDataQuotesMaxLength = 250;
 
-  // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
   const shuffleQuoteArray = () => {
     for (let i = $personalDataQuotesData.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
