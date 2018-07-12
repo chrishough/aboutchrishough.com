@@ -12,6 +12,9 @@
         margin-left: 0;
         margin-right: 0;
       }
+      &:nth-child(3) {
+        padding: 0 0 1rem 0;
+      }
     }
   }
 
@@ -387,6 +390,33 @@
           }
         }
       }
+    }
+  }
+
+  .text-container-wrapper {
+    > div {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .text-container-right {
+    border-right: 0.1rem $white solid;
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
+    }
+    &:after {
+      content:'';
+    }
+  }
+  .text-container-left {
+    border-left: 0.1rem $white solid;
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
+    }
+    &:before {
+      content:'';
     }
   }
 }
