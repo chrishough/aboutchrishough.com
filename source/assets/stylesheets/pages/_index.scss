@@ -225,6 +225,106 @@
     }
   }
 
+
+
+
+
+  .personal-data-quotes-container {
+    box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
+    background-color: rgba(4, 1, 5, 0.6);
+    padding: 0.5rem 0;
+
+    .personal-data-quotes-wrapper {
+      border-top: 0.2rem $purple-medium-dark solid;
+      border-bottom: 0.2rem $purple-medium-dark solid;
+      padding: 0 1rem;
+
+      @include media-breakpoint-up(xs) {
+        min-height: 15rem;
+        max-height: 15rem;
+      }
+      @include media-breakpoint-up(transition) {
+        min-height: 12rem;
+        max-height: 12rem;
+      }
+      @include media-breakpoint-up(sm) {
+        min-height: 10rem;
+        max-height: 10rem;
+      }
+
+      .progress {
+        background-color: $gray-900;
+        max-height: 0.3rem;
+      }
+
+      .progress-bar {
+        background-color: $purple-medium-dark;
+      }
+
+      .personal-data-quotes {
+        padding: 1rem 2rem 1.8rem 2rem;
+
+        @include media-breakpoint-up(xs) {
+          min-height: 15rem;
+          max-height: 15rem;
+        }
+        @include media-breakpoint-up(transition) {
+          min-height: 12rem;
+          max-height: 12rem;
+        }
+        @include media-breakpoint-up(sm) {
+          min-height: 10rem;
+          max-height: 10rem;
+        }
+
+        span {
+          display: block;
+          text-align: left;
+
+          @include media-breakpoint-up(xs) {
+            font-size: 0.9rem;
+          }
+        }
+        #personal-data-quotes-text {
+          font-style: italic;
+          padding-bottom: 1rem;
+
+          &:before {
+            content: '\201C';
+            margin-right: 4px;
+            margin-left: -8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          &:after {
+            content: '\201D';
+            margin-left: 4px;
+            margin-right: -8px;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+        #personal-data-quotes-text-read-more {
+          font-style: normal;
+          color: $purple-lightest;
+        }
+        #personal-data-quotes-more-text {
+          display: none;
+        }
+        #personal-data-quotes-author {
+          &:before {
+            content: "\2014\00a0\00a0";
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
+
   .personal-data-help,
   .personal-data-connect {
     @include impact-font();
@@ -232,8 +332,7 @@
     padding: 1rem 0;
     text-transform: uppercase;
     transform: scaleX(1);
-  }
-  .personal-data-help {
+
     @include media-breakpoint-up(xs) {
       font-size: 1.1rem;
     }
@@ -241,14 +340,7 @@
       font-size: 1.4rem;
     }
   }
-  .personal-data-connect {
-    @include media-breakpoint-up(xs) {
-      font-size: 1.1rem;
-    }
-    @include media-breakpoint-up(transition) {
-      font-size: 1.4rem;
-    }
-  }
+
   .personal-data-help-graphic {
     margin-top: auto;
     margin-left: auto;
@@ -317,100 +409,6 @@
   .personal-values-container-left {
     border-left: 0.1rem $white solid;
     height: 5rem;
-    div {
-      border-bottom: 0.1rem $white solid;
-      height: 50%;
-    }
-    &:before {
-      content:'';
-    }
-  }
-
-  .personal-data-quotes-container {
-    box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
-    background-color: $purple-darkest;
-    padding: 0.5rem 0;
-
-    .personal-data-quotes-wrapper {
-      border-top: 0.2rem $purple-medium-dark solid;
-      border-bottom: 0.2rem $purple-medium-dark solid;
-      min-height: 12rem;
-
-      .progress {
-        background-color: $gray-900;
-        max-height: 0.3rem;
-      }
-
-      .progress-bar {
-        background-color: $purple-medium-dark;
-      }
-
-      .personal-data-quotes {
-        padding: 2rem;
-        min-height: 12rem;
-
-        span {
-          display: block;
-          text-align: left;
-
-          @include media-breakpoint-up(xs) {
-            font-size: 0.9rem;
-          }
-        }
-        #personal-data-quotes-text {
-          font-style: italic;
-          padding-bottom: 1rem;
-
-          &:before {
-            content: '\201C';
-            margin-right: 4px;
-            margin-left: -8px;
-            font-size: 1.2rem;
-            font-weight: bold;
-          }
-          &:after {
-            content: '\201D';
-            margin-left: 4px;
-            margin-right: -8px;
-            font-size: 1.2rem;
-            font-weight: bold;
-          }
-        }
-        #personal-data-quotes-text-read-more {
-          font-style: normal;
-          color: $purple-lightest;
-        }
-        #personal-data-quotes-more-text {
-          display: none;
-        }
-        #personal-data-quotes-author {
-          &:before {
-            content: "\2014\00a0\00a0";
-            font-weight: bold;
-          }
-        }
-      }
-    }
-  }
-
-  .text-container-wrapper {
-    > div {
-      padding: 0;
-      margin: 0;
-    }
-  }
-  .text-container-right {
-    border-right: 0.1rem $white solid;
-    div {
-      border-bottom: 0.1rem $white solid;
-      height: 50%;
-    }
-    &:after {
-      content:'';
-    }
-  }
-  .text-container-left {
-    border-left: 0.1rem $white solid;
     div {
       border-bottom: 0.1rem $white solid;
       height: 50%;
