@@ -229,6 +229,20 @@
 
 
 
+
+
+
+
+
+
+
+  .personal-data-quotes-banner {
+    @include secondary-font();
+    padding-bottom: 4.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: right;
+  }
   .personal-data-quotes-container {
     box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
     background-color: rgba(4, 1, 5, 0.6);
@@ -241,20 +255,32 @@
 
       @include media-breakpoint-up(xs) {
         min-height: 15rem;
-        max-height: 15rem;
       }
       @include media-breakpoint-up(transition) {
         min-height: 12rem;
-        max-height: 12rem;
       }
       @include media-breakpoint-up(sm) {
         min-height: 10rem;
-        max-height: 10rem;
+      }
+      @include media-breakpoint-up(lg) {
+        border-left: 0.2rem $purple-medium-dark solid;
+        padding-left: 0;
+        margin-left: 0;
+      }
+      @include media-breakpoint-up(xl) {
+        border-right: 0.2rem $purple-medium-dark solid;
+        padding-right: 0;
+        margin-right: 0;
       }
 
       .progress {
         background-color: $gray-900;
         max-height: 0.3rem;
+
+        @include media-breakpoint-up(lg) {
+          margin-left: 0;
+          padding-left: 0;
+        }
       }
 
       .progress-bar {
@@ -262,19 +288,20 @@
       }
 
       .personal-data-quotes {
-        padding: 1rem 2rem 1.8rem 2rem;
-
         @include media-breakpoint-up(xs) {
+          padding: 1rem 2rem 1.8rem 2rem;
           min-height: 15rem;
-          max-height: 15rem;
+          margin-left: auto;
+          margin-right: auto;
         }
         @include media-breakpoint-up(transition) {
           min-height: 12rem;
-          max-height: 12rem;
         }
         @include media-breakpoint-up(sm) {
           min-height: 10rem;
-          max-height: 10rem;
+        }
+        @include media-breakpoint-up(lg) {
+          margin-left: inherit;
         }
 
         span {
@@ -324,6 +351,10 @@
 //-------------------------------------------------------------------
 //-------------------------------------------------------------------
 //-------------------------------------------------------------------
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
+//-------------------------------------------------------------------
 
   .personal-data-help,
   .personal-data-connect {
@@ -362,7 +393,6 @@
         display: block;
       }
     }
-
     > embed {
       margin-left: auto;
       margin-right: auto;
@@ -378,7 +408,14 @@
       }
     }
   }
-
+  .personal-values-container-wrapper-row {
+    @include media-breakpoint-up(xs) {
+      max-height: 35rem;
+    }
+    @include media-breakpoint-up(lg) {
+      max-height: 25rem;
+    }
+  }
   .personal-values-container-wrapper {
     @include media-breakpoint-up(xs) {
       padding: 0;
