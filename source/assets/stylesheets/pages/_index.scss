@@ -238,7 +238,7 @@
 
   .personal-data-quotes-banner {
     @include secondary-font();
-    padding-bottom: 4.5rem;
+    padding-bottom: 5rem;
     font-weight: bold;
     font-size: 1.3rem;
     text-align: right;
@@ -246,7 +246,12 @@
   .personal-data-quotes-container {
     box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
     background-color: rgba(4, 1, 5, 0.6);
-    padding: 0.5rem 0;
+    @include media-breakpoint-up(xs) {
+      padding: 0.5rem 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 1rem;
+    }
 
     .personal-data-quotes-wrapper {
       border-top: 0.2rem $purple-medium-dark solid;
@@ -401,7 +406,7 @@
         max-height: 250px;
       }
       @include media-breakpoint-up(minimium) {
-        max-height: 350px;
+        max-height: 300px;
       }
       @include media-breakpoint-up(sm) {
         max-height: 400px;
@@ -410,7 +415,13 @@
   }
   .personal-values-container-wrapper-row {
     @include media-breakpoint-up(xs) {
-      max-height: 35rem;
+      max-height: 23rem;
+    }
+    @include media-breakpoint-up(minimium) {
+      max-height: 26rem;
+    }
+    @include media-breakpoint-up(sm) {
+      max-height: 30rem;
     }
     @include media-breakpoint-up(lg) {
       max-height: 25rem;
