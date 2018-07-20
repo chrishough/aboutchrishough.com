@@ -1,5 +1,3 @@
-"use strict";
-
 // https://stackoverflow.com/questions/47711951/font-awesome-5-bundle-via-npm
 import fontawesome from '@fortawesome/fontawesome';
 import faAngleDoubleDown from '@fortawesome/fontawesome-free-solid/faAngleDoubleDown';
@@ -24,26 +22,26 @@ import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope';
 // see: https://fontawesome.com/how-to-use/svg-with-js#pseudo-elements
 fontawesome.config.searchPseudoElements = true;
 // https://stackoverflow.com/questions/48358529/failed-to-execute-removechild-on-node-with-fontawesome-in-react/48552226#48552226
-fontawesome.config.autoReplaceSvg = 'nest'
+fontawesome.config.autoReplaceSvg = 'nest';
 // Icons should be imported individually to keep bundle size down
 fontawesome.library.add(faAngleDoubleDown,
-                        faAngleDoubleUp,
-                        faLightbulb,
-                        faMapSigns,
-                        faMapMarkerAlt,
-                        faArrowCircleRight,
-                        faArrowCircleDown,
-                        faLinkedinIn,
-                        faWrench,
-                        faInstagram,
-                        faTwitter,
-                        faGithub,
-                        faEnvelope,
-                        faFacebookF,
-                        faRoad,
-                        faHeart,
-                        faSync,
-                        faEye);
+  faAngleDoubleUp,
+  faLightbulb,
+  faMapSigns,
+  faMapMarkerAlt,
+  faArrowCircleRight,
+  faArrowCircleDown,
+  faLinkedinIn,
+  faWrench,
+  faInstagram,
+  faTwitter,
+  faGithub,
+  faEnvelope,
+  faFacebookF,
+  faRoad,
+  faHeart,
+  faSync,
+  faEye);
 
 // If really necessary, entire styles can be loaded instead of specifying individual icons
 // import solid from '@fortawesome/fontawesome-pro-solid';

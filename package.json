@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "develop": "NODE_ENV=development webpack --watch --bail --progress --color --devtool source-map",
+    "develop": "NODE_ENV=development webpack --bail --progress --color --devtool source-map",
     "build_local": "NODE_ENV=development webpack --bail",
     "build_external": "NODE_ENV=production webpack --bail -p",
-    "lint": "eslint source --fix"
+    "eslint": "eslint 'source/assets/javascripts/**/*.js' --fix"
   },
   "browserslist": [
     "Last 5 versions"
@@ -17,6 +17,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.6",
     "bootstrap": "^4.1.0",
     "breakpoints-js": "^1.0.5",
+    "eslint-config-airbnb": "^17.0.0",
     "jquery": "^3.3.1",
     "jquery-circle-progress": "^1.2.2",
     "jquery-ui": "^1.12.1",
@@ -35,7 +36,8 @@
     "clean-webpack-plugin": "^0.1.18",
     "css-loader": "^0.28.9",
     "eslint": "^4.19.1",
-    "eslint-plugin-import": "^2.11.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
     "extract-loader": "^1.0.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",

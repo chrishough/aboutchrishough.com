@@ -8,7 +8,7 @@ namespace :test do
       puts("\nRunning esLint")
       puts("\nIf this command fails, please install: npm install -g eslint")
       puts("---------------------------------------------------------->>\n")
-      system('npm run lint')
+      system('npm run eslint')
     end
 
     desc 'Lint SCSS via StyleLint.'
