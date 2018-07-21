@@ -1,57 +1,55 @@
 ---
 layout: index
 ---
-div[class="container-fluid content-wrapper-body"]
-  div[class="row flex-fill"]
-    div[class="col-2 personal-data-wrapper-left-stack"]
-      div[class="personal-data-wrapper"]
-        = link_to(data.social.linkedin, target: :_blank) do
-          i[class="fab fa-linkedin-in"]
-      div[class="personal-data-wrapper"]
-        = link_to(data.social.github, target: :_blank) do
-          i[class="fab fa-github"]
-      div[class="personal-data-wrapper"]
-        = link_to(data.social.resume, target: :_blank) do
-          i[class="fas fa-road"]
-      div[class="personal-data-wrapper"]
-        = link_to(data.social.configurations, target: :_blank) do
-          i[class="fas fa-wrench"]
+div[class="container-fluid"]
+  / TOP
+  div[class="row flex-fill personal-data-wrapper-row"]
+    / SOCIAL
+    div[class="col-12 col-md-10 mx-auto personal-data-wrapper-container"]
+      div[class="row"]
+        div[class="col-2 col-md-2 personal-data-wrapper-left-stack"]
+          / SOCIAL : ACCOUNTS : LEFT
+          div
+            = link_to(data.social.linkedin, target: :_blank) do
+              i[class="fab fa-linkedin-in"]
+          div
+            = link_to(data.social.github, target: :_blank) do
+              i[class="fab fa-github"]
+          div
+            = link_to(data.social.resume, target: :_blank) do
+              i[class="fas fa-road"]
+          div
+            = link_to(data.social.configurations, target: :_blank) do
+              i[class="fas fa-wrench"]
 
-    div[class="col-10 personal-data-wrapper-center-stack d-flex flex-column justify-content-center align-items-center"]
-      div[class="personal-data-avatar"]
-        img[src="#{image_path('avatar.png')}"]
-      div[class="personal-data-location"]
-        i[class="em-svg em-heartpulse"]
-        |Remote. Global.
-      div[class="personal-data-city"]
-        = data.website.city
-        =>
-        |-
-        =>
-        = data.website.state
+        div[class="col-10 col-md-8 personal-data-wrapper-center-stack d-flex flex-column justify-content-center align-items-center"]
+          / SOCIAL : AVATAR
+          div[class="personal-data-avatar"]
+            img[src="#{image_path('avatar.png')}"]
+          div[class="personal-data-location"]
+            i[class="em-svg em-heartpulse"]
+            |Remote. Global.
+          div[class="personal-data-city"]
+            = data.website.city
+            =>
+            |-
+            =>
+            = data.website.state
 
-    div[class="col-2 personal-data-wrapper-right-stack"]
-      div[class="personal-data-wrapper"]
-        = link_to(data.social.instagram, target: :_blank) do
-          i[class="fab fa-instagram"]
-      div[class="personal-data-wrapper"]
-        = link_to(data.social.facebook, target: :_blank) do
-          i[class="fab fa-facebook-f"]
-      div[class="personal-data-wrapper"]
-        = link_to(data.social.twitter, target: :_blank) do
-          i[class="fab fa-twitter"]
-      div[class="personal-data-wrapper"]
-        a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question"]
-          i[class="far fa-envelope"]
-
-div[class="container-fluid content-wrapper-footer d-flex flex-fill flex-column"]
-  div[class="row justify-content-center"]
-    div[class="col-10"]
-      div[class="personal-data-slogan"]
-        div
-          = data.website.slogan
-
-
+        div[class="col-2 col-md-2 personal-data-wrapper-right-stack"]
+          / SOCIAL : ACCOUNTS : RIGHT
+          div
+            = link_to(data.social.instagram, target: :_blank) do
+              i[class="fab fa-instagram"]
+          div
+            = link_to(data.social.facebook, target: :_blank) do
+              i[class="fab fa-facebook-f"]
+          div
+            = link_to(data.social.twitter, target: :_blank) do
+              i[class="fab fa-twitter"]
+          div
+            a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question"]
+              i[class="far fa-envelope"]
 
 
 
@@ -62,20 +60,10 @@ div[class="container-fluid content-wrapper-footer d-flex flex-fill flex-column"]
 
 
 
-
-
-
-
-  div[class="row flex-fill personal-connect-container-wrapper-row"]
-    div[class="col-2 col-md-3 col-lg-5 col-xl-4 col-xxl-5 col-xxxl-5 personal-connect-container-right-first personal-connect-container-right-second"]
-      div
-    div[class="col-8 col-md-6 col-lg-4 col-xl-4 col-xxl-3 col-xxxl-2"]
-      div[class="personal-data-connect"]
-        |Let's Connect!
-    div[class="col-2 col-md-3 col-lg-3 col-xl-4 col-xxl-4 col-xxxl-5 personal-connect-container-left"]
-      div
-
-  div[class="row flex-fill personal-data-quotes-banner-wrapper-row"]
+div[class="container-fluid d-flex flex-fill flex-column"]
+  / BOTTOM
+  div[class="row flex-fill mt-auto personal-data-quotes-banner-wrapper-row"]
+    / QUOTES
     div[class="d-none d-lg-block col-lg-3 col-xxl-4 mt-auto personal-data-quotes-banner"]
       div[class="row"]
         div[class="col"]
@@ -91,6 +79,7 @@ div[class="container-fluid content-wrapper-footer d-flex flex-fill flex-column"]
           span[id="personal-data-quotes-author"]
 
   div[class="row flex-fill personal-values-container-wrapper-row"]
+    / VALUES
     div[class="col-sm-12 mt-auto"]
       div[class="row personal-values-container-wrapper"]
         div[class="col-1 col-md-1 col-lg-1 order-lg-1 col-xl-1 col-xxl-1 col-xxxl-1 personal-values-container-right-first"]

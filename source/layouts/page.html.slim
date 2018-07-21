@@ -2,7 +2,7 @@
   = partial "partials/layout/header"
   = partial "partials/layout/body" do
     = partial "partials/layout/components/navigation-header"
-    div[class="container-fluid content-wrapper"]
+    main[class="container-fluid content-wrapper"]
       == yield
     = partial "partials/layout/components/navigation-footer"
     = partial "partials/layout/components/javascript"

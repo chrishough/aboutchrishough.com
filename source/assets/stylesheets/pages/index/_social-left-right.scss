@@ -1,0 +1,97 @@
+/* stylelint-disable no-descending-specificity */
+.personal-data-wrapper-left-stack,
+.personal-data-wrapper-right-stack {
+  flex: 1;
+  min-width: 70px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  a {
+    color: $white;
+    display: block;
+    background-color: $purple-dark;
+    padding: 1rem;
+    font-size: 2rem;
+
+    &:hover {
+      color: $white;
+      background-color: $purple-medium-dark;
+      box-shadow: 0 0 1rem 0 $purple-medium-dark;
+    }
+  }
+}
+
+.personal-data-wrapper-left-stack div {
+  &:first-child {
+      a {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-right: 0.15rem $purple-medium-dark solid;
+
+      @include media-breakpoint-up(md) {
+        border-left: 0.15rem $purple-medium-dark solid;
+      }
+    }
+  }
+
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    a {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-right: 0.15rem $purple-medium-dark solid;
+
+      @include media-breakpoint-up(md) {
+        border-left: 0.15rem $purple-medium-dark solid;
+      }
+    }
+   }
+
+  &:last-child {
+    a {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-right: 0.15rem $purple-medium-dark solid;
+      border-bottom: 0.15rem $purple-medium-dark solid;
+
+      @include media-breakpoint-up(md) {
+        border-left: 0.15rem $purple-medium-dark solid;
+      }
+    }
+  }
+}
+
+.personal-data-wrapper-right-stack div {
+  &:first-child {
+    a {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-left: 0.15rem $purple-medium-dark solid;
+
+      @include media-breakpoint-up(md) {
+        border-right: 0.15rem $purple-medium-dark solid;
+      }
+    }
+  }
+
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    a {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-left: 0.15rem $purple-medium-dark solid;
+
+      @include media-breakpoint-up(md) {
+        border-right: 0.15rem $purple-medium-dark solid;
+      }
+    }
+   }
+
+  &:last-child {
+    a {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-left: 0.15rem $purple-medium-dark solid;
+      border-bottom: 0.15rem $purple-medium-dark solid;
+
+      @include media-breakpoint-up(md) {
+        border-right: 0.15rem $purple-medium-dark solid;
+      }
+    }
+  }
+}
