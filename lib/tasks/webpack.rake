@@ -15,7 +15,6 @@ namespace :webpack do
       puts("---------------------------------------------------------->>\n\n")
       puts('Building Webpack Configurations...')
       ProcessWebpackConfigurations.new(mode: 'development').run
-      Rake::Task['test:lint:style'].invoke
       puts("---------------------------------------------------------->>\n")
     end
   end

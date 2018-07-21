@@ -3,6 +3,7 @@
     @include media-breakpoint-up(xs) {
       padding: 6rem 0 2rem 0;
     }
+
     @include media-breakpoint-up(transition) {
       padding: 5.5rem 0 3rem 0;
     }
@@ -12,6 +13,7 @@
         margin-left: 0;
         margin-right: 0;
       }
+
       &:nth-child(3) {
         padding: 0 0 1rem 0;
       }
@@ -61,6 +63,7 @@
           border-radius: 0 1rem 0 0;
         }
       }
+
       &:nth-of-type(2),
       &:nth-of-type(3) {
         a {
@@ -68,6 +71,7 @@
           border-right: 0.15rem $purple-medium-dark solid;
         }
        }
+
       &:last-child {
         a {
           border-top: 0.15rem $purple-medium-dark solid;
@@ -81,6 +85,7 @@
 
   .personal-data-wrapper-center-stack {
     flex: 5;
+
     @include media-breakpoint-up(sm) {
       padding: 1rem 2rem 0 2rem;
     }
@@ -90,12 +95,15 @@
         text-align: center;
         border: 0.25rem $purple-darkest solid;
         box-shadow: 0 0 2rem 0.25rem $purple-darkest;
+
         @include media-breakpoint-up(xs) {
           max-width: 175px;
         }
+
         @include media-breakpoint-up(transition) {
           max-width: 245px;
         }
+
         @include media-breakpoint-up(sm) {
           max-width: 300px;
         }
@@ -109,10 +117,12 @@
       @include media-breakpoint-up(xs) {
         font-size: 0.9rem;
       }
+
       @include media-breakpoint-up(sm) {
         font-size: 1.2rem;
       }
     }
+
     .personal-data-location {
       padding-top: 0.5rem;
 
@@ -123,11 +133,13 @@
         @include media-breakpoint-up(xs) {
           font-size: 0.5rem;
         }
+
         @include media-breakpoint-up(sm) {
           font-size: 0.7rem;
         }
       }
     }
+
     .personal-data-city {
       padding-top: 0.1rem;
     }
@@ -145,6 +157,7 @@
           border-radius: 1rem 0 0 0;
         }
       }
+
       &:nth-of-type(2),
       &:nth-of-type(3) {
         a {
@@ -152,6 +165,7 @@
           border-left: 0.15rem $purple-medium-dark solid;
         }
        }
+
       &:last-child {
         a {
           border-top: 0.15rem $purple-medium-dark solid;
@@ -179,11 +193,12 @@
       @include media-breakpoint-up(xs) {
         font-size: 0.9rem;
       }
+
       @include media-breakpoint-up(sm) {
         font-size: 1.2rem;
       }
 
-      &:after {
+      &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -199,7 +214,7 @@
       }
     }
 
-    &:after {
+    &::after {
     	content: '';
     	position: absolute;
     	top: 0;
@@ -229,121 +244,217 @@
 //-------------------------------------------------------------------
 //-------------------------------------------------------------------
 
-  .personal-data-quotes-banner {
-    @include secondary-font();
-    padding-bottom: 5rem;
-    font-weight: bold;
-    font-size: 1.3rem;
-    text-align: right;
-  }
-  .personal-data-quotes-container {
-    box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
-    background-color: rgba(4, 1, 5, 0.6);
+  .personal-data-quotes-banner-wrapper-row {
     @include media-breakpoint-up(xs) {
-      padding: 0.5rem 0;
-    }
-    @include media-breakpoint-up(lg) {
-      padding: 1rem;
+      max-height: 13rem;
     }
 
-    .personal-data-quotes-wrapper {
-      border-top: 0.2rem $purple-medium-dark solid;
-      border-bottom: 0.2rem $purple-medium-dark solid;
-      padding: 0 1rem;
+    @include media-breakpoint-up(lg) {
+      max-height: 14rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      max-height: 15rem;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+      margin-bottom: -7rem;
+    }
+
+    .personal-data-quotes-banner {
+      @include secondary-font();
+
+      padding-bottom: 5rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-align: right;
+    }
+
+    .personal-data-quotes-container {
+      box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
+      background-color: rgba(4, 1, 5, 0.6);
 
       @include media-breakpoint-up(xs) {
-        min-height: 15rem;
+        padding: 0.5rem 0;
       }
-      @include media-breakpoint-up(transition) {
-        min-height: 12rem;
-      }
-      @include media-breakpoint-up(sm) {
-        min-height: 10rem;
-      }
+
       @include media-breakpoint-up(lg) {
-        border-left: 0.2rem $purple-medium-dark solid;
-        padding-left: 0;
-        margin-left: 0;
-      }
-      @include media-breakpoint-up(xl) {
-        border-right: 0.2rem $purple-medium-dark solid;
-        padding-right: 0;
-        margin-right: 0;
+        padding: 1rem;
       }
 
-      .progress {
-        background-color: $gray-900;
-        max-height: 0.3rem;
+      .personal-data-quotes-wrapper {
+        border-top: 0.2rem $purple-medium-dark solid;
+        border-bottom: 0.2rem $purple-medium-dark solid;
+        padding: 0 1rem;
 
-        @include media-breakpoint-up(lg) {
-          margin-left: 0;
-          padding-left: 0;
-        }
-      }
-
-      .progress-bar {
-        background-color: $purple-medium-dark;
-      }
-
-      .personal-data-quotes {
         @include media-breakpoint-up(xs) {
-          padding: 1rem 2rem 1.8rem 3.5rem;
           min-height: 15rem;
-          margin-left: auto;
-          margin-right: auto;
         }
+
         @include media-breakpoint-up(transition) {
           min-height: 12rem;
         }
+
         @include media-breakpoint-up(sm) {
           min-height: 10rem;
         }
+
         @include media-breakpoint-up(lg) {
-          padding: 1rem 2rem 1.8rem 0;
+          border-left: 0.2rem $purple-medium-dark solid;
+          padding-left: 0;
+          margin-left: 0;
         }
+
         @include media-breakpoint-up(xl) {
-          padding: 1rem 2rem 1.8rem 2rem;
+          border-right: 0.2rem $purple-medium-dark solid;
+          padding-right: 0;
+          margin-right: 0;
         }
 
-        span {
-          display: block;
-          text-align: left;
+        .progress {
+          background-color: $gray-900;
+          max-height: 0.3rem;
 
+          @include media-breakpoint-up(lg) {
+            margin-left: 0;
+            padding-left: 0;
+          }
+        }
+
+        .progress-bar {
+          background-color: $purple-medium-dark;
+        }
+
+        .personal-data-quotes {
           @include media-breakpoint-up(xs) {
-            font-size: 0.9rem;
+            padding: 1rem 2rem 1.8rem 3.5rem;
+            min-height: 15rem;
+            margin-left: auto;
+            margin-right: auto;
           }
-        }
-        #personal-data-quotes-text {
-          font-style: italic;
-          padding-bottom: 1rem;
 
-          &:before {
-            content: '\201C';
-            margin-right: 4px;
-            margin-left: -8px;
-            font-size: 1.2rem;
-            font-weight: bold;
+          @include media-breakpoint-up(transition) {
+            min-height: 12rem;
           }
-          &:after {
-            content: '\201D';
-            margin-left: 4px;
-            margin-right: -8px;
-            font-size: 1.2rem;
-            font-weight: bold;
+
+          @include media-breakpoint-up(sm) {
+            min-height: 10rem;
+          }
+
+          @include media-breakpoint-up(lg) {
+            padding: 1rem 2rem 1.8rem 0;
+          }
+
+          @include media-breakpoint-up(xl) {
+            padding: 1rem 2rem 1.8rem 2rem;
+          }
+
+          span {
+            display: block;
+            text-align: left;
+
+            @include media-breakpoint-up(xs) {
+              font-size: 0.9rem;
+            }
+          }
+
+          #personal-data-quotes-text {
+            font-style: italic;
+            padding-bottom: 1rem;
+
+            &::before {
+              content: '\201C';
+              margin-right: 4px;
+              margin-left: -8px;
+              font-size: 1.2rem;
+              font-weight: bold;
+            }
+
+            &::after {
+              content: '\201D';
+              margin-left: 4px;
+              margin-right: -8px;
+              font-size: 1.2rem;
+              font-weight: bold;
+            }
+          }
+
+          #personal-data-quotes-text-read-more {
+            font-style: normal;
+            color: $purple-lightest;
+          }
+
+          #personal-data-quotes-more-text {
+            display: none;
+          }
+
+          #personal-data-quotes-author {
+            &::before {
+              content: "\2014\00a0\00a0";
+              font-weight: bold;
+            }
           }
         }
-        #personal-data-quotes-text-read-more {
-          font-style: normal;
-          color: $purple-lightest;
+      }
+    }
+  }
+
+  .personal-values-container-wrapper-row {
+    @include media-breakpoint-up(xs) {
+      max-height: 23rem;
+    }
+
+    @include media-breakpoint-up(minimium) {
+      max-height: 26rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      max-height: 30rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-height: 25rem;
+    }
+
+    .personal-data-help-graphic {
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include media-breakpoint-up(xs) {
+        #connect-portrait {
+          display: block;
         }
-        #personal-data-quotes-more-text {
+
+        #connect-portrait-pointer {
           display: none;
         }
-        #personal-data-quotes-author {
-          &:before {
-            content: "\2014\00a0\00a0";
-            font-weight: bold;
-          }
+      }
+
+      @include media-breakpoint-up(lg) {
+        #connect-portrait {
+          display: none;
+        }
+
+        #connect-portrait-pointer {
+          display: block;
+        }
+      }
+
+      > embed {
+        margin-left: auto;
+        margin-right: auto;
+
+        @include media-breakpoint-up(xs) {
+          max-height: 250px;
+        }
+
+        @include media-breakpoint-up(minimium) {
+          max-height: 300px;
+        }
+
+        @include media-breakpoint-up(sm) {
+          max-height: 400px;
         }
       }
     }
@@ -352,6 +463,7 @@
   .personal-data-help,
   .personal-data-connect {
     @include impact-font();
+
     text-align: center;
     padding: 1rem 0;
     text-transform: uppercase;
@@ -360,65 +472,53 @@
     @include media-breakpoint-up(xs) {
       font-size: 1.1rem;
     }
+
     @include media-breakpoint-up(transition) {
       font-size: 1.4rem;
     }
   }
 
-  .personal-data-help-graphic {
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-
-    @include media-breakpoint-up(xs) {
-      #connect-portrait {
-        display: block;
-      }
-      #connect-portrait-pointer {
-        display: none;
-      }
+  .personal-values-container-right-first,
+  .personal-values-container-right-second,
+  .personal-connect-container-right-first,
+  .personal-connect-container-right-second {
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
     }
-    @include media-breakpoint-up(lg) {
-      #connect-portrait {
-        display: none;
-      }
-      #connect-portrait-pointer {
-        display: block;
-      }
-    }
-    > embed {
-      margin-left: auto;
-      margin-right: auto;
 
-      @include media-breakpoint-up(xs) {
-        max-height: 250px;
-      }
-      @include media-breakpoint-up(minimium) {
-        max-height: 300px;
-      }
-      @include media-breakpoint-up(sm) {
-        max-height: 400px;
-      }
+    &::after {
+      content: '';
     }
   }
-  .personal-values-container-wrapper-row {
-    @include media-breakpoint-up(xs) {
-      max-height: 23rem;
+
+  .personal-connect-container-right-second,
+  .personal-values-container-right-second {
+    border-right: 0.1rem $white solid;
+    height: 5rem;
+  }
+
+  .personal-connect-container-left,
+  .personal-values-container-left {
+    border-left: 0.1rem $white solid;
+    height: 5rem;
+
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
     }
-    @include media-breakpoint-up(minimium) {
-      max-height: 26rem;
-    }
-    @include media-breakpoint-up(sm) {
-      max-height: 30rem;
-    }
-    @include media-breakpoint-up(lg) {
-      max-height: 25rem;
+
+    &::before {
+      content: '';
     }
   }
+
+  .personal-connect-container-wrapper-row,
   .personal-values-container-wrapper {
     @include media-breakpoint-up(xs) {
       padding: 0;
     }
+
     @include media-breakpoint-up(sm) {
       padding-top: 1rem;
     }
@@ -426,31 +526,6 @@
     > div {
       padding: 0;
       margin: 0;
-    }
-  }
-  .personal-values-container-right-first,
-  .personal-values-container-right-second {
-    div {
-      border-bottom: 0.1rem $white solid;
-      height: 50%;
-    }
-    &:after {
-      content:'';
-    }
-  }
-  .personal-values-container-right-second {
-    border-right: 0.1rem $white solid;
-    height: 5rem;
-  }
-  .personal-values-container-left {
-    border-left: 0.1rem $white solid;
-    height: 5rem;
-    div {
-      border-bottom: 0.1rem $white solid;
-      height: 50%;
-    }
-    &:before {
-      content:'';
     }
   }
 }

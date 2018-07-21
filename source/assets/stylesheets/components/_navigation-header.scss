@@ -5,7 +5,6 @@
 .navigation-header {
   background-color: $purple-darkest;
   box-shadow: 0 0 0.5rem 0.25rem $purple-darkest;
-
   font-size: 1.25rem;
   text-align: center;
   padding: 0;
@@ -37,6 +36,7 @@
     padding-right: 0.5rem;
     font-size: 1.8rem;
     line-height: 2.5rem;
+
     @include impact-font();
   }
 }

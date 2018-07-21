@@ -3,21 +3,19 @@
 namespace :test do
   namespace :lint do
     desc 'Lint JavaScript via esLint.'
-    task :javascript do
+    task :js do
       puts("---------------------------------------------------------->>\n")
-      puts("\nRunning esLint")
-      puts("\nIf this command fails, please install: npm install -g eslint")
+      puts("Running esLint")
       puts("---------------------------------------------------------->>\n")
-      system('npm run eslint')
+      system('npm run lintjs')
     end
 
     desc 'Lint SCSS via StyleLint.'
-    task :style do
+    task :css do
       puts("---------------------------------------------------------->>\n")
-      puts("\nRunning Style Lint")
-      puts("\nIf this command fails, please install: npm install -g stylelint")
+      puts("Running Style Lint")
       puts("---------------------------------------------------------->>\n")
-      system('stylelint "source/**/*.scss" --syntax scss --fix')
+      system('npm run lintcss')
     end
   end
 end

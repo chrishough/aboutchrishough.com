@@ -5,9 +5,8 @@
   @include media-breakpoint-up(xs) {
     padding: 0;
   }
-  
-  min-height: 100%;
 
+  min-height: 100%;
   background: url('#{$image-path}/backgrounds/collage.jpg') repeat 50% 50% fixed;
   background-position: top center;
   background-size: contain;

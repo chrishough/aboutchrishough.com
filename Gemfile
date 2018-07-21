@@ -19,6 +19,4 @@ group :development do
   gem 'rspec'
   gem 'capybara'
   gem 'rubocop'
-  gem 'guard-rake'
-	gem 'guard-rspec'
 end
