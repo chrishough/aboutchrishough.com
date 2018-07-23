@@ -25,37 +25,64 @@
     }
   }
 
-  .personal-data-location,
-  .personal-data-city {
+  .personal-data-city-location-wrapper {
     text-align: center;
 
-    @include media-breakpoint-up(xs) {
-      font-size: 0.9rem;
+    @include media-breakpoint-up(transition) {
+      padding-top: 0.5rem;
     }
 
-    @include media-breakpoint-up(sm) {
-      font-size: 1.2rem;
-    }
-  }
-
-  .personal-data-location {
-    padding-top: 0.5rem;
-
-    i {
-      margin-right: 0.4rem;
-      vertical-align: baseline;
-
+    .personal-data-location,
+    .personal-data-city {
       @include media-breakpoint-up(xs) {
-        font-size: 0.5rem;
+        display: block;
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      @include media-breakpoint-up(transition) {
+        display: inline;
+        padding-left: 0;
+        padding-right: 0;
       }
 
       @include media-breakpoint-up(sm) {
-        font-size: 0.7rem;
+        font-size: 1.2rem;
+      }
+
+      .em-heartpulse,
+      .em-round_pushpin {
+        margin-right: 0.2rem;
+
+        @include media-breakpoint-up(xs) {
+          font-size: 0.5rem;
+        }
+
+        @include media-breakpoint-up(sm) {
+          font-size: 0.7rem;
+        }
+      }
+
+      .em-heartpulse {
+        vertical-align: baseline;
+      }
+
+      .em-round_pushpin {
+        vertical-align: sub;
       }
     }
-  }
 
-  .personal-data-city {
-    padding-top: 0.1rem;
+    .personal-data-location {
+      @include media-breakpoint-up(transition) {
+        padding-left: 0.8rem;
+        text-align: left;
+      }
+    }
+
+    .personal-data-city {
+      @include media-breakpoint-up(transition) {
+        text-align: right;
+      }
+    }
   }
 }

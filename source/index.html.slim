@@ -24,17 +24,33 @@ div[class="container-fluid"]
 
         div[class="col-10 col-md-8 personal-data-wrapper-center-stack d-flex flex-column justify-content-center align-items-center"]
           / SOCIAL : AVATAR
-          div[class="personal-data-avatar"]
-            img[src="#{image_path('avatar.png')}"]
-          div[class="personal-data-location"]
-            i[class="em-svg em-heartpulse"]
-            |Remote. Global.
-          div[class="personal-data-city"]
-            = data.website.city
-            =>
-            |-
-            =>
-            = data.website.state
+          div[class="row"]
+            div[class="col-12 personal-data-avatar"]
+              img[src="#{image_path('avatar.png')}"]
+
+
+
+
+
+
+          div[class="row w-100 no-gutters personal-data-city-location-wrapper"]
+            div[class="col-12"]
+              span[class="personal-data-city"]
+                i[class="em-svg em-round_pushpin"]
+                = data.website.city
+                |,
+                =>
+                = data.website.state
+              span[class="personal-data-location"]
+                i[class="em-svg em-heartpulse"]
+                |Remote.
+
+
+
+
+
+
+
 
         div[class="col-2 col-md-2 personal-data-wrapper-right-stack"]
           / SOCIAL : ACCOUNTS : RIGHT
