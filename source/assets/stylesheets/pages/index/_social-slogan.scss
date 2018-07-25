@@ -1,0 +1,71 @@
+.personal-data-slogan-wrapper-row {
+  padding: 2rem 0 1rem 0;
+
+  .personal-data-slogan {
+    position: relative;
+    color: $white;
+    padding: 0.2rem;
+
+    @include media-breakpoint-up(xs) {
+      background-color: rgba(4, 1, 5, 0.6);
+      box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
+    }
+
+    @include media-breakpoint-up(md) {
+      background-color: inherit;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    div {
+      border-top: 0.2rem $purple-medium-dark solid;
+      border-bottom: 0.2rem $purple-medium-dark solid;
+      padding: 2rem 2rem 1.8rem 3.5rem;
+
+      @include media-breakpoint-up(xs) {
+        font-size: 0.9rem;
+      }
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.2rem;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 1.5rem solid transparent;
+        border-bottom-color: $purple-medium-dark;
+        border-top: 0;
+        margin-left: -1.5rem;
+
+        @include media-breakpoint-up(xs) {
+          margin-top: -1.2rem;
+        }
+
+        @include media-breakpoint-up(md) {
+          margin-top: -1.5rem;
+        }
+
+        z-index: $zindex-dropdown;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 2rem solid transparent;
+      border-bottom-color: $purple-darkest;
+      border-top: 0;
+      margin-left: -2rem;
+      margin-top: -2rem;
+    }
+  }
+}

@@ -3,8 +3,8 @@
     "develop": "clear && printf '\\e[3J' && NODE_ENV=development webpack --bail --progress --color --devtool source-map",
     "build_local": "clear && printf '\\e[3J' && NODE_ENV=development webpack --bail",
     "build_external": "clear && printf '\\e[3J' && NODE_ENV=production webpack --bail -p",
-    "lintjs": "clear && printf '\\e[3J' && eslint 'source/assets/javascripts/**/*.js' --fix; exit 0;",
-    "lintcss": "clear && printf '\\e[3J' && stylelint 'source/**/*.scss' --syntax scss --fix; exit 0;"
+    "lintjs": "eslint 'source/assets/javascripts/**/*.js' --fix; exit 0;",
+    "lintcss": "stylelint 'source/**/*.scss' --syntax scss --fix; exit 0;"
   },
   "browserslist": [
     "Last 5 versions"

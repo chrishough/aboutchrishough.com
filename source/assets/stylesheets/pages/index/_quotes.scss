@@ -45,13 +45,10 @@
         min-height: 12rem;
       }
 
-      @include media-breakpoint-up(sm) {
-        min-height: 10rem;
-      }
-
       @include media-breakpoint-up(lg) {
         border-left: 0.2rem $purple-medium-dark solid;
         padding-left: 0;
+        padding-right: 0;
         margin-left: 0;
       }
 

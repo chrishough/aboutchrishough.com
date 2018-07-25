@@ -1,6 +1,7 @@
 .personal-values-container-wrapper-row {
   @include media-breakpoint-up(xs) {
     max-height: 24rem;
+    padding-top: 1rem;
   }
 
   @include media-breakpoint-up(minimium) {
