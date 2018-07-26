@@ -1,5 +1,5 @@
 .personal-data-slogan-wrapper-row {
-  padding: 2rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
 
   .personal-data-slogan {
     position: relative;
@@ -29,43 +29,6 @@
       @include media-breakpoint-up(sm) {
         font-size: 1.2rem;
       }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border: 1.5rem solid transparent;
-        border-bottom-color: $purple-medium-dark;
-        border-top: 0;
-        margin-left: -1.5rem;
-
-        @include media-breakpoint-up(xs) {
-          margin-top: -1.2rem;
-        }
-
-        @include media-breakpoint-up(md) {
-          margin-top: -1.5rem;
-        }
-
-        z-index: $zindex-dropdown;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      width: 0;
-      height: 0;
-      border: 2rem solid transparent;
-      border-bottom-color: $purple-darkest;
-      border-top: 0;
-      margin-left: -2rem;
-      margin-top: -2rem;
     }
   }
 }

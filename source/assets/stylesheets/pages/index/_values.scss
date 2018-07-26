@@ -1,20 +1,5 @@
 .personal-values-container-wrapper-row {
-  @include media-breakpoint-up(xs) {
-    max-height: 24rem;
-    padding-top: 1rem;
-  }
-
-  @include media-breakpoint-up(minimium) {
-    max-height: 26rem;
-  }
-
-  @include media-breakpoint-up(sm) {
-    max-height: 30rem;
-  }
-
-  @include media-breakpoint-up(lg) {
-    max-height: 25rem;
-  }
+  padding-top: 1rem;
 
   .personal-data-help-graphic {
     margin-top: auto;

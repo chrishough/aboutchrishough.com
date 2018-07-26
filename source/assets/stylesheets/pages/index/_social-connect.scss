@@ -1,22 +1,45 @@
-.personal-data-connect {
-  @include impact-font();
-
-  text-align: center;
-  text-transform: uppercase;
-
-  @include media-breakpoint-up(xs) {
-    font-size: 1.1rem;
+.personal-data-connect-wrapper {
+  @include media-breakpoint-up(md) {
+    max-width: 600px;
+    background-color: rgba(4, 1, 5, 0.6);
+    padding-bottom: 1rem;
   }
 
-  @include media-breakpoint-up(transition) {
-    font-size: 1.4rem;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 2rem;
+  }
+
+  @include media-breakpoint-up(xxxl) {
+    max-width: 700px;
+  }
+
+  .personal-data-connect {
+    @include impact-font();
+
+    text-align: center;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 1.1rem;
+    }
+
+    @include media-breakpoint-up(transition) {
+      font-size: 1.4rem;
+    }
   }
 }
 
 .personal-data-connect-left,
 .personal-data-connect-right {
   padding: 0;
-  height: 25rem;
+
+  @include media-breakpoint-up(xs) {
+    height: 5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 25rem;
+  }
 
   div {
     border-bottom: 0.1rem $white solid;

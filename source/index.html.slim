@@ -1,13 +1,14 @@
 ---
 layout: index
 ---
-div[class="container-fluid d-flex flex-colum flex-fill justify-content-center"]
+div[class="container-fluid d-flex flex-colum justify-content-center personal-data-wrapper-row"]
   / TOP
-  div[class="row flex-fill personal-data-wrapper-row"]
+  div[class="row w-100"]
     / SOCIAL
-    div[class="d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-left"]
+    div[class="col-2 order-2 col-md-1 order-md-1 col-lg-2 col-xl-2 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-left"]
       div
-    div[class="col-12 col-md-9 col-lg-8 col-xl-6 col-xxl-4 mx-auto my-auto personal-data-wrapper-container"]
+
+    div[class="col-12 order-1 col-md-10 order-md-2 col-lg-8 col-xl-6 col-xxl-4 mx-auto my-auto personal-data-wrapper-container"]
       div[class="row"]
         div[class="col-2 col-md-2 personal-data-wrapper-left-stack"]
           / SOCIAL : ACCOUNTS : LEFT
@@ -64,15 +65,15 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center"]
             div
               = data.website.slogan
 
-        div[class="col-12"]
-          / SOCIAL : CONNECT
-          div[class="personal-data-connect"]
-            |Let's Connect!
+    div[class="col-8 order-3 col-md-10 order-md-4 col-lg-8 col-xl-6 col-xxl-4 mx-auto my-auto personal-data-connect-wrapper"]
+      / SOCIAL : CONNECT
+      div[class="personal-data-connect"]
+        |Let's Connect!
 
-    div[class="d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-right"]
+    div[class="col-2 order-4 col-md-1 order-md-3 col-lg-2 col-xl-2 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-right"]
       div
 
-div[class="container-fluid d-flex flex-column"]
+div[class="container-fluid d-flex flex-column flex-fill"]
   / BOTTOM
   div[class="row flex-fill mt-auto personal-data-quotes-banner-wrapper-row"]
     / QUOTES
@@ -90,7 +91,7 @@ div[class="container-fluid d-flex flex-column"]
           span[id="personal-data-quotes-text"]
           span[id="personal-data-quotes-author"]
 
-  div[class="row flex-fill personal-values-container-wrapper-row"]
+  div[class="row personal-values-container-wrapper-row"]
     / VALUES
     div[class="col-sm-12 mt-auto"]
       div[class="row personal-values-container-wrapper"]
