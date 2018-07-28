@@ -16,14 +16,14 @@ const siteConfig = {
       path.join(__dirname, "/source/assets/javascripts/vendor.js")
     ],
     site: [
+      path.join(__dirname, "/source/assets/stylesheets/site.scss"),
       path.join(__dirname, "/source/assets/javascripts/site.js"),
-      path.join(__dirname, "/source/assets/stylesheets/site.scss")
     ]
   },
 
   output: {
     path: outputPath,
-    filename: "site-[hash].js"
+    filename: "[name]-[hash].js"
   },
 
   resolve: {
@@ -138,13 +138,13 @@ const siteConfig = {
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default']
     }),
-    new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor",
-      filename: "site-vendor-[hash].js",
-      minChunks: Infinity
-    }),
     new ManifestPlugin({
       fileName: "site-manifest.json"
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "vendor",
+      filename: "vendor-[hash].js",
+      minChunks: Infinity
     }),
     new CleanWebpackPlugin([outputPath], {
       root: __dirname,

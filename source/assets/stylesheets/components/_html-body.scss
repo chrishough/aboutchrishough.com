@@ -5,7 +5,8 @@ body {
   height: 100% !important;
   min-width: map-get($grid-breakpoints, 'minimium') !important;
   min-height: 100% !important;
-  background-color: $purple-darkest;
+  background-attachment: fixed;
+  background-size: cover;
 
   @include primary-font();
 

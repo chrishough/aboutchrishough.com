@@ -22,14 +22,14 @@
 
   .personal-data-quotes-container {
     box-shadow: 0 0 0.25rem 0.25rem $purple-darkest;
-    background-color: rgba(4, 1, 5, 0.6);
+    background-color: rgba(4, 1, 5, $backdrop-opacity);
 
     @include media-breakpoint-up(xs) {
       padding: 0.5rem 0;
     }
 
     @include media-breakpoint-up(lg) {
-      padding: 1rem;
+      padding: 1rem 1.5rem;
     }
 
     .personal-data-quotes-wrapper {
@@ -47,13 +47,13 @@
 
       @include media-breakpoint-up(lg) {
         border-left: 0.2rem $purple-medium-dark solid;
+        border-right: 0.2rem $purple-medium-dark solid;
         padding-left: 0;
         padding-right: 0;
         margin-left: 0;
       }
 
       @include media-breakpoint-up(xl) {
-        border-right: 0.2rem $purple-medium-dark solid;
         padding-right: 0;
         margin-right: 0;
       }

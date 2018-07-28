@@ -30,6 +30,14 @@ export default () => {
     },
     xl: {
       min: 1200,
+      max: 1800,
+    },
+    xxl: {
+      min: 1800,
+      max: 2450,
+    },
+    xxxl: {
+      min: 2450,
       max: Infinity,
     },
   });

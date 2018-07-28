@@ -6,10 +6,18 @@ import index from './pages/index';
 
 $(document).ready(() => {
   const $body = $('body');
+  const $bodyId = $body.attr('id');
 
   breakpoints();
   navigation();
-  index();
+
+  switch ($bodyId) {
+    case 'index':
+      index();
+      break;
+    default:
+      console.log('NO JS DETECTED!')
+  }
 
   // https://stackoverflow.com/questions/23800165/remove-move-the-google-chrome-bottom-left-status-bar-link-address-bar
   $body.on('mouseover', 'a', (element) => {

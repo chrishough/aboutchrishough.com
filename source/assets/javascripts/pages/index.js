@@ -1,6 +1,10 @@
 export default () => {
   const $personalDataQuotesData = [
     {
+      quote: 'Letting your emotions dictate your actions is the greatest sign of weakness.',
+      author: 'Gary Vaynerchuk Podcast',
+    },
+    {
       quote: 'If you are an entrepreneur and you are hungry, and you are selfish…listen carefully, selfish to scratch your itch, unless you marry somebody who is independent or disproportionally empathetic, you have no prayer of a real relationship.',
       author: 'Gary Vaynerchuk',
     },
@@ -222,6 +226,8 @@ export default () => {
     },
   ];
 
+  const $videoBackgroundFile = '/assets/images/backgrounds/bungee.mp4';
+  const $videoBackground = $('#video-background');
   const $personalDataQuotes = $('#personal-data-quotes');
   const $personalDataQuotesText = $('#personal-data-quotes-text');
   const $personalDataQuotesAuthor = $('#personal-data-quotes-author');
@@ -304,5 +310,18 @@ export default () => {
 
   triggerProgressBar(() => {
     triggerUpdateQuote();
+  });
+
+  $videoBackground.attr('src', '');
+
+  Breakpoints.on('lg xl xxl xxxl', {
+    enter() {
+      if ($('#video-background').attr('src').trim().length === 0) {
+        $videoBackground.attr('src', $videoBackgroundFile);
+      }
+    },
+    leave() {
+      $videoBackground.attr('src', '');
+    },
   });
 };

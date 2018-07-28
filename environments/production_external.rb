@@ -18,7 +18,7 @@ set :host, 'aboutchrishough.com'
 set :port, 80
 
 after_build do
-  Dir.glob('build/assets/*').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
+  Dir.glob('build/assets/*.json').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
   FileUtils.cp('source/CNAME', 'build/CNAME')
   add_content_to_source(postion: 'header', view_source_file: 'view_source_header.txt')
   add_content_to_source(postion: 'footer', view_source_file: 'view_source_footer.txt')
