@@ -16,7 +16,7 @@ $(document).ready(() => {
       index();
       break;
     default:
-      console.log('NO JS DETECTED!')
+      console.log('NO JS DETECTED!');
   }
 
   // https://stackoverflow.com/questions/23800165/remove-move-the-google-chrome-bottom-left-status-bar-link-address-bar
