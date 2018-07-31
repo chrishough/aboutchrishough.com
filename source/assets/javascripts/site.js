@@ -2,6 +2,10 @@ import breakpoints from './vendor/breakpoints';
 import navigation from './components/navigation';
 import index from './pages/index';
 import visionAndPassion from './pages/vision-and-passion';
+import careerPath from './pages/career-path';
+import familyJourney from './pages/family-journey';
+import workingTogether from './pages/working-together';
+import thoughtsOnPaper from './pages/thoughts-on-paper';
 
 const hidePreloader = () => {
   $('#preloader').fadeOut(500, () => {
@@ -23,8 +27,20 @@ $(document).ready(() => {
     case 'vision-and-passion':
       visionAndPassion();
       break;
+    case 'career-path':
+      careerPath();
+      break;
+    case 'family-journey':
+      familyJourney();
+      break;
+    case 'working-together':
+      workingTogether();
+      break;
+    case 'thoughts-on-paper':
+      thoughtsOnPaper();
+      break;
     default:
-      console.log('NO JS DETECTED - FIX ME!');
+      break;
   }
 
   // https://stackoverflow.com/questions/23800165/remove-move-the-google-chrome-bottom-left-status-bar-link-address-bar
