@@ -51,4 +51,16 @@
       visibility: visible;
     }
   }
+
+  @include media-breakpoint-up(xs) {
+    header {
+      visibility: visible;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    header {
+      visibility: hidden;
+    }
+  }
 }
