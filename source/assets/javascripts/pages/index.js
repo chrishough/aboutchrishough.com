@@ -226,8 +226,6 @@ export default () => {
     },
   ];
 
-  const $videoBackgroundFile = '/assets/images/backgrounds/bungee.mp4';
-  const $videoBackground = $('#video-background');
   const $personalDataQuotes = $('#personal-data-quotes');
   const $personalDataQuotesText = $('#personal-data-quotes-text');
   const $personalDataQuotesAuthor = $('#personal-data-quotes-author');
@@ -312,16 +310,18 @@ export default () => {
     triggerUpdateQuote();
   });
 
-  $videoBackground.attr('src', '');
+  $('#video-background-video').attr('src', '/assets/images/backgrounds/bungee.mp4');
+  $('#video-background').get(0).load();
 
-  // Breakpoints.on('lg xl xxl xxxl', {
-  //   enter() {
-  //     if ($('#video-background').attr('src').trim().length === 0) {
-  //       $videoBackground.attr('src', $videoBackgroundFile);
-  //     }
-  //   },
-  //   leave() {
-  //     $videoBackground.attr('src', '');
-  //   },
-  // });
+  Breakpoints.on('lg xl xxl xxxl', {
+    enter() {
+      if ($('#video-background-video').attr('src').trim().length === 0) {
+        $('#video-background-video').attr('src', '/assets/images/backgrounds/bungee.mp4');
+        $('#video-background').get(0).load();
+      }
+    },
+    leave() {
+      $('#video-background-video').attr('src', '');
+    },
+  });
 };
