@@ -1,6 +1,10 @@
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  background: url('#{$image-path}/backgrounds/collage.jpg') repeat 50% 50% fixed;
+  background-color: $purple-darkest;
+  background-position: top center;
+  background-size: contain;
 
   @include media-breakpoint-up(xs) {
     padding: 0;

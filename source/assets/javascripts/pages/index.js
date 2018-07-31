@@ -314,14 +314,14 @@ export default () => {
 
   $videoBackground.attr('src', '');
 
-  Breakpoints.on('lg xl xxl xxxl', {
-    enter() {
-      if ($('#video-background').attr('src').trim().length === 0) {
-        $videoBackground.attr('src', $videoBackgroundFile);
-      }
-    },
-    leave() {
-      $videoBackground.attr('src', '');
-    },
-  });
+  // Breakpoints.on('lg xl xxl xxxl', {
+  //   enter() {
+  //     if ($('#video-background').attr('src').trim().length === 0) {
+  //       $videoBackground.attr('src', $videoBackgroundFile);
+  //     }
+  //   },
+  //   leave() {
+  //     $videoBackground.attr('src', '');
+  //   },
+  // });
 };

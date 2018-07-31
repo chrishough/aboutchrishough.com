@@ -3,9 +3,6 @@
   = partial "partials/layout/body" do
     = partial "partials/layout/components/navigation-header"
 
-    video[autoplay loop id="video-background" muted plays-inline poster="#{image_path('transparent.png')}"]
-      source[src="" type="video/mp4"]
-
     main[class="container-fluid content-wrapper"]
       == yield
 
