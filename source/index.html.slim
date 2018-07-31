@@ -12,18 +12,19 @@ div[class="container-fluid d-flex flex-colum justify-content-center personal-dat
       div[class="row"]
         div[class="col-2 col-md-2 personal-data-wrapper-left-stack"]
           / SOCIAL : ACCOUNTS : LEFT
-          div
-            = link_to(data.social.linkedin, target: :_blank) do
-              i[class="fab fa-linkedin-in"]
-          div
-            = link_to(data.social.github, target: :_blank) do
-              i[class="fab fa-github"]
-          div
-            = link_to(data.social.resume, target: :_blank) do
-              i[class="fas fa-road"]
-          div
-            = link_to(data.social.configurations, target: :_blank) do
-              i[class="fas fa-wrench"]
+          div[class="row"]
+            div[class="col-12"]
+              = link_to(data.social.linkedin, target: :_blank) do
+                i[class="fab fa-linkedin-in"]
+            div[class="col-12"]
+              = link_to(data.social.github, target: :_blank) do
+                i[class="fab fa-github"]
+            div[class="col-12"]
+              = link_to(data.social.resume, target: :_blank) do
+                i[class="fas fa-road"]
+            div[class="col-12"]
+              = link_to(data.social.configurations, target: :_blank) do
+                i[class="fas fa-wrench"]
 
         div[class="col-10 col-md-8 personal-data-wrapper-center-stack d-flex flex-column align-items-center"]
           div[class="row"]
@@ -46,18 +47,19 @@ div[class="container-fluid d-flex flex-colum justify-content-center personal-dat
 
         div[class="col-2 col-md-2 personal-data-wrapper-right-stack"]
           / SOCIAL : ACCOUNTS : RIGHT
-          div
-            = link_to(data.social.instagram, target: :_blank) do
-              i[class="fab fa-instagram"]
-          div
-            = link_to(data.social.facebook, target: :_blank) do
-              i[class="fab fa-facebook-f"]
-          div
-            = link_to(data.social.twitter, target: :_blank) do
-              i[class="fab fa-twitter"]
-          div
-            a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question"]
-              i[class="far fa-envelope"]
+          div[class="row"]
+            div[class="col-12"]
+              = link_to(data.social.instagram, target: :_blank) do
+                i[class="fab fa-instagram"]
+            div[class="col-12"]
+              = link_to(data.social.facebook, target: :_blank) do
+                i[class="fab fa-facebook-f"]
+            div[class="col-12"]
+              = link_to(data.social.twitter, target: :_blank) do
+                i[class="fab fa-twitter"]
+            div[class="col-12"]
+              a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question"]
+                i[class="far fa-envelope"]
 
         div[class="col-12 personal-data-slogan-wrapper-row"]
           / SOCIAL : SLOGAN
