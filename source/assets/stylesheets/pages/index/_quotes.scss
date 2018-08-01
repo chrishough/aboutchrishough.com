@@ -1,5 +1,12 @@
 .personal-data-quotes-banner-wrapper-row {
+  @include media-breakpoint-up(xs) {
+    display: block;
+    visibility: visible;
+  }
+
   @include media-breakpoint-up(lg) {
+    display: none;
+    visibility: hidden;
     max-height: 14rem;
   }
 

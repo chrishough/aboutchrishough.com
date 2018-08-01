@@ -1,5 +1,15 @@
 .personal-values-container-wrapper-row {
-  padding-top: 1rem;
+  @include media-breakpoint-up(xs) {
+    padding-top: 1rem;
+    display: block;
+    visibility: visible;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+    visibility: hidden;
+    max-height: 14rem;
+  }
 
   .personal-data-help-graphic {
     margin-top: auto;
@@ -43,67 +53,67 @@
       }
     }
   }
-}
 
-.personal-data-help {
-  @include impact-font();
+  .personal-data-help {
+    @include impact-font();
 
-  text-align: center;
-  padding: 1rem 0;
-  text-transform: uppercase;
-  transform: scaleX(1);
+    text-align: center;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    transform: scaleX(1);
 
-  @include media-breakpoint-up(xs) {
-    font-size: 1.1rem;
+    @include media-breakpoint-up(xs) {
+      font-size: 1.1rem;
+    }
+
+    @include media-breakpoint-up(transition) {
+      font-size: 1.4rem;
+    }
   }
 
-  @include media-breakpoint-up(transition) {
-    font-size: 1.4rem;
-  }
-}
+  .personal-values-container-right-first,
+  .personal-values-container-right-second {
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
+    }
 
-.personal-values-container-right-first,
-.personal-values-container-right-second {
-  div {
-    border-bottom: 0.1rem $white solid;
-    height: 50%;
-  }
-
-  &::after {
-    content: '';
-  }
-}
-
-.personal-values-container-right-second {
-  border-right: 0.1rem $white solid;
-  height: 5rem;
-}
-
-.personal-values-container-left {
-  border-left: 0.1rem $white solid;
-  height: 5rem;
-
-  div {
-    border-bottom: 0.1rem $white solid;
-    height: 50%;
+    &::after {
+      content: '';
+    }
   }
 
-  &::before {
-    content: '';
-  }
-}
-
-.personal-values-container-wrapper {
-  @include media-breakpoint-up(xs) {
-    padding: 0;
+  .personal-values-container-right-second {
+    border-right: 0.1rem $white solid;
+    height: 5rem;
   }
 
-  @include media-breakpoint-up(sm) {
-    padding-top: 1rem;
+  .personal-values-container-left {
+    border-left: 0.1rem $white solid;
+    height: 5rem;
+
+    div {
+      border-bottom: 0.1rem $white solid;
+      height: 50%;
+    }
+
+    &::before {
+      content: '';
+    }
   }
 
-  > div {
-    padding: 0;
-    margin: 0;
+  .personal-values-container-wrapper {
+    @include media-breakpoint-up(xs) {
+      padding: 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 1rem;
+    }
+
+    > div {
+      padding: 0;
+      margin: 0;
+    }
   }
 }

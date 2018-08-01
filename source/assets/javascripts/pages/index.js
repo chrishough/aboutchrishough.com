@@ -302,14 +302,6 @@ export default () => {
     });
   };
 
-  shuffleQuoteArray();
-
-  updateQuoteValues();
-
-  triggerProgressBar(() => {
-    triggerUpdateQuote();
-  });
-
   $('#video-background-video').attr('src', '/assets/images/backgrounds/bungee.mp4');
   $('#video-background').get(0).load();
 
@@ -320,7 +312,16 @@ export default () => {
         $('#video-background').get(0).load();
       }
     },
+
     leave() {
+      shuffleQuoteArray();
+
+      updateQuoteValues();
+
+      triggerProgressBar(() => {
+        triggerUpdateQuote();
+      });
+
       $('#video-background-video').attr('src', '');
     },
   });
