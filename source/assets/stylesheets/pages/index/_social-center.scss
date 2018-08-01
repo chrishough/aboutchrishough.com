@@ -1,6 +1,10 @@
 .personal-data-wrapper-center-stack {
   flex: 5;
 
+  @include media-breakpoint-up(xl) {
+    max-width: 800px;
+  }
+
   @include media-breakpoint-up(xs) {
     justify-content: flex-end;
     padding-bottom: 1rem;
@@ -10,7 +14,21 @@
     padding: 1rem 2rem 1rem 2rem;
   }
 
+  @include media-breakpoint-up(lg) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
   .personal-data-avatar {
+    @include media-breakpoint-up(xs) {
+      visibility: visible;
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      visibility: hidden;
+      display: none;
+    }
+
     img {
       text-align: center;
       border: 0.25rem $purple-darkest solid;
@@ -34,6 +52,39 @@
     }
   }
 
+  .personal-data-signature {
+    @include primary-font();
+
+    text-align: center;
+    line-height: 3rem;
+
+    .prefix {
+      padding-right: 0.8rem;
+      font-size: 1.5rem;
+      vertical-align: top;
+    }
+
+    .username {
+      font-size: 3rem;
+      padding-right: 0.8rem;
+    }
+
+    i {
+      font-size: 1rem;
+      vertical-align: super;
+    }
+
+    @include media-breakpoint-up(xs) {
+      visibility: hidden;
+      display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      visibility: visible;
+      display: block;
+    }
+  }
+
   .personal-data-city-location-wrapper {
     text-align: center;
 
@@ -50,7 +101,6 @@
       }
 
       @include media-breakpoint-up(transition) {
-        display: inline;
         padding-left: 0;
         padding-right: 0;
       }
@@ -59,12 +109,17 @@
         font-size: 1.2rem;
       }
 
+      @include media-breakpoint-up(lg) {
+        display: inline;
+      }
+
       .em-heartpulse,
       .em-round_pushpin {
-        margin-right: 0.2rem;
+        margin-right: 0.5rem;
 
         @include media-breakpoint-up(xs) {
           font-size: 0.5rem;
+          margin-left: 0;
         }
 
         @include media-breakpoint-up(sm) {
@@ -74,6 +129,10 @@
 
       .em-heartpulse {
         vertical-align: baseline;
+
+        @include media-breakpoint-up(lg) {
+          margin-left: 0.5rem;
+        }
       }
 
       .em-round_pushpin {
@@ -82,14 +141,13 @@
     }
 
     .personal-data-location {
-      @include media-breakpoint-up(transition) {
-        padding-left: 0.8rem;
+      @include media-breakpoint-up(lg) {
         text-align: left;
       }
     }
 
     .personal-data-city {
-      @include media-breakpoint-up(transition) {
+      @include media-breakpoint-up(lg) {
         text-align: right;
       }
     }

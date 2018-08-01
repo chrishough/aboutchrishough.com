@@ -3,8 +3,4 @@ header[class="container-fluid fixed-top navigation-header-wrapper"]
     div[class="col navigation-header"]
       = link_to("/", class: "home-link") do
         div[class="flex-fill"]
-          span[class="prefix"]
-            |About
-          span[class="username"]
-            = data.website.author
-          i[class="em-svg em-100"]
+          = partial "partials/layout/components/about-signature"

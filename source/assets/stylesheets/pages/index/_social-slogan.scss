@@ -19,15 +19,20 @@
 
     div {
       border-top: 0.2rem $purple-medium-dark solid;
-      border-bottom: 0.2rem $purple-medium-dark solid;
-      padding: 2rem 2rem 1.8rem 3.5rem;
 
       @include media-breakpoint-up(xs) {
         font-size: 0.9rem;
+        border-bottom: 0.2rem $purple-medium-dark solid;
+        padding: 2rem 2rem 1.8rem 3.5rem;
       }
 
       @include media-breakpoint-up(sm) {
         font-size: 1.2rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 2rem 2rem 1rem 3.5rem;
+        border-bottom: none;
       }
     }
   }
