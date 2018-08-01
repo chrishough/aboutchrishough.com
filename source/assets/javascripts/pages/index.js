@@ -302,6 +302,10 @@ export default () => {
     });
   };
 
+  shuffleQuoteArray();
+
+  updateQuoteValues();
+
   $('#video-background-video').attr('src', '/assets/images/backgrounds/bungee.mp4');
   $('#video-background').get(0).load();
 
@@ -314,15 +318,13 @@ export default () => {
     },
 
     leave() {
-      shuffleQuoteArray();
-
-      updateQuoteValues();
-
-      triggerProgressBar(() => {
-        triggerUpdateQuote();
-      });
-
       $('#video-background-video').attr('src', '');
     },
+  });
+
+  Breakpoints.on('xs md', 'enter', () => {
+    triggerProgressBar(() => {
+      triggerUpdateQuote();
+    });
   });
 };
