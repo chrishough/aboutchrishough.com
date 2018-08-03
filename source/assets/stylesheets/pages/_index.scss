@@ -1,3 +1,66 @@
 #index {
+  .personal-data-wrapper-row {
+    @include media-breakpoint-up(xs) {
+      padding: 6rem 0 0.5rem 0;
+    }
 
+    @include media-breakpoint-up(md) {
+      padding: 7rem 0 2rem 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 7rem 0 3rem 0;
+    }
+
+    .personal-data-wrapper-container {
+      @include media-breakpoint-up(md) {
+        background-color: rgba(4, 1, 5, $backdrop-opacity);
+        padding: 0 0 1rem 0;
+
+        .row {
+          margin: 0;
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 800px;
+      }
+    }
+
+    @import "index/social-left-right";
+    @import "index/social-center";
+    @import "index/social-slogan";
+    @import "index/social-connect";
+  }
+
+  @import "index/quotes";
+  @import "index/values";
+
+  #video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    @include media-breakpoint-up(xs) {
+      visibility: hidden;
+    }
+
+    @include media-breakpoint-up(lg) {
+      visibility: visible;
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    header {
+      visibility: visible;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    header {
+      visibility: hidden;
+    }
+  }
 }

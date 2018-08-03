@@ -1,8 +1,16 @@
 @charset "utf-8";
+
 @import "~normalize-scss/sass/normalize/import-now";
 @import "variables";
 @import "vendor/bootstrap";
 @import "vendor/google_fonts";
 @import "vendor/fontawesome";
+@import "mixins/*";
 @import "components/*";
-@import "pages/*";
+@import "pages/index";
+@import "pages/career-path";
+@import "pages/family-journey";
+@import "pages/vision-and-passion";
+@import "pages/working-together";
+@import "pages/thoughts-on-paper";
+@import "pages/contact";

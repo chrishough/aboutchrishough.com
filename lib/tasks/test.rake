@@ -2,22 +2,32 @@
 
 namespace :test do
   namespace :lint do
+    desc 'Run all linters.'
+    task :all do
+      puts("---------------------------------------------------------->>\n")
+      puts("Running Style Lint")
+      puts("---------------------------------------------------------->>\n")
+      system("clear && printf '\\e[3J' && npm run lintcss")
+      puts("---------------------------------------------------------->>\n")
+      puts("Running esLint")
+      puts("---------------------------------------------------------->>\n")
+      system("npm run lintjs")
+    end
+
     desc 'Lint JavaScript via esLint.'
-    task :javascript do
+    task :js do
       puts("---------------------------------------------------------->>\n")
-      puts("\nRunning esLint")
-      puts("\nIf this command fails, please install: npm install -g eslint")
+      puts("Running esLint")
       puts("---------------------------------------------------------->>\n")
-      system('npm run lint')
+      system("clear && printf '\\e[3J' && npm run lintjs")
     end
 
     desc 'Lint SCSS via StyleLint.'
-    task :style do
+    task :css do
       puts("---------------------------------------------------------->>\n")
-      puts("\nRunning Style Lint")
-      puts("\nIf this command fails, please install: npm install -g stylelint")
+      puts("Running Style Lint")
       puts("---------------------------------------------------------->>\n")
-      system('stylelint "source/**/*.scss" --syntax scss --fix')
+      system("clear && printf '\\e[3J' && npm run lintcss")
     end
   end
 end

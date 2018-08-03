@@ -1,7 +1,13 @@
 = partial "partials/layout/html" do
   = partial "partials/layout/header"
   = partial "partials/layout/body" do
-    div[class="container-fluid content-wrapper"]
+    = partial "partials/layout/components/navigation-header"
+
+    video[autoplay loop muted playsinline id="video-background"]
+      source [src="" type="video/mp4" id="video-background-video"]
+
+    main[class="container-fluid content-wrapper"]
       == yield
-    = partial "partials/layout/components/navigation"
+
+    = partial "partials/layout/components/navigation-footer"
     = partial "partials/layout/components/javascript"

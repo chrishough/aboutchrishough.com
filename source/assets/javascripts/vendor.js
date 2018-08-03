@@ -1,6 +1,8 @@
-window.$ = window.jQuery = require('jquery')
-window.Popper = require('popper.js')
+window.jQuery = require('jquery');
 
-require("bootstrap");
-require("fontawesome");
-require("breakpoints");
+window.$ = window.jQuery;
+window.Popper = require('popper.js');
+
+require('bootstrap');
+require('fontawesome');
+require('breakpoints');

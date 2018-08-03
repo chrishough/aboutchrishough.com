@@ -1,0 +1,47 @@
+#cover {
+  background-color: $white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $zindex-cover;
+  min-height: 100%;
+  min-width: 100%;
+
+  #preloader {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    height: 240px;
+  }
+
+  .tree {
+    fill: $purple-medium-dark;
+  }
+
+  .circle-mask {
+    transform-origin: 50% 90%;
+    animation: scale 5s infinite ease-out;
+  }
+
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(0);
+    }
+
+    7%,
+    90% {
+      transform: scale(0.4);
+    }
+
+    50% {
+      transform: scale(1);
+    }
+  }
+}
