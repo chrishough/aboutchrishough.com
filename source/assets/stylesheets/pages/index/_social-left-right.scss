@@ -29,14 +29,13 @@
 
 .personal-data-wrapper-left-stack {
   a {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xs) {
       border-top: 0.15rem $purple-medium-dark solid;
       border-right: 0.15rem $purple-medium-dark solid;
-      border-left: 0.15rem $purple-medium-dark solid;
+    }
 
-      &:last-child {
-        border-bottom: 0.15rem $purple-medium-dark solid;
-      }
+    @include media-breakpoint-up(md) {
+      border-left: 0.15rem $purple-medium-dark solid;
     }
 
     @include media-breakpoint-up(lg) {
@@ -50,6 +49,12 @@
     }
   }
 
+  @include media-breakpoint-up(xs) {
+    .last {
+      border-bottom: 0.15rem $purple-medium-dark solid;
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     .last {
       border-right: 0.15rem $purple-medium-dark solid;
@@ -59,20 +64,29 @@
 
 .personal-data-wrapper-right-stack {
   a {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(xs) {
       border-top: 0.15rem $purple-medium-dark solid;
-      border-right: 0.15rem $purple-medium-dark solid;
       border-left: 0.15rem $purple-medium-dark solid;
+    }
 
-      &:last-child {
-        border-bottom: 0.15rem $purple-medium-dark solid;
-      }
+    @include media-breakpoint-up(md) {
+      border-right: 0.15rem $purple-medium-dark solid;
     }
 
     @include media-breakpoint-up(lg) {
       border-top: 0.15rem $purple-medium-dark solid;
       border-right: none;
       border-left: 0.15rem $purple-medium-dark solid;
+
+      &:last-child {
+        border-bottom: 0.15rem $purple-medium-dark solid;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    .last {
+      border-bottom: 0.15rem $purple-medium-dark solid;
     }
   }
 

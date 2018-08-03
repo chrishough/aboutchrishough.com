@@ -5,10 +5,10 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
   / TOP
   div[class="row w-100"]
     / SOCIAL
-    div[class="col-2 order-2 col-md-1 order-md-1 col-lg-1 col-xl-2 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-left"]
+    div[class="col-2 order-2 col-md-1 order-md-1 col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-left"]
       div
 
-    div[class="col-12 order-1 col-md-8 order-md-2 col-lg-8 col-xl-6 col-xxl-4 mx-auto my-auto personal-data-wrapper-container"]
+    div[class="col-12 order-1 col-md-8 order-md-2 col-lg-6 col-xl-5 col-xxl-4 mx-auto my-auto personal-data-wrapper-container"]
       div[class="row"]
         div[class="col-2 order-1 col-md-2 col-lg-12 order-lg-3 personal-data-wrapper-left-stack"]
           / SOCIAL : ACCOUNTS : LEFT
@@ -60,7 +60,7 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
               = link_to(data.social.twitter, target: :_blank) do
                 i[class="fab fa-twitter"]
             div[class="col-12 col-lg-3"]
-              a[href="mailto:#{data.social.email}?subject=#{data.website.author}: Question" class="last"]
+              = link_to("/pages/contact/", class: "last") do
                 i[class="far fa-envelope"]
 
         div[class="col-12 order-4 col-md-12 col-lg-12 order-lg-2 personal-data-slogan-wrapper-row"]
@@ -74,12 +74,12 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
           div[class="personal-data-connect"]
             |Let's Connect!
 
-    div[class="col-8 order-3 col-md-8 order-md-4 col-lg-8 col-xl-6 col-xxl-4 mx-auto my-auto personal-data-connect-wrapper-external"]
+    div[class="col-8 order-3 col-md-8 order-md-4 mx-auto my-auto personal-data-connect-wrapper-external"]
       / SOCIAL : CONNECT
       div[class="personal-data-connect"]
         |Let's Connect!
 
-    div[class="col-2 order-4 col-md-1 order-md-3 col-lg-1 col-xl-2 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-right"]
+    div[class="col-2 order-4 col-md-1 order-md-3 col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-right"]
       div
 
 div[class="container-fluid d-flex flex-column"]
