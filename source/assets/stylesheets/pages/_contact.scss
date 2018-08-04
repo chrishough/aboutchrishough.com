@@ -1,76 +1,68 @@
 #contact {
+  .contact-wrapper-container-row {
+    @include media-breakpoint-up(xs) {
+      padding: 6rem 0 1rem 0;
+    }
 
+    @include media-breakpoint-up(md) {
+      padding: 7rem 0 2rem 0;
+    }
 
+    @include media-breakpoint-up(lg) {
+      padding: 7rem 0 3rem 0;
+    }
 
+    .header-wrapper {
+      @include primary-font();
+      text-align: center;
 
+      .header {
+        padding-right: 0.5rem;
+      }
 
-  .personal-values-container-wrapper-row {
+      .em-svg {
+        margin-right: 0.5rem;
+      }
 
-    .personal-data-help-graphic {
-      > embed {
-        margin-left: auto;
-        margin-right: auto;
+      @include media-breakpoint-up(xs) {
+        line-height: 2.5rem;
+        font-size: 1.2rem;
+      }
 
-        @include media-breakpoint-up(xs) {
-          max-height: 300px;
-          margin-left: -4rem;
+      @include media-breakpoint-up(transition) {
+        line-height: 3.2rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      @include secondary-font();
+
+      @include media-breakpoint-up(xs) {
+        font-size: 0.9rem;
+      }
+
+      a {
+        font-style: normal;
+        color: $purple-lightest;
+
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
 
-    .personal-data-help {
-      @include impact-font();
+    .contact-wrapper-container {
+      background-color: rgba(4, 1, 5, $backdrop-opacity);
+      padding: 1.5rem;
 
-      text-align: center;
-      padding: 1rem 0;
-      text-transform: uppercase;
-      transform: scaleX(1);
-    }
-
-    .personal-values-container-right {
-      border-right: 0.1rem $white solid;
-      height: 5rem;
-
-      div {
-        border-bottom: 0.1rem $white solid;
-        height: 50%;
-      }
-
-      &::after {
-        content: '';
-      }
-    }
-
-    .personal-values-container-left {
-      border-left: 0.1rem $white solid;
-
-      @include media-breakpoint-up(xs) {
-        height: 0;
-      }
-
-      div {
-        border-bottom: 0.1rem $white solid;
-        height: 50%;
-      }
-
-      &::before {
-        content: '';
-      }
-    }
-
-    .personal-values-container-wrapper {
-      > div {
-        padding: 0;
-        margin: 0;
+      .contact-wrapper {
+        border-top: 0.2rem $purple-medium-dark solid;
+        border-bottom: 0.2rem $purple-medium-dark solid;
+        padding: 0 1rem;
       }
     }
   }
 
-
-
-
-
-
-
-
+  @import "contact/values";
 }
