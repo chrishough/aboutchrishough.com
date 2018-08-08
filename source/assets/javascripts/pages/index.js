@@ -111,7 +111,7 @@ export default () => {
     },
   });
 
-  Breakpoints.on('xs md', 'enter', () => {
+  Breakpoints.on('xs sm md', 'enter', () => {
     triggerProgressBar(() => {
       triggerUpdateQuote();
     });

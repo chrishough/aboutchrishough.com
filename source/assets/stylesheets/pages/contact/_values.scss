@@ -1,6 +1,6 @@
 .personal-values-container-wrapper-row {
   @include media-breakpoint-up(xs) {
-    padding-bottom: 1rem;
+    padding-bottom: 0;
   }
 
   @include media-breakpoint-up(sm) {
@@ -8,7 +8,8 @@
   }
 
   @include media-breakpoint-up(lg) {
-    padding-bottom: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .personal-data-help-graphic {
@@ -20,6 +21,7 @@
         max-height: 300px;
         padding-left: 0;
         margin-left: -4rem;
+        margin-bottom: -7px;
       }
 
       @include media-breakpoint-up(md) {
@@ -27,6 +29,7 @@
       }
 
       @include media-breakpoint-up(lg) {
+        max-height: 350px;
         margin-left: inherit;
         padding-left: 2rem;
       }
