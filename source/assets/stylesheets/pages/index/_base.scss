@@ -27,14 +27,14 @@
       }
     }
 
-    @import "index/social-left-right";
-    @import "index/social-center";
-    @import "index/social-slogan";
-    @import "index/social-connect";
+    @import "social-left-right";
+    @import "social-center";
+    @import "social-slogan";
+    @import "social-connect";
   }
 
-  @import "index/quotes";
-  @import "index/values";
+  @import "quotes";
+  @import "values";
 
   #video-background {
     position: fixed;

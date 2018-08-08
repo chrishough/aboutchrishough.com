@@ -10,6 +10,7 @@
 
     .header-wrapper {
       @include primary-font();
+
       text-align: center;
       padding-bottom: 1rem;
 
@@ -106,5 +107,5 @@
     }
   }
 
-  @import "contact/values";
+  @import "values";
 }
