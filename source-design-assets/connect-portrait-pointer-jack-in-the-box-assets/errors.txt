@@ -1,0 +1,1 @@
+[8/8/2018, 3:42:27 PM] document "connect-portrait-pointer-jack-in-the-box.psd": Fonts may render inconsistently and text wrapping is unsupported which can result in clipped text. Convert text to a shape to maintain fidelity.

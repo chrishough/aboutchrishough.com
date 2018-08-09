@@ -6,6 +6,7 @@ import careerPath from './pages/career-path';
 import familyJourney from './pages/family-journey';
 import workingTogether from './pages/working-together';
 import thoughtsOnPaper from './pages/thoughts-on-paper';
+import contactForm from './pages/contact-form';
 
 const hidePreloader = () => {
   $('#preloader').fadeOut(500, () => {
@@ -38,6 +39,9 @@ $(document).ready(() => {
       break;
     case 'thoughts-on-paper':
       thoughtsOnPaper();
+      break;
+    case 'contact-form':
+      contactForm();
       break;
     default:
       break;

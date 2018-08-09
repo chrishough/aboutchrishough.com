@@ -1,0 +1,24 @@
+.form-wrapper {
+  .form-control {
+    border-radius: 0;
+  }
+
+  .btn-primary {
+    background-color: $purple-dark;
+    border-color: $purple-medium-dark;
+    border-radius: 0;
+    font-size: 0.9rem;
+    padding: 1rem;
+    line-height: 1.1rem;
+
+    &:hover {
+      background-color: $purple-medium-dark;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(68, 27, 81, $backdrop-opacity);
+    }
+  }
+}
