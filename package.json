@@ -44,6 +44,7 @@
     "file-loader": "^1.1.6",
     "html-loader": "^0.5.5",
     "import-glob-loader": "^1.1.0",
+    "jquery-validation": "^1.17.0",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.1.4",
     "precss": "^3.1.0",

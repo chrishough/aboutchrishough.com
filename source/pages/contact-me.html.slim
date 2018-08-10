@@ -1,5 +1,5 @@
 ---
-id: contact
+id: contact-me
 layout: page
 ---
 
@@ -34,33 +34,23 @@ div[class="container-fluid d-flex flex-column flex-fill contact-wrapper-containe
                   div[class="form-group col-12"]
                     label[for="input-first-name"]
                       |First Name
-                    input[type="text" class="form-control form-control-lg" id="input-first-name" autocomplete="given-name" placeholder="First Name" required]
-                    div[class="invalid-feedback"]
-                      |First Name is Required!
+                    input[type="text" class="form-control form-control-lg" id="input-first-name" name="input-first-name" autocomplete="given-name" placeholder="First Name" required]
                   div[class="form-group col-12"]
                     label[for="input-last-name"]
                       |Last Name
-                    input[type="text" class="form-control form-control-lg" id="input-last-name" autocomplete="family-name" placeholder="Last Name" required]
-                    div[class="invalid-feedback"]
-                      |Last Name is Required!
+                    input[type="text" class="form-control form-control-lg" id="input-last-name" name="input-last-name" autocomplete="family-name" placeholder="Last Name" required]
                   div[class="form-group col-12"]
                     label[for="input-email"]
                       |Email Address
-                    input[type="email" class="form-control form-control-lg" id="input-email" autocomplete="email" placeholder="Email Address" required]
-                    div[class="invalid-feedback"]
-                      |Email Address is Required!
+                    input[type="email" class="form-control form-control-lg" id="input-email" name="input-email" autocomplete="email" placeholder="Email Address" required]
                   div[class="form-group col-12"]
                     label[for="input-subject"]
                       |Subject
-                    input[type="text" class="form-control form-control-lg" id="input-subject" placeholder="Subject" required]
-                    div[class="invalid-feedback"]
-                      |Subject is Required!
+                    input[type="text" class="form-control form-control-lg" id="input-subject" name="input-subject" placeholder="Subject" required]
                   div[class="form-group col-12"]
                     label[for="input-email-body"]
                       |Message
-                    textarea[class="form-control form-control-lg" id="input-email-body" rows="5" required]
-                    div[class="invalid-feedback"]
-                      |Message is Required!
+                    textarea[class="form-control form-control-lg" id="input-email-body" name="input-email-body" rows="5" required]
                   div[class="form-group col-12"]
-                    button[type="button" class="btn btn-primary btn-lg btn-block"]
+                    button[type="submit" id="send-button" class="btn btn-primary btn-lg btn-block"]
                       |Send

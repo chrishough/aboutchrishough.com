@@ -36,7 +36,8 @@ const siteConfig = {
       "jquery": "jquery/src/jquery.js",
       "popper": "popper.js/dist/popper.js",
       "bootstrap": "bootstrap/dist/js/bootstrap.js",
-      "breakpoints": "breakpoints-js/dist/breakpoints.min.js"
+      "breakpoints": "breakpoints-js/dist/breakpoints.min.js",
+      "validation": "jquery-validation/dist/jquery.validate.js",
     }
   },
 
