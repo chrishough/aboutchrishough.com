@@ -1,0 +1,21 @@
+#family-journey {
+  @include media-breakpoint-up(xs) {
+    padding: 6rem 0 0 0;
+  }
+  
+  color: $white;
+
+  .family-journey-chicago,
+  .family-journey-boulder,
+  .family-journey-nyc,
+  .family-journey-pdx,
+  .family-journey-tbd {
+    min-height: 25rem;
+  }
+
+  @import "family-journey-chicago";
+  @import "family-journey-boulder";
+  @import "family-journey-nyc";
+  @import "family-journey-pdx";
+  @import "family-journey-tbd";
+}

@@ -30,6 +30,8 @@
     padding-right: 0.5rem;
     vertical-align: text-top;
     line-height: 1.5rem;
+
+    @include primary-font();
   }
 
   .username {

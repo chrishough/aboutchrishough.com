@@ -36,16 +36,16 @@
     .navbar-title {
       color: $white;
 
-      @include secondary-font();
+      @include primary-font();
 
       @include media-breakpoint-up(xs) {
         line-height: 2.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       @include media-breakpoint-up(transition) {
         line-height: 3.2rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
 
       @include media-breakpoint-up(lg) {
@@ -73,6 +73,24 @@
 
     .navbar-nav {
       border: none;
+
+
+      .active {
+        background-color: $purple-medium-light;
+        font-weight: bold;
+        color: $white;
+
+        @include media-breakpoint-up(sm) {
+          box-shadow: 0 0 1rem 0 $purple-medium-dark;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin-top: -1rem;
+          border-radius: 1.5rem 1.5rem 0 0;
+          margin-bottom: -1rem;
+          padding-top: 1rem;
+        }
+      }
 
       li {
         @include media-breakpoint-up(xs) {
@@ -115,6 +133,8 @@
         }
 
         .nav-link {
+          @include secondary-font();
+
           color: $gray-300;
           padding: 1.25rem 1rem;
 

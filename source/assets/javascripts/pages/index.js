@@ -94,13 +94,14 @@ export default () => {
 
   updateQuoteValues();
 
-  $('#video-background-video').attr('src', '/assets/images/backgrounds/bungee.mp4');
+  const $videoBackgroundVideo = '/assets/images/backgrounds/bungee.mp4';
+  $('#video-background-video').attr('src', $videoBackgroundVideo);
   $('#video-background').get(0).load();
 
   Breakpoints.on('lg xl xxl xxxl', {
     enter() {
       if ($('#video-background-video').attr('src').trim().length === 0) {
-        $('#video-background-video').attr('src', '/assets/images/backgrounds/bungee.mp4');
+        $('#video-background-video').attr('src', $videoBackgroundVideo);
         $('#video-background').get(0).load();
       }
     },
@@ -110,7 +111,7 @@ export default () => {
     },
   });
 
-  Breakpoints.on('xs md', 'enter', () => {
+  Breakpoints.on('xs sm md', 'enter', () => {
     triggerProgressBar(() => {
       triggerUpdateQuote();
     });

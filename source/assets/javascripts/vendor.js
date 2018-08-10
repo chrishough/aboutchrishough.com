@@ -6,3 +6,4 @@ window.Popper = require('popper.js');
 require('bootstrap');
 require('fontawesome');
 require('breakpoints');
+require('validation');

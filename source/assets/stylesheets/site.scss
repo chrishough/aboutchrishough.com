@@ -7,10 +7,11 @@
 @import "vendor/fontawesome";
 @import "mixins/*";
 @import "components/*";
-@import "pages/index";
+@import "pages/index/base";
+@import "pages/contact-me/base";
+@import "pages/family-journey/base";
+// TODO ----------------------------------------------------
 @import "pages/career-path";
-@import "pages/family-journey";
 @import "pages/vision-and-passion";
 @import "pages/working-together";
 @import "pages/thoughts-on-paper";
-@import "pages/contact";
