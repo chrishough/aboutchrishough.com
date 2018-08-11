@@ -1,16 +1,10 @@
 #family-journey {
-  @include media-breakpoint-up(xs) {
-    padding: 6rem 0 0 0;
-  }
-  
-  color: $white;
-
   .family-journey-chicago,
   .family-journey-boulder,
   .family-journey-nyc,
   .family-journey-pdx,
   .family-journey-tbd {
-    min-height: 25rem;
+    color: $white;
   }
 
   @import "family-journey-chicago";
@@ -18,4 +12,30 @@
   @import "family-journey-nyc";
   @import "family-journey-pdx";
   @import "family-journey-tbd";
+
+  .skyline {
+    img {
+      border-radius: 50%;
+      border: 20px solid rgba(4, 1, 5, $backdrop-opacity);
+      max-width: 300px;
+    }
+  }
+
+  .step {
+    @include impact-font();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 6rem;
+    padding-left: 2rem;
+  }
+
+  .journey {
+    padding-left: 2rem;
+    background-color: rgba(4, 1, 5, $backdrop-opacity);
+  }
 }
