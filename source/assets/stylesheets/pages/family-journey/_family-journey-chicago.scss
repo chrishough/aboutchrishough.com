@@ -1,3 +1,9 @@
 .family-journey-chicago {
   padding: 6rem 1rem 1rem 1rem;
+
+  @include media-breakpoint-up(xs) {
+    background: url('#{$image-path}/backgrounds/skyline-chicago.jpg') no-repeat fixed;
+    background-position: top center;
+    background-size: contain;
+  }
 }
