@@ -3,7 +3,7 @@
 
   @include media-breakpoint-up(xs) {
     background: url('#{$image-path}/backgrounds/skyline-chicago.jpg') no-repeat fixed;
-    background-position: top center;
-    background-size: contain;
+    background-position: top left;
+    background-size: cover;
   }
 }

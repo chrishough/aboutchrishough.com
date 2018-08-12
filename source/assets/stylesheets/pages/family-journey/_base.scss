@@ -17,17 +17,27 @@
     @include media-breakpoint-up(xs) {
       display: none;
     }
-    
+
     img {
+
+    }
+
+    .step {
 
     }
   }
 
-  .step {
-
-  }
-
   .journey {
+    @include media-breakpoint-up(xs) {
+      .step {
+        
+      }
+    }
 
+    @include media-breakpoint-up(xl) {
+      .step {
+        display: none;
+      }
+    }
   }
 }
