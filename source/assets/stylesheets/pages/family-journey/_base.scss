@@ -1,42 +1,73 @@
 #family-journey {
-  .family-journey-chicago,
-  .family-journey-boulder,
-  .family-journey-nyc,
-  .family-journey-pdx,
-  .family-journey-tbd {
-    color: $white;
-  }
-
   @import "family-journey-chicago";
   @import "family-journey-boulder";
   @import "family-journey-nyc";
   @import "family-journey-pdx";
   @import "family-journey-tbd";
 
+  .family-journey-chicago,
+  .family-journey-boulder,
+  .family-journey-nyc,
+  .family-journey-pdx,
+  .family-journey-tbd {
+    color: $white;
+
+    @include media-breakpoint-up(xs) {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
   .skyline {
     @include media-breakpoint-up(xs) {
       display: none;
     }
 
-    img {
+    @include media-breakpoint-up(xl) {
+      display: block;
 
-    }
+      img {
 
-    .step {
-
+      }
     }
   }
 
-  .journey {
-    @include media-breakpoint-up(xs) {
-      .step {
-        
-      }
-    }
+  .journey-row {
+    padding: 1rem;
 
-    @include media-breakpoint-up(xl) {
-      .step {
-        display: none;
+    .journey-wrapper {
+      background-color: rgba(4, 1, 5, $backdrop-opacity-light);
+      padding: 1rem 1.5rem 1.5rem 1.5rem;
+
+      @include media-breakpoint-up(xs) {
+        .step {
+          display: block;
+          padding-top: 3rem;
+
+          .fa-layers-text {
+            @include impact-font();
+            color: $purple-darkest;
+            font-size: 1rem;
+            padding-bottom: 0.1rem;
+          }
+        }
+
+        .city {
+          @include impact-font();
+          font-size: 2rem;
+          padding-left: 0.3rem;
+          text-transform: capitalize;
+        }
+
+        .explanation {
+
+        }
+      }
+
+      @include media-breakpoint-up(xl) {
+        .step {
+          display: none;
+        }
       }
     }
   }

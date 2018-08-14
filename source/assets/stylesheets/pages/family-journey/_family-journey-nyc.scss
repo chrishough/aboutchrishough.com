@@ -1,9 +1,8 @@
 .family-journey-nyc {
-  padding: 0 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 
   @include media-breakpoint-up(xs) {
-    background: url('#{$image-path}/backgrounds/skyline-nyc.jpg') no-repeat fixed;
-    background-position: right -500px bottom -165px;
-    background-size: cover;
+    background: url('#{$image-path}/backgrounds/skyline-nyc.jpg');
+    background-position: right;
   }
 }
