@@ -4,11 +4,25 @@
       display: none;
     }
 
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(lg) {
       display: block;
 
-      img {
+      .step {
+        display: block;
+        position: absolute;
+        top: 44%;
+        left: 42%;
 
+        i {
+          font-size: 5rem;
+        }
+
+        .fa-layers-text {
+          @include impact-font();
+          color: $purple-darkest;
+          padding: 0 0 0.3rem 1.2rem;
+          font-size: 2rem;
+        }
       }
     }
   }
@@ -17,10 +31,18 @@
     padding: 1rem;
 
     .journey-wrapper {
-      padding: 1rem 1.5rem 1.5rem 1.5rem;
-
       @include media-breakpoint-up(xs) {
-        .step {
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        background-color: rgba(4, 1, 5, $backdrop-opacity-light);
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 2rem;
+        background-color: rgba(4, 1, 5, $backdrop-opacity);
+      }
+
+      .step {
+        @include media-breakpoint-up(xs) {
           display: block;
           padding-top: 3rem;
 
@@ -32,33 +54,21 @@
           }
         }
 
-        .city {
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+      }
+
+      .city {
+        @include media-breakpoint-up(xs) {
           @include impact-font();
           font-size: 2rem;
-          padding-left: 0.3rem;
           text-transform: capitalize;
+          padding-left: 0.3rem;
         }
 
-        .explanation {
-
-        }
-      }
-
-      @include media-breakpoint-up(sm) {
-        .city {
-
-        }
-      }
-
-      @include media-breakpoint-up(md) {
-        .city {
-
-        }
-      }
-
-      @include media-breakpoint-up(xl) {
-        .step {
-          display: none;
+        @include media-breakpoint-up(lg) {
+          padding-left: 15px;
         }
       }
     }
@@ -76,6 +86,7 @@
   .family-journey-pdx,
   .family-journey-tbd {
     color: $white;
+    max-width: map-get($grid-breakpoints, "lg");
 
     @include media-breakpoint-up(xs) {
       background-size: cover;
