@@ -19,6 +19,7 @@
 
         .fa-layers-text {
           @include impact-font();
+
           color: $purple-darkest;
           padding: 0 0 0.3rem 1.2rem;
           font-size: 2rem;
@@ -48,6 +49,7 @@
 
           .fa-layers-text {
             @include impact-font();
+
             color: $purple-darkest;
             font-size: 1rem;
             padding-bottom: 0.1rem;
@@ -62,6 +64,7 @@
       .city {
         @include media-breakpoint-up(xs) {
           @include impact-font();
+
           font-size: 2rem;
           text-transform: capitalize;
           padding-left: 0.3rem;
