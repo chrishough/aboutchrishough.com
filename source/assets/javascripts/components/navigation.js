@@ -32,13 +32,13 @@ export default () => {
     FontAwesome.dom.i2svg();
   });
 
-  Breakpoints.on('lg xl', 'enter', () => {
+  Breakpoints.on('lg xl xxl xxxl', 'enter', () => {
     $navDescriptionDefaultIcon.html('');
     $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-right'>");
     FontAwesome.dom.i2svg();
   });
 
-  Breakpoints.on('sm md lg xl', {
+  Breakpoints.on('sm md lg xl xxl xxxl', {
     enter() {
       $navItems.on({
         mouseenter: (element) => {

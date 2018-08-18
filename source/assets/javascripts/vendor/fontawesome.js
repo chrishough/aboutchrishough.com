@@ -8,6 +8,8 @@ import faRoad from '@fortawesome/fontawesome-free-solid/faRoad';
 import faEye from '@fortawesome/fontawesome-free-solid/faEye';
 import faMapSigns from '@fortawesome/fontawesome-free-solid/faMapSigns';
 import faMapMarkerAlt from '@fortawesome/fontawesome-free-solid/faMapMarkerAlt';
+import faMapMarker from '@fortawesome/fontawesome-free-solid/faMapMarker';
+import faQuestionCircle from '@fortawesome/fontawesome-free-solid/faQuestionCircle';
 import faSync from '@fortawesome/fontawesome-free-solid/faSync';
 import faArrowCircleDown from '@fortawesome/fontawesome-free-solid/faArrowCircleDown';
 import faWrench from '@fortawesome/fontawesome-free-solid/faWrench';
@@ -29,9 +31,11 @@ fontawesome.library.add(faAngleDoubleDown,
   faLightbulb,
   faMapSigns,
   faMapMarkerAlt,
+  faMapMarker,
   faArrowCircleRight,
   faArrowCircleDown,
   faLinkedinIn,
+  faQuestionCircle,
   faWrench,
   faInstagram,
   faTwitter,

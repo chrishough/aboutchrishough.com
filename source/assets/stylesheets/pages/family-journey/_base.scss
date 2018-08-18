@@ -1,16 +1,80 @@
 #family-journey {
-  @include media-breakpoint-up(xs) {
-    padding: 6rem 0 0 0;
-  }
-  
-  color: $white;
+  .skyline {
+    @include media-breakpoint-up(xs) {
+      display: none;
+    }
 
-  .family-journey-chicago,
-  .family-journey-boulder,
-  .family-journey-nyc,
-  .family-journey-pdx,
-  .family-journey-tbd {
-    min-height: 25rem;
+    @include media-breakpoint-up(lg) {
+      display: block;
+
+      .step {
+        display: block;
+        position: absolute;
+        top: 44%;
+        left: 42%;
+
+        i {
+          font-size: 5rem;
+        }
+
+        .fa-layers-text {
+          @include impact-font();
+
+          color: $purple-darkest;
+          padding: 0 0 0.3rem 1.2rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .journey-row {
+    padding: 1rem;
+
+    .journey-wrapper {
+      @include media-breakpoint-up(xs) {
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        background-color: rgba(4, 1, 5, $backdrop-opacity-light);
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 2rem;
+        background-color: rgba(4, 1, 5, $backdrop-opacity);
+      }
+
+      .step {
+        @include media-breakpoint-up(xs) {
+          display: block;
+          padding-top: 3rem;
+
+          .fa-layers-text {
+            @include impact-font();
+
+            color: $purple-darkest;
+            font-size: 1rem;
+            padding-bottom: 0.1rem;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          display: none;
+        }
+      }
+
+      .city {
+        @include media-breakpoint-up(xs) {
+          @include impact-font();
+
+          font-size: 2rem;
+          text-transform: capitalize;
+          padding-left: 0.3rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+          padding-left: 15px;
+        }
+      }
+    }
   }
 
   @import "family-journey-chicago";
@@ -18,4 +82,18 @@
   @import "family-journey-nyc";
   @import "family-journey-pdx";
   @import "family-journey-tbd";
+
+  .family-journey-chicago,
+  .family-journey-boulder,
+  .family-journey-nyc,
+  .family-journey-pdx,
+  .family-journey-tbd {
+    color: $white;
+    max-width: map-get($grid-breakpoints, "lg");
+
+    @include media-breakpoint-up(xs) {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }

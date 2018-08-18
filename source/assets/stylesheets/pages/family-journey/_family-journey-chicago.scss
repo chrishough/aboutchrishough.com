@@ -1,3 +1,21 @@
 .family-journey-chicago {
+  padding: 6rem 1rem 1rem 1rem;
 
+  @include media-breakpoint-up(xs) {
+    background: url('#{$image-path}/backgrounds/skyline-chicago.jpg');
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: none;
+  }
+
+  .skyline {
+    @include media-breakpoint-up(lg) {
+      background: url('#{$image-path}/backgrounds/skyline-chicago.jpg') 10% 15% no-repeat;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 20px solid rgba(4, 1, 5, $backdrop-opacity);
+    }
+  }
 }
