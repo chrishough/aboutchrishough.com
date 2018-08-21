@@ -6,6 +6,15 @@ export default () => {
   const $navDescriptionDefault = $('#navbar-description-default');
   const $navDescriptionDefaultIcon = $('#navbar-description-default-icon');
   const $navDescriptionSet = $('#navbar-description-set');
+  let $navDescriptionValue = '';
+
+  const setNavDescription = () => {
+    if ($('.navbar-nav > li').hasClass('active') === true) {
+      $navDescriptionValue = $('.navbar-nav > li.active').find('span').html();
+      $navDescriptionDefault.hide();
+      $navDescriptionSet.html($navDescriptionValue);
+    }
+  };
 
   Breakpoints.on('xs', {
     enter() {
@@ -40,6 +49,8 @@ export default () => {
 
   Breakpoints.on('sm md lg xl xxl xxxl', {
     enter() {
+      setNavDescription();
+
       $navItems.on({
         mouseenter: (element) => {
           $navDescriptionDefault.hide();
@@ -47,9 +58,13 @@ export default () => {
           $navDescriptionSet.fadeIn('fast');
         },
         mouseleave: () => {
-          $navDescriptionSet.hide();
-          $navDescriptionSet.html('');
-          $navDescriptionDefault.show();
+          if ($navDescriptionValue.trim().length === 0) {
+            $navDescriptionSet.hide();
+            $navDescriptionSet.html($navDescriptionValue);
+            $navDescriptionDefault.show();
+          } else {
+            $navDescriptionSet.html($navDescriptionValue);
+          }
         },
       });
     },
