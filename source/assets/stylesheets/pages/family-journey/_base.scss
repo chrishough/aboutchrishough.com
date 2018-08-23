@@ -95,5 +95,22 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
+    .rotate-location {
+      transform: rotate(360deg);
+      transition-duration: 5s;
+    }
+  }
+
+  .tooltip-inner {
+    @include secondary-font();
+
+    max-width: inherit;
+    padding: 1rem;
+    color: $white;
+    text-align: center;
+    background-color: $purple-darkest;
+    border-radius: 0;
+    font-size: 2rem;
   }
 }

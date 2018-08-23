@@ -1,12 +1,17 @@
 .personal-data-connect-wrapper-external {
-  @include media-breakpoint-up(md) {
-    background-color: rgba(4, 1, 5, $backdrop-opacity);
-    padding-bottom: 2rem;
+  // @include media-breakpoint-up(md) {
+  //   background-color: rgba(4, 1, 5, $backdrop-opacity);
+  //   padding-bottom: 2rem;
+  //   display: block;
+  //   visibility: visible;
+  // }
+
+  @include media-breakpoint-up(xs) {
     display: block;
     visibility: visible;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     display: none;
     visibility: hidden;
   }
@@ -22,10 +27,14 @@
     visibility: hidden;
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     padding-top: 1rem;
     display: block;
     visibility: visible;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 1rem;
   }
 }
 

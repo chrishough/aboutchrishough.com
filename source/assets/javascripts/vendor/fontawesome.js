@@ -20,6 +20,7 @@ import faFacebookF from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope';
+import faHandHoldingHeart from '@fortawesome/fontawesome-free-solid/faHandHoldingHeart';
 // This enables using FontAwesome in CSS pseudo elements
 // see: https://fontawesome.com/how-to-use/svg-with-js#pseudo-elements
 fontawesome.config.searchPseudoElements = true;
@@ -36,6 +37,7 @@ fontawesome.library.add(faAngleDoubleDown,
   faArrowCircleDown,
   faLinkedinIn,
   faQuestionCircle,
+  faHandHoldingHeart,
   faWrench,
   faInstagram,
   faTwitter,
