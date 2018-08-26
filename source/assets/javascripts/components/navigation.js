@@ -38,13 +38,11 @@ export default () => {
     $navbarToggler.attr('data-toggle', '');
     $navDescriptionDefaultIcon.html('');
     $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-down'>");
-    FontAwesome.dom.i2svg();
   });
 
   Breakpoints.on('lg xl xxl xxxl', 'enter', () => {
     $navDescriptionDefaultIcon.html('');
     $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-right'>");
-    FontAwesome.dom.i2svg();
   });
 
   Breakpoints.on('sm md lg xl xxl xxxl', {
