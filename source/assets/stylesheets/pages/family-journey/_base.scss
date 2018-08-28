@@ -10,18 +10,15 @@
       .step {
         display: block;
         position: absolute;
-        top: 44%;
-        left: 42%;
-
-        i {
-          font-size: 5rem;
-        }
+        top: 36%;
+        left: 36%;
+        font-size: 5rem;
 
         .fa-layers-text {
           @include impact-font();
 
           color: $purple-darkest;
-          padding: 0 0 0.6rem 1.2rem;
+          padding: 0 0 0.9rem 0;
           font-size: 2rem;
         }
       }
@@ -100,17 +97,5 @@
       transform: rotate(360deg);
       transition-duration: 5s;
     }
-  }
-
-  .tooltip-inner {
-    @include secondary-font();
-
-    max-width: inherit;
-    padding: 1rem;
-    color: $white;
-    text-align: center;
-    background-color: $purple-darkest;
-    border-radius: 0;
-    font-size: 2rem;
   }
 }

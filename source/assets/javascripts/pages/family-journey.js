@@ -1,5 +1,4 @@
 export default () => {
-  const $dataToggleToolTip = $('[data-toggle="tooltip"]');
   const $skyline = $('.skyline');
 
   $skyline.mouseenter(function () {
@@ -7,6 +6,4 @@ export default () => {
       $(this).removeClass('rotate-location').dequeue();
     });
   });
-
-  $dataToggleToolTip.tooltip();
 };

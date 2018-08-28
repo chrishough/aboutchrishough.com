@@ -10,7 +10,7 @@ export default () => {
 
   const setNavDescription = () => {
     if ($('.navbar-nav > li').hasClass('active') === true) {
-      $navDescriptionValue = $('.navbar-nav > li.active').find('span').html();
+      $navDescriptionValue = $('.navbar-nav > li.active').find('.nav-description').html();
       $navDescriptionDefault.hide();
       $navDescriptionSet.html($navDescriptionValue);
     }
@@ -52,7 +52,7 @@ export default () => {
       $navItems.on({
         mouseenter: (element) => {
           $navDescriptionDefault.hide();
-          $navDescriptionSet.html($(element.currentTarget).find('span').html());
+          $navDescriptionSet.html($(element.currentTarget).find('.nav-description').html());
           $navDescriptionSet.fadeIn('fast');
         },
         mouseleave: () => {
