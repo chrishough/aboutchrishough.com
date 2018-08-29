@@ -1,0 +1,40 @@
+.trait-container {
+  color: $white;
+
+  .focus-trait-wrapper,
+  .quality-trait-wrapper,
+  .empathy-trait-wrapper,
+  .summary-trait-wrapper {
+    background-color: rgba(4, 1, 5, $backdrop-opacity);
+
+    @include media-breakpoint-up(xs) {
+      margin-bottom: 2rem;
+    }
+
+    .row {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-top: 0.2rem $purple-medium-dark solid;
+      border-bottom: 0.2rem $purple-medium-dark solid;
+    }
+  }
+
+  .trait {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    div {
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      transform: rotate(180deg);
+      writing-mode: vertical-rl;
+    }
+  }
+
+  .explanation {
+    padding: 1rem;
+  }
+
+  @import "working-together-wrapper";
+}
