@@ -27,6 +27,7 @@
       "ignoreStrings": true,
       "ignoreTemplateLiterals": true
     }],
+    "func-names": ["error", "never"],
     "import/no-unresolved": ["error", {
       "ignore": [ "fontawesome", "breakpoints" ]
     }]

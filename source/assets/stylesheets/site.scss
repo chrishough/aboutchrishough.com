@@ -4,14 +4,13 @@
 @import "variables";
 @import "vendor/bootstrap";
 @import "vendor/google_fonts";
-@import "vendor/fontawesome";
 @import "mixins/*";
 @import "components/*";
 @import "pages/index/base";
 @import "pages/contact-me/base";
 @import "pages/family-journey/base";
+@import "pages/working-together/base";
 // TODO ----------------------------------------------------
 @import "pages/career-path";
 @import "pages/vision-and-passion";
-@import "pages/working-together";
 @import "pages/thoughts-on-paper";

@@ -10,7 +10,7 @@ export default () => {
 
   const setNavDescription = () => {
     if ($('.navbar-nav > li').hasClass('active') === true) {
-      $navDescriptionValue = $('.navbar-nav > li.active').find('span').html();
+      $navDescriptionValue = $('.navbar-nav > li.active').find('.nav-description').html();
       $navDescriptionDefault.hide();
       $navDescriptionSet.html($navDescriptionValue);
     }
@@ -38,13 +38,11 @@ export default () => {
     $navbarToggler.attr('data-toggle', '');
     $navDescriptionDefaultIcon.html('');
     $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-down'>");
-    FontAwesome.dom.i2svg();
   });
 
   Breakpoints.on('lg xl xxl xxxl', 'enter', () => {
     $navDescriptionDefaultIcon.html('');
     $navDescriptionDefaultIcon.append("<i class='fas fa-arrow-circle-right'>");
-    FontAwesome.dom.i2svg();
   });
 
   Breakpoints.on('sm md lg xl xxl xxxl', {
@@ -54,7 +52,7 @@ export default () => {
       $navItems.on({
         mouseenter: (element) => {
           $navDescriptionDefault.hide();
-          $navDescriptionSet.html($(element.currentTarget).find('span').html());
+          $navDescriptionSet.html($(element.currentTarget).find('.nav-description').html());
           $navDescriptionSet.fadeIn('fast');
         },
         mouseleave: () => {

@@ -1,6 +1,8 @@
 #working-together {
   .content-wrapper {
     padding-top: 6rem;
-    color: $black;
   }
+
+  @import "venn-container";
+  @import "trait-container";
 }
