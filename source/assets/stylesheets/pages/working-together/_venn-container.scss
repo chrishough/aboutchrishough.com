@@ -6,7 +6,7 @@
     margin-right: auto;
 
     @include media-breakpoint-up(xs) {
-      max-height: 400px;
+      max-height: 300px;
       height: 225px;
     }
 
@@ -16,11 +16,6 @@
 
     @include media-breakpoint-up(transition) {
       height: 300px;
-    }
-
-    @include media-breakpoint-up(sm) {
-      max-height: 500px;
-      height: 400px;
     }
   }
 }
