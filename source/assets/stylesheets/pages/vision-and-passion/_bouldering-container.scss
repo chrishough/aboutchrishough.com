@@ -15,7 +15,8 @@
     }
 
     @include media-breakpoint-up(transition) {
-      height: 300px;
+      max-height: 325px;
+      height: 325px;
     }
   }
 }
