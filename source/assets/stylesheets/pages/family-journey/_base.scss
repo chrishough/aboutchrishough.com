@@ -46,8 +46,6 @@
 
           .fa-layers-text {
             @include impact-font();
-
-            color: $purple-darkest;
             font-size: 1rem;
             padding-bottom: 0.1rem;
           }
@@ -74,12 +72,6 @@
     }
   }
 
-  @import "family-journey-chicago";
-  @import "family-journey-boulder";
-  @import "family-journey-nyc";
-  @import "family-journey-pdx";
-  @import "family-journey-tbd";
-
   .family-journey-chicago,
   .family-journey-boulder,
   .family-journey-nyc,
@@ -91,6 +83,10 @@
     @include media-breakpoint-up(xs) {
       background-size: cover;
       background-repeat: no-repeat;
+
+      .fa-layers-text {
+        color: $purple-darkest;
+      }
     }
 
     .rotate-location {
@@ -98,4 +94,10 @@
       transition-duration: 5s;
     }
   }
+
+  @import "family-journey-chicago";
+  @import "family-journey-boulder";
+  @import "family-journey-nyc";
+  @import "family-journey-pdx";
+  @import "family-journey-tbd";
 }

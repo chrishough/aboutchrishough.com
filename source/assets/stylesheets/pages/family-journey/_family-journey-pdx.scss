@@ -10,6 +10,15 @@
     background: none;
   }
 
+  .step,
+  .skyline {
+    color: $purple-medium-light; 
+
+    .fa-layers-text {
+      color: $white;
+    }
+  }
+
   .skyline {
     @include media-breakpoint-up(lg) {
       background: url('#{$image-path}/backgrounds/skyline-pdx.jpg') 57% 37% no-repeat;
@@ -17,11 +26,6 @@
       height: 300px;
       border-radius: 50%;
       border: 20px solid rgba(4, 1, 5, $backdrop-opacity);
-      color: $purple-medium-light;
-      
-      .fa-layers-text {
-        color: $white;
-      }
     }
   }
 }

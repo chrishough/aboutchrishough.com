@@ -251,12 +251,12 @@
 
     @include media-breakpoint-up(md) {
       margin: auto;
-      max-width: none;
+      max-width: map-get($grid-breakpoints, "lg");
       padding: 0;
     }
 
     @include media-breakpoint-up(xl) {
-      max-width: map-get($grid-breakpoints, "lg");
+      max-width: map-get($grid-breakpoints, "maximum");
     }
   }
 
