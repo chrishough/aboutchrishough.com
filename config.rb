@@ -26,9 +26,9 @@ ignore 'content/*'
 ignore 'rev-manifest.json'
 
 activate :blog do |blog|
-  blog.sources = 'articles/{year}-{month}-{day}-{title}.html'
-  blog.permalink = 'articles/{title}/index.html'
-  blog.layout = 'article'
+  blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
+  blog.permalink = 'thoughts-on-paper/{title}/index.html'
+  blog.layout = 'blog'
 end
 
 activate :deploy do |deploy|

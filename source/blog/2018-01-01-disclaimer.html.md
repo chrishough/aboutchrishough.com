@@ -1,20 +1,16 @@
 ---
-id: thoughts-on-paper
-layout: page
+title: Disclaimer
 ---
+
+Hello World
 
 p Thoughts on Paper
 
-|fa-dumbbell
-|fa-chess
 |fa-poo
 |fa-home
 |fa-globe
 |fa-coffee
 |fa-book
-|fa-handshake
 |fa-Pied-Piper-Alt
 |fa-fly
-|fa-wrench
-|fa-road
 |fa-heart

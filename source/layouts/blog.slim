@@ -1,0 +1,8 @@
+= partial "partials/layout/html" do
+  = partial "partials/layout/header"
+  = partial "partials/layout/body" do
+
+    main[class="container-fluid content-wrapper"]
+      == yield
+
+    = partial "partials/layout/components/javascript"
