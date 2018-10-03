@@ -12,15 +12,15 @@
     margin-right: auto;
 
     @include media-breakpoint-up(xs) {
-      max-height: 450px;
+      height: 450px;
     }
 
     @include media-breakpoint-up(sm) {
-      max-height: 500px;
+      height: 500px;
     }
 
-    @include media-breakpoint-up(xl) {
-      max-height: 750px;
+    @include media-breakpoint-up(md) {
+      height: 750px;
       margin-bottom: -8rem;
     }
   }
