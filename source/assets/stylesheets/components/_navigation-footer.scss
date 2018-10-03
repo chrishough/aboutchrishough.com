@@ -1,12 +1,29 @@
 .navbar {
   min-width: map-get($grid-breakpoints, 'minimium') !important;
   box-shadow: 0 0 0.5rem 0.25rem $purple-dark;
+  
+  @include primary-font();
 
   @include media-breakpoint-up(xs) {
     padding: 0.5rem 1rem;
   }
 
-  @include primary-font();
+  .container {
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+      max-width: inherit;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin: auto;
+      max-width: map-get($grid-breakpoints, "lg");
+      padding: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: map-get($grid-breakpoints, "maximum");
+    }
+  }
 
   .navbar-toggler {
     color: $white;
@@ -25,11 +42,11 @@
       outline: none;
 
       @include media-breakpoint-up(xs) {
-        padding: 0.5rem 1rem;
+        padding: 2rem 1.50rem;
       }
 
       @include media-breakpoint-up(transition) {
-        padding: 0.75rem 1.25rem;
+        padding: 1.25rem 1.5rem;
       }
 
       @include media-breakpoint-up(sm) {
@@ -40,16 +57,22 @@
     .navbar-title {
       color: $white;
 
-      @include primary-font();
-
       @include media-breakpoint-up(xs) {
         line-height: 2.5rem;
         font-size: 1rem;
+
+        .row {
+          line-height: 1.5rem;
+        }
       }
 
       @include media-breakpoint-up(transition) {
-        line-height: 3.2rem;
         font-size: 1.2rem;
+        
+        .row {
+          line-height: 1rem;
+          padding-bottom: 1rem;
+        }
       }
 
       @include media-breakpoint-up(lg) {
@@ -77,28 +100,6 @@
 
     .navbar-nav {
       border: none;
-
-      .active {
-        background-color: $purple-medium-light;
-        font-weight: bold;
-        color: $white;
-
-        @include media-breakpoint-up(xs) {
-          margin-bottom: -3px;
-        }
-
-        @include media-breakpoint-up(sm) {
-          box-shadow: 0 0 1rem 0 $purple-medium-dark;
-          margin-bottom: inherit;
-        }
-
-        @include media-breakpoint-up(lg) {
-          margin-top: -1rem;
-          border-radius: 1.5rem 1.5rem 0 0;
-          margin-bottom: -1rem;
-          padding-top: 1rem;
-        }
-      }
 
       li {
         @include media-breakpoint-up(xs) {
@@ -146,11 +147,9 @@
           @include media-breakpoint-up(sm) {
             margin-right: 0.5rem;
           }
-        }
 
-        @include media-breakpoint-up(sm) {
-          .nav-icon {
-            margin-right: 0;
+          @include media-breakpoint-up(sm) {
+            margin: 0;
           }
         }
 
@@ -205,6 +204,28 @@
           text-align: center;
         }
       }
+      
+      li.active {
+        background-color: $purple-medium-light;
+        font-weight: bold;
+        color: $white;
+
+        @include media-breakpoint-up(xs) {
+          margin-bottom: -3px;
+        }
+
+        @include media-breakpoint-up(sm) {
+          box-shadow: 0 0 1rem 0 $purple-medium-dark;
+          margin-bottom: inherit;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin-top: -1rem;
+          margin-bottom: -1rem;
+          border-radius: 1.5rem 1.5rem 0 0;
+          padding-top: 1rem;
+        }
+      }
 
       @include media-breakpoint-down(sm) {
         border-top: 0.15rem solid $purple-medium-dark;
@@ -243,23 +264,6 @@
     }
   }
 
-  .container {
-    @include media-breakpoint-up(sm) {
-      margin: 0;
-      max-width: inherit;
-    }
-
-    @include media-breakpoint-up(md) {
-      margin: auto;
-      max-width: map-get($grid-breakpoints, "lg");
-      padding: 0;
-    }
-
-    @include media-breakpoint-up(xl) {
-      max-width: map-get($grid-breakpoints, "maximum");
-    }
-  }
-
   .navbar-description-wrapper {
     color: $gray-100;
     text-align: right;
@@ -279,15 +283,11 @@
     @include media-breakpoint-up(sm) {
       display: block;
       font-size: 1rem;
-      line-height: 3.8rem;
-      min-height: 3.8rem;
     }
 
     @include media-breakpoint-up(lg) {
       font-size: 0.75rem;
       padding-top: 0.5rem;
-      line-height: 1.5rem;
-      min-height: 2rem;
 
       .fa-arrow-circle-down {
         display: none;
@@ -299,6 +299,36 @@
     }
   }
 
+  .navbar-company-wrapper {
+    color: $gray-100;
+    text-align: right;
+    font-size: 0.75rem;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    .navbar-company-copyright {
+      font-size: 0.7rem;
+    }
+
+    .navbar-company-disclaimer {
+      border-left: 1px $white solid;
+      padding-left: 6px;
+      margin-left: 3px;
+    }
+
+    @include media-breakpoint-up(xs) {
+      text-align: left;
+      padding-top: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+      text-align: right;
+      padding-top: 0.7rem;
+    }
+  }
   @include media-breakpoint-up(md) {
     .navbar-toggler,
     .navbar-nav {

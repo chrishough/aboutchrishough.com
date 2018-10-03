@@ -1,4 +1,8 @@
 #family-journey {
+  .content-wrapper {
+    padding: 0;
+  }
+  
   .skyline {
     @include media-breakpoint-up(xs) {
       display: none;

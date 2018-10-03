@@ -1,5 +1,6 @@
 ---
 title: Disclaimer
+slug: disclaimer
 ---
 
 Hello World
@@ -11,6 +12,5 @@ p Thoughts on Paper
 |fa-globe
 |fa-coffee
 |fa-book
-|fa-Pied-Piper-Alt
 |fa-fly
 |fa-heart

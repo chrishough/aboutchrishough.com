@@ -13,6 +13,7 @@ export default () => {
       $navDescriptionValue = $('.navbar-nav > li.active').find('.nav-description').html();
       $navDescriptionDefault.hide();
       $navDescriptionSet.html($navDescriptionValue);
+      $navDescriptionSet.append("&nbsp;<i class='fab fa-pied-piper-alt'>");
     }
   };
 
@@ -53,6 +54,7 @@ export default () => {
         mouseenter: (element) => {
           $navDescriptionDefault.hide();
           $navDescriptionSet.html($(element.currentTarget).find('.nav-description').html());
+          $navDescriptionSet.append("&nbsp;<i class='fab fa-pied-piper-alt'>");
           $navDescriptionSet.fadeIn('fast');
         },
         mouseleave: () => {
@@ -62,6 +64,7 @@ export default () => {
             $navDescriptionDefault.show();
           } else {
             $navDescriptionSet.html($navDescriptionValue);
+            $navDescriptionSet.append("&nbsp;<i class='fab fa-pied-piper-alt'>");
           }
         },
       });
