@@ -1,8 +1,16 @@
 #career-path {
+  @import "../../components/breadcrumbs";
+
+  .breadcrumbs {
+    .row {
+      max-width: map-get($grid-breakpoints, "xl");
+    }
+  }
+
   .content-wrapper {
     padding-top: 10rem;
-    color: $white;
   }
 
   @import "trait-container";
+  @import "embed-wrapper";
 }

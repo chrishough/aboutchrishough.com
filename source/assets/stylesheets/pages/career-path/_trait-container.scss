@@ -1,3 +1,19 @@
-.trait-container {
-  @import "embed-wrapper";
+.career-section {
+  background-color: rgba(4, 1, 5, $backdrop-opacity);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+
+  .career-header {
+    background-color: $white;
+
+    .career-header-title {
+      text-transform: capitalize;
+      color: $black;
+    }
+
+    img {
+      height: 40px;
+    }
+  }
 }

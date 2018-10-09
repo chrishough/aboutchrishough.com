@@ -1,4 +1,12 @@
 #family-journey {
+  @import "../../components/breadcrumbs";
+
+  .breadcrumbs {
+    .row {
+      max-width: map-get($grid-breakpoints, "lg");
+    }
+  }
+
   .content-wrapper {
     padding: 0;
   }
@@ -30,7 +38,17 @@
   }
 
   .journey-row {
-    padding: 1rem;
+    @include media-breakpoint-up(xs) {
+      padding: 1rem 2rem 1rem 1rem;
+      background-color: inherit;
+      margin-left: inherit;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 1rem;
+      background-color: rgba(4, 1, 5, $backdrop-opacity);
+      margin-left: 0.5rem;
+    }
 
     .journey-wrapper {
       @include media-breakpoint-up(xs) {
@@ -39,8 +57,8 @@
       }
 
       @include media-breakpoint-up(lg) {
-        padding: 2rem;
-        background-color: rgba(4, 1, 5, $backdrop-opacity);
+        border: 0.2rem $purple-medium-dark solid;
+        padding: 1rem;
       }
 
       .step {
@@ -50,6 +68,7 @@
 
           .fa-layers-text {
             @include impact-font();
+
             font-size: 1rem;
             padding-bottom: 0.1rem;
           }
@@ -104,4 +123,5 @@
   @import "family-journey-nyc";
   @import "family-journey-pdx";
   @import "family-journey-tbd";
+  @import "family-journey-chicago";
 }
