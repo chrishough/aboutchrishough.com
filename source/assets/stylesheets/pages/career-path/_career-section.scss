@@ -1,0 +1,33 @@
+.career-section {
+  background-color: rgba(4, 1, 5, $backdrop-opacity);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+
+  .career-header {
+    background-color: $white;
+    padding: 1rem;
+
+    .career-header-title {
+      text-transform: uppercase;
+      color: $purple-darkest;
+      padding-left: 1rem;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .career-icon {
+      img {
+        height: 40px;
+      }
+    }
+  }
+
+  .career-category {
+    padding: 1rem 0 1rem 0;
+
+    .explanation {
+
+    }
+  }
+}
