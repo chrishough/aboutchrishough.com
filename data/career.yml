@@ -1,0 +1,56 @@
+conferences:
+  -
+    id: 1
+    title: Rails Conference
+    dates: April 29th - May 2nd, 2013
+    location: Portland, Oregon
+    link: https://railsconf.org/
+  -
+    id: 2
+    title: jQuery Conference
+    dates: June 13th - 14th, 2013
+    location: Portland, Oregon
+  -
+    id: 3
+    title: Cascadia Ruby
+    dates: October 21st - 22nd, 2013
+    location: Portland, Oregon
+  -
+    id: 4
+    title: Ruby on Ales 
+    dates: March 6th – 7th, 2014
+    location: Bend, Oregon
+  -
+    id: 5
+    title: Rails Conference
+    dates: April 22nd - 25th, 2014
+    location: Chicago, Illinois
+    link: https://railsconf.org/
+  -
+    id: 6
+    title: Ruby on Ales 
+    dates: March 5th – 6th, 2015
+    location: Bend, Oregon
+  -
+    id: 7 
+    title: Rails Conference
+    dates: April 25th - 27th, 2017
+    location: Phoenix, Arizona
+    link: https://railsconf.org/
+  -
+    id: 8
+    title: Ruby Conference
+    dates: November 13th - 15th, 2018
+    location: Los Angeles, California
+    link: https://rubyconf.org/
+  -
+    id: 9
+    title: Rails Conference
+    dates: April 30th - May 2nd, 2019
+    location: Minneapolis, Minnesota
+    link: https://railsconf.org/
+
+
+
+
+

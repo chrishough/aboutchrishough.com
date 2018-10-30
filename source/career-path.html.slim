@@ -74,70 +74,18 @@ div[class="container-fluid career-section"]
               |conferences
           div[class="career-category"]
             div[class="col-12 explanation"]
-              table
-                tr
-                  td
-                    = link_to('Rails Conference', 'https://railsconf.org/', target: :_blank) 
-                  td
-                    |April 30th - May 2nd, 2019
-                  td
-                    |Minneapolis, Minnesota
-                tr
-                  td
-                    = link_to('Ruby Conference', 'https://rubyconf.org/', target: :_blank) 
-                  td
-                    |November 13th - 15th, 2018
-                  td
-                    |Los Angeles, California
-                tr
-                  td
-                    = link_to('Rails Conference', 'https://railsconf.org/', target: :_blank) 
-                  td
-                    |April 25th - 27th, 2017
-                  td
-                    |Phoenix, Arizona
-                tr
-                  td
-                    |Ruby on Ales 
-                  td
-                    |March 5th – 6th, 2015
-                  td
-                    |Bend, Oregon
-                tr
-                  td
-                    = link_to('Rails Conference', 'https://railsconf.org/', target: :_blank) 
-                  td
-                    |April 22nd - 25th, 2014
-                  td
-                    |Chicago, Illinois
-                tr
-                  td
-                    |Ruby on Ales 
-                  td
-                    |March 6th – 7th, 2014
-                  td
-                    |Bend, Oregon
-                tr
-                  td
-                    |Cascadia Ruby
-                  td
-                    |October 21st - 22nd, 2013
-                  td
-                    |Portland, Oregon
-                tr
-                  td
-                    |jQuery Conference
-                  td
-                    |June 13th - 14th, 2013
-                  td
-                    |Portland, Oregon
-                tr
-                  td
-                    = link_to('Rails Conference', 'https://railsconf.org/', target: :_blank) 
-                  td
-                    |April 29th - May 2nd, 2013
-                  td
-                    |Portland, Oregon
+              ul[class="career-category-conferences"]
+                - data.career.conferences.sort_by { |k| k["id"] }.reverse.each do |conference|
+                  li
+                    span[class="conferences-title"]
+                      - if conference.link
+                        = link_to(conference.title, conference.link, target: :_blank) 
+                      - else
+                        = conference.title
+                    span[class="conferences-dates"]
+                      = conference.dates
+                    span[class="conferences-location"]
+                      = conference.location
 
 div[class="container-fluid"]
   div[class="row"]
