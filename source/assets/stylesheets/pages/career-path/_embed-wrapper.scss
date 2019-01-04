@@ -1,5 +1,6 @@
 .career-path-embed-wrapper {
   @include media-breakpoint-up(xs) {
+    padding-top: 1rem;
     padding-bottom: 0;
   }
 
@@ -9,7 +10,6 @@
   }
 
   @include media-breakpoint-up(lg) {
-    padding-top: 9rem;
     padding-bottom: 1rem;
   }
 

@@ -1,9 +1,22 @@
 .career-section {
-  max-width: map-get($grid-breakpoints, 'xl') !important;
-  background-color: rgba(4, 1, 5, $backdrop-opacity);
+  max-width: map-get($grid-breakpoints, 'xl') !important;  
   padding-top: 0;
   padding-bottom: 0.5rem;
   border: none;
+
+  a {
+    font-style: normal;
+    color: $purple-lightest;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .career-section-education,
+  .career-section-conferences {
+    background-color: rgba(4, 1, 5, $backdrop-opacity);
+  }
 
   .career-header {
     background: url('#{$image-path}/backgrounds/subtle-patterns-dust-scratches.png') repeat-x;
@@ -29,13 +42,13 @@
     padding: 1rem 0 1rem 0;
 
     .explanation {
-      a {
-        font-style: normal;
-        color: $purple-lightest;
-
-        &:hover {
-          text-decoration: underline;
-        }
+      .fa-brain,
+      .fa-exclamation,
+      .fa-map-marker-alt,
+      .fa-calendar-alt,
+      .fa-coffee {
+        margin-right: 0.2rem;
+        font-size: 0.5rem;
       }
 
       .conferences-title,
@@ -43,14 +56,71 @@
       .conferences-location {
         text-transform: capitalize;
       }
+      
+      .education-school,
+      .conferences-title {
+        font-size: 0.9rem;
+      } 
+
+      .education-program,
+      .education-location,
+      .education-completed,
+      .education-clubs,
+      .conferences-dates,
+      .conferences-location {
+        font-size: 0.8rem;
+      }
+
+      .education-logo,
+      .conferences-logo {
+        line-height: 1rem;
+        max-width: 1rem;
+        
+        .fa-exclamation {
+          margin-left: 0.05rem;
+        }
+
+        .fa-coffee {
+          margin-left: -0.25rem;
+        }
+      }
+
+      .career-category-conferences-wrapper,
+      .career-category-education-wrapper {
+        padding: 0;
+      }
 
       @include media-breakpoint-up(xs) {
+        .career-category-education:not(:last-child),
         .career-category-conferences:not(:last-child) {
           border-bottom: 0.05rem $white dotted;
           padding-bottom: 1rem;
           margin-bottom: 1rem;
         }
       }
+    }
+  }
+
+  .career-category-lets-connect {
+    @include impact-font();
+
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      text-decoration: overline;
+    }
+    
+    .fa-mug-hot {
+      margin-left: 1.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    .career-section-education {
+      margin-bottom: 1rem;
     }
   }
 }

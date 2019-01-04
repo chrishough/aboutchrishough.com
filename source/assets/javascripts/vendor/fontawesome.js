@@ -25,9 +25,12 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
 import { faBook } from '@fortawesome/free-solid-svg-icons/faBook';
 import { faHandshake } from '@fortawesome/free-solid-svg-icons/faHandshake';
 import { faWrench } from '@fortawesome/free-solid-svg-icons/faWrench';
+import { faExclamation } from '@fortawesome/free-solid-svg-icons/faExclamation';
+import { faMugHot } from '@fortawesome/free-solid-svg-icons/faMugHot';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
@@ -35,6 +38,7 @@ import { faPiedPiperAlt } from '@fortawesome/free-brands-svg-icons/faPiedPiperAl
 import { faFly } from '@fortawesome/free-brands-svg-icons/faFly';
 
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons/faCalendarAlt';
 
 library.add(faAngleDoubleDown,
   faAngleDoubleUp,
@@ -52,6 +56,8 @@ library.add(faAngleDoubleDown,
   faHandHoldingHeart,
   faMicroscope,
   faBrain,
+  faMugHot,
+  faExclamation,
   faDumbbell,
   faChess,
   faPoo,
@@ -63,11 +69,13 @@ library.add(faAngleDoubleDown,
   faWrench,
   faTwitter,
   faLinkedinIn,
+  faLinkedin,
   faFacebookF,
   faInstagram,
   faGithub,
   faPiedPiperAlt,
   faFly,
+  faCalendarAlt,
   faEnvelope);
 
 dom.watch();
