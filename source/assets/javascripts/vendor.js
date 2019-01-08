@@ -7,4 +7,3 @@ require('bootstrap');
 require('fontawesome');
 require('breakpoints');
 require('validation');
-

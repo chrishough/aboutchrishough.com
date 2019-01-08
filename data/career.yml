@@ -31,6 +31,36 @@ education:
     clubs: Computer Club, Investment Club
     link: http://www.ic.edu/
 
+community:
+  -
+    id: 1
+    title: Founder
+    meetup: Full Stack PDX Meetup
+    dates: January 2017 - Present
+    location: Portland, Oregon
+    link: https://twitter.com/fullstackpdx
+  -
+    id: 2
+    title: Mentor
+    meetup: Mentorship Saturdays PDX Meetup
+    dates: November 2016 - Present
+    location: Portland, Oregon
+    link: https://www.meetup.com/Mentorship-Saturdays/
+  -
+    id: 3
+    title: Mentor
+    meetup: Operation Code
+    dates: November 2016 - December 2017
+    location: Portland, Oregon
+    link: https://operationcode.org/
+  -
+    id: 4
+    title: Founder
+    meetup: Ruby on Rails PDX Meetup
+    dates: January 2016 - December 2016
+    location: Portland, Oregon
+    link: https://twitter.com/rubyonrailspdx
+
 conferences:
   -
     id: 1

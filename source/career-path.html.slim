@@ -51,13 +51,38 @@ div[class="container-fluid career-section"]
                         div[class="col-11 education-clubs"]
                           = school.clubs
 
-      div[class="d-none d-md-block row"]
-        div[class="col-12 career-category-lets-connect"]
-          span
-            |Let's Connect!
-          = link_to(data.social.linkedin, target: :_blank) do
-            i[class="fas fa-mug-hot"]
-    
+    div[class="col-12 col-md-6"]
+      div[class="row career-section-community"]
+        div[class="col-12"]
+          div[class="row d-flex flex-row career-header"]
+            div[class="career-icon"]
+              img[src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/oss.svg"]
+            div[class="career-header-title"]
+              |community
+          div[class="career-category"]
+            div[class="col-12 mx-auto explanation"]  
+              - data.career.community.sort_by { |k| k["id"] }.each do |community|
+                div[class="row career-category-community"]
+                  div[class="col-12 career-category-community-wrapper"]
+                    div[class="row"]
+                      div[class="col-12 community-meetup"]
+                        = link_to(community.meetup, community.link, target: :_blank)
+                    div[class="row no-gutters"]
+                      div[class="col-1 community-logo"]
+                        i[class="fas fa-brain"]
+                      div[class="col-11 community-title"]
+                        = community.title
+                    div[class="row no-gutters"]
+                      div[class="col-1 community-logo"]
+                        i[class="fas fa-map-marker-alt"]
+                      div[class="col-11 community-location"]
+                        = community.location
+                    div[class="row no-gutters"]
+                      div[class="col-1 community-logo"]
+                        i[class="fas fa-exclamation"]
+                      div[class="col-11 community-dates"]                    
+                        = community.dates
+
     div[class="d-none d-md-block col-md-1 career-section-spacer"]
 
     div[class="col-12 col-md-5"]
@@ -90,9 +115,15 @@ div[class="container-fluid career-section"]
                         div[class="col-11 conferences-location"]
                           = conference.location
 
+    div[class="col-12"]
+      div[class="row"]
+        div[class="col-12 career-category-lets-connect"]
+          span
+            |Let's Connect!
+          = link_to(data.social.linkedin, target: :_blank) do
+            i[class="fas fa-mug-hot"]
 
 div[class="container-fluid"]
   div[class="row"]
     div[class="col-12 d-flex align-contents-center career-path-embed-wrapper"]
       embed[src="#{image_path('backgrounds/career-path.svg')}"]
-
