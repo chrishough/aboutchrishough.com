@@ -9,9 +9,9 @@ ruby:
   current_page.data.meta = data.career.executive_summary
 
 div[class="container-fluid career-section"]
-  div[class="row no-gutters"]
-    div[class="col-12 col-md-6"]
-      div[class="row career-section-education"]
+  div[class="card-columns"]
+    div[class="card career-section-education"]
+      div[class="row"]
         div[class="col-12"]
           div[class="row d-flex flex-row career-header"]
             div[class="career-icon"]
@@ -51,8 +51,8 @@ div[class="container-fluid career-section"]
                         div[class="col-11 education-clubs"]
                           = school.clubs
 
-    div[class="col-12 col-md-6"]
-      div[class="row career-section-community"]
+    div[class="card career-section-community"]
+      div[class="row"]
         div[class="col-12"]
           div[class="row d-flex flex-row career-header"]
             div[class="career-icon"]
@@ -83,10 +83,8 @@ div[class="container-fluid career-section"]
                       div[class="col-11 community-dates"]                    
                         = community.dates
 
-    div[class="d-none d-md-block col-md-1 career-section-spacer"]
-
-    div[class="col-12 col-md-5"]
-      div[class="row career-section-conferences"]
+    div[class="card career-section-conferences"]
+      div[class="row"]
         div[class="col-12"]
           div[class="row d-flex flex-row career-header"]
             div[class="career-icon"]
@@ -115,9 +113,9 @@ div[class="container-fluid career-section"]
                         div[class="col-11 conferences-location"]
                           = conference.location
 
-    div[class="col-12"]
+    div[class="card career-category-lets-connect"]
       div[class="row"]
-        div[class="col-12 career-category-lets-connect"]
+        div[class="col-12"]
           span
             |Let's Connect!
           = link_to(data.social.linkedin, target: :_blank) do
