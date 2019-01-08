@@ -16,7 +16,9 @@
   .career-section-education,
   .career-section-conferences,
   .career-section-community {
-    background-color: rgba(4, 1, 5, $backdrop-opacity);
+    .row:first-child {
+      background-color: rgba(4, 1, 5, $backdrop-opacity);
+    }
   }
 
   .career-header {
@@ -110,9 +112,9 @@
 
   .career-category-lets-connect {
     @include impact-font();
+
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem;
 
     span {
       text-decoration: overline;
@@ -139,10 +141,26 @@
     }
   }
 
-  @include media-breakpoint-up(xs) {
-    .career-section-education,
-    .career-section-community {
-      margin-bottom: 2rem;
+  .card-columns {
+    column-count: 1;
+
+    .card {
+      background: none;
+      margin-bottom: 1rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      column-count: 2;
+
+      .career-section-education,
+      .career-section-community {
+        padding-right: 1rem;
+      }
+
+      .career-section-conferences,
+      .career-category-lets-connect {
+        padding-left: 1rem;
+      }
     }
   }
 }
