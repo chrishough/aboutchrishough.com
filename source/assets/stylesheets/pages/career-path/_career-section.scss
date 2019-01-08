@@ -13,12 +13,11 @@
     }
   }
 
-  .career-section-education,
-  .career-section-conferences,
-  .career-section-community {
-    .row:first-child {
-      background-color: rgba(4, 1, 5, $backdrop-opacity);
-    }
+  .career-section-experiences,
+  .career-section-education > .row:first-child,
+  .career-section-conferences > .row:first-child,
+  .career-section-community > .row:first-child {
+    background-color: rgba(4, 1, 5, $backdrop-opacity);
   }
 
   .career-header {
@@ -108,6 +107,10 @@
         }
       }
     }
+  }
+
+  .career-section-experiences { 
+    margin-bottom: 1rem;
   }
 
   .career-category-lets-connect {
