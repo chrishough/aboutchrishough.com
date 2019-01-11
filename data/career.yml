@@ -133,9 +133,18 @@ experiences:
         - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
       learnings: Ruby, Ruby on Rails Framework, Ruby on Rails Engines, Que, PostgreSQL, MongoDB, Rubocop, Rspec, EmberJS, Business Development, Full Time Pair Programming, OSS Developer Engagement
       accomplishments: 
-        - "<a href='https://www.q-centrix.com/' target='_blank'>Q-Centrix Medical Services</a> - Replaced Delayed_job with Que resulting in each of the engines using the same backend job processor and bringing them one step closer to removing MongoDB. Pair programmed a detailed patient measure logic report via a complex recursive json endpoint and Ember frontend. "
-        - "<a href='http://www.reviewed.com' target='_blank'>Reviewed.com</a> - Bootstrap style adjustments affecting their responsive layout to meet new design comps. Updated the Amazon Product API advertisement blocks to filter products sold by Amazon reducing the chances of bad storefront data displaying to customers."
-        - "<a href='https://referral.codingzeal.com/' target='_blank'>Zeal Referral Program</a> - Refactored the platform out of a combination of web flow and materialized CSS into Bootstrap CSS providing customers with a consistent and elegant UI/UX."
+        - 
+          title: Q-Centrix Medical Services
+          link: https://www.q-centrix.com/
+          accomplishments: Replaced Delayed_job with Que resulting in each of the engines using the same backend job processor and bringing them one step closer to removing MongoDB. Pair programmed a detailed patient measure logic report via a complex recursive json endpoint and Ember frontend. 
+        - 
+          title: Reviewed.com
+          link: http://www.reviewed.com
+          accomplishments: Bootstrap style adjustments affecting their responsive layout to meet new design comps. Updated the Amazon Product API advertisement blocks to filter products sold by Amazon reducing the chances of bad storefront data displaying to customers.
+        - 
+          title: Zeal Referral Program
+          link: https://referral.codingzeal.com/'
+          accomplishments: Refactored the platform out of a combination of web flow and materialized CSS into Bootstrap CSS providing customers with a consistent and elegant UI/UX.
     -
       id: 7
       company: Weaveup
