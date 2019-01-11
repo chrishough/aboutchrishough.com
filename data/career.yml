@@ -6,88 +6,86 @@ experiences:
       id: 1
 
   ten-ninety-nine:
-    -
-      id: 1
-      company: RobotsBuildingRobots, LLC
-      link: http://robotsbuildingrobots.com/
-      position: Founder & Senior Full Stack Engineer
-      dates: January 2016 – Present
-      location: Work Remote from Portland, Oregon  
-      technologies:
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/redis.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/resque.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sidekiq.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/aws.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jquery.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/heroku.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sendgrid.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sentry.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/newrelic.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/bootstrap.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/meetup.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/clubhouse.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/gitlab.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/google.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/harvest.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/pivotaltracker.png
-        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/vscode.png
-      learnings: Ruby, Ruby on Rails, PostgreSQL, Rspec, Amazon Web Services, Heroku, GitHub, Microservices, Service Orientated Architectures, Product Development, Culture of Learning, Mentorship, The Lean Startup, Remote Culture, High Quality Focused Engineeering
-      accomplishments: 
-        - 
-          company: BilingualHire
-          link: http://www.bilingualhire.co
-          title: Senior Full Stack Engineer
-          dates: January 2016 – May 2016
-          accomplishments:
-            - A short engagement helping a close friend and colleague reengineer an MVP focused on placing bilingual candidates across the United States.
-            - Reduced user sign up workflow frustrations by simplifying content creation from launch to point of sale.  This included retooling every user interface and adjusting the data model to support many new language types.  
-        - 
-          company: Gathrly
-          link: https://gathrly.com
-          title: Engineering Team Lead & CTO
-          dates: January 2017 – December 2017
-          accomplishments:
-            - Setup the Agile Scrum Process utilizing Zenhub, mentoring a team of junior engineers and designers, and founder technical planning.
-            - Designed, Engineered, and Process Managed the Smartforms Lead Management MVP application utilized by top tier brewers in Oregon and California including Hopworks, Full Sail, Funhouse, and more.
-            - Engineered an ETL application to import data from the Meetup.com and Eventbright APIs.
-        - 
-          company: Cat on the Couch Productions
-          link: http://catonthecouch.com
-          title: Senior Consultant
-          dates: March 2018 – March 2018
-          accomplishments:
-            - Due to not having any ruby resources in house, was hired to restore a client site built via the middleman project, and transition hosting to github pages for client review.
-        - 
-          company: Chairseven
-          link: http://www.chairseven.com
-          title: Senior Full Stack Engineer & Mentor
-          dates: March 2018 – April 2018
-          accomplishments:
-            - Design and architected an interactive delivery platform via Middleman, Webpack, and JavaScript to serve over 300 interactives for the global publisher W.W. Norton and Company.  This included design cutup, ruby CI processing and architecture, and hiring additional engineers for the project. Each interactive was required to follow ARIA guidelines and scale responsively. 
-            - Setup the GitFlow Process, code reviews, quality guidelines, workflow management via Kanban via GitLab boards, and hired two junior engineers to continue the architecture process to completion.  This required setting up a strict process flow, call it an engine, that could work asynchronously across multiple timezones both inside and outside the continental U.S.  
-        - 
-          company: Crowd OX
-          link: https://www.crowdox.com
-          title: Senior Full Stack Engineer
-          dates: March 2018 – November 2018
-          accomplishments:
-            - Built out numorous features for the platform across three different ruby on rails engines.  This included a complete rewrite of the Partner application testing suite porting it from Minitest to the latest version of Rspec while maintaining testing coverage metrics.
-        - 
-          id: 6
-          company: Coding Zeal
-          link: https://www.codingzeal.com/
-          title: Senior Full Stack Engineer
-          dates: October 2018 – Present
-          accomplishments: 
-            - A key contributor to the Reviewed website, part of the USA Today network. Features and bugfixes applied to the platform, backend content management system, content creation interfaces, and architecture. 
-            
+    company: RobotsBuildingRobots, LLC
+    link: http://robotsbuildingrobots.com/
+    position: Founder & Senior Full Stack Engineer
+    dates: January 2016 – Present
+    location: Work Remote from Portland, Oregon  
+    technologies:
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/redis.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/resque.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sidekiq.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/aws.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jquery.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/heroku.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sendgrid.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sentry.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/newrelic.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/bootstrap.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/meetup.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/clubhouse.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/gitlab.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/google.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/harvest.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/pivotaltracker.png
+      - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/vscode.png
+    learnings: Ruby, Ruby on Rails, PostgreSQL, Rspec, Amazon Web Services, Heroku, GitHub, Microservices, Service Orientated Architectures, Product Development, Culture of Learning, Mentorship, The Lean Startup, Remote Culture, High Quality Focused Engineeering
+    accomplishments: 
+      - 
+        company: BilingualHire
+        link: http://www.bilingualhire.co
+        title: Senior Full Stack Engineer
+        dates: January 2016 – May 2016
+        accomplishments:
+          - A short engagement helping a close friend and colleague reengineer an MVP focused on placing bilingual candidates across the United States.
+          - Reduced user sign up workflow frustrations by simplifying content creation from launch to point of sale.  This included retooling every user interface and adjusting the data model to support many new language types.  
+      - 
+        company: Gathrly
+        link: https://gathrly.com
+        title: Engineering Team Lead & CTO
+        dates: January 2017 – December 2017
+        accomplishments:
+          - Setup the Agile Scrum Process utilizing Zenhub, mentoring a team of junior engineers and designers, and founder technical planning.
+          - Designed, Engineered, and Process Managed the Smartforms Lead Management MVP application utilized by top tier brewers in Oregon and California including Hopworks, Full Sail, Funhouse, and more.
+          - Engineered an ETL application to import data from the Meetup.com and Eventbright APIs.
+      - 
+        company: Cat on the Couch Productions
+        link: http://catonthecouch.com
+        title: Senior Consultant
+        dates: March 2018 – March 2018
+        accomplishments:
+          - Due to not having any ruby resources in house, was hired to restore a client site built via the middleman project, and transition hosting to github pages for client review.
+      - 
+        company: Chairseven
+        link: http://www.chairseven.com
+        title: Senior Full Stack Engineer & Mentor
+        dates: March 2018 – April 2018
+        accomplishments:
+          - Design and architected an interactive delivery platform via Middleman, Webpack, and JavaScript to serve over 300 interactives for the global publisher W.W. Norton and Company.  This included design cutup, ruby CI processing and architecture, and hiring additional engineers for the project. Each interactive was required to follow ARIA guidelines and scale responsively. 
+          - Setup the GitFlow Process, code reviews, quality guidelines, workflow management via Kanban via GitLab boards, and hired two junior engineers to continue the architecture process to completion.  This required setting up a strict process flow, call it an engine, that could work asynchronously across multiple timezones both inside and outside the continental U.S.  
+      - 
+        company: Crowd OX
+        link: https://www.crowdox.com
+        title: Senior Full Stack Engineer
+        dates: March 2018 – November 2018
+        accomplishments:
+          - Built out numorous features for the platform across three different ruby on rails engines.  This included a complete rewrite of the Partner application testing suite porting it from Minitest to the latest version of Rspec while maintaining testing coverage metrics.
+      - 
+        id: 6
+        company: Coding Zeal
+        link: https://www.codingzeal.com/
+        title: Senior Full Stack Engineer
+        dates: October 2018 – Present
+        accomplishments: 
+          - A key contributor to the Reviewed website, part of the USA Today network. Features and bugfixes applied to the platform, backend content management system, content creation interfaces, and architecture. 
+
   w-two:
     -
       id: 1
