@@ -61,7 +61,7 @@ div[class="container-fluid career-section"]
                       div[class="row no-gutters experience-learnings"]
                         blockquote
                           = w_two.learnings
-                    div[class="row no-gutters experience-accomplishments"]
+                    div[class="row no-gutters experience-w-two-accomplishments"]
                       ul
                         - w_two.accomplishments.each do |w_two_accomplishment|
                           li
@@ -82,10 +82,61 @@ div[class="container-fluid career-section"]
                           = w_two.accolades
 
             div[class="tab-pane" id="ten-ninety-nine" role="tabpanel" aria-labelledby="ten-ninety-nine-tab"]
-              |1099
-              - data.career.experiences['ten-ninety-nine'].sort_by { |k| k["id"] }.reverse.each do |ten_ninety_nine|
+              ruby:
+                ten_ninety_nine = data.career.experiences['ten-ninety-nine']
 
-
+              div[class="row career-category-experiences"]
+                div[class="col-12"]
+                  div[class="row"]
+                    div[class="col-12 experience-company"]
+                      = link_to(ten_ninety_nine.company, ten_ninety_nine.link, target: :_blank)
+                  div[class="row no-gutters"]
+                    div[class="col-1 experience-logo"]
+                      i[class="fab fa-pied-piper-alt"]
+                    div[class="col-11 experience-position"]
+                      = ten_ninety_nine.position
+                  div[class="row no-gutters"]
+                    div[class="col-1 experience-logo"]
+                      i[class="far fa-calendar-alt"]
+                    div[class="col-11 experience-dates"]
+                      = ten_ninety_nine.dates
+                  div[class="row no-gutters"]
+                    div[class="col-1 experience-logo"]
+                      i[class="fas fa-map-marker-alt"]
+                    div[class="col-11 experience-location"]
+                      = ten_ninety_nine.location
+                  div[class="row no-gutters experience-technologies"]
+                    - ten_ninety_nine.technologies.each do |ten_ninety_nine_technology|
+                      div
+                        img[src="#{ten_ninety_nine_technology}"]
+                  div[class="row no-gutters experience-learnings"]
+                    blockquote
+                      = ten_ninety_nine.learnings
+                  div[class="row no-gutters experience-w-ten-ninety-nine-accomplishments"]
+                    - ten_ninety_nine.roles.sort_by { |k| k["id"] }.reverse.each do |ten_ninety_nine_role|
+                      div[class="col-12"]
+                        div[class="row no-gutters"]
+                          div[class="col-1 experience-logo"]
+                            i[class="fas fa-exclamation"]
+                          div[class="col-11 experience-dates"]      
+                            strong
+                              = ten_ninety_nine_role.title
+                            =>
+                            |with
+                            =>
+                            = link_to(ten_ninety_nine_role.company, ten_ninety_nine_role.link, target: :_blank)
+                      div[class="col-12"]
+                        div[class="row no-gutters"]
+                          div[class="col-1 experience-logo"]
+                            i[class="far fa-calendar-alt"]
+                          div[class="col-11 experience-dates"]
+                            = ten_ninety_nine_role.dates
+                      div[class="col-12"]
+                        ul
+                          - ten_ninety_nine_role.accomplishments.each do |ten_ninety_nine_role_accomplishment|
+                            li 
+                              = ten_ninety_nine_role_accomplishment
+ 
 
 
 
@@ -131,7 +182,7 @@ div[class="container-fluid career-section"]
                         = school.location
                     div[class="row no-gutters"]
                       div[class="col-1 education-logo"]
-                        i[class="fas fa-exclamation"]
+                        i[class="fab fa-fly"]
                       div[class="col-11 education-completed"]                    
                         = school.completed
                     - if school.clubs
