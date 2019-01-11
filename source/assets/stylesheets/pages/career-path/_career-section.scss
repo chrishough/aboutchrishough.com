@@ -60,6 +60,7 @@
       .fa-calendar-alt,
       .fa-pied-piper-alt,
       .fa-coffee,
+      .fa-fly,
       .fa-trophy {
         margin-right: 0.2rem;
         font-size: 0.5rem;
@@ -89,8 +90,8 @@
       .experience-dates,
       .experience-location,
       .experience-learnings,
-      .experience-accomplishments,
-      .experience-accomplishments {
+      .experience-w-two-accomplishments,
+      .experience-w-ten-ninety-nine-accomplishments {
         font-size: 0.8rem;
       }
 
@@ -142,7 +143,8 @@
         }
       }
 
-      .experience-accomplishments {
+      .experience-w-two-accomplishments,
+      .experience-w-ten-ninety-nine-accomplishments {
         ul {
           padding: 1rem 0 0 1rem;
 
@@ -150,6 +152,20 @@
             padding-bottom: 0.5rem;
           }
         }
+      }
+
+      .experience-w-ten-ninety-nine-accomplishments {
+        .col-12:first-child {
+          padding-top: 0.5rem;
+        }
+
+        ul {
+          padding-left: 2rem;
+        }
+      }
+
+      .experience-position {
+        font-weight: bold;
       }
 
       @include media-breakpoint-up(xs) {
