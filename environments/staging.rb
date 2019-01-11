@@ -2,7 +2,7 @@
 
 activate :external_pipeline,
          name: :webpack,
-         command: 'npm run build_local',
+         command: 'npm run staging',
          source: 'build'
 
 Slim::Engine.set_default_options(pretty: true)

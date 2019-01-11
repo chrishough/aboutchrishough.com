@@ -26,6 +26,9 @@
     padding: 1rem;
 
     .career-header-title {
+      @include impact-font();
+
+      font-size: 1.3rem;
       text-transform: uppercase;
       color: $purple-darkest;
       padding-left: 1rem;
@@ -40,15 +43,24 @@
     }
   }
 
-  .career-category {
-    padding: 1rem 0 1rem 0;
+  .career-section-education,
+  .career-section-community,
+  .career-section-conferences,
+  .career-category-lets-connect {
+    .career-category {
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
 
+  .career-category {
     .explanation {
       .fa-brain,
       .fa-exclamation,
       .fa-map-marker-alt,
       .fa-calendar-alt,
-      .fa-coffee {
+      .fa-pied-piper-alt,
+      .fa-coffee,
+      .fa-trophy {
         margin-right: 0.2rem;
         font-size: 0.5rem;
       }
@@ -72,13 +84,20 @@
       .education-clubs,
       .community-dates,
       .conferences-dates,
-      .conferences-location {
+      .conferences-location,
+      .experience-position,
+      .experience-dates,
+      .experience-location,
+      .experience-learnings,
+      .experience-accomplishments,
+      .experience-accomplishments {
         font-size: 0.8rem;
       }
 
       .education-logo,
       .community-logo,
-      .conferences-logo {
+      .conferences-logo,
+      .experience-logo {
         line-height: 1rem;
         max-width: 1rem;
         
@@ -97,10 +116,47 @@
         padding: 0;
       }
 
+      .experience-technologies {
+        padding: 1rem 0 0.5rem 0;
+
+        div {
+          background: $white;
+          border-radius: 1rem;
+          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+          margin: 0 0.5rem 0.5rem 0;
+        }
+
+        img {
+          height: 16px;
+        }
+      }
+
+      .experience-learnings {
+        padding: 0.5rem 0 0 0;
+
+        blockquote {
+          margin: 0;
+          border-left: 0.05rem solid $gray-500;
+          color: $gray-500;
+          padding: 0 1em;
+        }
+      }
+
+      .experience-accomplishments {
+        ul {
+          padding: 1rem 0 0 1rem;
+
+          li {
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
       @include media-breakpoint-up(xs) {
         .career-category-education:not(:last-child),
         .career-category-community:not(:last-child),
-        .career-category-conferences:not(:last-child) {
+        .career-category-conferences:not(:last-child),
+        .career-category-experiences:not(:last-child) {
           border-bottom: 0.05rem $white dotted;
           padding-bottom: 1rem;
           margin-bottom: 1rem;
@@ -166,4 +222,6 @@
       }
     }
   }
+
+  @import "career-section-experiences";
 }

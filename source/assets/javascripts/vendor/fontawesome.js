@@ -27,6 +27,7 @@ import { faHandshake } from '@fortawesome/free-solid-svg-icons/faHandshake';
 import { faWrench } from '@fortawesome/free-solid-svg-icons/faWrench';
 import { faExclamation } from '@fortawesome/free-solid-svg-icons/faExclamation';
 import { faMugHot } from '@fortawesome/free-solid-svg-icons/faMugHot';
+import { faTrophy } from '@fortawesome/free-solid-svg-icons/faTrophy';
 
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
@@ -62,6 +63,7 @@ library.add(faAngleDoubleDown,
   faChess,
   faPoo,
   faHome,
+  faTrophy,
   faCoffee,
   faGlobe,
   faBook,

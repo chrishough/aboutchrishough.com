@@ -1,65 +1,248 @@
 executive_summary: Hard work, passion, attention to detail, and being self-motivated are all part of my DNA. I thrive in organizations with a culture of learning. Where coding, design, and product decisions are a collaborative team sport. To me, a strong engineering culture values quality, style, testing, and family. This means our craft, and what we do outside the workplace matters. In life and business, I drive decisions with data versus throwing darts at a board. I'm more pragmatic versus dogmatic and believe there is an infinite set of ways to solve a complex problem. I align best with corporate cultures that value empathy, family, and laughter. Offline you will find me organizing community events, mentoring, reading, and bodybuilding. We all have one life, and one chance to play this game the best we can play it. I am thankful for every day I get to play and work my best to be the best version of myself I can be.
 
+experiences:
+  products:
+    -
+      id: 1
+
+  ten-ninety-nine:
+    -
+      id: 1
+
+  w-two:
+    -
+      id: 1
+      company: AT&T
+      link: http://www.att.com
+      position: Team Leader – Web Technology
+      dates: August 2001 – September 2007 
+      location: Onsite in Chicago, Illinois 
+      technologies:
+        - https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/logos/coldfusion.png
+        - https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/logos/sqlserver.png
+        - https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/logos/oracle.png
+        - https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/logos/msft.png
+        - https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/logos/svn.png
+        - https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/logos/fusebox.png
+      learnings: Adobe ColdFusion, Microsoft SQL Server, Oracle, Fusebox Framework, Enterprise SDLC, Performance and Process Management, High Availability and Monitoring, Scalability, Service Orientated Architectures 
+      accomplishments: 
+        - First exposure to compiling annual performance reviews and peer metrics for five engineers in our five-state Midwest region.  This included writing development processes, software style guidelines, scalability standards, and pairing.
+        - Engineered a metrics-driven multi-tiered dashboard application serving actionable data to the enterprise. By organizing data into passive and reactive pods each level of the organization could have a direct impact on performance.  This resulted in reduced expenses, increased productivity, and cases of prevented fraud.
+        - Standardized process delivery online replacing legacy paper binders across all call centers.  The mission critical handbook applications required 24/7 uptime, and real-time administrative updates.  This software increased customer satisfaction scores, reduced outages, and reduced visits for repairs.
+        - Allowing training managers to schedule, track, and administer course materials online reduced knowledge silos.  This resulted in increased customer satisfaction, reduced outages, and increased employee happiness.
+      accolades: 'Key Contributor Awards: 2002 - 2006, 2007 from the Installation and Repair Organization. Employee of the Month: January, February, December 2004, and March, April, July 2005 from the Installation and Repair Organization. Certificate of Appreciation: April 2003, from the Installation and Repair Organization. Accomplishment Certificate: 2003, from the Network Dispatch Center’s Handbook project.'
+    -
+      id: 2
+      company: SOM
+      link: http://www.som.com
+      position: Applications Developer
+      dates: January 2008 – March 2009
+      location: Onsite in Chicago, Illinois  
+      technologies:
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/coldfusion.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sqlserver.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/msft.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/fusebox.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jquery.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/svn.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+      learnings: Adobe ColdFusion, Microsoft SQL Server, SVN, Fusebox Framework, Monetization & Expense Driven Teams, Open Source Technology 
+      accomplishments: 
+        - Refactored the internal project management software to support international languages and character sets.
+        - First exposure utilizing open source software to produce an internal forums application product.  This small utility increased collaboration among project managers reducing task duplication.
+    -
+      id: 3
+      position: Web Applications Engineer
+      dates: August 2009 – April 2014
+      location: Onsite in Denver, Colorado, then Work Remote from New York, New York
+      accomplishments: 
+        - Started the implementation of our service orientated architecture in Ruby on Rails moving our stack away from ColdFusion. This involved engineering six new microservices and migrating our servers to Heroku. By partnering off hours by with an external consultant this implementation provided leverage to drive culture change.
+        - Refactored our code deployment process to Git Flow via GitHub moving the entire organization away from SVN.  This included mandating testing coverage, no longer working on live production code, and pair code reviews. Outside of the technology department training for non-technical committers helped drive these modifications.
+        - Revamped and revitalized the RetailHub Enterprise Content Management Software using the ColdBox MVC framework.  This full rebuild replaced ten years of legacy code with new workflows built on modern UI/UX principles. Organizing every customer tool in a single workspace increased application performance, and resulted in better client relationships.
+    -
+      id: 4
+      company: PlaceWise Media
+      link: http://www.placewise.com
+      position: Director of Application Engineering
+      dates: April 2014 – December 2015  
+      location: Work Remote from New York, New York and Portland, Oregon  
+      technologies:
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/emberjs.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/aws.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/solr.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sqlserver.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/coldfusion.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/coldbox.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jquery.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sentry.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/newrelic.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sidekiq.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jira.gif
+      learnings: Adobe ColdFusion, Microsoft SQL Server, SVN, Git, Ruby, Ruby on Rails Framework, Heroku, AWS, ProfitBricks Cloud, PostgreSQL, Redis, Rspec, Service Orientated Architectures, Microservices, Remote Culture, Organizational Theory, Git Flow, Microservices, Managing External Consultants, Culture Change   
+      accomplishments: 
+        - Managed the construction of a Service Orientated Architecture to drive content to over 600 statically generated websites.  The strategic initiative of the team was to replace our legacy ColdFusion architecture with a Ruby on Rails backend, and JavaScript-driven front end.  This resulted in covering Black Friday Sales traffic at scale while delivering new content and reduced DevOps overhead costs.
+        - Instituted a focus on training and mentoring to reduce knowledge silos, grow junior developers, and reduce project time to completion.  Online courses, real-time pairing, and monetary awards helped achieve measurable success.
+        - Transformed legacy communications by implementing Slack enterprise-wide.  CodeClimate GPAs, Git Flow notifications, NewRelic Alerts, and our Emoji based Pull Request game defined this culture shift.
+        - Coordinated and cultivated external client relationships built on top of our Service Orientated Architecture.  API customers could push and pull data into content management systems allowing us to grow revenue opportunities with the same resources.
+    -
+      id: 5
+      company: Whiplash
+      link: https://www.whiplashmerch.com/
+      position: Senior Full Stack Developer
+      dates: April 2016 – October 2016
+      location: Work Remote from Portland, Oregon 
+      technologies:
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rackspace.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/mysql.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/redis.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/resque.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/airbrake.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+      learnings: Ruby, Ruby on Rails Framework, Resque, MySQL, Redis, Rubocop, Rspec, Rackspace, Service Orientated Architectures, Microservices, Refactoring Monorails
+      accomplishments: 
+        - Engineered a 2-Way ETL Microservice with API to break apart an existing monolithic application and legacy architecture.  Acting as a glorified facade, the application relayed communications between many 3rd party providers and our monorail in real time.  Automated webhooks, polling events, and API translations provided flexibility for varying provider complexity. Standardized style guide and test coverage metrics were also respected.
+        - Instituted Slack and Git Flow modeled after successful engineering teams and remote focused cultures. Room configurations supported both engineering and sales. ETL customers joined us in guest rooms for asynchronous communication across many time zones, while code processes increased code quality and test coverage.
+    -
+      id: 6
+      company: Coding Zeal
+      link: https://www.codingzeal.com/
+      position: Senior Software Engineer
+      dates: October 2016 – June 2017 
+      location: Work Remote from Portland, Oregon  
+      technologies:
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/emberjs.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/redis.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
+      learnings: Ruby, Ruby on Rails Framework, Ruby on Rails Engines, Que, PostgreSQL, MongoDB, Rubocop, Rspec, EmberJS, Business Development, Full Time Pair Programming, OSS Developer Engagement
+      accomplishments: 
+        - "<a href='https://www.q-centrix.com/' target='_blank'>Q-Centrix Medical Services</a> - Replaced Delayed_job with Que resulting in each of the engines using the same backend job processor and bringing them one step closer to removing MongoDB. Pair programmed a detailed patient measure logic report via a complex recursive json endpoint and Ember frontend. "
+        - "<a href='http://www.reviewed.com' target='_blank'>Reviewed.com</a> - Bootstrap style adjustments affecting their responsive layout to meet new design comps. Updated the Amazon Product API advertisement blocks to filter products sold by Amazon reducing the chances of bad storefront data displaying to customers."
+        - "<a href='https://referral.codingzeal.com/' target='_blank'>Zeal Referral Program</a> - Refactored the platform out of a combination of web flow and materialized CSS into Bootstrap CSS providing customers with a consistent and elegant UI/UX."
+    -
+      id: 7
+      company: Weaveup
+      link: https://www.weaveup.com/
+      position: Senior Backend Engineer
+      dates: June 2017 – April 2018
+      location: Work Remote from Portland, Oregon 
+      technologies:
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/redis.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
+      learnings: Ruby, Ruby on Rails Framework, Sidekiq, PostgreSQL, Rubocop, Rspec, Cucumber Testing, BDD, Materialized Views, Parallel Testing, Zenhub 
+      accomplishments: 
+        - Managed the hiring process for additional mid-level and senior backed engineers, and assisted with the hiring of our first project manager.
+        - Spearheaded the rollout of our Agile Scrum process structure and Sizing via Fibonacci numbers, and presented on Git Flow and Semver for future microservices.
+        - Architected Licensing 2.0 which required a multi-stage multi-epic rollout process and hooked into every component related to our design content in the backend API. While I was only able to complete 2/3 epics, each component completed in near isolation totaled over 100 files and impacted nearly every feature of our architecture.  The final epic was comprised of 10 feature tickets, > 127 files, full test coverage via rspec and multiple data migrations.
+        - Converted existing legacy Minitest specs to Rspec, and implemented test execution on CI via the Parallels gem.  This stopgap solution cut down our testing processing time from 25 minutes down to 8 minutes on average.  
+    -
+      id: 8
+      company: "MediaPRO: Cybersecurity & Privacy Education"
+      link: https://www.mediapro.com/
+      position: Senior Application Developer
+      dates: April 2018 – Present
+      location: Work Remote from Portland, Oregon 
+      technologies:
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jira.gif
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/bitbucket.gif
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/confluence.gif
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/aws.png
+        - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/vscode.png
+      learnings: Ruby, Ruby on Rails, PostgreSQL, Rspec, Amazon Web Services, Amazon CloudFront, Jenkins, Jira, Confluence, Bitbucket, Agile Development via Scrum
+      accomplishments: 
+        - A key contributor to the successful launch of LearningLAB. A platform that helps enterprises fortify their workforce against cyber threats and privacy breaches. In terms of the code, I am the resident sme on Rspec, Code 
+        - Taught a seminar on Linting.  How it relates to code quality and the various options on the market for both the front and back ends. This included rubocop, rubocop-rspec, eslint, and stylelint. 
+        - Kicked off a book club that meets weekly focused on both engineering skills and culture.  The first book we covered was "Practical Object-Oriented Design, An Agile Primer Using Ruby" by Sandy Metz. 
+
 education:
   -
     id: 1
-    name: NYU School of Continuing and Professional Studies
-    program: Ruby on Rails Programming Course
-    location: New York, New York
-    completed: Completed 2012
-    link: http://www.scps.nyu.edu/
-  -
-    id: 2
-    name: Northwestern University School of Continuing Studies
-    program: Economics of Trading Course
-    location: Chicago, Illinois
-    completed: Completed 2007
-    link: http://www.scs.northwestern.edu/
-  -
-    id: 3
-    name: Keller Graduate School of Management
-    program: Master of Business Administration
-    location: Chicago, Illinois
-    completed: Graduated 2005
-    link: http://www.keller.edu/
-  -
-    id: 4
     name: Illinois College
     program: Bachelor of Science in Management Information Systems
     location: Jacksonville, Illinois
     completed: Graduated 2001
     clubs: Computer Club, Investment Club
     link: http://www.ic.edu/
+  -
+    id: 2
+    name: Keller Graduate School of Management
+    program: Master of Business Administration
+    location: Chicago, Illinois
+    completed: Graduated 2005
+    link: http://www.keller.edu/
+  -
+    id: 3
+    name: Northwestern University School of Continuing Studies
+    program: Economics of Trading Course
+    location: Chicago, Illinois
+    completed: Completed 2007
+    link: http://www.scs.northwestern.edu/
+  -
+    id: 4
+    name: NYU School of Continuing and Professional Studies
+    program: Ruby on Rails Programming Course
+    location: New York, New York
+    completed: Completed 2012
+    link: http://www.scps.nyu.edu/
 
 community:
   -
     id: 1
     title: Founder
-    meetup: Full Stack PDX Meetup
-    dates: January 2017 - Present
+    meetup: Ruby on Rails PDX Meetup
+    dates: January 2016 - December 2016
     location: Portland, Oregon
-    link: https://twitter.com/fullstackpdx
+    link: https://twitter.com/rubyonrailspdx
   -
     id: 2
-    title: Mentor
-    meetup: Mentorship Saturdays PDX Meetup
-    dates: November 2016 - Present
-    location: Portland, Oregon
-    link: https://www.meetup.com/Mentorship-Saturdays/
-  -
-    id: 3
     title: Mentor
     meetup: Operation Code
     dates: November 2016 - December 2017
     location: Portland, Oregon
     link: https://operationcode.org/
   -
+    id: 3
+    title: Mentor
+    meetup: Mentorship Saturdays PDX Meetup
+    dates: November 2016 - Present
+    location: Portland, Oregon
+    link: https://www.meetup.com/Mentorship-Saturdays/
+  -
     id: 4
     title: Founder
-    meetup: Ruby on Rails PDX Meetup
-    dates: January 2016 - December 2016
+    meetup: Full Stack PDX Meetup
+    dates: January 2017 - Present
     location: Portland, Oregon
-    link: https://twitter.com/rubyonrailspdx
+    link: https://twitter.com/fullstackpdx
+
 
 conferences:
   -
