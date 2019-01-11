@@ -1,8 +1,8 @@
 {
   "scripts": {
     "develop": "clear && printf '\\e[3J' && NODE_ENV=development webpack --progress --color --devtool source-map",
-    "build_local": "clear && printf '\\e[3J' && NODE_ENV=development webpack",
-    "build_external": "clear && printf '\\e[3J' && NODE_ENV=production webpack --bail -p",
+    "staging": "clear && printf '\\e[3J' && NODE_ENV=development webpack",
+    "production": "clear && printf '\\e[3J' && NODE_ENV=production webpack --bail -p",
     "lintjs": "eslint 'source/assets/javascripts/**/*.js' --fix; exit 0;",
     "lintcss": "stylelint 'source/**/*.scss' --syntax scss --fix; exit 0;"
   },

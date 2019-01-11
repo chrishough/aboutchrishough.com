@@ -16,13 +16,91 @@ div[class="container-fluid career-section"]
           img[src="https://cdn.jsdelivr.net/gh/chrishough/my-public-data@master/my-resume/product.svg"]
         div[class="career-header-title"]
           |experiences
-      div[class="career-category"]
-        div[class="col-12 mx-auto explanation"]   
-          br
-          br
-          br
-          br
-          
+      div[class="row career-category"]
+        div[class="col-12 p-0 mx-auto explanation"]   
+          ul[class="nav nav-tabs" role="tablist"]
+            li[class="nav-item"]
+              a[class="nav-link active" id="w-two-tab" data-toggle="tab" href="#w-two" role="tab" aria-controls="w-two" aria-selected="true"]
+                |W2
+            li[class="nav-item"]
+              a[class="nav-link" id="ten-ninety-nine-tab" data-toggle="tab" href="#ten-ninety-nine" role="tab" aria-controls="ten-ninety-nine" aria-selected="false"]
+                |1099
+            li[class="nav-item"]
+              a[class="nav-link" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false" ]
+                |Product
+          div[class="tab-content"]
+            div[class="tab-pane active" id="w-two" role="tabpanel" aria-labelledby="w2-tab"]
+              - data.career.experiences['w-two'].sort_by { |k| k["id"] }.reverse.each do |w_two|
+                div[class="row career-category-experiences"]
+                  div[class="col-12"]
+                    - if w_two.company
+                      div[class="row"]
+                        div[class="col-12 experience-company"]
+                          = link_to(w_two.company, w_two.link, target: :_blank)
+                    div[class="row no-gutters"]
+                      div[class="col-1 experience-logo"]
+                        i[class="fab fa-pied-piper-alt"]
+                      div[class="col-11 experience-position"]
+                        = w_two.position
+                    div[class="row no-gutters"]
+                      div[class="col-1 experience-logo"]
+                        i[class="far fa-calendar-alt"]
+                      div[class="col-11 experience-dates"]
+                        = w_two.dates
+                    div[class="row no-gutters"]
+                      div[class="col-1 experience-logo"]
+                        i[class="fas fa-map-marker-alt"]
+                      div[class="col-11 experience-location"]
+                        = w_two.location
+                    - if w_two.technologies  
+                      div[class="row no-gutters experience-technologies"]
+                        - w_two.technologies.each do |w_two_technology|
+                          div
+                            img[src="#{w_two_technology}"]
+                    - if w_two.learnings
+                      div[class="row no-gutters experience-learnings"]
+                        blockquote
+                          = w_two.learnings
+                    div[class="row no-gutters experience-accomplishments"]
+                      ul
+                        - w_two.accomplishments.each do |w_two_accomplishment|
+                          li
+                            = w_two_accomplishment
+                    - if w_two.accolades
+                      div[class="row no-gutters"]
+                        div[class="col-1 experience-logo"]
+                          i[class="fas fa-trophy"]
+                        div[class="col-11 experience-dates"]
+                          |Accolades: 
+                          = w_two.accolades
+
+
+
+
+
+
+
+
+
+
+
+            div[class="tab-pane" id="ten-ninety-nine" role="tabpanel" aria-labelledby="ten-ninety-nine-tab"]
+              |1099
+              - data.career.experiences['ten-ninety-nine'].sort_by { |k| k["id"] }.reverse.each do |ten_ninety_nine|
+
+
+
+
+
+
+            div[class="tab-pane" id="product" role="tabpanel" aria-labelledby="product-tab"]
+              |Product
+              - data.career.experiences['products'].sort_by { |k| k["id"] }.reverse.each do |products|
+
+
+
+
+
 div[class="container-fluid career-section"]
   div[class="card-columns"]
     div[class="card career-section-education"]
@@ -35,7 +113,7 @@ div[class="container-fluid career-section"]
               |education
           div[class="career-category"]
             div[class="col-12 mx-auto explanation"]   
-              - data.career.education.sort_by { |k| k["id"] }.each do |school|
+              - data.career.education.sort_by { |k| k["id"] }.reverse.each do |school|
                 div[class="row career-category-education"]
                   div[class="col-12 career-category-education-wrapper"]
                     div[class="row"]
@@ -76,7 +154,7 @@ div[class="container-fluid career-section"]
               |community
           div[class="career-category"]
             div[class="col-12 mx-auto explanation"]  
-              - data.career.community.sort_by { |k| k["id"] }.each do |community|
+              - data.career.community.sort_by { |k| k["id"] }.reverse.each do |community|
                 div[class="row career-category-community"]
                   div[class="col-12 career-category-community-wrapper"]
                     div[class="row"]
