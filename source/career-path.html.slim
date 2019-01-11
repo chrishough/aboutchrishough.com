@@ -65,7 +65,14 @@ div[class="container-fluid career-section"]
                       ul
                         - w_two.accomplishments.each do |w_two_accomplishment|
                           li
-                            = w_two_accomplishment
+                            - if w_two_accomplishment.is_a?(Hash)
+                              = link_to(w_two_accomplishment.title, w_two_accomplishment.link, target: :_blank)
+                              =>
+                              |-
+                              =>
+                              = w_two_accomplishment.accomplishments
+                            - else
+                              = w_two_accomplishment
                     - if w_two.accolades
                       div[class="row no-gutters"]
                         div[class="col-1 experience-logo"]
