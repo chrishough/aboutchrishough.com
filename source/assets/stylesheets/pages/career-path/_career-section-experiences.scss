@@ -14,13 +14,18 @@
     }
   }
   .nav-link {
-    @include secondary-font();
-    font-weight: bold;
+    @include impact-font();
+    
+    font-weight: normal;
     border-radius: 0;
     padding: 1rem 2rem; 
     border-color: $white;
     border: none;
-  
+    
+    &:hover {
+      text-decoration: none;
+    }
+
     &:hover:not(.active),
     &:focus:not(.active), {
       background-color: $gray-100;
