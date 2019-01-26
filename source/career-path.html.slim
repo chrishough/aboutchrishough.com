@@ -137,25 +137,31 @@ div[class="container-fluid career-section"]
                             li 
                               = ten_ninety_nine_role_accomplishment
 
-
-
-
-
-
-
-
             div[class="tab-pane" id="product" role="tabpanel" aria-labelledby="product-tab"]
-              |Product
-              - data.career.experiences['products'].sort_by { |k| k["id"] }.reverse.each do |products|
+              div[class="row"]
+                div[class="col-12 col-md-7"]
+                  div[class="row product-vision-statement"]
+                    |When it comes to products these two quotes always come to my mind. 
+                  div[class="row product-vision-statement"]
+                      blockquote
+                        |"If I would have listened to customers, I would have given them a faster horse." - Henry Ford.
+                  div[class="row product-vision-statement"]
+                    |Without Ford's vision, I wonder how the automobile landscape would look today.  Second, whenever I think of the term "change agent" this titan comes to mind. 
+                  div[class="row product-vision-statement"]
+                      blockquote
+                        |"It is important to reason from first principles, rather than, by analogy. So the normal way we conduct our lives is we reason by analogy. We're doing this because it's like something else that was done or like what other people are doing. Iterations on a theme. It's kinda mentally easier to reason by analogy rather than from first principles. First principles is kinda a physics way of looking at the world and what that really means is you kinda boil things down to the most fundamental truths and say okay, what are we sure is true? or sure as possible is true? and then reason up from there. That takes a lot more mental energy." - Elon Musk.
+                  div[class="row product-vision-statement"]
+                    |Regardless of what you think of Musk, he has already changed the game when it comes to payments online, electric vehicles, and now space.  I am not sure if I would refer to him as Tony Stark though.  
+                  div[class="row product-vision-statement"]
+                    |Why do I love these quotes? I have been a part of a number of failed side hustles and I always have something cooking in the kitchen.  We live in amazing times.  Times where a collective set of individuals can work together to change the world.  Technology is changing everything, and through technology, we can build our dreams.
+                  div[class="row product-vision-statement"]
+                    |Stay tuned for more details. 
+                  div[class="row product-vision-statement"]
+                    embed[id="connect-signature" src="#{image_path('signature.svg')}"]
 
-
-
-
-
-
-
-
-
+                div[class="col-12 col-md-5"]
+                  div[class="row mx-auto product-vision-graphic"]
+                    img[src="#{image_path('open-source-projects.jpeg')}"]
 
 
 div[class="container-fluid career-section"]

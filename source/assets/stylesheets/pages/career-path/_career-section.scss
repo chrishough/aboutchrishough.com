@@ -91,7 +91,9 @@
       .experience-location,
       .experience-learnings,
       .experience-w-two-accomplishments,
-      .experience-w-ten-ninety-nine-accomplishments {
+      .experience-w-ten-ninety-nine-accomplishments,
+      .product-learnings,
+      .product-vision-statement {
         font-size: 0.8rem;
       }
 
@@ -132,14 +134,13 @@
         }
       }
 
-      .experience-learnings {
-        padding: 0.5rem 0 0 0;
-
+      .experience-learnings,
+      .product-vision-statement {
         blockquote {
           margin: 0;
           border-left: 0.05rem solid $gray-500;
           color: $gray-500;
-          padding: 0 1em;
+          padding: 0 1rem;
         }
       }
 
@@ -166,6 +167,35 @@
 
       .experience-position {
         font-weight: bold;
+      }
+
+      .product-vision-graphic {
+        padding: 1rem 0;
+
+        img {
+          height: 525px;
+          margin: auto;
+        }
+      }
+
+      .product-vision-statement {
+        padding-left: 1rem;
+
+        &:first-child {
+          padding-top: 1rem;
+        }
+        &:not(:first-child) {
+          padding-top: 0.5rem;
+        }
+        &:not(:last-child) {
+          padding-bottom: 0.5rem;
+        }
+
+        #connect-signature {
+          @include media-breakpoint-up(xs) {
+            max-height: 50px;
+          }
+        }
       }
 
       @include media-breakpoint-up(xs) {
