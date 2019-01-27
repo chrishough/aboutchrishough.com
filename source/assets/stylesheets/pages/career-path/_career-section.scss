@@ -1,0 +1,273 @@
+.career-section {
+  max-width: map-get($grid-breakpoints, 'xl') !important;  
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  border: none;
+
+  a {
+    font-style: normal;
+    color: $purple-lightest;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .career-section-experiences,
+  .career-section-education > .row:first-child,
+  .career-section-conferences > .row:first-child,
+  .career-section-community > .row:first-child {
+    background-color: rgba(4, 1, 5, $backdrop-opacity);
+  }
+
+  .career-header {
+    background: url('#{$image-path}/backgrounds/subtle-patterns-dust-scratches.png') repeat-x;
+    background-color: $white;
+    padding: 1rem;
+
+    .career-header-title {
+      @include impact-font();
+
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: $purple-darkest;
+      padding-left: 1rem;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .career-icon {
+      img {
+        height: 40px;
+      }
+    }
+  }
+
+  .career-section-education,
+  .career-section-community,
+  .career-section-conferences,
+  .career-category-lets-connect {
+    .career-category {
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
+
+  .career-category {
+    .explanation {
+      .fa-brain,
+      .fa-exclamation,
+      .fa-map-marker-alt,
+      .fa-calendar-alt,
+      .fa-pied-piper-alt,
+      .fa-coffee,
+      .fa-fly,
+      .fa-trophy {
+        margin-right: 0.2rem;
+        font-size: 0.5rem;
+      }
+
+      .conferences-title,
+      .conferences-dates,
+      .conferences-location {
+        text-transform: capitalize;
+      }
+      
+      .education-school,
+      .conferences-title,
+      .community-meetup,
+      .community-title {
+        font-size: 0.9rem;
+      } 
+
+      .education-program,
+      .education-location,
+      .education-completed,
+      .education-clubs,
+      .community-dates,
+      .conferences-dates,
+      .conferences-location,
+      .experience-position,
+      .experience-dates,
+      .experience-location,
+      .experience-learnings,
+      .experience-w-two-accomplishments,
+      .experience-w-ten-ninety-nine-accomplishments,
+      .product-learnings,
+      .product-vision-statement {
+        font-size: 0.8rem;
+      }
+
+      .education-logo,
+      .community-logo,
+      .conferences-logo,
+      .experience-logo {
+        line-height: 1rem;
+        max-width: 1rem;
+        
+        .fa-exclamation {
+          margin-left: 0.05rem;
+        }
+
+        .fa-coffee {
+          margin-left: -0.25rem;
+        }
+      }
+
+      .career-category-conferences-wrapper,
+      .career-category-education-wrapper,
+      .career-category-community-wrapper {
+        padding: 0;
+      }
+
+      .experience-technologies {
+        padding: 1rem 0 0.5rem 0;
+
+        div {
+          background: $white;
+          border-radius: 1rem;
+          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+          margin: 0 0.5rem 0.5rem 0;
+        }
+
+        img {
+          height: 16px;
+        }
+      }
+
+      .experience-learnings,
+      .product-vision-statement {
+        blockquote {
+          margin: 0;
+          border-left: 0.05rem solid $gray-500;
+          color: $gray-500;
+          padding: 0 1rem;
+        }
+      }
+
+      .experience-w-two-accomplishments,
+      .experience-w-ten-ninety-nine-accomplishments {
+        ul {
+          padding: 1rem 0 0 1rem;
+
+          li {
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .experience-w-ten-ninety-nine-accomplishments {
+        .col-12:first-child {
+          padding-top: 0.5rem;
+        }
+
+        ul {
+          padding-left: 2rem;
+        }
+      }
+
+      .experience-position {
+        font-weight: bold;
+      }
+
+      .product-vision-graphic {
+        padding: 1rem 0;
+
+        img {
+          height: 525px;
+          margin: auto;
+        }
+      }
+
+      .product-vision-statement {
+        padding-left: 1rem;
+
+        &:first-child {
+          padding-top: 1rem;
+        }
+        &:not(:first-child) {
+          padding-top: 0.5rem;
+        }
+        &:not(:last-child) {
+          padding-bottom: 0.5rem;
+        }
+
+        #connect-signature {
+          @include media-breakpoint-up(xs) {
+            max-height: 50px;
+          }
+        }
+      }
+
+      @include media-breakpoint-up(xs) {
+        .career-category-education:not(:last-child),
+        .career-category-community:not(:last-child),
+        .career-category-conferences:not(:last-child),
+        .career-category-experiences:not(:last-child) {
+          border-bottom: 0.05rem $white dotted;
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .career-section-experiences { 
+    margin-bottom: 1rem;
+  }
+
+  .career-category-lets-connect {
+    @include impact-font();
+
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      text-decoration: overline;
+    }
+    
+    .fa-mug-hot {
+      margin-left: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xs) {
+      font-size: 1.5rem;
+
+      .fa-mug-hot {
+        font-size: 2rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+
+      .fa-mug-hot {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .card-columns {
+    column-count: 1;
+
+    .card {
+      background: none;
+      margin-bottom: 1rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      column-count: 2;
+
+      .career-section-education,
+      .career-section-community {
+        padding-right: 1rem;
+      }
+
+      .career-section-conferences,
+      .career-category-lets-connect {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  @import "career-section-experiences";
+}

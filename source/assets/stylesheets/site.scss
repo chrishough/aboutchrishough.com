@@ -5,7 +5,11 @@
 @import "vendor/bootstrap";
 @import "vendor/google_fonts";
 @import "mixins/*";
-@import "components/*";
+@import "components/content-wrapper";
+@import "components/cover";
+@import "components/html-body";
+@import "components/navigation-footer";
+@import "components/navigation-header";
 @import "pages/index/base";
 @import "pages/contact-me/base";
 @import "pages/family-journey/base";

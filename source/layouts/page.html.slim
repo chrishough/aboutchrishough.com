@@ -1,10 +1,11 @@
-= partial "partials/layout/html" do
-  = partial "partials/layout/header"
+= partial "partials/layout/document" do
+  = partial "partials/components/header"
   = partial "partials/layout/body" do
-    = partial "partials/layout/components/navigation-header"
-
+    = partial "partials/components/navigation-header"
+    = partial "partials/components/breadcrumbs"
+    
     main[class="container-fluid content-wrapper"]
       == yield
 
-    = partial "partials/layout/components/navigation-footer"
-    = partial "partials/layout/components/javascript"
+    = partial "partials/components/navigation-footer"
+    = partial "partials/components/javascript"

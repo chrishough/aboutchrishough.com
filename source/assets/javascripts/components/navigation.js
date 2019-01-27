@@ -13,6 +13,7 @@ export default () => {
       $navDescriptionValue = $('.navbar-nav > li.active').find('.nav-description').html();
       $navDescriptionDefault.hide();
       $navDescriptionSet.html($navDescriptionValue);
+      $navDescriptionSet.append("&nbsp;<i class='fab fa-pied-piper-alt'>");
     }
   };
 
@@ -20,7 +21,7 @@ export default () => {
     enter() {
       $navDescriptionDefaultIcon.html('');
       $navbarToggler.attr('data-toggle', 'collapse');
-      $navHeaderWrapper.on('click', () => {
+      $navbarToggler.on('click', () => {
         if ($('.navbar-header-wrapper').find('svg').attr('data-icon') === 'angle-double-up') {
           $('.navbar-header-wrapper').find('svg').attr('data-icon', 'angle-double-down');
         } else {
@@ -30,7 +31,7 @@ export default () => {
     },
     leave() {
       $navbarToggler.attr('data-toggle', '');
-      $navHeaderWrapper.off('click');
+      $navbarToggler.off('click');
     },
   });
 
@@ -53,6 +54,7 @@ export default () => {
         mouseenter: (element) => {
           $navDescriptionDefault.hide();
           $navDescriptionSet.html($(element.currentTarget).find('.nav-description').html());
+          $navDescriptionSet.append("&nbsp;<i class='fab fa-pied-piper-alt'>");
           $navDescriptionSet.fadeIn('fast');
         },
         mouseleave: () => {
@@ -62,6 +64,7 @@ export default () => {
             $navDescriptionDefault.show();
           } else {
             $navDescriptionSet.html($navDescriptionValue);
+            $navDescriptionSet.append("&nbsp;<i class='fab fa-pied-piper-alt'>");
           }
         },
       });

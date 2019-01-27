@@ -8,6 +8,7 @@ build
 !.bundle/config
 backup
 webpack.config.js
+.vscode
 
 ###############################################################################################
 # Ignore all logfiles, tempfiles, and databases.

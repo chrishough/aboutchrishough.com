@@ -32,7 +32,7 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
             div[class="col-12 personal-data-avatar"]
               img[src="#{image_path('avatar.png')}"]
             div[class="col-12 personal-data-signature"]
-              = partial "partials/layout/components/about-signature"
+              = partial "partials/components/about-signature"
 
           div[class="row no-gutters personal-data-city-location-wrapper"]
             / SOCIAL : CITY AND LOCATION
@@ -60,7 +60,7 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
               = link_to(data.social.twitter, target: :_blank) do
                 i[class="fab fa-twitter"]
             div[class="col-12 col-lg-3"]
-              = link_to("/pages/contact-me/", class: "last") do
+              = link_to("/contact-me/", class: "last") do
                 i[class="far fa-envelope"]
 
         div[class="col-12 order-4 col-md-12 col-lg-12 order-lg-2 personal-data-slogan-wrapper-row"]

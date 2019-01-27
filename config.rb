@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Bundler.require(:default)
-
+require 'pry'
 require 'slim'
 Slim::Engine.disable_option_validator!
 
@@ -22,13 +22,13 @@ page '/*.txt', layout: false
 ignore 'assets/stylesheets/*'
 ignore 'assets/javascripts/*'
 ignore 'partials/*'
-ignore 'content/*'
+ignore 'source/blog/*'
 ignore 'rev-manifest.json'
 
 activate :blog do |blog|
-  blog.sources = 'articles/{year}-{month}-{day}-{title}.html'
-  blog.permalink = 'articles/{title}/index.html'
-  blog.layout = 'article'
+  blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
+  blog.permalink = 'thoughts-on-paper/{year}/{month}/{day}/{title}/index.html'
+  blog.layout = 'blog'
 end
 
 activate :deploy do |deploy|
@@ -39,6 +39,13 @@ end
 
 # rubocop:disable Metrics/BlockLength
 helpers do
+  def link_to_post_by_slug(slug)
+    article = blog.articles.find { |article| article.slug.downcase == slug.downcase }
+    link_to(article.title, article.url)
+  rescue
+    ""
+  end
+
   def image_url(source)
     return image_path(source) unless external_site_configured?
     config[:protocol] + host_with_port + image_path(source)

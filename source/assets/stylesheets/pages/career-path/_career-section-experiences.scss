@@ -1,0 +1,42 @@
+.career-category-lets-connect {
+  .career-category {
+    padding: 0 0 1rem 0;
+  }
+}
+
+.nav-tabs {
+  border-bottom: 0.05rem solid $white;
+  .nav-item {
+    border-right: 0.05rem solid $white;
+
+    &:first-child {
+      border-left: 0.05rem solid $white;
+    }
+  }
+  .nav-link {
+    @include impact-font();
+    
+    font-weight: normal;
+    border-radius: 0;
+    padding: 1rem 2rem; 
+    border-color: $white;
+    border: none;
+    
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:hover:not(.active),
+    &:focus:not(.active), {
+      background-color: $gray-100;
+    }
+  }
+}
+
+.tab-content {
+  padding: 1rem;
+}
+
+.tab-pane {
+  padding: 0 1rem 1rem 1rem;
+}
