@@ -4,10 +4,11 @@ namespace :test do
   namespace :lint do
     desc 'Run all linters.'
     task :all do
+      system("clear && printf '\\e[3J'")
       puts("---------------------------------------------------------->>\n")
       puts("Running Style Lint")
       puts("---------------------------------------------------------->>\n")
-      system("clear && printf '\\e[3J' && npm run lintcss")
+      system("npm run lintcss")
       puts("---------------------------------------------------------->>\n")
       puts("Running esLint")
       puts("---------------------------------------------------------->>\n")

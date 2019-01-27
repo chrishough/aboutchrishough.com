@@ -1,6 +1,10 @@
 @import 'bootstrap/scss/functions';
 @import 'bootstrap_variables';
 
+// Bootstrap Overides
+// $gray-800: $purple-dark !default;
+// $zindex-top: 1080 !default;		
+// $zindex-cover: 2000 !default;
 // Webpack + Autoprefixer Overrides for broken icons!
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
@@ -15,7 +19,7 @@ $navbar-light-toggler-icon-bg: none;
 @import "bootstrap/scss/mixins/reset-text";
 @import "bootstrap/scss/mixins/text-emphasis";
 
-@mixin text-hide() {
+@mixin text-hide($ignore-warning: true) {
   // stylelint-disable-next-line font-family-no-missing-generic-family-keyword
   font: 0/0 a;
   color: transparent;

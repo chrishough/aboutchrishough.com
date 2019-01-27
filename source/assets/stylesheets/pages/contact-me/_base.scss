@@ -1,4 +1,8 @@
 #contact-me {
+  .content-wrapper {
+    padding: 0;
+  }
+  
   .contact-wrapper-container-top-row {
     @include media-breakpoint-up(xs) {
       padding: 6rem 0 6rem 0;
