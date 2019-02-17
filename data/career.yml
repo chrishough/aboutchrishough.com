@@ -83,10 +83,9 @@ experiences:
         company: Coding Zeal
         link: https://www.codingzeal.com/
         title: Senior Full Stack Engineer
-        dates: October 2018 – Present
+        dates: October 2018 – February 2019
         accomplishments: 
-          - A key contributor to the Reviewed website, part of the USA Today network. Features and bugfixes applied to the platform, backend content management system, content creation interfaces, and architecture. 
-
+          - A key contributor to Reviewed, part of the USA Today network. Features and bugfixes applied to the platform, backend content management system, content creation interfaces, and architecture. My most significant accomplishment was helping them adjust how content slugs were maintained in the content management system, which impacted every content model in the application.
   w-two:
     -
       id: 1
