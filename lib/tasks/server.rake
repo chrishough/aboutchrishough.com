@@ -17,7 +17,7 @@ namespace :server do
       puts("---------------------------------------------------------->>\n")
       puts('Building static files, but I will not be starting the server')
       puts("---------------------------------------------------------->>\n")
-      system('time bundle exec middleman build -e production_local --verbose')
+      system('time bundle exec middleman build -e staging --verbose')
     end
     
     desc 'Build the site for production'
@@ -25,7 +25,7 @@ namespace :server do
       puts("---------------------------------------------------------->>\n")
       puts('Building static files, but I will not be starting the server')
       puts("---------------------------------------------------------->>\n")
-      system('time bundle exec middleman build -e production_external --verbose')
+      system('time bundle exec middleman build -e production --verbose')
     end
   end
 end

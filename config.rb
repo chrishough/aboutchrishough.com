@@ -5,6 +5,9 @@ require 'pry'
 require 'slim'
 Slim::Engine.disable_option_validator!
 
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true
+
 require_all 'lib/helpers'
 autoload_all 'lib/helpers'
 
@@ -26,9 +29,9 @@ ignore 'source/blog/*'
 ignore 'rev-manifest.json'
 
 activate :blog do |blog|
-  blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
-  blog.permalink = 'thoughts-on-paper/{year}/{month}/{day}/{title}/index.html'
-  blog.layout = 'blog'
+  blog.sources = 'blog/{year}{month}{day}-{title}.html'
+  blog.permalink = 'thoughts-on-paper/{title}/index.html'
+  blog.layout = 'post'
 end
 
 activate :deploy do |deploy|

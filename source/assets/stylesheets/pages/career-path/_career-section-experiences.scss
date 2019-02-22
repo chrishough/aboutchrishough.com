@@ -6,6 +6,7 @@
 
 .nav-tabs {
   border-bottom: 0.05rem solid $white;
+  
   .nav-item {
     border-right: 0.05rem solid $white;
 
@@ -13,9 +14,8 @@
       border-left: 0.05rem solid $white;
     }
   }
+
   .nav-link {
-    @include impact-font();
-    
     font-weight: normal;
     border-radius: 0;
     padding: 1rem 2rem; 

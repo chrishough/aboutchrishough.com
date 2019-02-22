@@ -12,6 +12,8 @@ gem 'middleman-deploy', git: 'https://github.com/middleman-contrib/middleman-dep
 
 gem 'slim'
 gem 'titleize'
+gem 'stringex'
+gem 'redcarpet'
 
 group :development do
   gem 'pry'
