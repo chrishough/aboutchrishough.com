@@ -1,0 +1,6 @@
+---
+title: A Better Light Switch
+tags: kimptonhotels, qualitydesign, evolve, energyefficiency, greentech, leviton
+hero_image: 20190127-a-better-light-switch.png
+---
+I recently stayed at the Kimpton Palladian Hotel in downtown Seattle. The first time I entered the room I had no idea why the lights wouldn’t turn on. I vaguely remembered talking to the front desk who informed me during the check in process the room keys were required for the lights in the room. As I glanced at the wall I noticed a device that looked like a credit card slot machine. I inserted the card and the lights came on! To be honest, this was the best device for controlling lights being left on in hotel rooms I have ever seen. While I do not know the hotel’s budget, I can safely assume that this translates to millions in lower energy costs annually. Yes, it is green tech for sure, but that bottom line entry has to be enormous. This is what great design looks like! You can hang all of the passive aggressive signs you want and little will change. Engineering an easy to use convenient device takes a little more effort up front but it just works! I wish there were more design decisions like this in our world.
