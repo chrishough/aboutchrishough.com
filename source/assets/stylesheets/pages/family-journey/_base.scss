@@ -1,12 +1,6 @@
 #family-journey {
   @import "../../components/breadcrumbs";
 
-  .breadcrumbs {
-    .row {
-      max-width: map-get($grid-breakpoints, "lg");
-    }
-  }
-
   .content-wrapper {
     padding: 0;
   }
