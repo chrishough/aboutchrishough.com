@@ -24,4 +24,8 @@
   .page-description {
     padding-top: 0.5rem;
   }
+
+  .row {
+    max-width: map-get($grid-breakpoints, "xl");
+  }
 }
