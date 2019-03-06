@@ -25,14 +25,7 @@ page '/*.txt', layout: false
 ignore 'assets/stylesheets/*'
 ignore 'assets/javascripts/*'
 ignore 'partials/*'
-ignore 'source/blog/*'
 ignore 'rev-manifest.json'
-
-activate :blog do |blog|
-  blog.sources = 'blog/{year}{month}{day}-{title}.html'
-  blog.permalink = 'thoughts-on-paper/{title}/index.html'
-  blog.layout = 'post'
-end
 
 activate :deploy do |deploy|
   deploy.build_before   = true
@@ -42,13 +35,6 @@ end
 
 # rubocop:disable Metrics/BlockLength
 helpers do
-  def link_to_post_by_slug(slug)
-    article = blog.articles.find { |article| article.slug.downcase == slug.downcase }
-    link_to(article.title, article.url)
-  rescue
-    ""
-  end
-
   def image_url(source)
     return image_path(source) unless external_site_configured?
     config[:protocol] + host_with_port + image_path(source)
