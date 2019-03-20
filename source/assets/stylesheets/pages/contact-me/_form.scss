@@ -2,11 +2,11 @@
   .form-control {
     border-radius: 0;
 
-    &:hover { 
+    &:hover {
       outline: $purple-medium-dark 0.3rem solid;
     }
   }
-  
+
   .invalid-feedback {
     color: $purple-lightest;
   }

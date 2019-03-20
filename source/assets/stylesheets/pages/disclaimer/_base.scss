@@ -2,7 +2,7 @@
   .content-wrapper {
     padding: 0;
   }
-  
+
   .disclaimer-wrapper-container-top-row {
     @include media-breakpoint-up(xs) {
       padding: 6rem 0 9rem 0;
@@ -30,7 +30,7 @@
       @include media-breakpoint-up(xs) {
         max-height: 250px;
         display: block;
-        margin-left: auto; 
+        margin-left: auto;
         margin-right: auto;
         padding-bottom: 1rem;
       }
@@ -50,14 +50,14 @@
         margin-top: auto;
         margin-bottom: auto;
       }
-      
+
       @include media-breakpoint-up(xl) {
-        max-height: 350px; 
+        max-height: 350px;
         margin-right: 2rem;
       }
 
       @include media-breakpoint-up(xxl) {
-        max-height: 400px; 
+        max-height: 400px;
         margin-right: 4rem;
       }
     }

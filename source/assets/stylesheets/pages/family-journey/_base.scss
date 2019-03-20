@@ -4,7 +4,7 @@
   .content-wrapper {
     padding: 0;
   }
-  
+
   .skyline {
     @include media-breakpoint-up(xs) {
       display: none;
@@ -124,5 +124,4 @@
   @import "family-journey-nyc";
   @import "family-journey-pdx";
   @import "family-journey-tbd";
-  @import "family-journey-chicago";
 }
