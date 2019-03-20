@@ -1,5 +1,4 @@
 export default () => {
-  const $navHeaderWrapper = $('.navbar-header-wrapper');
   const $navItems = $('.navbar-nav > li');
   const $navbarToggler = $('.navbar-toggler');
   const $navbarNavItemWrapper = $('.navbar-nav-item-wrapper');
