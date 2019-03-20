@@ -186,9 +186,11 @@
         &:first-child {
           padding-top: 1rem;
         }
+
         &:not(:first-child) {
           padding-top: 0.5rem;
         }
+
         &:not(:last-child) {
           padding-bottom: 0.5rem;
         }
