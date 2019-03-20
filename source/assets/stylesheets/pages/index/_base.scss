@@ -17,12 +17,20 @@
     padding: 0;
 
     .personal-data-wrapper-container {
+      @include media-breakpoint-up(xs) {
+        padding-top: 2rem;
+      }
+
       @include media-breakpoint-up(md) {
         background-color: rgba(4, 1, 5, $backdrop-opacity);
-        padding: 0 0 1rem 0;
+        padding: 0;
 
         .row {
           margin: 0;
+        }
+
+        .personal-data-stacks-wrapper-container {
+          @include box-shadow-all-sides();
         }
       }
 

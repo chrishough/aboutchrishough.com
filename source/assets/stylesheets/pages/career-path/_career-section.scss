@@ -17,6 +17,8 @@
   .career-section-education > .row:first-child,
   .career-section-conferences > .row:first-child,
   .career-section-community > .row:first-child {
+    @include box-shadow-all-sides();
+
     background-color: rgba(4, 1, 5, $backdrop-opacity);
   }
 
@@ -247,9 +249,12 @@
   }
 
   .card-columns {
+    break-inside: avoid;
     column-count: 1;
 
     .card {
+      break-inside: avoid;
+      transform: translateZ(0);
       background: none;
       margin-bottom: 1rem;
     }

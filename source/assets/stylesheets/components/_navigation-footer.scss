@@ -1,9 +1,9 @@
 .navbar {
-  min-width: map-get($grid-breakpoints, 'minimium') !important;
-  box-shadow: 0 0 0.5rem 0.25rem $purple-dark;
-  
+  @include box-shadow-all-sides();
   @include primary-font();
 
+  min-width: map-get($grid-breakpoints, 'minimium') !important;
+  
   @include media-breakpoint-up(xs) {
     padding: 0.5rem 1rem;
   }
@@ -216,7 +216,7 @@
           color: $white;
 
           @include media-breakpoint-up(sm) {
-            box-shadow: 0 0 1rem 0 $purple-medium-dark;
+            @include box-shadow($color: $purple-medium-dark);
           }
 
           @include media-breakpoint-up(lg) {
@@ -307,7 +307,8 @@
         }
 
         @include media-breakpoint-up(sm) {
-          box-shadow: 0 0 1rem 0 $purple-medium-dark;
+          @include box-shadow($color: $purple-medium-dark);
+
           margin-bottom: inherit;
         }
 
