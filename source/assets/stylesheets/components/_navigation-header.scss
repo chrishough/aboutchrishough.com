@@ -3,9 +3,10 @@
 }
 
 .navigation-header {
+  @include box-shadow-all-sides();
+
   background: url('#{$image-path}/backgrounds/subtle-patterns-twinkle-twinkle.png') repeat-x;
   background-color: $purple-darkest;
-  box-shadow: 0 0 0.5rem 0.25rem $purple-darkest;
   font-size: 1.25rem;
   text-align: center;
   padding: 0;

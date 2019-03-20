@@ -12,7 +12,7 @@
 
   .step,
   .skyline {
-    color: $purple-medium-light; 
+    color: $purple-medium-light;
 
     .fa-layers-text {
       color: $white;
@@ -21,6 +21,8 @@
 
   .skyline {
     @include media-breakpoint-up(lg) {
+      @include box-shadow-all-sides();
+
       background: url('#{$image-path}/backgrounds/skyline-pdx.jpg') 57% 37% no-repeat;
       width: 300px;
       height: 300px;

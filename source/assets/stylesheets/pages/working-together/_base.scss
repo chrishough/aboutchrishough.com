@@ -1,12 +1,6 @@
 #working-together {
   @import "../../components/breadcrumbs";
 
-  .breadcrumbs {
-    .row {
-      max-width: map-get($grid-breakpoints, "xl");
-    }
-  }
-  
   .content-wrapper {
     padding-left: 0;
     padding-right: 0;

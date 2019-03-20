@@ -1,14 +1,8 @@
 #career-path {
   @import "../../components/breadcrumbs";
 
-  .breadcrumbs {
-    .row {
-      max-width: map-get($grid-breakpoints, "xl");
-    }
-  }
-
   .content-wrapper {
-    padding: 2rem 0 0 0;;
+    padding: 2rem 0 0 0;
   }
 
   @import "career-section";

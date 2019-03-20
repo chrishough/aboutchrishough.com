@@ -5,6 +5,9 @@ require 'pry'
 require 'slim'
 Slim::Engine.disable_option_validator!
 
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true
+
 require_all 'lib/helpers'
 autoload_all 'lib/helpers'
 
@@ -22,14 +25,7 @@ page '/*.txt', layout: false
 ignore 'assets/stylesheets/*'
 ignore 'assets/javascripts/*'
 ignore 'partials/*'
-ignore 'source/blog/*'
 ignore 'rev-manifest.json'
-
-activate :blog do |blog|
-  blog.sources = 'blog/{year}-{month}-{day}-{title}.html'
-  blog.permalink = 'thoughts-on-paper/{year}/{month}/{day}/{title}/index.html'
-  blog.layout = 'blog'
-end
 
 activate :deploy do |deploy|
   deploy.build_before   = true
@@ -39,13 +35,6 @@ end
 
 # rubocop:disable Metrics/BlockLength
 helpers do
-  def link_to_post_by_slug(slug)
-    article = blog.articles.find { |article| article.slug.downcase == slug.downcase }
-    link_to(article.title, article.url)
-  rescue
-    ""
-  end
-
   def image_url(source)
     return image_path(source) unless external_site_configured?
     config[:protocol] + host_with_port + image_path(source)

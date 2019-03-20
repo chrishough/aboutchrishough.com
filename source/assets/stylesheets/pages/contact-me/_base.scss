@@ -2,10 +2,10 @@
   .content-wrapper {
     padding: 0;
   }
-  
+
   .contact-wrapper-container-top-row {
     @include media-breakpoint-up(xs) {
-      padding: 6rem 0 6rem 0;
+      padding: 6rem 0 9rem 0;
     }
 
     @include media-breakpoint-up(sm) {
