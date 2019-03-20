@@ -21,12 +21,14 @@
 }
 
 @mixin box-shadow-top-bottom-left-sides {
-  box-shadow: -0.5rem -0.5rem 0.5rem 0.25rem $purple-darkest,
-              -0.5rem 0 0.5rem 0.25rem $purple-darkest,
-              -0.5rem 0.5rem 0.5rem 0.25rem $purple-darkest;
+  box-shadow:
+    -0.5rem -0.5rem 0.5rem 0.25rem $purple-darkest,
+    -0.5rem 0 0.5rem 0.25rem $purple-darkest,
+    -0.5rem 0.5rem 0.5rem 0.25rem $purple-darkest;
 }
 
 @mixin box-shadow-top-bottom-sides {
-  box-shadow: -0.5rem 0 0.5rem 0.25rem $purple-darkest,
-              0 0 0.5rem 0.25rem $purple-darkest;
+  box-shadow:
+    -0.5rem 0 0.5rem 0.25rem $purple-darkest,
+    0 0 0.5rem 0.25rem $purple-darkest;
 }

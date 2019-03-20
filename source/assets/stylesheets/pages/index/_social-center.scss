@@ -31,10 +31,10 @@
 
     img {
       @include box-shadow-all-sides();
-      
+
       text-align: center;
       border: 0.25rem $purple-darkest solid;
-      
+
       @include media-breakpoint-up(xs) {
         max-width: 175px;
       }

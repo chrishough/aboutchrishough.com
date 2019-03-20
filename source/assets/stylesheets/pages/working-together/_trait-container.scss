@@ -30,7 +30,7 @@
   }
 
   @include media-breakpoint-up(xs) {
-    .trait-wrapper { 
+    .trait-wrapper {
       box-shadow: none;
     }
 
@@ -46,9 +46,9 @@
   }
 
   @include media-breakpoint-up(lg) {
-    .trait-wrapper { 
+    .trait-wrapper {
       @include box-shadow-all-sides();
-      
+
       margin-bottom: 2rem;
       background-color: rgba(4, 1, 5, $backdrop-opacity);
     }
@@ -125,7 +125,7 @@
 
       @include media-breakpoint-up(xs) {
         @include rotate(180);
-        
+
         writing-mode: vertical-rl;
       }
 
@@ -144,7 +144,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-      height: 100%
+      height: 100%;
     }
   }
 

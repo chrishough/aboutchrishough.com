@@ -3,7 +3,7 @@
   @include primary-font();
 
   min-width: map-get($grid-breakpoints, 'minimium') !important;
-  
+
   @include media-breakpoint-up(xs) {
     padding: 0.5rem 1rem;
   }
@@ -50,19 +50,19 @@
         line-height: 1.5rem;
         color: $gray-100;
         text-align: right;
-        
+
         @include media-breakpoint-up(xs) {
           display: none;
-    
+
           .fa-arrow-circle-down {
             display: inline;
           }
-    
+
           .fa-arrow-circle-right {
             display: none;
           }
         }
-    
+
         @include media-breakpoint-up(sm) {
           display: block;
           font-size: 0.75rem;
@@ -72,32 +72,32 @@
             font-size: 1rem;
           }
         }
-    
+
         @include media-breakpoint-up(lg) {
           .fa-arrow-circle-down {
             display: none;
           }
-    
+
           .fa-arrow-circle-right {
             display: inline;
           }
         }
       }
-    
+
       .navbar-company-wrapper {
         color: $gray-100;
         text-align: right;
         font-size: 0.75rem;
-    
+
         a {
           color: $white;
           text-decoration: underline;
         }
-    
+
         .navbar-company-copyright {
           font-size: 0.7rem;
         }
-    
+
         .navbar-company-disclaimer {
           border-left: 0.05rem $white solid;
           padding-left: 0.5rem;
@@ -111,7 +111,7 @@
             padding-right: 0;
           }
         }
-    
+
         @include media-breakpoint-up(xs) {
           line-height: 1.5rem;
           text-align: left;
@@ -121,7 +121,7 @@
         @include media-breakpoint-up(md) {
           line-height: inherit;
         }
-    
+
         @include media-breakpoint-up(lg) {
           text-align: right;
           padding-top: 0.7rem;
@@ -181,7 +181,7 @@
       display: none;
     }
   }
-  
+
   .navbar-nav-item-wrapper {
     padding-right: 0;
     padding-left: 0;
@@ -296,7 +296,7 @@
           text-align: center;
         }
       }
-      
+
       li.active {
         background-color: $purple-medium-light;
         font-weight: bold;

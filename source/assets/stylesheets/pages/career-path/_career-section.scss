@@ -1,5 +1,5 @@
 .career-section {
-  max-width: map-get($grid-breakpoints, 'xl') !important;  
+  max-width: map-get($grid-breakpoints, 'xl') !important;
   padding-top: 0;
   padding-bottom: 0.5rem;
   border: none;
@@ -45,15 +45,6 @@
     }
   }
 
-  .career-section-education,
-  .career-section-community,
-  .career-section-conferences,
-  .career-category-lets-connect {
-    .career-category {
-      padding: 1rem 0 1.5rem 0;
-    }
-  }
-
   .career-category {
     .explanation {
       .fa-brain,
@@ -73,13 +64,13 @@
       .conferences-location {
         text-transform: capitalize;
       }
-      
+
       .education-school,
       .conferences-title,
       .community-meetup,
       .community-title {
         font-size: 0.9rem;
-      } 
+      }
 
       .education-program,
       .education-location,
@@ -105,7 +96,7 @@
       .experience-logo {
         line-height: 1rem;
         max-width: 1rem;
-        
+
         .fa-exclamation {
           margin-left: 0.05rem;
         }
@@ -215,7 +206,16 @@
     }
   }
 
-  .career-section-experiences { 
+  .career-section-education,
+  .career-section-community,
+  .career-section-conferences,
+  .career-category-lets-connect {
+    .career-category {
+      padding: 1rem 0 1.5rem 0;
+    }
+  }
+
+  .career-section-experiences {
     margin-bottom: 1rem;
   }
 
@@ -228,7 +228,7 @@
     span {
       text-decoration: overline;
     }
-    
+
     .fa-mug-hot {
       margin-left: 1.5rem;
     }

@@ -6,7 +6,7 @@
 
 .nav-tabs {
   border-bottom: 0.05rem solid $white;
-  
+
   .nav-item {
     &:nth-child(2) {
       border-left: 0.05rem solid $white;
@@ -17,10 +17,10 @@
   .nav-link {
     font-weight: normal;
     border-radius: 0;
-    padding: 1rem 2rem; 
+    padding: 1rem 2rem;
     border-color: $white;
     border: none;
-    
+
     &:hover {
       text-decoration: none;
     }
