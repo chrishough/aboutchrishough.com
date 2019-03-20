@@ -8,6 +8,7 @@
   .skyline {
     @include media-breakpoint-up(xs) {
       display: none;
+      box-shadow: none;
     }
 
     @include media-breakpoint-up(lg) {
@@ -39,6 +40,8 @@
     }
 
     @include media-breakpoint-up(lg) {
+      @include box-shadow-all-sides();
+
       padding: 1rem;
       background-color: rgba(4, 1, 5, $backdrop-opacity);
       margin-left: 0.5rem;
@@ -46,11 +49,14 @@
 
     .journey-wrapper {
       @include media-breakpoint-up(xs) {
+        @include box-shadow-all-sides();
+
         padding: 1rem 1.5rem 1.5rem 1.5rem;
-        background-color: rgba(4, 1, 5, $backdrop-opacity-light);
+        background-color: rgba(4, 1, 5, $backdrop-opacity);
       }
 
       @include media-breakpoint-up(lg) {
+        box-shadow: none;
         border: 0.2rem $purple-medium-dark solid;
         padding: 1rem;
       }
@@ -107,7 +113,8 @@
     }
 
     .rotate-location {
-      transform: rotate(360deg);
+      @include rotate(360);
+
       transition-duration: 5s;
     }
   }

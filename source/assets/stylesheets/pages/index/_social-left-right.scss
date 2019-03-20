@@ -20,9 +20,10 @@
     font-size: 2rem;
 
     &:hover {
+      @include box-shadow($color: $purple-medium-dark);
+
       color: $white;
       background-color: $purple-medium-dark;
-      box-shadow: 0 0 1rem 0 $purple-medium-dark;
     }
   }
 }

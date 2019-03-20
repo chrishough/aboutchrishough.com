@@ -20,6 +20,7 @@ export default () => {
   const $personalDataQuotesProgressBar = $('#personal-data-quotes-progress-bar');
 
   let $personalDataQuotePointer = 0;
+  
   const $personalDataQuotesMaxLength = 250;
 
   const shuffleQuoteArray = () => {
