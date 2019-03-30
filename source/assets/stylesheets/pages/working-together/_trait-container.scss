@@ -61,7 +61,7 @@
       background-color: transparent;
     }
 
-    .quality-trait-wrapper {
+    .empathy-trait-wrapper {
       margin-bottom: 0;
       background-color: transparent;
 
@@ -73,7 +73,7 @@
   }
 
   @include media-breakpoint-up(xl) {
-    .focus-trait-wrapper {
+    .quality-trait-wrapper {
       padding-left: 1.5rem;
 
       .row {
@@ -81,7 +81,7 @@
       }
     }
 
-    .empathy-trait-wrapper {
+    .focus-trait-wrapper {
       padding-right: 1.5rem;
 
       .row {
