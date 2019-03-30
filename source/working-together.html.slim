@@ -15,15 +15,6 @@ div[class="container venn-container"]
 
 div[class="container-fluid trait-container"]
   div[class="row trait-wrapper"]
-    div[class="col-12 col-lg-4 focus-trait-wrapper"]
-      div[class="row"]
-        div[class="col-2 col-lg-12 trait"]
-          i[class="fas fa-brain"]
-          div[class="mx-auto"]
-            |Focus
-        div[class="col-10 col-lg-12 explanation"]
-          = data.page['working-together'].goals['focus']
-
     div[class="col-12 col-lg-4 quality-trait-wrapper"]
       div[class="row"]
         div[class="col-2 col-lg-12 trait"]
@@ -41,6 +32,15 @@ div[class="container-fluid trait-container"]
             |Empathy
         div[class="col-10 col-lg-12 explanation"]
           = data.page['working-together'].goals['empathy']
+          
+    div[class="col-12 col-lg-4 focus-trait-wrapper"]
+      div[class="row"]
+        div[class="col-2 col-lg-12 trait"]
+          i[class="fas fa-brain"]
+          div[class="mx-auto"]
+            |Focus
+        div[class="col-10 col-lg-12 explanation"]
+          = data.page['working-together'].goals['focus']
 
   div[class="row"]
     div[class="col-12 summary-trait-wrapper"]
