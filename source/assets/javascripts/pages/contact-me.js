@@ -7,20 +7,21 @@ export default () => {
 
   $.validator.setDefaults({
     submitHandler() {
+      const $socialEmail = 'talk@aboutchrishough.com';
       const $inputFirstName = $('#input-first-name').val();
       const $inputLastName = $('#input-last-name').val();
       const $inputEmail = $('#input-email').val();
       const $inputEmailBody = $('#input-email-body').val();
       const $inputSubject = $('#input-subject').val();
 
-      let $inputBody = 'Subject: ' + $inputSubject;
-      $inputBody = $inputBody + "\r\n" + 'First Name: ' + $inputFirstName;
-      $inputBody = $inputBody + "\r\n" + 'Last Name: ' + $inputLastName;
-      $inputBody = $inputBody + "\r\n" + 'Email Address: ' + $inputEmail;
-      $inputBody = $inputBody + "\r\n\r\n" + '--------------------------------------------';
-      $inputBody = $inputBody + "\r\n\r\n" + $inputEmailBody;
+      let $inputBody = `Subject: ${$inputSubject}`;
+      $inputBody = `${$inputBody}\r\nFirst Name: ${$inputFirstName}`;
+      $inputBody = `${$inputBody}\r\nLast Name: ${$inputLastName}`;
+      $inputBody = `${$inputBody}\r\nEmail Address: ${$inputEmail}`;
+      $inputBody = `${$inputBody}\r\n\r\n--------------------------------------------`;
+      $inputBody = `${$inputBody}\r\n\r\n${$inputEmailBody}`;
 
-      location.href = 'mailto:' + encodeURIComponent($inputEmail) + '?subject=' + encodeURIComponent($inputSubject) + '&body=' + encodeURIComponent($inputBody); 
+      window.location.href = `mailto:${encodeURIComponent($socialEmail)}?subject=${encodeURIComponent($inputSubject)}&body=${encodeURIComponent($inputBody)}`;
     },
   });
 
@@ -60,22 +61,22 @@ export default () => {
       'input-first-name': {
         required: 'You must enter a first name!',
         minlength: 'Three character minimum!',
-        alphanumeric: 'Only alphabetical, numbers, spaces, and dash characters!'
+        alphanumeric: 'Only alphabetical, numbers, spaces, and dash characters!',
       },
       'input-last-name': {
         required: 'You must enter a last name!',
         minlength: 'Three character minimum!',
-        alphanumeric: 'Only alphabetical, numbers, spaces, and dash characters!'
+        alphanumeric: 'Only alphabetical, numbers, spaces, and dash characters!',
       },
       'input-email': {
         required: 'You must enter an email address!',
         minlength: 'Three character minimum!',
-        email: 'Not a valid email address!'
+        email: 'Not a valid email address!',
       },
       'input-subject': {
         required: 'You must enter a subject!',
         minlength: 'Three character minimum!',
-        alphanumeric: 'Only alphabetical, numbers, spaces, and dash characters!'
+        alphanumeric: 'Only alphabetical, numbers, spaces, and dash characters!',
       },
       'input-email-body': {
         required: 'You must enter a message!',

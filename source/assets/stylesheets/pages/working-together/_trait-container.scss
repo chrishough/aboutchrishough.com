@@ -14,7 +14,11 @@
       margin-bottom: 2rem;
       background-color: rgba(4, 1, 5, $backdrop-opacity);
     }
+  }
 
+  .focus-trait-wrapper,
+  .quality-trait-wrapper,
+  .empathy-trait-wrapper {
     .row {
       border-top: 0.2rem $purple-medium-dark solid;
       border-bottom: 0.2rem $purple-medium-dark solid;
@@ -28,6 +32,11 @@
       }
     }
   }
+  
+  .summary-trait-wrapper {
+    border-top: 0.2rem $purple-medium-dark solid;
+    border-bottom: 0.2rem $purple-medium-dark solid;
+  }
 
   @include media-breakpoint-up(xs) {
     .trait-wrapper {
@@ -40,12 +49,25 @@
       @include box-shadow-top-bottom-sides();
     }
 
-    .summary-trait-wrapper {
-      @include box-shadow-all-sides();
-    }
+    .summary-trait-row {
+      padding-bottom: 10rem;
+
+      .col-lg-8 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .summary-trait-wrapper {
+        @include box-shadow-all-sides();
+      }
+    }  
   }
 
   @include media-breakpoint-up(lg) {
+    .summary-trait-row {
+      padding-bottom: 10rem;
+    }
+
     .trait-wrapper {
       @include box-shadow-all-sides();
 
@@ -61,7 +83,7 @@
       background-color: transparent;
     }
 
-    .quality-trait-wrapper {
+    .empathy-trait-wrapper {
       margin-bottom: 0;
       background-color: transparent;
 
@@ -70,31 +92,26 @@
         border-right: 0.2rem $purple-medium-dark solid;
       }
     }
+
+    .summary-trait-wrapper {
+      border-left: 0.2rem $purple-medium-dark solid;
+      border-right: 0.2rem $purple-medium-dark solid;
+    }
   }
 
   @include media-breakpoint-up(xl) {
+    .quality-trait-wrapper {
+      padding-left: 1.5rem;
+
+      .row {
+        border-left: 0.2rem $purple-medium-dark solid;
+      }
+    }
+
     .focus-trait-wrapper {
-      padding-left: 1.5rem;
-
-      .row {
-        border-left: 0.2rem $purple-medium-dark solid;
-      }
-    }
-
-    .empathy-trait-wrapper {
       padding-right: 1.5rem;
 
       .row {
-        border-right: 0.2rem $purple-medium-dark solid;
-      }
-    }
-
-    .summary-trait-wrapper {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-
-      .row {
-        border-left: 0.2rem $purple-medium-dark solid;
         border-right: 0.2rem $purple-medium-dark solid;
       }
     }
@@ -137,7 +154,7 @@
   }
 
   .explanation {
-    padding: 1rem 1.5rem 1rem 1rem;
+    padding: 1rem 2rem 1rem 2rem;
 
     @include media-breakpoint-up(xs) {
       height: inherit;
@@ -145,12 +162,6 @@
 
     @include media-breakpoint-up(lg) {
       height: 100%;
-    }
-  }
-
-  .summary-trait-wrapper {
-    .explanation {
-      padding-left: 1.5rem;
     }
   }
 

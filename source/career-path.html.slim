@@ -6,7 +6,7 @@ icon: fas fa-map-signs
 layout: page
 ---
 ruby:
-  current_page.data.meta = data.career.executive_summary
+  current_page.data.meta = data.page['career-path'].summary
 
 div[class="container-fluid career-section"]
   div[class="row"]
@@ -30,7 +30,7 @@ div[class="container-fluid career-section"]
                 |Product
           div[class="tab-content"]
             div[class="tab-pane active" id="w-two" role="tabpanel" aria-labelledby="w2-tab"]
-              - data.career.experiences['w-two'].sort_by { |k| k["id"] }.reverse.each do |w_two|
+              - data.page['career-path'].experiences['w-two'].sort_by { |k| k["id"] }.reverse.each do |w_two|
                 div[class="row career-category-experiences"]
                   div[class="col-12"]
                     - if w_two.company
@@ -83,7 +83,7 @@ div[class="container-fluid career-section"]
 
             div[class="tab-pane" id="ten-ninety-nine" role="tabpanel" aria-labelledby="ten-ninety-nine-tab"]
               ruby:
-                ten_ninety_nine = data.career.experiences['ten-ninety-nine']
+                ten_ninety_nine = data.page['career-path'].experiences['ten-ninety-nine']
 
               div[class="row career-category-experiences"]
                 div[class="col-12"]
@@ -175,7 +175,7 @@ div[class="container-fluid career-section"]
               |education
           div[class="career-category"]
             div[class="col-12 mx-auto explanation"]   
-              - data.career.education.sort_by { |k| k["id"] }.reverse.each do |school|
+              - data.page['career-path'].education.sort_by { |k| k["id"] }.reverse.each do |school|
                 div[class="row career-category-education"]
                   div[class="col-12 career-category-education-wrapper"]
                     div[class="row"]
@@ -216,7 +216,7 @@ div[class="container-fluid career-section"]
               |community
           div[class="career-category"]
             div[class="col-12 mx-auto explanation"]  
-              - data.career.community.sort_by { |k| k["id"] }.reverse.each do |community|
+              - data.page['career-path'].community.sort_by { |k| k["id"] }.reverse.each do |community|
                 div[class="row career-category-community"]
                   div[class="col-12 career-category-community-wrapper"]
                     div[class="row"]
@@ -248,7 +248,7 @@ div[class="container-fluid career-section"]
               |conferences
           div[class="career-category"]
             div[class="col-12 mx-auto explanation"]              
-              - data.career.conferences.sort_by { |k| k["id"] }.reverse.each do |conference|
+              - data.page['career-path'].conferences.sort_by { |k| k["id"] }.reverse.each do |conference|
                   div[class="row career-category-conferences"]
                     div[class="col-12 career-category-conferences-wrapper"]
                       div[class="row"]
@@ -273,7 +273,7 @@ div[class="container-fluid career-section"]
         div[class="col-12"]
           span
             |Let's Connect!
-          = link_to(data.social.linkedin, target: :_blank) do
+          = link_to(data.components.social.linkedin, target: :_blank) do
             i[class="fas fa-mug-hot"]
 
 div[class="container-fluid"]
