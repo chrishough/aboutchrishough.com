@@ -4,8 +4,9 @@ title: Family Journey
 slug: family-journey
 icon: fas fa-map-marker-alt
 layout: page
-meta: If I were to sum up my journey on the Oregon Trail, this quote from Rich Roll in the book "Finding Ultra" says it better than I can. "Pursue what’s in your heart, and the universe will conspire to support you." I never set out to be part of the Portland business community, and I am not sure where my covered wagon will go next. The journey matters more to me than the destination. 
 ---
+ruby:
+  current_page.data.meta = data.page['family-journey'].summary
 
 div[class="container-fluid family-journey-chicago"]
   div[class="row"]
@@ -27,7 +28,7 @@ div[class="container-fluid family-journey-chicago"]
               |Chicago
           div[class="row"]
             div[class="col-12 explanation"]
-              |Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              = data.page['family-journey'].locations['chicago']
 
 div[class="container-fluid family-journey-boulder"]
   div[class="row"]
@@ -49,7 +50,7 @@ div[class="container-fluid family-journey-boulder"]
               |Boulder
           div[class="row"]
             div[class="col-12 explanation"]
-              |Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              = data.page['family-journey'].locations['boulder']
 
 div[class="container-fluid family-journey-nyc"]
   div[class="row"]
@@ -71,7 +72,7 @@ div[class="container-fluid family-journey-nyc"]
               |Manhattan
           div[class="row"]
             div[class="col-12 explanation"]
-              |Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              = data.page['family-journey'].locations['manhattan']
 
 div[class="container-fluid family-journey-pdx"]
   div[class="row"]
@@ -93,7 +94,7 @@ div[class="container-fluid family-journey-pdx"]
               |PDX
           div[class="row"]
             div[class="col-12 explanation"]
-              |Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              = data.page['family-journey'].locations['pdx']
 
 div[class="container-fluid family-journey-tbd"]
   div[class="row"]
@@ -112,7 +113,7 @@ div[class="container-fluid family-journey-tbd"]
               |TBD
           div[class="row"]
             div[class="col-12 explanation"]
-              |Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+              = data.page['family-journey'].locations['next']
 
   div[class="row"]
     div[class="col-12 d-flex align-contents-center"]

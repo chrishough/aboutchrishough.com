@@ -130,15 +130,9 @@
       }
 
       .em-heartpulse {
-        vertical-align: baseline;
-
         @include media-breakpoint-up(lg) {
           margin-left: 0.5rem;
         }
-      }
-
-      .em-round_pushpin {
-        vertical-align: sub;
       }
     }
 

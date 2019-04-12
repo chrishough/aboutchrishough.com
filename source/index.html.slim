@@ -2,9 +2,7 @@
 layout: index
 ---
 div[class="container-fluid d-flex flex-colum flex-fill justify-content-center personal-data-wrapper-row"]
-  / TOP
   div[class="row w-100"]
-    / SOCIAL
     div[class="col-2 order-2 col-md-1 order-md-1 col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-left"]
       div
 
@@ -14,16 +12,16 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
           / SOCIAL : ACCOUNTS : LEFT
           div[class="row "]
             div[class="col-12 col-lg-3"]
-              = link_to(data.social.linkedin, target: :_blank) do
+              = link_to(data.components.social.linkedin, target: :_blank) do
                 i[class="fab fa-linkedin-in"]
             div[class="col-12 col-lg-3"]
-              = link_to(data.social.github, target: :_blank) do
+              = link_to(data.components.social.github, target: :_blank) do
                 i[class="fab fa-github"]
             div[class="col-12 col-lg-3"]
-              = link_to(data.social.resume, target: :_blank) do
+              = link_to(data.components.social.resume, target: :_blank) do
                 i[class="fas fa-road"]
             div[class="col-12 col-lg-3"]
-              = link_to(data.social.configurations, target: :_blank, class: 'last') do
+              = link_to(data.components.social.configurations, target: :_blank, class: 'last') do
                 i[class="fas fa-wrench"]
 
         div[class="col-10 order-2 col-md-8 col-lg-12 order-lg-1 personal-data-wrapper-center-stack d-flex flex-column align-items-center"]
@@ -39,10 +37,10 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
             div[class="col-12"]
               span[class="personal-data-city"]
                 i[class="em-svg em-round_pushpin"]
-                = data.website.city
+                = data.components.bio.city
                 |,
                 =>
-                = data.website.state
+                = data.components.bio.state
               span[class="personal-data-location"]
                 i[class="em-svg em-heartpulse"]
                 |Remote.
@@ -51,13 +49,13 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
           / SOCIAL : ACCOUNTS : RIGHT
           div[class="row"]
             div[class="col-12 col-lg-3"]
-              = link_to(data.social.instagram, target: :_blank) do
+              = link_to(data.components.social.instagram, target: :_blank) do
                 i[class="fab fa-instagram"]
             div[class="col-12 col-lg-3"]
-              = link_to(data.social.facebook, target: :_blank) do
+              = link_to(data.components.social.facebook, target: :_blank) do
                 i[class="fab fa-facebook-f"]
             div[class="col-12 col-lg-3"]
-              = link_to(data.social.twitter, target: :_blank) do
+              = link_to(data.components.social.twitter, target: :_blank) do
                 i[class="fab fa-twitter"]
             div[class="col-12 col-lg-3"]
               = link_to("/contact-me/", class: "last") do
@@ -67,7 +65,7 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
           / SOCIAL : SLOGAN
           div[class="personal-data-slogan"]
             div
-              = data.website.slogan
+              = data.components.bio.slogan
 
         div[class="d-none d-md-block col-md-12 order-md-5 personal-data-connect-wrapper-internal"]
           / SOCIAL : CONNECT
@@ -83,9 +81,7 @@ div[class="container-fluid d-flex flex-colum flex-fill justify-content-center pe
       div
 
 div[class="container-fluid d-flex flex-column"]
-  / BOTTOM
   div[class="row mt-auto personal-data-quotes-banner-wrapper-row"]
-    / QUOTES
     div[class="d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 mt-auto personal-data-quotes-banner"]
       div[class="row"]
         div[class="col"]
@@ -101,7 +97,6 @@ div[class="container-fluid d-flex flex-column"]
           span[id="personal-data-quotes-author"]
 
   div[class="row personal-values-container-wrapper-row"]
-    / VALUES
     div[class="col-sm-12 mt-auto"]
       div[class="row personal-values-container-wrapper"]
         div[class="col-2 col-md-3 col-lg-3 order-lg-5 col-xl-4 col-xxl-4 col-xxxl-5 personal-values-container-right"]
