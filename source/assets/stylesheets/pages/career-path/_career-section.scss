@@ -82,7 +82,6 @@
       .experience-position,
       .experience-dates,
       .experience-location,
-      .experience-learnings,
       .experience-w-two-accomplishments,
       .experience-w-ten-ninety-nine-accomplishments,
       .product-learnings,
@@ -127,7 +126,6 @@
         }
       }
 
-      .experience-learnings,
       .product-vision-statement {
         blockquote {
           margin: 0;
@@ -138,28 +136,18 @@
       }
 
       .experience-w-two-accomplishments,
-      .experience-w-ten-ninety-nine-accomplishments {
-        ul {
-          padding: 1rem 0 0 1rem;
-
-          li {
-            padding-bottom: 0.5rem;
-          }
-        }
+      .experience-w-ten-ninety-nine-top-level-accomplishments {
+        padding: 1rem 0 1rem 0;
       }
 
       .experience-w-ten-ninety-nine-accomplishments {
         .col-12:first-child {
-          padding-top: 0.5rem;
+          padding-top: 1rem;
         }
 
-        ul {
-          padding-left: 2rem;
+        .col-12 {
+          padding: 1rem 0 1rem 0;
         }
-      }
-
-      .experience-position {
-        font-weight: bold;
       }
 
       .product-vision-graphic {
