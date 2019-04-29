@@ -1,4 +1,18 @@
-summary: Strategic Engineering Leader with expertise in coding, design, product development, software quality, and testing with a passion for building, leading, and mentoring high-performing remote teams.
+summary: >-
+  Strategic Engineering Leader with expertise in coding, design, product development, software quality, and testing with a passion for building, leading, and mentoring high-performing remote teams.
+  accomplishments:
+    -
+      id: 1
+      name: Engineering
+      description: Service Oriented Architectures, Continuous Integration, Code Reviews, Pair Programming, Automated Testing, Testing Coverage Metrics, Code Quality, Lean Startup Principles
+    -
+      id: 2
+      name: Architecture
+      description: Full Stack Ruby on Rails, PostgreSQL, Redis, Rspec, AWS, Heroku, GitHub
+    -
+      id: 1
+      name: Leadership
+      description: Culture of Learning, Empathy, Lead by Example, Remote Working Culture, Project Management & Prioritization via SCRUM / Kanban, Data-driven Decision Making
 
 experiences:
   ten-ninety-nine:
