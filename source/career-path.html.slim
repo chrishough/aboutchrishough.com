@@ -33,30 +33,41 @@ div[class="container-fluid career-section"]
               - data.page['career-path'].experiences['w-two'].sort_by { |k| k["id"] }.reverse.each do |w_two|
                 div[class="row career-category-experiences"]
                   div[class="col-12"]
-                    - if w_two.company
-                      div[class="row"]
-                        div[class="col-12 experience-company"]
-                          - if w_two.link
-                            = link_to(w_two.company, w_two.link, target: :_blank)
-                          - else
-                            = w_two.company
-                    div[class="row no-gutters"]
-                      div[class="col-1 experience-logo"]
-                        i[class="fab fa-pied-piper-alt"]
-                      div[class="col-11 experience-position"]
-                        = w_two.position
-                    div[class="row no-gutters"]
-                      div[class="col-1 experience-logo"]
-                        i[class="far fa-calendar-alt"]
-                      div[class="col-11 experience-dates"]
-                        = w_two.dates
-                    div[class="row no-gutters"]
-                      div[class="col-1 experience-logo"]
-                        i[class="fas fa-map-marker-alt"]
-                      div[class="col-11 experience-location"]
-                        = w_two.location
+                    div[class="row"]
+                      div[class="col-12 experience-company"]
+                        - if w_two.link
+                          = link_to(w_two.company, w_two.link, target: :_blank)
+                        - else
+                          = w_two.company
+                    - if w_two['position'].kind_of?(Array)
+                      - w_two['position'].sort_by { |k| k["id"] }.reverse.each do |postion|
+                        div[class="row no-gutters"]
+                          div[class="col-1 experience-logo"]
+                            i[class="fab fa-pied-piper-alt"]
+                          div[class="col-11 experience-position"]
+                            = postion.position
+                        div[class="row no-gutters"]
+                          div[class="col-1 experience-logo"]
+                            i[class="far fa-calendar-alt"]
+                          div[class="col-11 experience-dates"]
+                            = postion.dates
+                    - else
+                      div[class="row no-gutters"]
+                        div[class="col-1 experience-logo"]
+                          i[class="fab fa-pied-piper-alt"]
+                        div[class="col-11 experience-position"]
+                          = w_two.position
+                      div[class="row no-gutters"]
+                        div[class="col-1 experience-logo"]
+                          i[class="far fa-calendar-alt"]
+                        div[class="col-11 experience-dates"]
+                          = w_two.dates
+
                     div[class="row no-gutters experience-w-two-accomplishments"]
-                      = w_two.accomplishments
+                      ul
+                        - w_two.accomplishments.each do |accomplishment|
+                          li
+                            = accomplishment
 
             div[class="tab-pane" id="ten-ninety-nine" role="tabpanel" aria-labelledby="ten-ninety-nine-tab"]
               ruby:
@@ -77,22 +88,17 @@ div[class="container-fluid career-section"]
                       i[class="far fa-calendar-alt"]
                     div[class="col-11 experience-dates"]
                       = ten_ninety_nine.dates
-                  div[class="row no-gutters"]
-                    div[class="col-1 experience-logo"]
-                      i[class="fas fa-map-marker-alt"]
-                    div[class="col-11 experience-location"]
-                      = ten_ninety_nine.location
                   div[class="row no-gutters experience-w-ten-ninety-nine-top-level-accomplishments"]
                       = ten_ninety_nine.accomplishments
-
                   div[class="row no-gutters experience-w-ten-ninety-nine-accomplishments"]
-                    - ten_ninety_nine.roles.sort_by { |k| k["id"] }.reverse.each do |ten_ninety_nine_role|
-                      div[class="col-12 experience-position"]
-                        strong
-                          = ten_ninety_nine_role.company
-                        |:
-                        =>
-                        = ten_ninety_nine_role.accomplishments
+                    ul
+                      - ten_ninety_nine.roles.sort_by { |k| k["id"] }.reverse.each do |ten_ninety_nine_role|
+                        li
+                          strong
+                            = ten_ninety_nine_role.company
+                          |:
+                          =>
+                          = ten_ninety_nine_role.accomplishments
 
             div[class="tab-pane" id="product" role="tabpanel" aria-labelledby="product-tab"]
               div[class="row"]
