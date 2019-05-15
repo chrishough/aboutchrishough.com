@@ -52,78 +52,84 @@ experiences:
       link: http://www.att.com
       position: Team Leader – Web Technology
       dates: 2001 – 2007
-      location: Onsite in Chicago, Illinois
-      accomplishments: >-
-        Managed a team of 5 engineers across the Midwest region and built a metrics-driven multi-tiered dashboard application serving actionable data to the enterprise to prevent fraud and increase performance metrics for customers nationwide.
+      accomplishments:
+        - Managed a team of 5 engineers across the Midwest region and created consistency by establishing writing development processes, software style guidelines, scalability standards, and pair programming sessions.
+        - Reduced expenses, increased productivity, and prevented fraud by engineering a metrics-driven multi-tiered dashboard application serving actionable data to the enterprise.
+        - Increased customer satisfaction scores, reduced outages, & reduced repair visits by standardizing online process delivery and creating mission-critical applications with 24/7 uptime & real-time administrative updates.
     -
       id: 2
       company: SOM
       link: http://www.som.com
       position: Applications Developer
       dates: 2008 – 2009
-      location: Onsite in Chicago, Illinois
-      accomplishments: >-
-        Increased project management collaboration and reduced task duplication during the Burj Khalifa construction project by refactoring internal project management software and developing a company-wide task tracker.
+      accomplishments:
+        - Refactored internal project management software to support international languages and character sets.
+        - Increased project management collaboration and reduced task duplication during the Burj Khalifa construction project by developing a company-wide project and task tracker.
     -
       id: 3
-      position: Web Applications Engineer
-      dates: 2009 – 2014
-      location: Onsite in Denver, Colorado, and Remote from New York, New York
-      accomplishments: >-
-        Revamped the RetailHub Enterprise Content Management Software. Replaced 10 years of legacy code & organized customer tools in a single workspace to increase application performance & improve client satisfaction.
-    -
-      id: 4
       company: PlaceWise Media
       link: http://www.placewise.com
-      position: Director of Application Engineering
-      dates: 2014 – 2015
-      location: Remote from New York, New York and Portland, Oregon
-      accomplishments: >-
-        Managed the construction of a Ruby on Rails based Service Oriented Architecture to drive content to over 600 statically generated websites, handle increased site traffic on Black Friday, deliver new content, and reduce DevOps overhead costs.
+      position:
+        -
+          id: 1
+          position: Web Applications Engineer
+          dates: 2009 – 2014
+        -
+          id: 2
+          position: Director of Application Engineering
+          dates: 2014 – 2015
+      accomplishments:
+        - Managed the construction of a Ruby on Rails based Service Oriented Architecture to drive content to over 600 statically generated websites, handle increased site traffic on Black Friday, deliver new content, and reduce DevOps overhead costs.
+        - Built a culture of learning by implementing online courses, real-time pairing, and career mentoring to reduce knowledge silos, grow junior developers, and reduce project completion times.
+        - Refactored the code deployment process to Git Flow via GitHub from SVN in order to improve the stability of the CI environment and increase the speed of code deployments.
+        - Revamped the RetailHub Enterprise Content Management Software. Replaced 10 years of legacy code & organized customer tools in a single workspace to increase application performance & improve client satisfaction. Transformed legacy communications and increased collaboration & efficiency by implementing Slack enterprise-wide.
     -
-      id: 5
+      id: 4
       company: BilingualHire
       position: Senior Full Stack Engineer
       dates: 2016
-      location: Remote from Portland, Oregon
-      accomplishments: >-
-        Re-engineered an MVP focused on placing bilingual candidates in jobs across the United States. Optimized the user sign up workflow by simplifying content creation from launch to point of sale, retooling every user interface, and adjusting the data model to support many new language types.
+      accomplishments:
+        - Re-engineered an MVP focused on placing bilingual candidates in jobs across the United States.
+        - Optimized the user sign up workflow by simplifying content creation from launch to point of sale, retooling every user interface, and adjusting the data model to support many new language types.
     -
-      id: 6
+      id: 5
       company: Whiplash
       link: https://www.whiplashmerch.com/
       position: Senior Full Stack Developer
       dates: 2016
-      location: Remote from Portland, Oregon
-      accomplishments: >-
-        Engineered an Inbound and Outbound ETL Microservice with API to relay communications between 3rd party providers & our monorail in real time and provide flexibility for varying provider complexity. Instituted Slack and Git Flow modeled to improve code quality, test coverage, and communication.
+      accomplishments:
+        - Engineered an Inbound and Outbound ETL Microservice with API to relay communications between 3rd party providers & our monorail in real time and provide flexibility for varying provider complexity.
+        - Instituted Slack and Git Flow modeled to improve code quality, test coverage, and communication. Created room configurations to support cross-collaboration between on-site and remote engineering, sales, & customer teams.
     -
-      id: 7
+      id: 6
       company: Coding Zeal
       link: https://www.codingzeal.com/
       position: Senior Software Engineer
       dates: 2016 – 2017
-      location: Remote from Portland, Oregon
-      accomplishments: >-
-        Engineered the foundations required to move a client off of MongoDB, both to increase efficiency and cut costs. Built a detailed patient logic report utilizing recursion to enable patient metric analysis & interpretation for a customer in the medical industry. Refactored Coding Zeal’s referral program website to improve lead conversions.
+      accomplishments:
+        - Built a detailed patient logic report utilizing recursion to enable patient metric analysis & interpretation for a customer in the medical industry.
+        - Engineered the foundations required to move a client off of MongoDB both to increase efficiency and cut costs.
+        - Refactored Coding Zeal’s referral program website to provide customers with a consistent & accessible UI/UX, increase customer satisfaction, and improve lead conversions.
     -
-      id: 8
+      id: 7
       company: Weaveup
       link: https://www.weaveup.com/
       position: Senior Backend Engineer
       dates: 2017 – 2018
-      location: Remote from Portland, Oregon
-      accomplishments: >-
-        Led hiring, onboarding, and training of engineers for the backend team. Planned and architected Licensing 2.0 which impacted every component related to design content in the backend API. Cut test processing time from 25 minutes to 8 minutes by implementing parallel test execution on CI.
+      accomplishments:
+        - Led hiring, onboarding, and training of engineers and the first SCRUM project manager for the backend team.
+        - Planned and architected Licensing 2.0 which required a multi-stage multi-epic rollout process. Completed multiple epics of 100 files each that impacted every component related to design content in the backend API.
+        - Cut test processing time from 25 minutes to 8 minutes by converting legacy Minitest specs to Rspec and implementing parallel test execution on CI.
     -
-      id: 9
+      id: 8
       company: "MediaPRO: Cybersecurity & Privacy Education"
       link: https://www.mediapro.com/
       position: Senior Application Developer
       dates: 2018 – Present
-      location: Remote from Portland, Oregon
-      accomplishments: >-
-        Successfully launched LearningLAB, a platform that helps enterprises fortify their workforce against cyber threats and privacy breaches. Led backend testing and established best practices to achieve optimal software quality.
+      accomplishments:
+        - Successfully launched LearningLAB, a platform that helps enterprises fortify their workforce against cyber threats and privacy breaches. Led backend testing and established best practices to achieve optimal software quality.
+        - Designed a full-stack dependency management process for our two monolithic ruby-on-rails applications.
+        - Improved code cleanliness and readability by teaching the team about how linting can be used to increase productivity and working with the engineers to implement linting in the code base.
 
 education:
   -

@@ -140,6 +140,13 @@
         padding: 1rem 0 1rem 0;
       }
 
+      .experience-w-two-accomplishments,
+      .experience-w-ten-ninety-nine-accomplishments {
+        li:not(:last-child) {
+          padding-bottom: 0.5rem;
+        }
+      }
+
       .experience-w-ten-ninety-nine-accomplishments {
         .col-12:first-child {
           padding-top: 1rem;
