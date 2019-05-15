@@ -1,5 +1,6 @@
-summary: >-
-  Strategic Engineering Leader with expertise in coding, design, product development, software quality, and testing with a passion for building, leading, and mentoring high-performing remote teams.
+summary:
+  description: >-
+    Strategic Engineering Leader with expertise in coding, design, product development, software quality, and testing with a passion for building, leading, and mentoring high-performing remote teams.
   accomplishments:
     -
       id: 1
@@ -10,7 +11,7 @@ summary: >-
       name: Architecture
       description: Full Stack Ruby on Rails, PostgreSQL, Redis, Rspec, AWS, Heroku, GitHub
     -
-      id: 1
+      id: 3
       name: Leadership
       description: Culture of Learning, Empathy, Lead by Example, Remote Working Culture, Project Management & Prioritization via SCRUM / Kanban, Data-driven Decision Making
 
@@ -137,49 +138,24 @@ education:
     program: Master of Business Administration
     location: Chicago, Illinois
     link: http://www.keller.edu/
-  -
-    id: 3
-    name: Northwestern University School of Continuing Studies
-    program: Economics of Trading Course
-    location: Chicago, Illinois
-    link: http://www.scs.northwestern.edu/
-  -
-    id: 4
-    name: NYU School of Continuing and Professional Studies
-    program: Ruby on Rails Programming Course
-    location: New York, New York
-    link: http://www.scps.nyu.edu/
 
 community:
   -
     id: 1
     title: Founder
     meetup: Ruby on Rails PDX Meetup
-    dates: 2016
     location: Portland, Oregon
-    link: https://twitter.com/rubyonrailspdx
   -
     id: 2
     title: Mentor
-    meetup: Operation Code
-    dates: 2016 - 2017
+    meetup: Mentorship Saturdays PDX Meetup
     location: Portland, Oregon
-    link: https://operationcode.org/
   -
     id: 3
-    title: Mentor
-    meetup: Mentorship Saturdays PDX Meetup
-    dates: 2016 - Present
-    location: Portland, Oregon
-    link: https://www.meetup.com/Mentorship-Saturdays/
-  -
-    id: 4
     title: Founder
     meetup: Full Stack PDX Meetup
-    dates: 2017 - Present
     location: Portland, Oregon
-    link: https://twitter.com/fullstackpdx
-
+    link: https://www.meetup.com/fullstackpdx/
 
 conferences:
   -
