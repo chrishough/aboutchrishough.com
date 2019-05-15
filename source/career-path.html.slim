@@ -167,7 +167,10 @@ div[class="container-fluid career-section"]
                   div[class="col-12 career-category-community-wrapper"]
                     div[class="row"]
                       div[class="col-12 community-meetup"]
-                        = link_to(community.meetup, community.link, target: :_blank)
+                        -if community.link
+                          = link_to(community.meetup, community.link, target: :_blank)
+                        - else
+                          = community.meetup
                     div[class="row no-gutters"]
                       div[class="col-1 community-logo"]
                         i[class="fas fa-brain"]
@@ -178,11 +181,6 @@ div[class="container-fluid career-section"]
                         i[class="fas fa-map-marker-alt"]
                       div[class="col-11 community-location"]
                         = community.location
-                    div[class="row no-gutters"]
-                      div[class="col-1 community-logo"]
-                        i[class="fas fa-exclamation"]
-                      div[class="col-11 community-dates"]
-                        = community.dates
 
     div[class="card career-section-conferences"]
       div[class="row"]

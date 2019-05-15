@@ -24,6 +24,22 @@
 
   .page-description {
     padding-top: 0.5rem;
+    padding-left: 0;
+
+    .page-child-wrapper {
+      .col-12 {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+      }
+
+      .col-12:first-child {
+        padding-top: 1rem;
+      }
+
+      .col-12:last-child {
+        padding-bottom: 0;
+      }
+    }
   }
 
   .row {
