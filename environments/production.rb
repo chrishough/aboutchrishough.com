@@ -13,7 +13,7 @@ activate :minify_html do |html|
   html.remove_http_protocol = false
 end
 
-set :protocol, 'http://'
+set :protocol, 'https://'
 set :host, 'aboutchrishough.com'
 set :port, 80
 
