@@ -21,7 +21,7 @@ after_build do
   Dir.glob('build/assets/*.json').select { |file| /manifest/.match file }.each { |file| File.delete(file) }
 
   File.write('build/CNAME', 'aboutchrishough.com')
-  
+
   add_content_to_source(postion: 'header', view_source_file: 'view_source_header.txt')
   add_content_to_source(postion: 'footer', view_source_file: 'view_source_footer.txt')
 end
@@ -42,18 +42,18 @@ end
 
 def read_source_file(view_source_file:)
   File.read('source/partials/' + view_source_file).strip
-rescue
+rescue StandardError
   raise StandardError, 'Unfortunately the view source file can not be located!'
 end
 
 def write_footer_content(postion:, content:, view_source_file:)
   content.insert(content.index('</html>'), "\n#{read_source_file(view_source_file: view_source_file)}\n")
-rescue
+rescue StandardError
   raise StandardError, 'Unfortunately the view source header index can not be located!'
 end
 
 def write_header_content(postion:, content:, view_source_file:)
   content.insert(content.index('<html') + 19, "\n#{read_source_file(view_source_file: view_source_file)}\n")
-rescue
+rescue StandardError
   raise StandardError, 'Unfortunately the view source footer index can not be located!'
 end
