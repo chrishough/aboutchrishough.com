@@ -42,7 +42,14 @@ helpers do
 
   def link_to(*args, &block)
     return super(*args, &block) unless external_site_configured?
-    args[0] = external_destination(args[0])
+    return super(*args, &block) if args.select { |arg| arg.is_a?(Hash) && arg.include?(:target) }.present?
+
+    if block_given?
+      args[0] = external_destination(args[0])
+    else
+      args[1] = external_destination(args[1])
+    end
+
     super(*args, &block)
   end
 
