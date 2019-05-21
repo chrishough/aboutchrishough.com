@@ -126,15 +126,6 @@
         }
       }
 
-      .product-vision-statement {
-        blockquote {
-          margin: 0;
-          border-left: 0.05rem solid $gray-500;
-          color: $gray-500;
-          padding: 0 1rem;
-        }
-      }
-
       .experience-w-two-accomplishments,
       .experience-w-ten-ninety-nine-top-level-accomplishments {
         padding: 1rem 0 1rem 0;
@@ -148,10 +139,6 @@
       }
 
       .experience-w-ten-ninety-nine-accomplishments {
-        .col-12:first-child {
-          padding-top: 1rem;
-        }
-
         .col-12 {
           padding: 1rem 0 1rem 0;
         }
@@ -167,6 +154,13 @@
       }
 
       .product-vision-statement {
+        blockquote {
+          margin: 0;
+          border-left: 0.05rem solid $gray-500;
+          color: $gray-500;
+          padding: 0 1rem;
+        }
+
         &:first-child {
           padding-top: 1rem;
         }
