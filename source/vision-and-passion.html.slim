@@ -1,0 +1,52 @@
+---
+id: vision-and-passion
+title: Vision & Passion
+slug: vision-and-passion
+icon: fas fa-eye 
+layout: page
+---
+ruby:
+  current_page.data.meta = data.page['vision-and-passion'].summary
+
+div[class="container bouldering-container"]
+  div[class="row"]
+    div[class="col-12 d-flex align-contents-center"]
+      embed[src="#{image_path('backgrounds/bouldering.svg')}"]
+
+div[class="container-fluid trait-container"]
+  div[class="row trait-wrapper"]
+    div[class="col-12 col-lg-4 fitness-trait-wrapper"]
+      div[class="row"]
+        div[class="col-2 col-lg-12 trait"]
+          i[class="fas fa-dumbbell"]
+          div[class="mx-auto"]
+            |Fitness
+        div[class="col-10 col-lg-12 explanation"]
+          = data.page['vision-and-passion'].goals['fitness']
+
+    div[class="col-12 col-lg-4 strategy-trait-wrapper"]
+      div[class="row"]
+        div[class="col-2 col-lg-12 trait"]
+          i[class="fas fa-chess"]
+          div[class="mx-auto"]
+            |Strategy
+        div[class="col-10 col-lg-12 explanation"]
+          = data.page['vision-and-passion'].goals['strategy']
+
+    div[class="col-12 col-lg-4 education-trait-wrapper"]
+      div[class="row"]
+        div[class="col-2 col-lg-12 trait"]
+          i[class="fas fa-book"]
+          div[class="mx-auto"]
+            |Education
+        div[class="col-10 col-lg-12 explanation"]
+          = data.page['vision-and-passion'].goals['education']
+  
+  div[class="row summary-trait-row"]
+    div[class="col-12 col-lg-8"]
+      div[class="summary-trait-wrapper"]
+        div[class="explanation"]
+          = data.page['vision-and-passion'].goals['overall']
+
+    div[class="col-12 col-lg-4 d-flex align-contents-center vision-and-passion-embed-wrapper"]
+      embed[src="#{image_path('backgrounds/vision-and-passion.svg')}"]

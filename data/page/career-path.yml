@@ -1,0 +1,253 @@
+summary:
+  description: >-
+    Strategic Engineering Leader with expertise in coding, design, product development, software quality, and testing with a passion for building, leading, and mentoring high-performing remote teams.
+  accomplishments:
+    -
+      id: 1
+      name: Engineering
+      description: Service Oriented Architectures, Continuous Integration, Code Reviews, Pair Programming, Automated Testing, Testing Coverage Metrics, Code Quality, Lean Startup Principles
+    -
+      id: 2
+      name: Architecture
+      description: Full Stack Ruby on Rails, PostgreSQL, Redis, Rspec, AWS, Heroku, GitHub
+    -
+      id: 3
+      name: Leadership
+      description: Culture of Learning, Empathy, Lead by Example, Remote Working Culture, Project Management & Prioritization via SCRUM / Kanban, Data-driven Decision Making
+  technologies:
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/airbrake.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/aws.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/bitbucket.gif
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/bootstrap.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/clubhouse.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/coldfusion.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/confluence.gif
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/emberjs.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/fusebox.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/gitlab.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/google.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/harvest.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/heroku.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jira.gif
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jquery.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/meetup.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/msft.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/newrelic.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/oracle.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/pivotaltracker.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rackspace.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/redis.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/resque.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sendgrid.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sentry.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sidekiq.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sqlserver.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/svn.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/vscode.png
+
+experiences:
+  ten-ninety-nine:
+    company: RobotsBuildingRobots, LLC
+    link: http://robotsbuildingrobots.com/
+    position: Founder & Senior Full Stack Engineer
+    dates: 2016 – Present
+    location: Remote from Portland, Oregon
+    accomplishments: >-
+      Hired by companies to work on every part of the SDLC, from product inception, roadmap development, and hands-on programming to launch, customer implementation, and maintenance. Built and trained internal teams on software quality best practices to create a sustainable engineering culture that can execute on the most challenging business objectives.
+    roles:
+      -
+        id: 1
+        company: Gathrly
+        accomplishments: >-
+          Partnered with company founders to create a technical product roadmap and setup agile processes. Designed, engineered, and maintained a lead management application utilized by top tier brewers. Coached and mentored a team of junior engineers to meet productivity goals and ensure high-performance.
+      -
+        id: 2
+        company: USA Today
+        accomplishments: >-
+          Developed and architected a backend CMS with frontend content creation interfaces & features. Optimized user flows & improved the customer experience by designing an updated responsive layout.
+      -
+        id: 3
+        company: W. W. Norton
+        accomplishments: >-
+          Designed and architected an interactive delivery platform to serve over 300+ interactives for a global publisher. Setup the GitFlow Process, code reviews, quality guidelines, & workflow management. Coached & mentored junior engineers on best practices to increase their productivity & contributions to the code base.
+      -
+        id: 4
+        company: Crowd OX
+        accomplishments: >-
+          Built out platform features across three ruby-on-rails engines. Rewrote the Partner application testing suite porting it from Minitest to the latest version of RSpec while maintaining testing coverage metrics. Expanded testing coverage from 0% to over 60% in a legacy code base with 100% model testing coverage.
+  w-two:
+    -
+      id: 1
+      company: AT&T
+      link: http://www.att.com
+      position: Team Leader – Web Technology
+      dates: 2001 – 2007
+      accomplishments:
+        - Managed a team of 5 engineers across the Midwest region and created consistency by establishing writing development processes, software style guidelines, scalability standards, and pair programming sessions.
+        - Reduced expenses, increased productivity, and prevented fraud by engineering a metrics-driven multi-tiered dashboard application serving actionable data to the enterprise.
+        - Increased customer satisfaction scores, reduced outages, & reduced repair visits by standardizing online process delivery and creating mission-critical applications with 24/7 uptime & real-time administrative updates.
+    -
+      id: 2
+      company: SOM
+      link: http://www.som.com
+      position: Applications Developer
+      dates: 2008 – 2009
+      accomplishments:
+        - Refactored internal project management software to support international languages and character sets.
+        - Increased project management collaboration and reduced task duplication during the Burj Khalifa construction project by developing a company-wide project and task tracker.
+    -
+      id: 3
+      company: PlaceWise Media
+      link: http://www.placewise.com
+      position:
+        -
+          id: 1
+          position: Web Applications Engineer
+          dates: 2009 – 2014
+        -
+          id: 2
+          position: Director of Application Engineering
+          dates: 2014 – 2015
+      accomplishments:
+        - Managed the construction of a Ruby on Rails based Service Oriented Architecture to drive content to over 600 statically generated websites, handle increased site traffic on Black Friday, deliver new content, and reduce DevOps overhead costs.
+        - Built a culture of learning by implementing online courses, real-time pairing, and career mentoring to reduce knowledge silos, grow junior developers, and reduce project completion times.
+        - Refactored the code deployment process to Git Flow via GitHub from SVN in order to improve the stability of the CI environment and increase the speed of code deployments.
+        - Revamped the RetailHub Enterprise Content Management Software. Replaced 10 years of legacy code & organized customer tools in a single workspace to increase application performance & improve client satisfaction. Transformed legacy communications and increased collaboration & efficiency by implementing Slack enterprise-wide.
+    -
+      id: 4
+      company: BilingualHire
+      position: Senior Full Stack Engineer
+      dates: 2016
+      accomplishments:
+        - Re-engineered an MVP focused on placing bilingual candidates in jobs across the United States.
+        - Optimized the user sign up workflow by simplifying content creation from launch to point of sale, retooling every user interface, and adjusting the data model to support many new language types.
+    -
+      id: 5
+      company: Whiplash
+      link: https://www.whiplashmerch.com/
+      position: Senior Full Stack Developer
+      dates: 2016
+      accomplishments:
+        - Engineered an Inbound and Outbound ETL Microservice with API to relay communications between 3rd party providers & our monorail in real time and provide flexibility for varying provider complexity.
+        - Instituted Slack and Git Flow modeled to improve code quality, test coverage, and communication. Created room configurations to support cross-collaboration between on-site and remote engineering, sales, & customer teams.
+    -
+      id: 6
+      company: Coding Zeal
+      link: https://www.codingzeal.com/
+      position: Senior Software Engineer
+      dates: 2016 – 2017
+      accomplishments:
+        - Built a detailed patient logic report utilizing recursion to enable patient metric analysis & interpretation for a customer in the medical industry.
+        - Engineered the foundations required to move a client off of MongoDB both to increase efficiency and cut costs.
+        - Refactored Coding Zeal’s referral program website to provide customers with a consistent & accessible UI/UX, increase customer satisfaction, and improve lead conversions.
+    -
+      id: 7
+      company: Weaveup
+      link: https://www.weaveup.com/
+      position: Senior Backend Engineer
+      dates: 2017 – 2018
+      accomplishments:
+        - Led hiring, onboarding, and training of engineers and the first SCRUM project manager for the backend team.
+        - Planned and architected Licensing 2.0 which required a multi-stage multi-epic rollout process. Completed multiple epics of 100 files each that impacted every component related to design content in the backend API.
+        - Cut test processing time from 25 minutes to 8 minutes by converting legacy Minitest specs to Rspec and implementing parallel test execution on CI.
+    -
+      id: 8
+      company: "MediaPRO: Cybersecurity & Privacy Education"
+      link: https://www.mediapro.com/
+      position: Senior Application Developer
+      dates: 2018 – Present
+      accomplishments:
+        - Successfully launched LearningLAB, a platform that helps enterprises fortify their workforce against cyber threats and privacy breaches. Led backend testing and established best practices to achieve optimal software quality.
+        - Designed a full-stack dependency management process for our two monolithic ruby-on-rails applications.
+        - Improved code cleanliness and readability by teaching the team about how linting can be used to increase productivity and working with the engineers to implement linting in the code base.
+
+education:
+  -
+    id: 1
+    name: Illinois College
+    program: Bachelor of Science in Management Information Systems
+    location: Jacksonville, Illinois
+    link: http://www.ic.edu/
+  -
+    id: 2
+    name: Keller Graduate School of Management
+    program: Master of Business Administration
+    location: Chicago, Illinois
+    link: http://www.keller.edu/
+
+community:
+  -
+    id: 1
+    title: Founder
+    meetup: Ruby on Rails PDX Meetup
+    location: Portland, Oregon
+  -
+    id: 2
+    title: Mentor
+    meetup: Mentorship Saturdays PDX Meetup
+    location: Portland, Oregon
+  -
+    id: 3
+    title: Founder
+    meetup: Full Stack PDX Meetup
+    location: Portland, Oregon
+    link: https://www.meetup.com/fullstackpdx/
+
+conferences:
+  -
+    id: 1
+    title: Rails Conference
+    dates: April 29th - May 2nd, 2013
+    location: Portland, Oregon
+    link: https://railsconf.org/
+  -
+    id: 2
+    title: jQuery Conference
+    dates: June 13th - 14th, 2013
+    location: Portland, Oregon
+  -
+    id: 3
+    title: Cascadia Ruby
+    dates: October 21st - 22nd, 2013
+    location: Portland, Oregon
+  -
+    id: 4
+    title: Ruby on Ales
+    dates: March 6th – 7th, 2014
+    location: Bend, Oregon
+  -
+    id: 5
+    title: Rails Conference
+    dates: April 22nd - 25th, 2014
+    location: Chicago, Illinois
+    link: https://railsconf.org/
+  -
+    id: 6
+    title: Ruby on Ales
+    dates: March 5th – 6th, 2015
+    location: Bend, Oregon
+  -
+    id: 7
+    title: Rails Conference
+    dates: April 25th - 27th, 2017
+    location: Phoenix, Arizona
+    link: https://railsconf.org/
+  -
+    id: 8
+    title: Ruby Conference
+    dates: November 13th - 15th, 2018
+    location: Los Angeles, California
+    link: https://rubyconf.org/
+  -
+    id: 9
+    title: Rails Conference
+    dates: April 30th - May 2nd, 2019
+    location: Minneapolis, Minnesota
+    link: https://railsconf.org/

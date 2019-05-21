@@ -1,0 +1,24 @@
+.family-journey-nyc {
+  padding: 1rem 1rem 1rem 1rem;
+
+  @include media-breakpoint-up(xs) {
+    background: url('#{$image-path}/backgrounds/skyline-nyc.jpg');
+    background-position: right;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: none;
+  }
+
+  .skyline {
+    @include media-breakpoint-up(lg) {
+      @include box-shadow-all-sides();
+
+      background: url('#{$image-path}/backgrounds/skyline-nyc.jpg') 75% 54% no-repeat;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 0.5rem solid rgba(4, 1, 5, $backdrop-opacity);
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.trait-container {
+  max-width: map-get($grid-breakpoints, 'xl') !important;
+  color: $white;
+
+  .fitness-trait-wrapper,
+  .strategy-trait-wrapper,
+  .education-trait-wrapper,
+  .summary-trait-wrapper {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+
+    @include media-breakpoint-up(xs) {
+      margin-bottom: 2rem;
+      background-color: rgba(4, 1, 5, $backdrop-opacity);
+    }
+  }
+
+  .fitness-trait-wrapper,
+  .strategy-trait-wrapper,
+  .education-trait-wrapper {
+    .row {
+      border-top: 0.2rem $purple-medium-dark solid;
+      border-bottom: 0.2rem $purple-medium-dark solid;
+
+      @include media-breakpoint-up(xs) {
+        height: inherit;
+      }
+
+      @include media-breakpoint-up(lg) {
+        height: 100%;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    .trait-wrapper {
+      box-shadow: none;
+    }
+
+    .fitness-trait-wrapper,
+    .strategy-trait-wrapper,
+    .education-trait-wrapper {
+      @include box-shadow-top-bottom-sides();
+    }
+
+    .summary-trait-row {
+      .col-lg-8 {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .summary-trait-wrapper {
+        @include box-shadow-all-sides();
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .trait-wrapper {
+      @include box-shadow-all-sides();
+
+      margin-bottom: 2rem;
+      background-color: rgba(4, 1, 5, $backdrop-opacity);
+    }
+
+    .fitness-trait-wrapper,
+    .strategy-trait-wrapper,
+    .education-trait-wrapper {
+      box-shadow: none;
+      margin-bottom: 0;
+      background-color: transparent;
+    }
+
+    .strategy-trait-wrapper {
+      margin-bottom: 0;
+      background-color: transparent;
+
+      .row {
+        border-left: 0.2rem $purple-medium-dark solid;
+        border-right: 0.2rem $purple-medium-dark solid;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .fitness-trait-wrapper {
+      padding-left: 1.5rem;
+
+      .row {
+        border-left: 0.2rem $purple-medium-dark solid;
+      }
+    }
+
+    .education-trait-wrapper {
+      padding-right: 1.5rem;
+
+      .row {
+        border-right: 0.2rem $purple-medium-dark solid;
+      }
+    }
+  }
+
+  .trait {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    @include media-breakpoint-up(xs) {
+      padding-top: inherit;
+      align-self: center;
+      justify-content: center;
+      height: inherit;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 1.5rem;
+      align-self: inherit;
+      justify-content: inherit;
+      height: 7rem;
+    }
+
+    div {
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+
+      @include media-breakpoint-up(xs) {
+        @include rotate(180);
+
+        writing-mode: vertical-rl;
+      }
+
+      @include media-breakpoint-up(lg) {
+        transform: inherit;
+        writing-mode: inherit;
+      }
+    }
+  }
+
+  .explanation {
+    padding: 1rem 2rem 1rem 2rem;
+
+    @include media-breakpoint-up(xs) {
+      height: inherit;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 100%;
+    }
+  }
+
+  @import "embed-wrapper";
+}

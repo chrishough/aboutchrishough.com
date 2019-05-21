@@ -1,0 +1,46 @@
+.navigation-header-wrapper {
+  min-width: map-get($grid-breakpoints, 'minimium') !important;
+}
+
+.navigation-header {
+  @include box-shadow-all-sides();
+
+  background: url('#{$image-path}/backgrounds/subtle-patterns-twinkle-twinkle.png') repeat-x;
+  background-color: $purple-darkest;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0;
+
+  a.home-link,
+  a.home-link:visited,
+  a.home-link:active,
+  a.home-link:hover {
+    color: $white;
+    text-decoration: none;
+
+    div {
+      padding: 1rem 0;
+    }
+
+    i {
+      font-size: 0.85rem;
+      vertical-align: inherit;
+    }
+  }
+
+  .prefix {
+    padding-right: 0.5rem;
+    vertical-align: text-top;
+    line-height: 1.5rem;
+
+    @include primary-font();
+  }
+
+  .username {
+    padding-right: 0.5rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+
+    @include impact-font();
+  }
+}

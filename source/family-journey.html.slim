@@ -1,0 +1,120 @@
+---
+id: family-journey
+title: Family Journey
+slug: family-journey
+icon: fas fa-map-marker-alt
+layout: page
+---
+ruby:
+  current_page.data.meta = data.page['family-journey'].summary
+
+div[class="container-fluid family-journey-chicago"]
+  div[class="row"]
+    div[class="d-none d-lg-block col-lg-4 align-self-center"]
+      div[class="skyline"]
+        div[class="step"]
+          span[class="fa-layers fa-fw fa-2x step"]
+            i[class="fas fa-map-marker"]
+            span[class="fa-layers-text"] 1
+    div[class="col-12 col-lg-8"]
+      div[class="row journey-row"]
+        div[class="col-12 journey-wrapper"]
+          div[class="row d-flex flex-row"]
+            div
+              span[class="fa-layers fa-fw fa-2x step"]
+                i[class="fas fa-map-marker"]
+                span[class="fa-layers-text"] 1
+            div[class="city"]
+              |Chicago
+          div[class="row"]
+            div[class="col-12 explanation"]
+              = data.page['family-journey'].locations['chicago']
+
+div[class="container-fluid family-journey-boulder"]
+  div[class="row"]
+    div[class="d-none d-lg-block col-lg-4 align-self-center"]
+      div[class="skyline"]
+        div[class="step"]
+          span[class="fa-layers fa-fw fa-2x step"]
+            i[class="fas fa-map-marker"]
+            span[class="fa-layers-text"] 2
+    div[class="col-12 col-lg-8"]
+      div[class="row journey-row"]
+        div[class="col-12 journey-wrapper"]
+          div[class="row d-flex flex-row"]
+            div
+              span[class="fa-layers fa-fw fa-2x step"]
+                i[class="fas fa-map-marker"]
+                span[class="fa-layers-text"] 2
+            div[class="city"]
+              |Boulder
+          div[class="row"]
+            div[class="col-12 explanation"]
+              = data.page['family-journey'].locations['boulder']
+
+div[class="container-fluid family-journey-nyc"]
+  div[class="row"]
+    div[class="d-none d-lg-block col-lg-4 align-self-center"]
+      div[class="skyline"]
+        div[class="step"]
+          span[class="fa-layers fa-fw fa-2x step"]
+            i[class="fas fa-map-marker"]
+            span[class="fa-layers-text"] 3
+    div[class="col-12 col-lg-8"]
+      div[class="row journey-row"]
+        div[class="col-12 journey-wrapper"]
+          div[class="row d-flex flex-row"]
+            div
+              span[class="fa-layers fa-fw fa-2x step"]
+                i[class="fas fa-map-marker"]
+                span[class="fa-layers-text"] 3
+            div[class="city"]
+              |Manhattan
+          div[class="row"]
+            div[class="col-12 explanation"]
+              = data.page['family-journey'].locations['manhattan']
+
+div[class="container-fluid family-journey-pdx"]
+  div[class="row"]
+    div[class="d-none d-lg-block col-lg-4 align-self-center"]
+      div[class="skyline"]
+        div[class="step"]
+          span[class="fa-layers fa-fw fa-2x step"]
+            i[class="fas fa-map-marker"]
+            span[class="fa-layers-text"] 4
+    div[class="col-12 col-lg-8"]
+      div[class="row journey-row"]
+        div[class="col-12 journey-wrapper"]
+          div[class="row d-flex flex-row"]
+            div
+              span[class="fa-layers fa-fw fa-2x step"]
+                i[class="fas fa-map-marker"]
+                span[class="fa-layers-text"] 4
+            div[class="city"]
+              |PDX
+          div[class="row"]
+            div[class="col-12 explanation"]
+              = data.page['family-journey'].locations['pdx']
+
+div[class="container-fluid family-journey-tbd"]
+  div[class="row"]
+    div[class="d-none d-lg-block col-lg-4 align-self-center"]
+      div[class="skyline"]
+        i[class="fas fa-question-circle"]
+    div[class="col-12 col-lg-8"]
+      div[class="row journey-row"]
+        div[class="col-12 journey-wrapper"]
+          div[class="row d-flex flex-row"]
+            div
+              span[class="fa-layers fa-fw fa-2x step"]
+                i[class="fas fa-map-marker"]
+                span[class="fa-layers-text"] ?
+            div[class="city"]
+              |TBD
+          div[class="row"]
+            div[class="col-12 explanation"]
+              = data.page['family-journey'].locations['next']
+
+  div[class="row"]
+    div[class="col-12 d-flex align-contents-center"]
+      embed[id="family-journey" src="#{image_path('backgrounds/family-journey.svg')}"]

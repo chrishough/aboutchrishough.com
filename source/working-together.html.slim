@@ -1,0 +1,52 @@
+---
+id: working-together
+title: Working Together
+slug: working-together
+icon: fas fa-handshake 
+layout: page
+---
+ruby:
+  current_page.data.meta = data.page['working-together'].summary
+
+div[class="container venn-container"]
+  div[class="row"]
+    div[class="col-12 d-flex align-contents-center"]
+      embed[id="working-together-venn" src="#{image_path('backgrounds/venn.svg')}"]
+
+div[class="container-fluid trait-container"]
+  div[class="row trait-wrapper"]
+    div[class="col-12 col-lg-4 quality-trait-wrapper"]
+      div[class="row"]
+        div[class="col-2 col-lg-12 trait"]
+          i[class="fas fa-microscope"]
+          div[class="mx-auto"]
+            |Quality
+        div[class="col-10 col-lg-12 explanation"]
+          = data.page['working-together'].goals['quality']
+
+    div[class="col-12 col-lg-4 empathy-trait-wrapper"]
+      div[class="row"]
+        div[class="col-2 col-lg-12 trait"]
+          i[class="fas fa-hand-holding-heart"]
+          div[class="mx-auto"]
+            |Empathy
+        div[class="col-10 col-lg-12 explanation"]
+          = data.page['working-together'].goals['empathy']
+          
+    div[class="col-12 col-lg-4 focus-trait-wrapper"]
+      div[class="row"]
+        div[class="col-2 col-lg-12 trait"]
+          i[class="fas fa-brain"]
+          div[class="mx-auto"]
+            |Focus
+        div[class="col-10 col-lg-12 explanation"]
+          = data.page['working-together'].goals['focus']
+
+  div[class="row summary-trait-row"]
+    div[class="col-12 col-lg-8"]
+      div[class="summary-trait-wrapper"]
+        div[class="explanation"]
+          = data.page['working-together'].goals['overall']
+
+    div[class="col-12 col-lg-4 d-flex align-contents-center working-together-embed-wrapper"]
+      embed[src="#{image_path('backgrounds/working-together.svg')}"]

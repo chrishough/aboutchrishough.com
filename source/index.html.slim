@@ -1,21 +1,110 @@
 ---
 layout: index
 ---
+div[class="container-fluid d-flex flex-colum flex-fill justify-content-center personal-data-wrapper-row"]
+  div[class="row w-100"]
+    div[class="col-2 order-2 col-md-1 order-md-1 col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-left"]
+      div
 
-div[class='avatar-author']
-  = data.website.title
+    div[class="col-12 order-1 col-md-8 order-md-2 col-lg-6 col-xl-5 col-xxl-4 mx-auto my-auto personal-data-wrapper-container"]
+      div[class="row personal-data-stacks-wrapper-container"]
+        div[class="col-2 order-1 col-md-2 col-lg-12 order-lg-3 personal-data-wrapper-left-stack"]
+          / SOCIAL : ACCOUNTS : LEFT
+          div[class="row "]
+            div[class="col-12 col-lg-3"]
+              = link_to(data.components.social.linkedin, target: :_blank) do
+                i[class="fab fa-linkedin-in"]
+            div[class="col-12 col-lg-3"]
+              = link_to(data.components.social.github, target: :_blank) do
+                i[class="fab fa-github"]
+            div[class="col-12 col-lg-3"]
+              = link_to(data.components.social.resume, target: :_blank) do
+                i[class="fas fa-road"]
+            div[class="col-12 col-lg-3"]
+              = link_to(data.components.social.configurations, target: :_blank, class: 'last') do
+                i[class="fas fa-wrench"]
 
-div[class='avatar-image']
-  img src="#{data.social.avatar}"
+        div[class="col-10 order-2 col-md-8 col-lg-12 order-lg-1 personal-data-wrapper-center-stack d-flex flex-column align-items-center"]
+          div[class="row"]
+            / SOCIAL : AVATAR
+            div[class="col-12 personal-data-avatar"]
+              img[src="#{image_path('avatar.png')}"]
+            div[class="col-12 personal-data-signature"]
+              = partial "partials/components/about-signature"
 
-div[class='avatar-personal']
-  div[class='avatar-slogan']
-    = data.website.slogan
+          div[class="row no-gutters personal-data-city-location-wrapper"]
+            / SOCIAL : CITY AND LOCATION
+            div[class="col-12"]
+              span[class="personal-data-city"]
+                i[class="em-svg em-round_pushpin"]
+                = data.components.bio.city
+                |,
+                =>
+                = data.components.bio.state
+              span[class="personal-data-location"]
+                i[class="em-svg em-heartpulse"]
+                |Remote.
 
-  div[class='avatar-location']
-    div
-      = image_tag 'social-media-icons/location.svg'
-      = data.website.location
+        div[class="col-2 order-3 col-md-2 col-lg-12 order-lg-4 personal-data-wrapper-right-stack"]
+          / SOCIAL : ACCOUNTS : RIGHT
+          div[class="row"]
+            div[class="col-12 col-lg-3"]
+              = link_to(data.components.social.instagram, target: :_blank) do
+                i[class="fab fa-instagram"]
+            div[class="col-12 col-lg-3"]
+              = link_to(data.components.social.facebook, target: :_blank) do
+                i[class="fab fa-facebook-f"]
+            div[class="col-12 col-lg-3"]
+              = link_to(data.components.social.twitter, target: :_blank) do
+                i[class="fab fa-twitter"]
+            div[class="col-12 col-lg-3"]
+              = link_to("/contact-me/", class: "last") do
+                i[class="far fa-envelope"]
 
-div[class='avatar-social-media']
-  = partial 'partials/layout/components/social-media-icons'
+        div[class="col-12 order-4 col-md-12 col-lg-12 order-lg-2 personal-data-slogan-wrapper-row"]
+          / SOCIAL : SLOGAN
+          div[class="personal-data-slogan"]
+            div
+              = data.components.bio.slogan
+
+        div[class="d-none d-md-block col-md-12 order-md-5 personal-data-connect-wrapper-internal"]
+          / SOCIAL : CONNECT
+          div[class="personal-data-connect"]
+            |Let's Connect!
+
+    div[class="col-8 order-3 col-md-8 order-md-4 mx-auto my-auto personal-data-connect-wrapper-external"]
+      / SOCIAL : CONNECT
+      div[class="personal-data-connect"]
+        |Let's Connect!
+
+    div[class="col-2 order-4 col-md-1 order-md-3 col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 my-auto personal-data-connect-right"]
+      div
+
+div[class="container-fluid d-flex flex-column"]
+  div[class="row mt-auto personal-data-quotes-banner-wrapper-row"]
+    div[class="d-none d-lg-block col-lg-2 col-xl-3 col-xxl-3 col-xxxl-4 mt-auto personal-data-quotes-banner"]
+      div[class="row"]
+        div[class="col"]
+          |Favorite
+          br
+          |Inspirations
+    div[class="col-lg-9 col-xl-6 col-xxl-6 col-xxxl-4 mt-auto personal-data-quotes-container"]
+      div[class="row personal-data-quotes-wrapper"]
+        div[class="col-12 progress"]
+          div[id="personal-data-quotes-progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"]
+        div[id="personal-data-quotes" class="col-md-10 col-xl-12 d-flex flex-column justify-content-center personal-data-quotes"]
+          span[id="personal-data-quotes-text"]
+          span[id="personal-data-quotes-author"]
+
+  div[class="row personal-values-container-wrapper-row"]
+    div[class="col-sm-12 mt-auto"]
+      div[class="row personal-values-container-wrapper"]
+        div[class="col-2 col-md-3 col-lg-3 order-lg-5 col-xl-4 col-xxl-4 col-xxxl-5 personal-values-container-right"]
+          div
+        div[class="col-12 order-12 col-lg-2 order-lg-2 col-xl-2 col-xxl-2 col-xxxl-1 d-flex align-contents-center personal-data-help-graphic"]
+          embed[id="connect-portrait" src="#{image_path('backgrounds/connect-portrait.svg')}"]
+        div[class="col-8 col-md-6 col-lg-4 order-lg-4 col-xl-4 col-xxl-4 col-xxxl-2 my-auto"]
+          div[class="personal-data-help"]
+            |How can I help you?
+        div[class="col-2 col-md-3 col-lg-3 order-lg-5 col-xl-4 col-xxl-4 col-xxxl-5 my-auto personal-values-container-left"]
+          div

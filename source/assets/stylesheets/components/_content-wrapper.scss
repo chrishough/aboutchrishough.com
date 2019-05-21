@@ -1,0 +1,8 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url('#{$image-path}/backgrounds/collage.jpg') repeat 50% 50% fixed;
+  background-position: top center;
+  background-size: contain;
+  min-height: 100%;
+}
