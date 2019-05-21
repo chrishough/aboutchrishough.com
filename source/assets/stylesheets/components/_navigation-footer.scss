@@ -1,0 +1,365 @@
+.navbar {
+  @include box-shadow-all-sides();
+  @include primary-font();
+
+  min-width: map-get($grid-breakpoints, 'minimium') !important;
+
+  @include media-breakpoint-up(xs) {
+    padding: 0.5rem 1rem;
+  }
+
+  .container {
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+      max-width: inherit;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin: auto;
+      max-width: map-get($grid-breakpoints, "lg");
+      padding: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: map-get($grid-breakpoints, "maximum");
+    }
+  }
+
+  .navbar-header-wrapper {
+    @include media-breakpoint-up(sm) {
+      border-bottom: 0.15rem solid $purple-medium-dark;
+    }
+
+    @include media-breakpoint-up(lg) {
+      border-bottom: 0;
+      max-width: 375px;
+    }
+  }
+
+  .navbar-toggler-wrapper {
+    color: $white;
+    border: none;
+    border-radius: 0;
+    padding: 0.25rem 0;
+
+    .navbar-title {
+      color: $white;
+
+      .navbar-description-wrapper {
+        min-height: 1.5rem;
+        line-height: 1.5rem;
+        color: $gray-100;
+        text-align: right;
+
+        @include media-breakpoint-up(xs) {
+          display: none;
+
+          .fa-arrow-circle-down {
+            display: inline;
+          }
+
+          .fa-arrow-circle-right {
+            display: none;
+          }
+        }
+
+        @include media-breakpoint-up(sm) {
+          display: block;
+          font-size: 0.75rem;
+
+          i {
+            padding-left: 0.25rem;
+            font-size: 1rem;
+          }
+        }
+
+        @include media-breakpoint-up(lg) {
+          .fa-arrow-circle-down {
+            display: none;
+          }
+
+          .fa-arrow-circle-right {
+            display: inline;
+          }
+        }
+      }
+
+      .navbar-company-wrapper {
+        color: $gray-100;
+        text-align: right;
+        font-size: 0.75rem;
+
+        a {
+          color: $white;
+          text-decoration: underline;
+        }
+
+        .navbar-company-copyright {
+          font-size: 0.7rem;
+        }
+
+        .navbar-company-disclaimer {
+          border-left: 0.05rem $white solid;
+          padding-left: 0.5rem;
+          margin-left: 0.25rem;
+
+          @include media-breakpoint-up(xs) {
+            padding-right: 0.5rem;
+          }
+
+          @include media-breakpoint-up(lg) {
+            padding-right: 0;
+          }
+        }
+
+        @include media-breakpoint-up(xs) {
+          line-height: 1.5rem;
+          text-align: left;
+          padding-top: 0;
+        }
+
+        @include media-breakpoint-up(md) {
+          line-height: inherit;
+        }
+
+        @include media-breakpoint-up(lg) {
+          text-align: right;
+          padding-top: 0.7rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+
+      @include media-breakpoint-up(xs) {
+        line-height: 2.5rem;
+        font-size: 1rem;
+      }
+
+      @include media-breakpoint-up(transition) {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        line-height: inherit;
+        text-align: right;
+        white-space: nowrap;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    @include media-breakpoint-up(xs) {
+      display: flex;
+    }
+
+    @include media-breakpoint-up(sm) {
+      &:not(:disabled) {
+        cursor: default;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    color: $white;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    outline: none;
+
+    @include media-breakpoint-up(xs) {
+      padding: 2rem 1.5rem;
+    }
+
+    @include media-breakpoint-up(transition) {
+      padding: 1.25rem 1.5rem;
+    }
+
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
+  }
+
+  .navbar-nav-item-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+
+    .navbar-nav {
+      border: none;
+
+      li {
+        @include media-breakpoint-up(xs) {
+          &:not(:last-child) {
+            border-bottom: 0.15rem solid $purple-medium-dark;
+          }
+
+          &:last-child {
+            margin-bottom: -7px;
+          }
+        }
+
+        @include media-breakpoint-up(sm) {
+          &:not(:last-child) {
+            border-bottom: 0;
+          }
+
+          &:last-child {
+            margin-bottom: inherit;
+          }
+        }
+
+        &:hover {
+          background-color: $purple-medium-dark;
+          font-weight: bold;
+          color: $white;
+
+          @include media-breakpoint-up(sm) {
+            @include box-shadow($color: $purple-medium-dark);
+          }
+
+          @include media-breakpoint-up(lg) {
+            margin-top: -1rem;
+            border-radius: 1.5rem 1.5rem 0 0;
+            margin-bottom: -2rem;
+            padding-top: 1rem;
+          }
+        }
+
+        .nav-icon {
+          @include media-breakpoint-up(xs) {
+            margin-left: 0.2rem;
+          }
+
+          @include media-breakpoint-up(sm) {
+            margin-right: 0.5rem;
+          }
+
+          @include media-breakpoint-up(sm) {
+            margin: 0;
+          }
+        }
+
+        .nav-link {
+          @include secondary-font();
+
+          color: $gray-300;
+          padding: 0;
+
+          &:hover {
+            color: $white;
+            font-weight: bold;
+          }
+
+          @include media-breakpoint-up(xs) {
+            span {
+              display: inline;
+            }
+
+            .nav-button {
+              border-right: 0.15rem solid $purple-medium-dark;
+              padding: 1rem 1rem 1rem 1.5rem;
+              margin-right: 1rem;
+              display: inline-block;
+              min-width: 75px;
+            }
+          }
+
+          @include media-breakpoint-up(sm) {
+            font-size: 1.5rem;
+            padding: 2rem;
+
+            span {
+              display: none;
+            }
+
+            .nav-button {
+              border-right: none;
+              padding: initial;
+              margin-right: initial;
+              display: initial;
+              min-width: initial;
+            }
+          }
+
+          @include media-breakpoint-up(lg) {
+            padding-top: 2.5rem;
+          }
+        }
+
+        @include media-breakpoint-up(xs) {
+          text-align: left;
+        }
+
+        @include media-breakpoint-up(sm) {
+          text-align: center;
+        }
+      }
+
+      li.active {
+        background-color: $purple-medium-light;
+        font-weight: bold;
+        color: $white;
+
+        @include media-breakpoint-up(xs) {
+          margin-bottom: -3px;
+        }
+
+        @include media-breakpoint-up(sm) {
+          @include box-shadow($color: $purple-medium-dark);
+
+          margin-bottom: inherit;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin-top: -1rem;
+          margin-bottom: -2rem;
+          border-radius: 1.5rem 1.5rem 0 0;
+          padding-top: 1rem;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        border-top: 0.15rem solid $purple-medium-dark;
+        margin-top: 0.75rem;
+      }
+
+      @include media-breakpoint-up(sm) {
+        border-top: 0;
+        margin-top: 0;
+        align-items: stretch;
+        justify-content: space-around;
+      }
+
+      @include media-breakpoint-up(md) {
+        max-width: none;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: map-get($grid-breakpoints, "lg");
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: map-get($grid-breakpoints, "xl");
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .navbar-toggler-wrapper,
+    .navbar-nav {
+      margin: auto;
+      max-width: map-get($grid-breakpoints, "maximum");
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 0.5rem 0 0 0;
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
+  }
+}

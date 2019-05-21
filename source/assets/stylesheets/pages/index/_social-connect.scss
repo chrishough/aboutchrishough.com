@@ -1,0 +1,78 @@
+.personal-data-connect-wrapper-external {
+  @include media-breakpoint-up(xs) {
+    display: block;
+    visibility: visible;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 800px;
+  }
+}
+
+.personal-data-connect-wrapper-internal {
+  @include media-breakpoint-up(xs) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 1rem;
+    display: block;
+    visibility: visible;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.personal-data-connect {
+  @include impact-font();
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(xs) {
+    font-size: 1.1rem;
+  }
+
+  @include media-breakpoint-up(transition) {
+    font-size: 1.4rem;
+  }
+}
+
+.personal-data-connect-left,
+.personal-data-connect-right {
+  padding: 0;
+
+  @include media-breakpoint-up(xs) {
+    height: 5rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 25rem;
+  }
+
+  div {
+    border-bottom: 0.1rem $white solid;
+    height: 50%;
+  }
+
+  &::after {
+    content: '';
+  }
+}
+
+.personal-data-connect-left {
+  border-right: 0.1rem $white solid;
+}
+
+.personal-data-connect-right {
+  border-left: 0.1rem $white solid;
+}

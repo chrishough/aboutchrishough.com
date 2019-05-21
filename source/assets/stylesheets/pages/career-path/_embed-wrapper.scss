@@ -1,0 +1,30 @@
+.career-path-embed-wrapper {
+  @include media-breakpoint-up(xs) {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 1rem;
+  }
+
+  embed {
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-breakpoint-up(sm) {
+      height: 500px;
+    }
+
+    @include media-breakpoint-up(md) {
+      height: 750px;
+      margin-bottom: -8rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+$purple-lightest: #ba4bdb;
+$purple-medium-light: #84359c;
+$purple-medium-dark: #441b51;
+$purple-dark: #2d1135;
+$purple-darkest: #040105;
+
+$image-path: '../../assets/images/';
+
+$backdrop-opacity: 0.7;
+$backdrop-opacity-light: 0.5;
+
+$gray-800: $purple-dark;
+$grid-breakpoints: (
+  xs: 0,
+  minimium: 350px,
+  transition: 450px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  maximum: 1000px,
+  xl: 1200px,
+  xxl: 1800px,
+  xxxl: 2450px
+);

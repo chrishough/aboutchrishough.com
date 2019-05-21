@@ -1,0 +1,99 @@
+/* stylelint-disable no-descending-specificity */
+.personal-data-wrapper-left-stack,
+.personal-data-wrapper-right-stack {
+  min-width: 70px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  .row,
+  .col-12 {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    color: $white;
+    display: block;
+    background-color: $purple-dark;
+    padding: 1rem;
+    font-size: 2rem;
+
+    &:hover {
+      @include box-shadow($color: $purple-medium-dark);
+
+      color: $white;
+      background-color: $purple-medium-dark;
+    }
+  }
+}
+
+.personal-data-wrapper-left-stack {
+  a {
+    @include media-breakpoint-up(xs) {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-right: 0.15rem $purple-medium-dark solid;
+    }
+
+    @include media-breakpoint-up(md) {
+      border-left: 0.15rem $purple-medium-dark solid;
+    }
+
+    @include media-breakpoint-up(lg) {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-right: none;
+      border-left: 0.15rem $purple-medium-dark solid;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    .last {
+      border-bottom: 0.15rem $purple-medium-dark solid;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .last {
+      border-right: 0.15rem $purple-medium-dark solid;
+    }
+  }
+}
+
+.personal-data-wrapper-right-stack {
+  a {
+    @include media-breakpoint-up(xs) {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-left: 0.15rem $purple-medium-dark solid;
+    }
+
+    @include media-breakpoint-up(md) {
+      border-right: 0.15rem $purple-medium-dark solid;
+    }
+
+    @include media-breakpoint-up(lg) {
+      border-top: 0.15rem $purple-medium-dark solid;
+      border-right: none;
+      border-left: 0.15rem $purple-medium-dark solid;
+
+      &:last-child {
+        border-bottom: 0.15rem $purple-medium-dark solid;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    .last {
+      border-bottom: 0.15rem $purple-medium-dark solid;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .last {
+      border-right: 0.15rem $purple-medium-dark solid;
+    }
+  }
+}
