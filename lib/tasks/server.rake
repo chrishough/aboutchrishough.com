@@ -19,7 +19,7 @@ namespace :server do
       puts("---------------------------------------------------------->>\n")
       system('time bundle exec middleman build -e staging --verbose')
     end
-    
+
     desc 'Build the site for production'
     task production: ['utilities:build:purge:all', 'webpack:build:production'] do
       puts("---------------------------------------------------------->>\n")

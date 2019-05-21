@@ -55,8 +55,8 @@
       .fa-coffee,
       .fa-fly,
       .fa-trophy {
-        margin-right: 0.2rem;
-        font-size: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 0.6rem;
       }
 
       .conferences-title,
@@ -69,7 +69,7 @@
       .conferences-title,
       .community-meetup,
       .community-title {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
       }
 
       .education-program,
@@ -82,19 +82,18 @@
       .experience-position,
       .experience-dates,
       .experience-location,
-      .experience-learnings,
       .experience-w-two-accomplishments,
       .experience-w-ten-ninety-nine-accomplishments,
       .product-learnings,
       .product-vision-statement {
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
       .education-logo,
       .community-logo,
       .conferences-logo,
       .experience-logo {
-        line-height: 1rem;
+        line-height: 1.2rem;
         max-width: 1rem;
 
         .fa-exclamation {
@@ -127,39 +126,22 @@
         }
       }
 
-      .experience-learnings,
-      .product-vision-statement {
-        blockquote {
-          margin: 0;
-          border-left: 0.05rem solid $gray-500;
-          color: $gray-500;
-          padding: 0 1rem;
-        }
+      .experience-w-two-accomplishments,
+      .experience-w-ten-ninety-nine-top-level-accomplishments {
+        padding: 1rem 0 1rem 0;
       }
 
       .experience-w-two-accomplishments,
       .experience-w-ten-ninety-nine-accomplishments {
-        ul {
-          padding: 1rem 0 0 1rem;
-
-          li {
-            padding-bottom: 0.5rem;
-          }
+        li:not(:last-child) {
+          padding-bottom: 0.5rem;
         }
       }
 
       .experience-w-ten-ninety-nine-accomplishments {
-        .col-12:first-child {
-          padding-top: 0.5rem;
+        .col-12 {
+          padding: 1rem 0 1rem 0;
         }
-
-        ul {
-          padding-left: 2rem;
-        }
-      }
-
-      .experience-position {
-        font-weight: bold;
       }
 
       .product-vision-graphic {
@@ -172,7 +154,12 @@
       }
 
       .product-vision-statement {
-        padding-left: 1rem;
+        blockquote {
+          margin: 0;
+          border-left: 0.05rem solid $gray-500;
+          color: $gray-500;
+          padding: 0 1rem;
+        }
 
         &:first-child {
           padding-top: 1rem;

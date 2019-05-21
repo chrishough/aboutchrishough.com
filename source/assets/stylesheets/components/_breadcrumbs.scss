@@ -24,9 +24,28 @@
 
   .page-description {
     padding-top: 0.5rem;
+
+    .accomplishments {
+      .col-12:first-child {
+        padding-top: 1rem;
+      }
+
+      .col-12:last-child {
+        padding-bottom: 0;
+      }
+    }
   }
 
-  .row {
+  .page-tool-description {
+    overflow: hidden;
+    max-height: 190px;
+
+    div {
+      display: inline;
+    }
+  }
+
+  .row:first-child {
     max-width: map-get($grid-breakpoints, "xl");
   }
 }
