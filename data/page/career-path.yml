@@ -14,6 +14,43 @@ summary:
       id: 3
       name: Leadership
       description: Culture of Learning, Empathy, Lead by Example, Remote Working Culture, Project Management & Prioritization via SCRUM / Kanban, Data-driven Decision Making
+  technologies:
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/airbrake.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/apple.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/atom.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/aws.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/bitbucket.gif
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/bootstrap.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/clubhouse.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/coldfusion.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/confluence.gif
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/emberjs.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/fusebox.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/git.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/gitlab.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/google.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/harvest.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/heroku.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jira.gif
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/jquery.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/meetup.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/msft.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/newrelic.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/oracle.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/pivotaltracker.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/postgres.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rackspace.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/redis.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/resque.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/ruby.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/rspec.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sendgrid.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sentry.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sidekiq.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/slack.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/sqlserver.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/svn.png
+    - https://github.com/chrishough/my-public-data/raw/master/my-resume/logos/vscode.png
 
 experiences:
   ten-ninety-nine:
