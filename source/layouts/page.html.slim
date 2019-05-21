@@ -19,19 +19,28 @@
                 i[class="#{current_page.data.icon}"]
               =>
               = link_to(current_page.data.title, current_page.data.slug)
-          div[class="col-12 page-description"]
-            - if current_page.data.meta['description']
-              div[class="col-12 page-child-wrapper"]
-                = current_page.data.meta['description']
-                - if current_page.data.meta['accomplishments']
-                  - current_page.data.meta['accomplishments'].sort_by { |k| k["id"] }.reverse.each do |accomplishment|
-                    div[class="col-12 col-xl-9"]
-                      strong
-                        = accomplishment['name']
-                      |:
-                      =>
-                      = accomplishment['description']
-            - else
+          - if current_page.data.meta['description'] && current_page.data.meta['accomplishments'] && current_page.data.meta['technologies']
+            div[class="col-12 col-xl-9 page-description"]
+              = current_page.data.meta['description']
+              div[class="row accomplishments"]
+                - current_page.data.meta['accomplishments'].sort_by { |k| k["id"] }.reverse.each do |accomplishment|
+                  div[class="col-12"]
+                    strong
+                      = accomplishment['name']
+                    |:
+                    =>
+                    = accomplishment['description']
+            div[class="d-none d-xl-block col-xl-3 page-tool-description"]
+              - 4.times
+                - current_page.data.meta['technologies'].shuffle.each do |technology|
+                  div
+                    img[src="#{technology}"]
+
+          - elsif current_page.data.meta['description']
+            div[class="col-12 page-description"]
+              = current_page.data.meta['description']
+          - else
+            div[class="col-12 page-description"]
               = current_page.data.meta
 
     main[class="container-fluid content-wrapper"]

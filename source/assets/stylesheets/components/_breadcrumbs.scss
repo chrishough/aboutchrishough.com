@@ -25,14 +25,7 @@
   .page-description {
     padding-top: 0.5rem;
 
-    .page-child-wrapper {
-      padding-left: 0;
-
-      .col-12 {
-        padding-left: 0;
-        padding-bottom: 0.5rem;
-      }
-
+    .accomplishments {
       .col-12:first-child {
         padding-top: 1rem;
       }
@@ -43,7 +36,16 @@
     }
   }
 
-  .row {
+  .page-tool-description {
+    overflow: hidden;
+    max-height: 190px;
+
+    div {
+      display: inline;
+    }
+  }
+
+  .row:first-child {
     max-width: map-get($grid-breakpoints, "xl");
   }
 }
