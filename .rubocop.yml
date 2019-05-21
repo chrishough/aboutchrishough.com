@@ -37,7 +37,11 @@ Metrics/MethodLength:
 Metrics/LineLength:
   Max: 180
   Exclude:
-    - 'spec/features/*'
+    - 'lib/tasks/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'lib/tasks/*'
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
