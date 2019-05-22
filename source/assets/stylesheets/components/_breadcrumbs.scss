@@ -1,6 +1,6 @@
 .breadcrumbs {
   padding-top: 5.5rem;
-  background: url('#{$image-path}/backgrounds/subtle-patterns-dust-scratches.png') repeat-x;
+  background: url('#{$image-path}/backgrounds/subtle-patterns-dust-scratches.png') repeat;
   background-color: $white;
   color: $purple-darkest;
   padding-bottom: 1rem;
@@ -30,6 +30,10 @@
     padding-top: 0.5rem;
 
     .accomplishments {
+      .col-12 {
+        padding-bottom: 0.5rem;
+      }
+
       .col-12:first-child {
         padding-top: 1rem;
       }
