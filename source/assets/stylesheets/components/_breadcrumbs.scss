@@ -20,6 +20,10 @@
     border-left: 1px $purple-darkest solid;
     padding-left: 6px;
     margin-left: 6px;
+
+    a:first-child {
+      padding-right: 0.5rem;
+    }
   }
 
   .page-description {
@@ -42,6 +46,7 @@
 
     div {
       display: inline;
+      padding: 0.2rem;
     }
   }
 
