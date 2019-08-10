@@ -82,6 +82,11 @@ experiences:
         company: Crowd OX
         accomplishments: >-
           Built out platform features across three ruby-on-rails engines. Rewrote the Partner application testing suite porting it from Minitest to the latest version of RSpec while maintaining testing coverage metrics. Expanded testing coverage from 0% to over 60% in a legacy code base with 100% model testing coverage.
+      -
+        id: 5
+        company: Eggplant
+        accomplishments: >-
+          Expanded the authorization capability of the testing manager application to include Microsoft Active Directory (LDAP). Coordinated daily pair programming sessions to mentor junior engineers, improve team collaboration, and increase overall team performance. 
   w-two:
     -
       id: 1
@@ -162,11 +167,23 @@ experiences:
       company: "MediaPRO: Cybersecurity & Privacy Education"
       link: https://www.mediapro.com/
       position: Senior Application Developer
-      dates: 2018 – Present
+      dates: 2018 – 2019
       accomplishments:
         - Successfully launched LearningLAB, a platform that helps enterprises fortify their workforce against cyber threats and privacy breaches. Led backend testing and established best practices to achieve optimal software quality.
         - Designed a full-stack dependency management process for our two monolithic ruby-on-rails applications.
         - Improved code cleanliness and readability by teaching the team about how linting can be used to increase productivity and working with the engineers to implement linting in the code base.
+    -
+      id: 9
+      company: "onDiem"
+      link: https://ondiem.com/
+      position: Director of Engineering
+      dates: 2019 – Present
+      accomplishments:
+        - Hired to lead the development of an on-demand staffing platform to enable dental professionals to find work on a flexible schedule and dental practices to ensure service availability and improve the patient experience by fully staffing their offices.
+        - Partner with the founding team, head of product, and creative director to design, develop, and execute the product roadmap with a focus on building features to support monetization and securing early adopters to gather user feedback. This included implementing SCRUM to drive team productivity and performance.
+        - Personally built engineering integrations and implemented automation to reduce platform complexity and improve performance for external customers, and the internal customer support team.
+        - Documented platform architecture and passwords to secure the stack and create a knowledge base, reducing ramp-up time for new engineers joining the team.
+        - Migrated the code base from Bitbuck to Github to take advantage of more streamlined tooling, setup continuous integration for automated testing, implement security scans, and develop style guide tests.
 
 education:
   -
