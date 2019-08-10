@@ -82,6 +82,11 @@ experiences:
         company: Crowd OX
         accomplishments: >-
           Built out platform features across three ruby-on-rails engines. Rewrote the Partner application testing suite porting it from Minitest to the latest version of RSpec while maintaining testing coverage metrics. Expanded testing coverage from 0% to over 60% in a legacy code base with 100% model testing coverage.
+      -
+        id: 5
+        company: Eggplant
+        accomplishments: >-
+          Expanded the authorization capability of the testing manager application to include Microsoft Active Directory (LDAP). Coordinated daily pair programming sessions to mentor junior engineers, improve team collaboration, and increase overall team performance. 
   w-two:
     -
       id: 1
