@@ -40,4 +40,4 @@ jobs:
     # ----------------------------------------------------Middleman
     - name: Build Middleman Site
       run: |
-        bundle exec rake server:build:production
+        bundle exec middleman build -e production --verbose
