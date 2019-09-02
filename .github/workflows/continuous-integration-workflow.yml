@@ -16,12 +16,13 @@ jobs:
       uses: actions/setup-ruby@v1
       with:
         version: 2.6.x
-    - name: Setup Ruby Dependencies
+    - name: Ruby Version
       run: |
         ruby -v
-        echo "\n\n***********************************************************************\n\n"
+    - name: Setup Ruby Dependencies
+      run: |
+        gem update bundler
         bundle install --jobs 4 --retry 3
     - name: Test Ruby Dependencies
       run: |
-        echo "\n\n***********************************************************************\n\n"
         bundle exec rake -T
