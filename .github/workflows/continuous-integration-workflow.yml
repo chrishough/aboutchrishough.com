@@ -41,15 +41,11 @@ jobs:
     - name: Build Webpack File
       run: |
         bundle exec rake webpack:build:production
-    - name: Build Middle Site
-      run: |
-        export TERM=xterm
-        bundle exec middleman build -e production --verbose
-
-  deploy:
-    requires:
-      - build
-    steps:
-      - name: Node Version
-        run: |
-          node --version
+    # ----------------------------------------------------Webpack
+    - name: Deploy to Github Pages
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: export TERM=xterm && bundle exec middleman build -e production --verbose
