@@ -44,4 +44,12 @@ jobs:
     - name: Build Middle Site
       run: |
         export TERM=xterm
-        bundle exec middleman build -e production
+        bundle exec middleman build -e production --verbose
+
+  deploy:
+    requires:
+      - build
+    steps:
+      - name: Node Version
+        run: |
+          node --version
