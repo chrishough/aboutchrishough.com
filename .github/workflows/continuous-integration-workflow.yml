@@ -41,9 +41,9 @@ jobs:
     - name: Build Webpack File
       run: |
         bundle exec rake webpack:build:production
-    - name: List Files
+    - name: Verify Shell
       run: |
-        ls -al
+        export TERM=xterm
     - name: Build Middle Site
       run: |
         bundle exec middleman build -e production --verbose
