@@ -19,5 +19,7 @@ jobs:
     - name: Setup Ruby Dependencies
       run: |
         ruby -v
+        echo "\n\n***********************************************************************\n\n"
         bundle install --jobs 4 --retry 3
+        echo "\n\n***********************************************************************\n\n"
         bundle exec rake tasks
