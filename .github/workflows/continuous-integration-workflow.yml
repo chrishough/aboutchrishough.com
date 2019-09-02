@@ -37,3 +37,7 @@ jobs:
     - name: Setup Node Dependencies
       run: |
         npm install
+    # ----------------------------------------------------Middleman
+    - name: Build Middleman Site
+      run: |
+        bundle exec rake server:build:production
