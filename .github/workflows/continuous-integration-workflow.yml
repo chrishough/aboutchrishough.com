@@ -37,7 +37,7 @@ jobs:
     - name: Setup Node Dependencies
       run: |
         npm install
-    # ----------------------------------------------------Middleman
-    - name: Build Middleman Site
+    # ----------------------------------------------------Webpack
+    - name: Build Webpack File
       run: |
-        bundle exec middleman build -e production --verbose
+        bundle exec rake webpack:build:production
