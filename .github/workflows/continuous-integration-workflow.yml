@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-
+    # ----------------------------------------------------Ruby
     - name: Install Ruby
       uses: actions/setup-ruby@v1
       with:
@@ -26,3 +26,11 @@ jobs:
     - name: Test Ruby Dependencies
       run: |
         bundle exec rake -T
+    # ----------------------------------------------------Node
+    - name: Install Node
+      uses: actions/setup-node@v1
+      with:
+        version: 10.16.3
+    - name: Node Version
+      run: |
+        node --version
