@@ -48,7 +48,7 @@ jobs:
     # ----------------------------------------------------Deploy
     - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v1.1.0
-      if: success()
+      if: github.event_name == 'pull_request' && github.event.pull_request.merged == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         PUBLISH_BRANCH: gh-pages
