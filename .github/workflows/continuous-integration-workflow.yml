@@ -34,3 +34,6 @@ jobs:
     - name: Node Version
       run: |
         node --version
+    - name: Setup Node Dependencies
+      run: |
+        npm install
