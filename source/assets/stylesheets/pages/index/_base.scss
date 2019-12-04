@@ -16,6 +16,14 @@
   .personal-data-wrapper-row {
     padding: 0;
 
+    .w-100 {
+      padding-bottom: 10rem;
+
+      @media (min-height: map-get($grid-height-breakpoints, "minimium")) {
+        padding-bottom: 0;
+      }
+    }
+
     .personal-data-wrapper-container {
       @include media-breakpoint-up(xs) {
         padding-top: 2rem;
@@ -36,6 +44,12 @@
 
       @include media-breakpoint-up(xl) {
         max-width: 800px;
+      }
+
+      // Handle Rectangle Viewing Ports
+      @media (min-height: map-get($grid-height-breakpoints, "minimium")) {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
       }
     }
 
