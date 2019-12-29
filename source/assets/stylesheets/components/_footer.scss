@@ -1,0 +1,17 @@
+footer {
+  color: $white;
+  background-color: $purple-darkest;
+
+  .row {
+    @include box-shadow();
+
+    border-top: 0.2rem $purple-medium-dark solid;
+    font-size: 0.9rem;
+    padding: 0.9rem 0 0.9rem 0;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
