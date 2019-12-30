@@ -5,13 +5,18 @@ footer {
   .row {
     @include box-shadow();
 
-    border-top: 0.2rem $purple-medium-dark solid;
     font-size: 0.9rem;
-    padding: 0.9rem 0 0.9rem 0;
+    padding: 1.25rem 0;
 
     a {
       color: $white;
       text-decoration: underline;
+    }
+
+    .navbar-company-disclaimer {
+      border-left: 0.05rem $white solid;
+      padding-left: 0.5rem;
+      margin-left: 0.5rem;
     }
   }
 }

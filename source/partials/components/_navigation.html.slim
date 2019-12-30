@@ -1,0 +1,26 @@
+nav[class="navbar navbar-expand-sm navbar-dark"]
+  div[class="container-fluid"]
+    div[class="row flex-fill"]
+      div[class="col-12"]
+        div[class="row navbar-toggler-wrapper"]
+          div[class="col-9 navbar-title"]
+            = link_to("/") do
+              = partial "partials/components/about-signature"
+
+          div[class="col-3 navbar-button"]
+            button[class="navbar-toggler" type="button" data-toggle="collapse"
+                                                        data-target="#navbarCollapse"
+                                                        aria-controls="navbarCollapse"
+                                                        aria-expanded="false"
+                                                        aria-label="Toggle navigation"]
+              i[id="nav-button" class="fa fa-angle-double-down"]
+
+    div[class="collapse navbar-collapse" id="navbarCollapse" style=""]
+      ul[class="navbar-nav mr-auto"]
+        li[class="nav-item active"]
+          a[class="nav-link" href="#"]
+            |Link
+
+        li[class="nav-item"]
+          a[class="nav-link" href="#"]
+            |Link
