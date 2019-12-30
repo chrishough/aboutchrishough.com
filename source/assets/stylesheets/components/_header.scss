@@ -57,5 +57,75 @@
         }
       }
     }
+
+    .navbar-nav-item-wrapper {
+      padding-right: 0;
+      padding-left: 0;
+
+      .navbar-nav {
+        border: none;
+
+        li {
+          @include media-breakpoint-up(xs) {
+            &:first-child {
+              border-top: 0.15rem solid $purple-medium-dark;
+            }
+
+            &:not(:last-child) {
+              border-bottom: 0.15rem solid $purple-medium-dark;
+            }
+          }
+
+          &:hover {
+            background-color: $purple-medium-dark;
+            font-weight: bold;
+            color: $white;
+          }
+
+          .nav-icon {
+            @include media-breakpoint-up(xs) {
+              margin-left: 0.2rem;
+            }
+          }
+
+          .nav-link {
+            @include secondary-font();
+
+            color: $gray-300;
+            padding: 0;
+
+            &:hover {
+              color: $white;
+              font-weight: bold;
+            }
+
+            @include media-breakpoint-up(xs) {
+              span {
+                display: inline;
+              }
+
+              .nav-button {
+                border-right: 0.15rem solid $purple-medium-dark;
+                padding: 1rem 1rem 1rem 1.5rem;
+                margin-right: 1rem;
+                display: inline-block;
+                min-width: 75px;
+                text-align: center;
+              }
+            }
+          }
+
+          @include media-breakpoint-up(xs) {
+            text-align: left;
+          }
+        }
+
+        li.active {
+          background-color: $purple-medium-light;
+          font-weight: bold;
+          color: $white;
+        }
+      }
+    }
   }
 }
