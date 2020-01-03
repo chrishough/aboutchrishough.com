@@ -18,7 +18,6 @@ $(document).ready(() => {
   const $bodyId = $body.attr('id');
 
   breakpoints();
-  navigation();
 
   switch ($bodyId) {
     case 'index':
