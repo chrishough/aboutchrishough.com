@@ -16,6 +16,10 @@
   box-shadow: $horiz $vert $blur $spread $color unquote($inset);
 }
 
+@mixin drop-shadow($horiz: 0, $vert: 0, $spread: 0.25rem, $color: $purple-darkest) {
+  filter: drop-shadow($horiz $vert $spread $color);
+}
+
 @mixin box-shadow-all-sides () {
 	@include box-shadow();
 }

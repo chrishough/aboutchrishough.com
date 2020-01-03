@@ -1,13 +1,13 @@
-nav[class="navbar navbar-expand-sm navbar-dark"]
+nav[class="navbar navbar-expand-sm sticky-top navbar-dark"]
   div[class="container-fluid"]
     div[class="row flex-fill"]
-      div[class="col-12"]
+      div[class="col-12 col-lg-4 my-auto"]
         div[class="row navbar-toggler-wrapper"]
-          div[class="col-9 navbar-title"]
+          div[class="col-9 col-sm-12 navbar-title"]
             = link_to("/") do
               = partial "partials/components/about-signature"
 
-          div[class="col-3 navbar-button"]
+          div[class="col-3 d-md-none navbar-button"]
             button[class="navbar-toggler" type="button" data-toggle="collapse"
                                                         data-target="#navbarCollapse"
                                                         aria-controls="navbarCollapse"
@@ -15,7 +15,7 @@ nav[class="navbar navbar-expand-sm navbar-dark"]
                                                         aria-label="Toggle navigation"]
               i[id="nav-button" class="fa fa-angle-double-down"]
 
-      div[class="col-12 navbar-nav-item-wrapper"]
+      div[class="col-12 col-lg-8 navbar-nav-item-wrapper"]
         div[class="collapse navbar-collapse" id="navbarCollapse"]
           ul[class="navbar-nav flex-fill"]
             ruby:

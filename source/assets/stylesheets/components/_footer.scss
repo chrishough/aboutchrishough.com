@@ -1,22 +1,49 @@
 footer {
+  @include box-shadow();
+  @include drop-shadow();
+
   color: $white;
   background-color: $purple-darkest;
+  padding: 0.5rem 0;
 
   .row {
-    @include box-shadow();
-
     font-size: 0.9rem;
-    padding: 1.25rem 0;
+    padding-top: 0.5rem;
+    text-align: center;
 
     a {
       color: $white;
       text-decoration: underline;
     }
 
-    .navbar-company-disclaimer {
-      border-left: 0.05rem $white solid;
-      padding-left: 0.5rem;
-      margin-left: 0.5rem;
+    @include media-breakpoint-up(xs) {
+      padding-bottom: 0.5rem;
+
+      span {
+        display: block;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      border-top: 0.15rem solid $purple-medium-dark;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      span {
+        display: initial;
+        padding-bottom: 0;
+      }
+
+      span:first-child {
+        padding-right: 1rem;
+
+        &::after {
+          content: '|';
+          font-weight: bold;
+          padding-left: 1rem;
+        }
+      }
     }
   }
 }

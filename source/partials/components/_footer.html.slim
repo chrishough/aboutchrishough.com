@@ -1,11 +1,5 @@
-footer[class="container"]
+footer[class="container-fluid"]
   div[class="row flex-fill"]
-    div[class="mx-auto"]
-      span
-        |&copy;
-      =>
-      |2018
-      =>
-      = link_to(data.components.rbr.desc, data.components.rbr.url, target: :_blank)
-      span[class="navbar-company-disclaimer"]
-        = link_to("Disclaimer", "/disclaimer/")
+    div[class="col-12 mx-auto"]
+      = partial "partials/components/copyright"
+      = partial "partials/components/disclaimer"
