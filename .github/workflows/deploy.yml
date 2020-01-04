@@ -8,13 +8,15 @@ on:
 
 jobs:
   deploy:
-  if: github.event.pull_request.merged == true
-
-
     runs-on: ubuntu-latest
 
     steps:
-      - run: echo "Running Deploy Static Site"
+      - run: echo "Running Deploy Static Site ONE"
+      if: github.event.pull_request.merged == true
+
+      - run: echo "Running Deploy Static Site TWO"
+      if: github.event.pull_request.merged == true && success()
+
 
     # - name: Deploy to Github Pages
     #   uses: peaceiris/actions-gh-pages@v1.1.0
