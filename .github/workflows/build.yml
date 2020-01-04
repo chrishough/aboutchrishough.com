@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      # - uses: actions/checkout@master
+      - run: echo "Running Build Static Site"
+
 
       # # ----------------------------------------------------Ruby
 

@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - uses: actions/test-website-build@master
-      - run: echo "Running Update GitHub Pages on Merge to Master"
+      - run: echo "Running Deploy Static Site"
 
     # - name: Deploy to Github Pages
     #   uses: peaceiris/actions-gh-pages@v1.1.0
