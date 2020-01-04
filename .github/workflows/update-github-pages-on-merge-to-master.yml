@@ -7,13 +7,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
 
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/test-website-build@master
-    - run: echo "Running Update GitHub Pages on Merge to Master"
+      - uses: actions/test-website-build@master
+      - run: echo "Running Update GitHub Pages on Merge to Master"
 
     # - name: Deploy to Github Pages
     #   uses: peaceiris/actions-gh-pages@v1.1.0
