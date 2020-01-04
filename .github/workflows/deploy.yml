@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/test-website-build@master
+      - uses: actions/build@master
       - run: echo "Running Deploy Static Site"
 
     # - name: Deploy to Github Pages
