@@ -2,6 +2,7 @@ name: Deploy Static Site
 
 on:
   pull_request:
+    types: [closed]
     branches:
       - master
 
