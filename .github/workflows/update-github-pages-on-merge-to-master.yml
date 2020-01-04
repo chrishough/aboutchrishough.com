@@ -1,3 +1,5 @@
+name: Update GitHub Pages on Merge to Master
+
 on:
   pull_request:
     branches:
@@ -6,7 +8,7 @@ on:
 jobs:
   deploy:
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
-    name: Update GitHub Pages on Merge to Master
+
     runs-on: ubuntu-latest
 
     steps:

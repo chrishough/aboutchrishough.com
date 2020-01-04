@@ -1,3 +1,5 @@
+name: Test Website Build
+
 on:
   pull_request:
     branches:
@@ -5,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Test Website Build
+
     runs-on: ubuntu-latest
 
     steps:
