@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - run: echo "TESTING ACTIONS"
+    - run: echo "Running Test Website Build"
 
     # # ----------------------------------------------------Ruby
 
