@@ -1,5 +1,4 @@
 import breakpoints from './vendor/breakpoints';
-import navigation from './components/navigation';
 import index from './pages/index';
 import visionAndPassion from './pages/vision-and-passion';
 import careerPath from './pages/career-path';
@@ -19,7 +18,6 @@ $(document).ready(() => {
   const $bodyId = $body.attr('id');
 
   breakpoints();
-  navigation();
 
   switch ($bodyId) {
     case 'index':

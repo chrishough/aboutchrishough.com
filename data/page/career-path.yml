@@ -58,7 +58,7 @@ experiences:
     link: http://robotsbuildingrobots.com/
     position: Founder & Senior Full Stack Engineer
     dates: 2016 – Present
-    location: Remote from Portland, Oregon
+    location: Remote from Boulder, Colorado
     accomplishments: >-
       Hired by companies to work on every part of the SDLC, from product inception, roadmap development, and hands-on programming to launch, customer implementation, and maintenance. Built and trained internal teams on software quality best practices to create a sustainable engineering culture that can execute on the most challenging business objectives.
     roles:
@@ -184,6 +184,15 @@ experiences:
         - Personally built engineering integrations and implemented automation to reduce platform complexity and improve performance for external customers, and the internal customer support team.
         - Documented platform architecture and passwords to secure the stack and create a knowledge base, reducing ramp-up time for new engineers joining the team.
         - Migrated the code base from Bitbuck to Github to take advantage of more streamlined tooling, setup continuous integration for automated testing, implement security scans, and develop style guide tests.
+    -
+      id: 10
+      company: "VYNYL"
+      link: https://vynyl.com/
+      position: Senior Software Engineer
+      dates: 2019 – Present
+      accomplishments:
+        - Design and develop key features to enhance the functionality of an enterprise lending platform processing $110MM+ in financial assets per year.
+        - Hire, train, and mentor a remote team of four software engineers to increase overall productivity while improving code quality.
 
 education:
   -
@@ -215,7 +224,6 @@ community:
     title: Founder
     meetup: Full Stack PDX Meetup
     location: Portland, Oregon
-    link: https://www.meetup.com/fullstackpdx/
 
 conferences:
   -
@@ -268,3 +276,9 @@ conferences:
     dates: April 30th - May 2nd, 2019
     location: Minneapolis, Minnesota
     link: https://railsconf.org/
+  -
+    id: 10
+    title: Ruby Conference
+    dates: November 18th - 20th, 2019
+    location: Nashville, Tennessee
+    link: https://rubyconf.org/
