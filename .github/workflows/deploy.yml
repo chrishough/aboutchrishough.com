@@ -12,6 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
+        if: github.event.pull_request.merged == true
 
       # ----------------------------------------------------Ruby
 
@@ -19,6 +20,8 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           version: 2.6.x
+        if: github.event.pull_request.merged == true
+
       - name: Ruby Version
         run: |
           ruby -v
@@ -41,6 +44,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           version: 10.16.3
+        if: github.event.pull_request.merged == true
+
       - name: Node Version
         run: |
           node --version
