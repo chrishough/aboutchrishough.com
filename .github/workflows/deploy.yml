@@ -8,13 +8,18 @@ on:
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true
-
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< Updated upstream
       - uses: actions/test-website-build@master
+=======
+      - uses: actions/build@master
+        if: github.event.pull_request.merged == true
+
+>>>>>>> Stashed changes
       - run: echo "Running Deploy Static Site"
+        if: github.event.pull_request.merged == true
 
     # - name: Deploy to Github Pages
     #   uses: peaceiris/actions-gh-pages@v1.1.0
