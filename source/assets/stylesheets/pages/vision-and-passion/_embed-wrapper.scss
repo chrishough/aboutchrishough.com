@@ -3,10 +3,6 @@
     padding-bottom: 0;
   }
 
-  @include media-breakpoint-up(sm) {
-    padding-bottom: 5rem;
-  }
-
   embed {
     margin-left: auto;
     margin-right: auto;

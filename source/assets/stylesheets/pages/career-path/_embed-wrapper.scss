@@ -6,11 +6,10 @@
 
   @include media-breakpoint-up(sm) {
     padding-top: 2rem;
-    padding-bottom: 5rem;
   }
 
   @include media-breakpoint-up(lg) {
-    padding-bottom: 1rem;
+    padding-bottom: 0;
   }
 
   embed {
@@ -24,7 +23,6 @@
 
     @include media-breakpoint-up(md) {
       height: 750px;
-      margin-bottom: -8rem;
     }
   }
 }

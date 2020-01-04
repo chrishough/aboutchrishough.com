@@ -14,7 +14,7 @@
   .personal-data-slogan {
     position: relative;
     color: $white;
-    padding: 0.2rem;
+    padding: 0.2rem 0;
 
     @include media-breakpoint-up(xs) {
       @include box-shadow-all-sides();
