@@ -67,7 +67,7 @@ jobs:
       # ----------------------------------------------------Deploy
 
       - run: echo "Deploy to Github Pages"
-      if: github.event.pull_request.merged == true && success()
+        if: github.event.pull_request.merged == true && success()
 
       # - name: Deploy to Github Pages
       #   uses: peaceiris/actions-gh-pages@v1.1.0
