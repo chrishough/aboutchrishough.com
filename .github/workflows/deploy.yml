@@ -33,11 +33,6 @@ jobs:
           bundle install --jobs 4 --retry 3
         if: github.event.pull_request.merged == true
 
-      - name: Test Ruby Dependencies
-        run: |
-          bundle exec rake -T
-        if: github.event.pull_request.merged == true
-
       # ----------------------------------------------------Node
 
       - name: Install Node
@@ -71,13 +66,10 @@ jobs:
 
       # ----------------------------------------------------Deploy
 
-      - run: echo "Deploy to Github Pages"
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v1.1.0
         if: github.event.pull_request.merged == true && success()
-
-      # - name: Deploy to Github Pages
-      #   uses: peaceiris/actions-gh-pages@v1.1.0
-      #   if: github.event.pull_request.merged == true && success()
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #     PUBLISH_BRANCH: gh-pages
-      #     PUBLISH_DIR: ./build
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./build
