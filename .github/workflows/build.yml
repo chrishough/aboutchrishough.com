@@ -12,24 +12,23 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-      - run: echo "Running Test Website Build ONE"
 
-    # # ----------------------------------------------------Ruby
+      # ----------------------------------------------------Ruby
 
-    # - name: Install Ruby
-    #   uses: actions/setup-ruby@v1
-    #   with:
-    #     version: 2.6.x
-    # - name: Ruby Version
-    #   run: |
-    #     ruby -v
-    # - name: Setup Ruby Dependencies
-    #   run: |
-    #     gem update bundler
-    #     bundle install --jobs 4 --retry 3
-    # - name: Test Ruby Dependencies
-    #   run: |
-    #     bundle exec rake -T
+      - name: Install Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          version: 2.6.x
+      - name: Ruby Version
+        run: |
+          ruby -v
+      - name: Setup Ruby Dependencies
+        run: |
+          gem update bundler
+          bundle install --jobs 4 --retry 3
+      - name: Test Ruby Dependencies
+        run: |
+          bundle exec rake -T
 
     # # ----------------------------------------------------Node
 
