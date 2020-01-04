@@ -1,4 +1,4 @@
-name: Update GitHub Pages on Merge to Master
+name: Deploy Static Site
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged
+    if: github.event.pull_request.merged == true
 
     runs-on: ubuntu-latest
 
