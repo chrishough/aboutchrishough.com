@@ -23,8 +23,6 @@ Welcome to About Chris Hough's website!
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
-Twitter: @chrishough : TEST CI DEPLOY
-
 Ascii Cats : https://user.xmission.com/~emailbox/ascii_cats.htm
 
 Background patterns from Toptal Subtle Patterns
