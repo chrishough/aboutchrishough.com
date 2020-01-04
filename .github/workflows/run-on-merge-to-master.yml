@@ -1,0 +1,10 @@
+name: Run on Merge to Master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/test-website-build@master
+      - uses: actions/auto-deployment-to-github-pages@master
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
