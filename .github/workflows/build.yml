@@ -1,4 +1,4 @@
-name: Website Build
+name: Build Static Site
 
 on:
   pull_request:
