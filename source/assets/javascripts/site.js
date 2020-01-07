@@ -13,7 +13,7 @@ const hidePreloader = () => {
     $('#cover').fadeOut(1000);
   });
 };
-
+console.log('TEST');
 $(document).ready(() => {
   const $body = $('body');
   const $bodyId = $body.attr('id');
