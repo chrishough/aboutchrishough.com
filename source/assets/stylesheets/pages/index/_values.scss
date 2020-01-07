@@ -16,11 +16,7 @@
       margin-right: auto;
 
       @include media-breakpoint-up(xs) {
-        max-height: 250px;
-      }
-
-      @include media-breakpoint-up(minimium) {
-        max-height: 300px;
+        max-height: 225px;
       }
 
       @include media-breakpoint-up(sm) {
