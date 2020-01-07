@@ -1,7 +1,6 @@
 #index {
   .content-wrapper {
     @include media-breakpoint-up(xs) {
-      margin-top: -2rem;
       padding: 0;
     }
 

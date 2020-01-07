@@ -58,7 +58,7 @@ jobs:
           bundle exec rake webpack:build:production
         if: github.event.pull_request.merged == true
 
-      - name: Build Middle Site
+      - name: Build Site
         run: |
           export TERM=xterm
           bundle exec middleman build -e production --verbose
