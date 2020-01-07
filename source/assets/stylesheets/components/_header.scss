@@ -67,6 +67,10 @@
           padding: 0;
         }
 
+        @include media-breakpoint-up(transition) {
+          text-align: center;
+        }
+
         .navbar-toggler {
           color: $white;
           font-size: 1.25rem;
@@ -84,6 +88,11 @@
         padding-right: 30px;
         padding-left: 30px;
         padding-bottom: 5px;
+      }
+
+      @include media-breakpoint-up(transition) {
+        padding-right: 15px;
+        padding-left: 15px;
       }
     }
 
