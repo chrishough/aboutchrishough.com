@@ -58,3 +58,7 @@ jobs:
       - name: Rubocop
         run: |
           bundle exec rubocop
+
+      - name: ESLint
+        run: |
+          npm run lintjs
