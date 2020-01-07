@@ -85,10 +85,6 @@
     }
   }
 
-  @include media-breakpoint-up(xs) {
-
-  }
-
   @include media-breakpoint-up(lg) {
     .navbar-title {
       display: none;

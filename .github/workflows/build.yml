@@ -52,3 +52,17 @@ jobs:
         run: |
           export TERM=xterm
           bundle exec middleman build -e production --verbose
+
+      # ----------------------------------------------------Quality
+
+      - name: Rubocop
+        run: |
+          bundle exec rubocop
+
+      - name: ESLint
+        run: |
+          npm run lintjs
+
+      - name: StyleLint
+        run: |
+          npm run lintcss
