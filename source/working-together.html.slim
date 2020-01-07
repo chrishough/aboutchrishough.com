@@ -2,16 +2,16 @@
 id: working-together
 title: Working Together
 slug: working-together
-icon: fas fa-handshake 
+icon: fas fa-handshake
 layout: page
 ---
 ruby:
   current_page.data.meta = data.page['working-together'].summary
 
-div[class="container venn-container"]
-  div[class="row"]
+div[class="container-fluid venn-container"]
+  div[class="row mx-auto"]
     div[class="col-12 d-flex align-contents-center"]
-      embed[id="working-together-venn" src="#{image_path('backgrounds/venn.svg')}"]
+      embed[src="#{image_path('backgrounds/venn.svg')}"]
 
 div[class="container-fluid trait-container"]
   div[class="row trait-wrapper"]
@@ -32,7 +32,7 @@ div[class="container-fluid trait-container"]
             |Empathy
         div[class="col-10 col-lg-12 explanation"]
           = data.page['working-together'].goals['empathy']
-          
+
     div[class="col-12 col-lg-4 focus-trait-wrapper"]
       div[class="row"]
         div[class="col-2 col-lg-12 trait"]

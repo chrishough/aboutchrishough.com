@@ -31,7 +31,8 @@
     .personal-data-quotes-wrapper {
       border-top: 0.2rem $purple-medium-dark solid;
       border-bottom: 0.2rem $purple-medium-dark solid;
-      padding: 0 1rem;
+      margin: 0;
+      padding: 0;
 
       @include media-breakpoint-up(xs) {
         min-height: 15rem;
