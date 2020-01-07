@@ -52,3 +52,9 @@ jobs:
         run: |
           export TERM=xterm
           bundle exec middleman build -e production --verbose
+
+      # ----------------------------------------------------Quality
+
+      - name: Rubocop
+        run: |
+          bundle exec rubocop
