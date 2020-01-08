@@ -1,6 +1,6 @@
 export default () => {
   const $navbarToggler = $('.navbar-toggler');
-  console.log('TEST');
+
   Breakpoints.on('xs', {
     enter() {
       $navbarToggler.attr('data-toggle', 'collapse');
