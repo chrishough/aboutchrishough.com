@@ -5,8 +5,8 @@
     "production": "clear && printf '\\e[3J' && NODE_ENV=production webpack --bail -p",
     "lintjs_with_fix": "eslint 'source/assets/javascripts/**/*.js' --fix; exit 0;",
     "lintcss_with_fix": "stylelint 'source/**/*.scss' --syntax scss --fix; exit 0;",
-    "lintjs": "eslint 'source/assets/javascripts/**/*.js'; exit 0;",
-    "lintcss": "stylelint 'source/**/*.scss' --syntax scss; exit 0;"
+    "lintjs": "eslint 'source/assets/javascripts/**/*.js'",
+    "lintcss": "stylelint 'source/**/*.scss' --syntax scss"
   },
   "browserslist": [
     "Last 5 versions"
