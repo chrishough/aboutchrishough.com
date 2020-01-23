@@ -28,7 +28,7 @@ div[class="container-fluid family-journey-chicago"]
               |Chicago
           div[class="row"]
             div[class="col-12 explanation"]
-              = data.page['family-journey'].locations['chicago']
+              = data.page['family-journey'].locations['chicago_1']
 
 div[class="container-fluid family-journey-boulder"]
   div[class="row"]
@@ -50,7 +50,7 @@ div[class="container-fluid family-journey-boulder"]
               |Boulder
           div[class="row"]
             div[class="col-12 explanation"]
-              = data.page['family-journey'].locations['boulder']
+              = data.page['family-journey'].locations['boulder_2']
 
 div[class="container-fluid family-journey-nyc"]
   div[class="row"]
@@ -72,7 +72,7 @@ div[class="container-fluid family-journey-nyc"]
               |Manhattan
           div[class="row"]
             div[class="col-12 explanation"]
-              = data.page['family-journey'].locations['manhattan']
+              = data.page['family-journey'].locations['manhattan_3']
 
 div[class="container-fluid family-journey-pdx"]
   div[class="row"]
@@ -94,7 +94,30 @@ div[class="container-fluid family-journey-pdx"]
               |PDX
           div[class="row"]
             div[class="col-12 explanation"]
-              = data.page['family-journey'].locations['pdx']
+              = data.page['family-journey'].locations['pdx_4']
+
+div[class="container-fluid family-journey-boulder"]
+  div[class="row"]
+    div[class="d-none d-lg-block col-lg-4 align-self-center"]
+      div[class="skyline"]
+        div[class="step"]
+          span[class="fa-layers fa-fw fa-2x step"]
+            i[class="fas fa-map-marker"]
+            span[class="fa-layers-text"] 2
+    div[class="col-12 col-lg-8"]
+      div[class="row journey-row"]
+        div[class="col-12 journey-wrapper"]
+          div[class="row d-flex flex-row"]
+            div
+              span[class="fa-layers fa-fw fa-2x step"]
+                i[class="fas fa-map-marker"]
+                span[class="fa-layers-text"] 5
+            div[class="city"]
+              |Boulder
+          div[class="row"]
+            div[class="col-12 explanation"]
+              = data.page['family-journey'].locations['boulder_5']
+
 
 div[class="container-fluid family-journey-tbd"]
   div[class="row"]
