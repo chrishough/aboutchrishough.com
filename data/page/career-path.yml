@@ -212,18 +212,27 @@ community:
   -
     id: 1
     title: Founder
+    dates: 2016 - 2017
     meetup: Ruby on Rails PDX Meetup
     location: Portland, Oregon
   -
     id: 2
     title: Mentor
+    dates: 2016 – 2019
     meetup: Mentorship Saturdays PDX Meetup
     location: Portland, Oregon
   -
     id: 3
     title: Founder
+    dates: 2017 – 2019
     meetup: Full Stack PDX Meetup
     location: Portland, Oregon
+  -
+    id: 4
+    title: Participant
+    dates: 2019 - Present
+    meetup: Boulder Ruby Group
+    location: Boulder, Colorado
 
 conferences:
   -
@@ -281,4 +290,10 @@ conferences:
     title: Ruby Conference
     dates: November 18th - 20th, 2019
     location: Nashville, Tennessee
+    link: https://rubyconf.org/
+  -
+    id: 11
+    title: Rails Conference
+    dates: May 5th - 7th. 2020
+    location: Portland, Oregon
     link: https://rubyconf.org/
