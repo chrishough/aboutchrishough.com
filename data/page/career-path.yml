@@ -189,10 +189,18 @@ experiences:
       company: "VYNYL"
       link: https://vynyl.com/
       position: Senior Software Engineer
-      dates: 2019 – Present
+      dates: 2019 – 2020
       accomplishments:
         - Design and develop key features to enhance the functionality of an enterprise lending platform processing $110MM+ in financial assets per year.
         - Hire, train, and mentor a remote team of four software engineers to increase overall productivity while improving code quality.
+    -
+      id: 10
+      company: "Dutchie"
+      link: https://dutchie.com/
+      position: Senior Software Engineer
+      dates: 2020 – Present
+      accomplishments:
+        - Excited to join the team engineering cutting edge technology for the Cannabis industry.
 
 education:
   -
@@ -229,9 +237,16 @@ community:
     location: Portland, Oregon
   -
     id: 4
-    title: Participant
+    title: Regular Attendee
     dates: 2019 - Present
     meetup: Boulder Ruby Group
+    location: Boulder, Colorado
+
+  -
+    id: 4
+    title: Mentor & Volunteer Teacher
+    dates: 2020 - Present
+    meetup: Turing School of Software & Design
     location: Boulder, Colorado
 
 conferences:
@@ -290,10 +305,4 @@ conferences:
     title: Ruby Conference
     dates: November 18th - 20th, 2019
     location: Nashville, Tennessee
-    link: https://rubyconf.org/
-  -
-    id: 11
-    title: Rails Conference
-    dates: May 5th - 7th. 2020
-    location: Portland, Oregon
     link: https://rubyconf.org/
