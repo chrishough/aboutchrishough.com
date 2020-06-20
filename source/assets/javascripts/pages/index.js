@@ -4,7 +4,7 @@ export default () => {
     $.ajax({
       async: false,
       global: false,
-      url: 'https://raw.githubusercontent.com/chrishough/my-public-data/master/public-website-data-sets/quotes.json',
+      url: 'https://raw.githubusercontent.com/chrishough/aboutchrishough.com/master/source/assets/data/quotes.json',
       dataType: 'json',
       success(data) {
         json = data;
