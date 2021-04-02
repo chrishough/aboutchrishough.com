@@ -99,6 +99,7 @@
   .family-journey-boulder,
   .family-journey-nyc,
   .family-journey-pdx,
+  .family-journey-lasvegas,
   .family-journey-tbd {
     color: $white;
     max-width: map-get($grid-breakpoints, "lg");
@@ -123,5 +124,6 @@
   @import "family-journey-boulder";
   @import "family-journey-nyc";
   @import "family-journey-pdx";
+  @import "family-journey-lasvegas";
   @import "family-journey-tbd";
 }
