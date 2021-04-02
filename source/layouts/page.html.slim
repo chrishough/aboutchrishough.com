@@ -20,7 +20,7 @@
               =>
               = link_to(current_page.data.title, current_page.data.slug)
           - if current_page.data.meta['description'] && current_page.data.meta['accomplishments'] && current_page.data.meta['technologies']
-            div[class="col-12 col-xl-9 page-description"]
+            div[class="col-12 page-description"]
               = current_page.data.meta['description']
               div[class="row accomplishments"]
                 - current_page.data.meta['accomplishments'].sort_by { |k| k["id"] }.reverse.each do |accomplishment|
@@ -30,11 +30,6 @@
                     |:
                     =>
                     = accomplishment['description']
-            div[class="d-none d-xl-block col-xl-3 page-tool-description"]
-              - 4.times
-                - current_page.data.meta['technologies'].shuffle.each do |technology|
-                  div
-                    img[src="#{technology}"]
 
           - elsif current_page.data.meta['description']
             div[class="col-12 page-description"]
