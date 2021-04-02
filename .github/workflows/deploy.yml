@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -19,7 +19,7 @@ jobs:
       - name: Install Ruby
         uses: actions/setup-ruby@v1
         with:
-          version: 2.7.x
+          ruby-version: 2.7.2
         if: github.event.pull_request.merged == true
 
       - name: Ruby Version

@@ -87,6 +87,11 @@ experiences:
         company: Eggplant
         accomplishments: >-
           Expanded the authorization capability of the testing manager application to include Microsoft Active Directory (LDAP). Coordinated daily pair programming sessions to mentor junior engineers, improve team collaboration, and increase overall team performance.
+      -
+        id: 6
+        company: Advanced Building Technology
+        accomplishments: >-
+          Utilized responsive web design construction techniques to rearchitect version two of this corporation's website. While version one was not mobile or tablet friendly, iPhones, iPads, and desktops are all now supported. It was successfully launched on time in preparation for new product kickoffs.
   w-two:
     -
       id: 1
@@ -247,7 +252,7 @@ community:
     title: Mentor & Volunteer Teacher
     dates: 2020 - Present
     meetup: Turing School of Software & Design
-    location: Boulder, Colorado
+    location: Las Vegas, Nevada
 
 conferences:
   -
