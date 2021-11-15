@@ -74,7 +74,7 @@ helpers do
   end
 
   def prep_external_destination(destination)
-    '/' + destination
+    "/#{destination}"
   end
 
   def external_site_configured?
