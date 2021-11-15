@@ -43,7 +43,7 @@ def add_to_source(postion:, content:, view_source_file:)
 end
 
 def read_source_file(view_source_file:)
-  File.read('source/partials/' + view_source_file).strip
+  File.read("source/partials/#{view_source_file}").strip
 rescue StandardError
   raise StandardError, 'Unfortunately the view source file can not be located!'
 end

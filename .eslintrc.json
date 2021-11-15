@@ -1,5 +1,4 @@
 {
-  "extends": "airbnb-base",
   "globals": {
     "window": true,
     "Breakpoints": true,
@@ -19,6 +18,9 @@
   "plugins": [
     "import"
   ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "rules": {
     "max-len": ["error", 180, 2, {
       "ignoreUrls": true,
