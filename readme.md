@@ -22,5 +22,3 @@ I’m a human being and my blog reflects and embodies that humanity.
 
 Looking for my resume? [Click Here](https://github.com/chrishough/my-resume/)  
 Looking for my local configurations? [Click Here](https://github.com/chrishough/my-configurations/)
-
-![open-source-projects.jpeg](https://github.com/chrishough/aboutchrishough.com/raw/master/source/assets/images/open-source-projects.jpeg)
