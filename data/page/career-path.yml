@@ -92,6 +92,22 @@ experiences:
         company: Advanced Building Technology
         accomplishments: >-
           Utilized responsive web design construction techniques to rearchitect version two of this corporation's website. While version one was not mobile or tablet friendly, iPhones, iPads, and desktops are all now supported. It was successfully launched on time in preparation for new product kickoffs.
+      -
+        id: 7
+        company: Sidebench
+        accomplishments: >-
+          Serving as a Technical Architect for the Momints NFT Marketplace by researching architecture, selecting components based on scalability needs and risk mitigation, developing the MVP, and compiling marketing materials. Provide high-level documentation on recommendations for system architecture diagrams, server infrastructure, tech stack selection, 3rd Party dependencies, data models and database schema, and API specifications to drive development.
+      -
+        id: 8
+        company: SafeAccess
+        accomplishments: >-
+          Developed a talent pipeline and hired a senior Ruby on Rails engineer to backfill the co-founder and senior technical architect of the application.
+      -
+        id: 9
+        company: Arthur Maxwell
+        accomplishments: >-
+          Rearchitected an offline iPad-driven eLearning management and classroom application with enterprise clients across the globe to web-based learning using the latest Hotwire, Stimulus, Turbo, and Ruby on Rails libraries.
+
   w-two:
     -
       id: 1
