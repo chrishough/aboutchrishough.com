@@ -19,10 +19,9 @@
       padding-left: 0;
 
       .section-header {
-        @include background-color-alpha($color: $color-one, $alpha: $backdrop-opacity-dark);
-
-        border-top: 0.1rem solid $color-two;
-        border-bottom: 0.1rem solid $color-two;
+        background-color: rgba(4, 1, 5, $backdrop-opacity);
+        border-top: 0.1rem solid $purple-dark;
+        border-bottom: 0.1rem solid $purple-dark;
         text-transform: uppercase;
         text-align: center;
         display: inline-flex;
@@ -36,7 +35,7 @@
         }
 
         a {
-          color: $color-five;
+          color: $purple-lightest;
           text-decoration: none;
         }
 
