@@ -57,56 +57,14 @@ experiences:
     company: RobotsBuildingRobots, LLC
     link: http://robotsbuildingrobots.com/
     position: Founder & Senior Full Stack Engineer
-    dates: 2016 – Present
-    location: Remote from Boulder, Colorado
-    accomplishments: >-
-      Hired by companies to work on every part of the SDLC, from product inception, roadmap development, and hands-on programming to launch, customer implementation, and maintenance. Built and trained internal teams on software quality best practices to create a sustainable engineering culture that can execute on the most challenging business objectives.
-    roles:
-      -
-        id: 1
-        company: Gathrly
-        accomplishments: >-
-          Partnered with company founders to create a technical product roadmap and setup agile processes. Designed, engineered, and maintained a lead management application utilized by top tier brewers. Coached and mentored a team of junior engineers to meet productivity goals and ensure high-performance.
-      -
-        id: 2
-        company: USA Today
-        accomplishments: >-
-          Developed and architected a backend CMS with frontend content creation interfaces & features. Optimized user flows & improved the customer experience by designing an updated responsive layout.
-      -
-        id: 3
-        company: W. W. Norton
-        accomplishments: >-
-          Designed and architected an interactive delivery platform to serve over 300+ interactives for a global publisher. Setup the GitFlow Process, code reviews, quality guidelines, & workflow management. Coached & mentored junior engineers on best practices to increase their productivity & contributions to the code base.
-      -
-        id: 4
-        company: Crowd OX
-        accomplishments: >-
-          Built out platform features across three ruby-on-rails engines. Rewrote the Partner application testing suite porting it from Minitest to the latest version of RSpec while maintaining testing coverage metrics. Expanded testing coverage from 0% to over 60% in a legacy code base with 100% model testing coverage.
-      -
-        id: 5
-        company: Eggplant
-        accomplishments: >-
-          Expanded the authorization capability of the testing manager application to include Microsoft Active Directory (LDAP). Coordinated daily pair programming sessions to mentor junior engineers, improve team collaboration, and increase overall team performance.
-      -
-        id: 6
-        company: Advanced Building Technology
-        accomplishments: >-
-          Utilized responsive web design construction techniques to rearchitect version two of this corporation's website. While version one was not mobile or tablet friendly, iPhones, iPads, and desktops are all now supported. It was successfully launched on time in preparation for new product kickoffs.
-      -
-        id: 7
-        company: Sidebench
-        accomplishments: >-
-          Serving as a Technical Architect for the Momints NFT Marketplace by researching architecture, selecting components based on scalability needs and risk mitigation, developing the MVP, and compiling marketing materials. Provide high-level documentation on recommendations for system architecture diagrams, server infrastructure, tech stack selection, 3rd Party dependencies, data models and database schema, and API specifications to drive development.
-      -
-        id: 8
-        company: SafeAccess
-        accomplishments: >-
-          Developed a talent pipeline and hired a senior Ruby on Rails engineer to backfill the co-founder and senior technical architect of the application.
-      -
-        id: 9
-        company: Arthur Maxwell
-        accomplishments: >-
-          Rearchitected an offline iPad-driven eLearning management and classroom application with enterprise clients across the globe to web-based learning using the latest Hotwire, Stimulus, Turbo, and Ruby on Rails libraries.
+    dates: 2016 – Time.current
+    location: Illinois, Colorado, Oregon, Nevada & New York
+    accomplishments:
+      - "Arthur Maxwell & Advanced Building Technology: Spearheaded the transition of Arthur Maxwell's traditional iPad-based eLearning systems to an advanced web-based platform, dramatically increasing global accessibility and user engagement. This was achieved by leveraging modern technologies such as Hotwire, Stimulus, Turbo, and Ruby on Rails. Similarly, led a significant rearchitecture at Advanced Building Technology, transforming their website into a mobile-first design that not only reduced hosting costs but also enhanced traffic monitoring and optimized user experiences across various devices."
+
+      - "SafeAccess & Sidebench: At SafeAccess, a robust talent pipeline strategy was developed, culminating in the strategic placement of a senior Ruby on Rails engineer to ensure continuous innovation and leadership in application development. Concurrently, as the Technical Architect at Sidebench, directed the pioneering development of the Momints NFT Marketplace from inception to MVP. This role involved extensive research and selection of scalable technologies, as well as the creation of comprehensive documentation to support architectural decisions and streamline development processes."
+
+      - "Collaborative Projects at Crowd OX, W. W. Norton, and Gathrly: Oversaw the enhancement of Crowd OX's platform, significantly expanding its capabilities and transitioning the testing suite to achieve exemplary code coverage. At W. W. Norton, orchestrated the development of an interactive delivery platform that now serves over 300 interactive resources globally, implementing rigorous GitFlow and quality control processes. In collaboration with Gathrly's founders, developed and continuously improved a lead management system for elite brewers, fostering an environment that prioritizes mentorship and high performance among engineering teams."
 
   w-two:
     -
@@ -116,9 +74,11 @@ experiences:
       position: Team Leader – Web Technology
       dates: 2001 – 2007
       accomplishments:
-        - Managed a team of 5 engineers across the Midwest region and created consistency by establishing writing development processes, software style guidelines, scalability standards, and pair programming sessions.
-        - Reduced expenses, increased productivity, and prevented fraud by engineering a metrics-driven multi-tiered dashboard application serving actionable data to the enterprise.
-        - Increased customer satisfaction scores, reduced outages, & reduced repair visits by standardizing online process delivery and creating mission-critical applications with 24/7 uptime & real-time administrative updates.
+        - Led a regional team of five engineers, standardizing development practices across the Midwest by introducing comprehensive software style guidelines, scalability standards, and pair programming sessions to enhance consistency and team performance.
+
+        - Engineered a multi-tiered, metrics-driven dashboard application that significantly reduced expenses, increased productivity, and prevented fraud by providing actionable data enterprise-wide.
+
+        - Boosted customer satisfaction and minimized outages by standardizing online process delivery and developing mission-critical applications with 24/7 uptime and real-time administrative updates.
     -
       id: 2
       company: SOM
@@ -126,8 +86,9 @@ experiences:
       position: Applications Developer
       dates: 2008 – 2009
       accomplishments:
-        - Refactored internal project management software to support international languages and character sets.
-        - Increased project management collaboration and reduced task duplication during the Burj Khalifa construction project by developing a company-wide project and task tracker.
+        - Enhanced internal project management software by refactoring it to support international languages and character sets, fostering global usability and communication.
+
+        - Developed a comprehensive project and task tracker for the Burj Khalifa construction project, increasing management collaboration and reducing task duplication, which streamlined project operations and enhanced team efficiency.
     -
       id: 3
       company: PlaceWise Media
@@ -142,18 +103,20 @@ experiences:
           position: Director of Application Engineering
           dates: 2014 – 2015
       accomplishments:
-        - Managed the construction of a Ruby on Rails based Service Oriented Architecture to drive content to over 600 statically generated websites, handle increased site traffic on Black Friday, deliver new content, and reduce DevOps overhead costs.
-        - Built a culture of learning by implementing online courses, real-time pairing, and career mentoring to reduce knowledge silos, grow junior developers, and reduce project completion times.
-        - Refactored the code deployment process to Git Flow via GitHub from SVN in order to improve the stability of the CI environment and increase the speed of code deployments.
-        - Revamped the RetailHub Enterprise Content Management Software. Replaced 10 years of legacy code & organized customer tools in a single workspace to increase application performance & improve client satisfaction. Transformed legacy communications and increased collaboration & efficiency by implementing Slack enterprise-wide.
+        - Spearheaded the development of a Ruby on Rails-based Service Oriented Architecture that powers content delivery across over 600 statically generated websites, enhancing Black Friday traffic management, content updates, and reducing DevOps costs.
+
+        - Championed a culture of continuous learning within the team by launching online courses, promoting real-time pairing, and providing career mentoring, which significantly reduced knowledge silos, accelerated junior developer growth, and decreased project timelines.
+
+        - Overhauled the code deployment process by transitioning from SVN to GitFlow via GitHub, improving the stability of the continuous integration environment and expediting deployment speeds.
+
+        - Revitalized the RetailHub Enterprise Content Management Software by replacing a decade of legacy code and consolidating customer tools into a unified workspace, boosting application performance and client satisfaction. Enhanced team communication and operational efficiency by integrating Slack enterprise-wide.
     -
       id: 4
       company: BilingualHire
       position: Senior Full Stack Engineer
       dates: 2016
       accomplishments:
-        - Re-engineered an MVP focused on placing bilingual candidates in jobs across the United States.
-        - Optimized the user sign up workflow by simplifying content creation from launch to point of sale, retooling every user interface, and adjusting the data model to support many new language types.
+        - Re-engineered an MVP to streamline the placement of bilingual candidates in jobs across the U.S., enhancing the user sign-up workflow by simplifying content creation from launch to sale, overhauling user interfaces, and expanding the data model to support multiple new languages.
     -
       id: 5
       company: Whiplash
@@ -161,8 +124,9 @@ experiences:
       position: Senior Full Stack Developer
       dates: 2016
       accomplishments:
-        - Engineered an Inbound and Outbound ETL Microservice with API to relay communications between 3rd party providers & our monorail in real time and provide flexibility for varying provider complexity.
-        - Instituted Slack and Git Flow modeled to improve code quality, test coverage, and communication. Created room configurations to support cross-collaboration between on-site and remote engineering, sales, & customer teams.
+        - Developed an Inbound and Outbound ETL Microservice with an integrated API to facilitate real-time communications between third-party providers and our monorail system, enhancing operational flexibility to accommodate diverse provider complexities.
+
+        - Implemented Slack and GitFlow to elevate code quality and test coverage while fostering cross-collaborative environments between on-site and remote engineering, sales, and customer service teams through strategic room configurations.
     -
       id: 6
       company: Coding Zeal
@@ -170,9 +134,11 @@ experiences:
       position: Senior Software Engineer
       dates: 2016 – 2017
       accomplishments:
-        - Built a detailed patient logic report utilizing recursion to enable patient metric analysis & interpretation for a customer in the medical industry.
-        - Engineered the foundations required to move a client off of MongoDB both to increase efficiency and cut costs.
-        - Refactored Coding Zeal’s referral program website to provide customers with a consistent & accessible UI/UX, increase customer satisfaction, and improve lead conversions.
+        - Developed a complex patient logic report using recursion for enhanced metric analysis and interpretation within the medical industry, facilitating better data-driven decisions.
+
+        - Engineered a strategic migration from MongoDB to more cost-effective and efficient database solutions, optimizing performance and reducing operational costs for a client.
+
+        - Led a comprehensive refactor of Coding Zeal’s referral program website, enhancing UI/UX to boost customer satisfaction and improve lead conversion rates.
     -
       id: 7
       company: Weaveup
@@ -180,9 +146,9 @@ experiences:
       position: Senior Backend Engineer
       dates: 2017 – 2018
       accomplishments:
-        - Led hiring, onboarding, and training of engineers and the first SCRUM project manager for the backend team.
-        - Planned and architected Licensing 2.0 which required a multi-stage multi-epic rollout process. Completed multiple epics of 100 files each that impacted every component related to design content in the backend API.
-        - Cut test processing time from 25 minutes to 8 minutes by converting legacy Minitest specs to Rspec and implementing parallel test execution on CI.
+        - Directed the recruitment, onboarding, and training of new engineering talent, including the integration of the first SCRUM project manager, to strengthen backend team capabilities. Led the complex, multi-stage architecture and rollout of Licensing 2.0, enhancing every aspect of design content within the backend API through comprehensive updates across hundreds of files.
+
+        - Achieved a significant reduction in test processing times by transitioning from legacy Minitest specs to RSpec and integrating parallel test execution on continuous integration platforms, cutting down durations from 25 minutes to just 8 minutes.
     -
       id: 8
       company: "MediaPRO: Cybersecurity & Privacy Education"
@@ -190,9 +156,11 @@ experiences:
       position: Senior Application Developer
       dates: 2018 – 2019
       accomplishments:
-        - Successfully launched LearningLAB, a platform that helps enterprises fortify their workforce against cyber threats and privacy breaches. Led backend testing and established best practices to achieve optimal software quality.
-        - Designed a full-stack dependency management process for our two monolithic ruby-on-rails applications.
-        - Improved code cleanliness and readability by teaching the team about how linting can be used to increase productivity and working with the engineers to implement linting in the code base.
+        - Spearheaded the launch of LearningLAB, a platform designed to strengthen enterprise workforce defenses against cyber threats and privacy breaches, overseeing backend testing and establishing best practices to enhance software quality.
+
+        - Developed a comprehensive full-stack dependency management process tailored for two monolithic Ruby on Rails applications, significantly enhancing system integrity and operational efficiency.
+
+        - Elevated code quality and team productivity by introducing and implementing linting practices across the engineering team, improving code cleanliness and readability.
     -
       id: 9
       company: "onDiem"
@@ -200,11 +168,11 @@ experiences:
       position: Director of Engineering
       dates: 2019
       accomplishments:
-        - Hired to lead the development of an on-demand staffing platform to enable dental professionals to find work on a flexible schedule and dental practices to ensure service availability and improve the patient experience by fully staffing their offices.
-        - Partner with the founding team, head of product, and creative director to design, develop, and execute the product roadmap with a focus on building features to support monetization and securing early adopters to gather user feedback. This included implementing SCRUM to drive team productivity and performance.
-        - Personally built engineering integrations and implemented automation to reduce platform complexity and improve performance for external customers, and the internal customer support team.
-        - Documented platform architecture and passwords to secure the stack and create a knowledge base, reducing ramp-up time for new engineers joining the team.
-        - Migrated the code base from Bitbuck to Github to take advantage of more streamlined tooling, setup continuous integration for automated testing, implement security scans, and develop style guide tests.
+        - Led the development of an on-demand staffing platform for dental professionals, enhancing service availability and patient experience by optimizing flexible work opportunities and office staffing solutions. Collaborated closely with the founding team, head of product, and creative director to design and implement a product roadmap focused on feature development for monetization and user feedback, incorporating SCRUM methodologies to boost team productivity.
+
+        - Engineered critical platform integrations and automation enhancements to simplify operations and enhance performance for both external customers and the internal support team. Spearheaded the migration of the codebase from Bitbucket to GitHub, introducing advanced tooling, continuous integration, security scans, and style guide compliance to streamline processes and bolster security.
+
+        - Established a comprehensive documentation system for platform architecture and security protocols to ensure robust knowledge sharing and reduce onboarding time for new engineers.
     -
       id: 10
       company: "VYNYL"
@@ -212,8 +180,9 @@ experiences:
       position: Senior Software Engineer
       dates: 2019 – 2020
       accomplishments:
-        - Design and develop key features to enhance the functionality of an enterprise lending platform processing $110MM+ in financial assets per year.
-        - Hire, train, and mentor a remote team of four software engineers to increase overall productivity while improving code quality.
+        - Oversaw the design and development of key features to enhance the functionality of an enterprise lending platform, which processes over $110 million in financial assets annually.
+
+        - Recruited, trained, and mentored a remote team of four software engineers, elevating productivity and enhancing code quality through rigorous code reviews, implementation of Rspec automated testing best practices, and adherence to Sandy Metz’s coding principles in Ruby.
     -
       id: 11
       company: "Dutchie"
@@ -221,19 +190,25 @@ experiences:
       position: Senior Software Engineer
       dates: 2020 – 2022
       accomplishments:
-        - Led development and served as the Technical Lead for the launch of a Chain Billing Project by architecting and implementing the backend API and transitioning legacy APIs and code structures to utilize a newly designed data model.
-        - Empowered and led a dynamic and skilled development team by driving key development initiatives, including the establishment of an industry panel, the 155-member Ruby Guild, and a Rubyist Book Club for testing techniques in Rspec.
-        - Championed collaboration and effective leadership in code by reviewing PRs, pairing to remove blockers, assisting with outages, and helping develop and test new coding patterns.
-        - Reinforcing a culture of inclusivity, diversity, empathy, and empowerment remotely by fostering collaboration and hosting 1-on-1 chats with each and every engineer during a period of rapid growth.
+        - Spearheaded the launch of the Chain Billing Project, overseeing the architecture and implementation of the backend API while modernizing legacy code and APIs to integrate with a new data model.
+
+        - Cultivated a dynamic development environment by leading initiatives such as the formation of an industry panel, the 155-member Ruby Guild, and a Rubyist Book Club, which focuses on advancing testing techniques in Rspec.
+
+        - Promoted a collaborative and effective coding culture by reviewing PRs, facilitating pair programming to tackle blockers, supporting during outages, and pioneering new coding patterns.
+
+        - Enhanced a remote work culture grounded in inclusivity, diversity, empathy, and empowerment, ensuring consistent engagement through 1-on-1 chats with engineers during periods of rapid organizational growth.
     -
       id: 12
       company: "Goldbelly"
       link: https://goldbelly.com/
       position: Senior Software Engineer
-      dates: 2022 – Present
+      dates: 2022 – Time.current
       accomplishments:
-        - Co-led the design and development of a first-of-its-kind E-Gifting experience for the Goldbelly food E-Commerce platform with a React Frontend and Rails Backend to enable user sharing of personalized culinary experiences from legendary chefs and award-winning restaurants. These pre-payment features for purchases containing perishable goods enabled frictionless ordering with solely an email address; leaving delivery details and timing to recipients.
-        - Co-led the vision and implementation of incorporating StackOverflow for enterprises into our engineering and customer support structures to promote rapid collaboration and consistent solutions.
+        - Collaborated closely with the VP of Engineering to redefine our API framework, leading to the strategic overhaul and organization of our API architecture. We successfully launched Version 4 of our Ruby on Rails Backend API, which was built adhering to the latest OpenAPI specifications. This version incorporated up-to-date API conventions and embraced Semantic Versioning (Semver) to ensure backward compatibility and predictability in future updates. This foundational upgrade facilitated the seamless decoupling of our e-commerce frontend, transitioning to Next.js with TypeScript auto-generated API clients, enhancing our system's modularity and scalability.
+
+        - Co-led the pioneering design and development of a unique E-Gifting feature on the Goldbelly food e-commerce platform, utilizing a React frontend and Rails backend. This innovative service allows users to share personalized culinary experiences from renowned chefs and restaurants, with the convenience of pre-payment and recipient-controlled delivery details.
+
+        - Initiated and guided the integration of StackOverflow for Enterprises into our engineering and customer support frameworks, enhancing rapid collaboration and ensuring uniform solutions across the board. This strategic mo
 
 education:
   -
@@ -278,7 +253,7 @@ community:
   -
     id: 4
     title: Mentor & Volunteer Teacher
-    dates: 2020 - Present
+    dates: 2020 - 2022
     meetup: Turing School of Software & Design
     location: Las Vegas, Nevada
 
@@ -339,3 +314,9 @@ conferences:
     dates: November 18th - 20th, 2019
     location: Nashville, Tennessee
     link: https://rubyconf.org/
+  -
+    id: 10
+    title: Rails World Conference
+    dates: September 26th - 27th, 2024
+    location: Toronto, Canada
+    link: https://rubyonrails.org/world/2024
