@@ -22,6 +22,11 @@ after_build do
 
   File.write('build/CNAME', 'aboutchrishough.com')
 
+  if File.exist?('build/four-o-four/index.html')
+    FileUtils.cp('build/four-o-four/index.html', 'build/404.html')
+    FileUtils.rm_rf('build/four-o-four')
+  end
+
   add_content_to_source(postion: 'header', view_source_file: 'view_source_header.txt')
   add_content_to_source(postion: 'footer', view_source_file: 'view_source_footer.txt')
 end

@@ -127,12 +127,9 @@
       }
 
       .experience-w-two-accomplishments,
-      .experience-w-ten-ninety-nine-top-level-accomplishments {
-        padding: 1rem 0 1rem 0;
-      }
-
-      .experience-w-two-accomplishments,
       .experience-w-ten-ninety-nine-accomplishments {
+        padding: 1rem 0 1rem 0;
+
         li:not(:last-child) {
           padding-bottom: 0.5rem;
         }

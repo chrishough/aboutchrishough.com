@@ -1,0 +1,54 @@
+#four-o-four {
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
+    background: url('#{$image-path}/backgrounds/20241027-screaming-cat.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .section-four-o-four-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding-right: 0;
+      padding-left: 0;
+
+      .section-header {
+        background-color: rgba(4, 1, 5, $backdrop-opacity);
+        border-top: 0.1rem solid $purple-dark;
+        border-bottom: 0.1rem solid $purple-dark;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+
+        span {
+          vertical-align: middle;
+          font-size: 1rem;
+        }
+
+        a {
+          color: $purple-lightest;
+          text-decoration: none;
+        }
+
+        .title {
+          @include media-breakpoint-up(xs) {
+            font-size: 2rem;
+          }
+
+          @include media-breakpoint-up(md) {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
