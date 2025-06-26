@@ -10,6 +10,8 @@ backup
 webpack.config.js
 .vscode
 .idea
+.claude
+claude.md
 
 ###############################################################################################
 # Ignore all logfiles, tempfiles, and databases.
