@@ -7,5 +7,6 @@ window.jQuery = window.$ = $;
 window.Popper = require('popper.js');
 
 // Load libraries!
+require('bootstrap');
 require('breakpoints');
 require('jquery-validation');
