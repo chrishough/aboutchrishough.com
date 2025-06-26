@@ -2,15 +2,17 @@
 
 activate :external_pipeline,
          name: :webpack,
-         command: 'npm run staging',
+         command: 'yarn run staging',
          source: 'build'
 
-Slim::Engine.set_default_options(pretty: true)
+Slim::Engine.set_options(pretty: true)
 
-set :relative_links, true
+activate :asset_hash, exts: %w[.jpg .png .webmanifest .ico .svg]
 
-activate :relative_assets
-
-set :protocol, 'http://'
+set :protocol, 'https://'
 set :host, 'aboutchrishough.com'
 set :port, 80
+
+require_relative '../lib/build_process_functions'
+
+after_build { adjust_final_source }
