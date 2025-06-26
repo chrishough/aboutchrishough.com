@@ -80,4 +80,15 @@ library.add(faAngleDoubleDown,
   faCalendarAlt,
   faEnvelope);
 
+// Watch for DOM changes and replace <i> tags with SVGs
 dom.watch();
+
+// Also process any existing icons on page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    dom.i2svg();
+  });
+} else {
+  // DOM is already loaded
+  dom.i2svg();
+}
