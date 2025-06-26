@@ -5578,11 +5578,6 @@ jquery-ui@^1.14.0:
   dependencies:
     jquery ">=1.12.0 <5.0.0"
 
-jquery-validation@^1.21.0:
-  version "1.21.0"
-  resolved "https://registry.npmjs.org/jquery-validation/-/jquery-validation-1.21.0.tgz#78fc05ab76020912a246af3661b3f54a438bca93"
-  integrity sha512-xNot0rlUIgu7duMcQ5qb6MGkGL/Z1PQaRJQoZAURW9+a/2PGOUxY36o/WyNeP2T9R6jvWB8Z9lUVvvQWI/Zs5w==
-
 jquery@*:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
