@@ -1,9 +1,11 @@
+// External Code Only!
 window.jQuery = require('jquery');
 
-window.$ = window.jQuery;
+// eslint-disable-next-line no-multi-assign
+window.jQuery = window.$ = $;
+
 window.Popper = require('popper.js');
 
-require('bootstrap');
-require('fontawesome');
+// Load libraries!
 require('breakpoints');
-require('validation');
+require('jquery-validation');
