@@ -238,30 +238,11 @@
     }
   }
 
-  .card-columns {
-    break-inside: avoid;
-    column-count: 1;
-
-    .card {
-      break-inside: avoid;
-      transform: translateZ(0);
-      background: none;
-      margin-bottom: 1rem;
-    }
-
-    @include media-breakpoint-up(sm) {
-      column-count: 2;
-
-      .career-section-education,
-      .career-section-community {
-        padding-right: 1rem;
-      }
-
-      .career-section-conferences,
-      .career-category-lets-connect {
-        padding-left: 1rem;
-      }
-    }
+  // Single column layout for all sections
+  .career-section-conferences,
+  .career-section-education,
+  .career-section-community {
+    margin-bottom: 2rem;
   }
 
   @import "career-section-experiences";
