@@ -51,7 +51,7 @@
       .fa-exclamation,
       .fa-map-marker-alt,
       .fa-calendar-alt,
-      .fa-pied-piper-alt,
+      .fa-handshake,
       .fa-coffee,
       .fa-fly,
       .fa-trophy {
@@ -59,14 +59,6 @@
         font-size: 0.6rem;
       }
 
-      .education-school,
-      .conferences-title,
-      .community-meetup,
-      .community-title {
-        padding: 0 0 0 0.5rem;
-        font-size: 1.1rem;
-        text-transform: capitalize;
-      }
 
       .education-program,
       .education-location,
@@ -83,6 +75,16 @@
       .product-learnings,
       .product-vision-statement {
         font-size: 1rem;
+      }
+
+      .experience-position,
+      .experience-dates,
+      .education-school,
+      .conferences-title,
+      .community-meetup,
+      .community-title {
+        padding: 0 0 0 0.5rem;
+        text-transform: capitalize;
       }
 
       .education-logo,

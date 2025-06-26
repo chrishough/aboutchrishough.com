@@ -31,7 +31,7 @@ div[class="container-fluid career-section"]
               - data.page['career-path'].experiences['w-two'].sort_by { |k| k["id"] }.reverse.each do |w_two|
                 div[class="row career-category-experiences"]
                   div[class="col-12"]
-                    div[class="row"]
+                    div[class="row pb-2"]
                       div[class="col-12 experience-company"]
                         - if w_two.link
                           = link_to(w_two.company, w_two.link, target: :_blank)
@@ -39,23 +39,23 @@ div[class="container-fluid career-section"]
                           = w_two.company
                     - if w_two['position'].kind_of?(Array)
                       - w_two['position'].sort_by { |k| k["id"] }.reverse.each do |postion|
-                        div[class="row g-0"]
+                        div[class="row pb-2"]
                           div[class="col-1 experience-logo"]
-                            i[class="fab fa-pied-piper-alt"]
+                            i[class="fas fa-handshake"]
                           div[class="col-11 experience-position"]
                             = postion.position
-                        div[class="row g-0"]
+                        div[class="row pb-2"]
                           div[class="col-1 experience-logo"]
                             i[class="far fa-calendar-alt"]
                           div[class="col-11 experience-dates"]
                             = postion.dates
                     - else
-                      div[class="row g-0"]
+                      div[class="row pb-2"]
                         div[class="col-1 experience-logo"]
-                          i[class="fab fa-pied-piper-alt"]
+                          i[class="fas fa-handshake"]
                         div[class="col-11 experience-position"]
                           = w_two.position
-                      div[class="row g-0"]
+                      div[class="row"]
                         div[class="col-1 experience-logo"]
                           i[class="far fa-calendar-alt"]
                         div[class="col-11 experience-dates"]
@@ -73,20 +73,20 @@ div[class="container-fluid career-section"]
 
               div[class="row career-category-experiences"]
                 div[class="col-12"]
-                  div[class="row"]
+                  div[class="row pb-2"]
                     div[class="col-12 experience-company"]
                       = link_to(ten_ninety_nine.company, ten_ninety_nine.link, target: :_blank)
-                  div[class="row g-0"]
+                  div[class="row pb-2"]
                     div[class="col-1 experience-logo"]
-                      i[class="fab fa-pied-piper-alt"]
+                      i[class="fas fa-handshake"]
                     div[class="col-11 experience-position"]
                       = ten_ninety_nine.position
-                  div[class="row g-0"]
+                  div[class="row pb-2"]
                     div[class="col-1 experience-logo"]
                       i[class="far fa-calendar-alt"]
                     div[class="col-11 experience-dates"]
                       = ten_ninety_nine.dates
-                  div[class="row g-0 experience-w-ten-ninety-nine-accomplishments"]
+                  div[class="row experience-w-ten-ninety-nine-accomplishments"]
                     ul
                       - ten_ninety_nine.accomplishments.each do |accomplishment|
                         li
