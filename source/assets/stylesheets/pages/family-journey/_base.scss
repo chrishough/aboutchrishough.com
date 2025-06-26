@@ -13,20 +13,35 @@
 
     @include media-breakpoint-up(lg) {
       display: block;
+      position: relative;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
 
       .step {
         display: block;
         position: absolute;
-        top: 36%;
-        left: 36%;
+        top: 33%;
+        left: 32%;
         font-size: 5rem;
+        transform: translateZ(0);
+        will-change: transform;
+
+        .fa-layers {
+          transform-style: preserve-3d;
+          backface-visibility: hidden;
+        }
 
         .fa-layers-text {
           @include impact-font();
 
           color: $purple-darkest;
-          padding: 0 0 0.9rem 0;
           font-size: 2rem;
+          transform: translateZ(0);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -60%);
+          line-height: 1;
         }
       }
     }
@@ -70,7 +85,11 @@
             @include impact-font();
 
             font-size: 1rem;
-            padding-bottom: 0.1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -60%);
+            line-height: 1;
           }
         }
 
