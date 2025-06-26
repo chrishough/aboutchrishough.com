@@ -33,15 +33,21 @@ jobs:
       # ----------------------------------------------------Node
 
       - name: Install Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          version: 10.16.3
+          node-version: 22.6.0
       - name: Node Version
         run: |
           node --version
-      - name: Setup Node Dependencies
+      - name: Install Yarn
         run: |
-          npm install
+          npm install --global yarn
+      - name: Yarn Version
+        run: |
+          yarn --version
+      - name: Install Dependencies
+        run: |
+          yarn install
 
       # ----------------------------------------------------Webpack
 
