@@ -1,7 +1,7 @@
 .career-section {
   max-width: map-get($grid-breakpoints, 'xl') !important;
   padding-top: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 3rem;
   border: none;
 
   a {
@@ -59,17 +59,13 @@
         font-size: 0.6rem;
       }
 
-      .conferences-title,
-      .conferences-dates,
-      .conferences-location {
-        text-transform: capitalize;
-      }
-
       .education-school,
       .conferences-title,
       .community-meetup,
       .community-title {
+        padding: 0 0 0 0.5rem;
         font-size: 1.1rem;
+        text-transform: capitalize;
       }
 
       .education-program,
@@ -108,7 +104,7 @@
       .career-category-conferences-wrapper,
       .career-category-education-wrapper,
       .career-category-community-wrapper {
-        padding: 0;
+        padding: 0 0 0 1rem;
       }
 
       .experience-technologies {
@@ -230,6 +226,7 @@
     }
 
     @include media-breakpoint-up(lg) {
+      padding: 0 0 0 1rem;
       font-size: 2rem;
 
       .fa-mug-hot {
@@ -238,11 +235,12 @@
     }
   }
 
-  // Single column layout for all sections
-  .career-section-conferences,
+  // Two column layout: conferences left, others right
   .career-section-education,
   .career-section-community {
-    margin-bottom: 2rem;
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 0 1rem;
+    }
   }
 
   @import "career-section-experiences";

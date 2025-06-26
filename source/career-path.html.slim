@@ -120,8 +120,8 @@ div[class="container-fluid career-section"]
 
 div[class="container-fluid career-section"]
   div[class="row"]
-    div[class="col-12"]
-      div[class="career-section-conferences mb-4"]
+    div[class="col-12 col-lg-6"]
+      div[class="career-section-conferences"]
         div[class="row"]
           div[class="col-12"]
             div[class="row d-flex flex-row career-header"]
@@ -132,24 +132,24 @@ div[class="container-fluid career-section"]
                 - data.page['career-path'].conferences.sort_by { |k| k["id"] }.reverse.each do |conference|
                     div[class="row career-category-conferences"]
                       div[class="col-12 career-category-conferences-wrapper"]
-                        div[class="row"]
+                        div[class="row pb-2"]
                           div[class="col-12 conferences-title"]
                             - if conference.link
                               = link_to(conference.title, conference.link, target: :_blank)
                             - else
                               = conference.title
-                        div[class="row g-0"]
+                        div[class="row pb-2"]
                           div[class="col-1 conferences-logo"]
                             i[class="far fa-calendar-alt"]
                           div[class="col-11 conferences-dates"]
                             = conference.dates
-                        div[class="row g-0"]
+                        div[class="row"]
                           div[class="col-1 conferences-logo"]
                             i[class="fas fa-map-marker-alt"]
-                        div[class="col-11 conferences-location"]
-                          = conference.location
+                          div[class="col-11 conferences-location"]
+                            = conference.location
 
-    div[class="col-12"]
+    div[class="col-12 col-lg-6"]
       div[class="career-section-education mb-4"]
         div[class="row"]
           div[class="col-12"]
@@ -161,24 +161,23 @@ div[class="container-fluid career-section"]
                 - data.page['career-path'].education.sort_by { |k| k["id"] }.reverse.each do |school|
                   div[class="row career-category-education"]
                     div[class="col-12 career-category-education-wrapper"]
-                      div[class="row"]
+                      div[class="row pb-2"]
                         div[class="col-12 education-title"]
                           - if school.link
                             = link_to(school.name, school.link, target: :_blank)
                           - else
                             = school.name
-                      div[class="row g-0"]
+                      div[class="row pb-2"]
                         div[class="col-1 education-logo"]
                           i[class="fas fa-brain"]
                         div[class="col-11 education-program"]
                           = school.program
-                      div[class="row g-0"]
+                      div[class="row pb-2"]
                         div[class="col-1 education-logo"]
                           i[class="fas fa-map-marker-alt"]
                         div[class="col-11 education-location"]
                           = school.location
 
-    div[class="col-12"]
       div[class="career-section-community mb-4"]
         div[class="row"]
           div[class="col-12"]
@@ -190,35 +189,34 @@ div[class="container-fluid career-section"]
                 - data.page['career-path'].community.sort_by { |k| k["id"] }.reverse.each do |community|
                   div[class="row career-category-community"]
                     div[class="col-12 career-category-community-wrapper"]
-                      div[class="row"]
+                      div[class="row pb-2"]
                         div[class="col-12 community-meetup"]
                           -if community.link
                             = link_to(community.meetup, community.link, target: :_blank)
                           - else
                             = community.meetup
-                      div[class="row g-0"]
+                      div[class="row pb-2"]
                         div[class="col-1 community-logo"]
                           i[class="fas fa-brain"]
                         div[class="col-11 community-title"]
                           = community.title
-                      div[class="row g-0"]
+                      div[class="row pb-2"]
                         div[class="col-1 community-logo"]
                           i[class="far fa-calendar-alt"]
                         div[class="col-11 community-dates"]
                           = community.dates
-                      div[class="row g-0"]
+                      div[class="row"]
                         div[class="col-1 community-logo"]
                           i[class="fas fa-map-marker-alt"]
                         div[class="col-11 community-location"]
                           = community.location
 
-    div[class="col-12"]
       div[class="career-category-lets-connect"]
         div[class="row"]
           div[class="col-12"]
             span
               |Let's Connect!
-          = link_to(data.components.social.linkedin, target: :_blank) do
-            i[class="fas fa-mug-hot"]
+            = link_to(data.components.social.linkedin, target: :_blank) do
+              i[class="fas fa-mug-hot"]
 
 
