@@ -19,6 +19,7 @@
   }
 
   .personal-data-wrapper-row {
+    z-index: $zindex-tooltip;
     padding: 0;
 
     .w-100 {
