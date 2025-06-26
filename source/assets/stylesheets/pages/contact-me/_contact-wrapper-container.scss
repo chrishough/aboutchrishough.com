@@ -39,30 +39,6 @@
       }
     }
 
-    .form-description,
-    .form-control {
-      padding: 0.5rem 0.5rem;
-    }
-
-    label,
-    .form-description,
-    .form-control {
-      @include secondary-font();
-
-      @include media-breakpoint-up(xs) {
-        font-size: 0.9rem;
-      }
-
-      a {
-        font-style: normal;
-        color: $purple-lightest;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
     padding: 1rem;
 
     @include media-breakpoint-up(xs) {
@@ -81,6 +57,4 @@
       }
     }
   }
-
-  @import "form";
 }
