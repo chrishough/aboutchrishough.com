@@ -26,3 +26,15 @@ $grid-breakpoints: (
 $grid-height-breakpoints: (
   minimium: 800px,
 );
+$container-max-widths: (
+  xs: 0,
+  minimium: 375px,
+  transition: 450px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  maximum: 1000px,
+  xl: 1200px,
+  xxl: 1800px,
+  xxxl: 2450px
+);

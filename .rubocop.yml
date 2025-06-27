@@ -2,9 +2,13 @@
 # TODO - FIX COP
 # rubocop:enable all
 
+require:
+  - rubocop-rake
+
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 3.4
   DisplayStyleGuide: false
+  NewCops: enable
   Exclude:
     - 'backup/**/*'
     - 'build/**/*'
@@ -34,7 +38,7 @@ Metrics/ClassLength:
 Metrics/MethodLength:
   Max: 16
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 180
   Exclude:
     - 'lib/tasks/*'

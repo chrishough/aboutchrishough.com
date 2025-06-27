@@ -18,20 +18,20 @@ div[class="container-fluid career-section"]
         div[class="col-12 p-0 mx-auto explanation"]
           ul[class="nav nav-tabs nav-fill justify-content-center" role="tablist"]
             li[class="nav-item"]
-              a[class="nav-link active" id="w-two-tab" data-toggle="tab" href="#w-two" role="tab" aria-controls="w-two" aria-selected="true"]
+              a[class="nav-link active" id="w-two-tab" data-bs-toggle="tab" href="#w-two" role="tab" aria-controls="w-two" aria-selected="true"]
                 |W2
             li[class="nav-item"]
-              a[class="nav-link" id="ten-ninety-nine-tab" data-toggle="tab" href="#ten-ninety-nine" role="tab" aria-controls="ten-ninety-nine" aria-selected="false"]
+              a[class="nav-link" id="ten-ninety-nine-tab" data-bs-toggle="tab" href="#ten-ninety-nine" role="tab" aria-controls="ten-ninety-nine" aria-selected="false"]
                 |1099
             li[class="nav-item"]
-              a[class="nav-link" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false" ]
+              a[class="nav-link" id="product-tab" data-bs-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false" ]
                 |Product
           div[class="tab-content"]
             div[class="tab-pane active" id="w-two" role="tabpanel" aria-labelledby="w2-tab"]
               - data.page['career-path'].experiences['w-two'].sort_by { |k| k["id"] }.reverse.each do |w_two|
                 div[class="row career-category-experiences"]
                   div[class="col-12"]
-                    div[class="row"]
+                    div[class="row pb-2"]
                       div[class="col-12 experience-company"]
                         - if w_two.link
                           = link_to(w_two.company, w_two.link, target: :_blank)
@@ -39,29 +39,29 @@ div[class="container-fluid career-section"]
                           = w_two.company
                     - if w_two['position'].kind_of?(Array)
                       - w_two['position'].sort_by { |k| k["id"] }.reverse.each do |postion|
-                        div[class="row no-gutters"]
+                        div[class="row pb-2"]
                           div[class="col-1 experience-logo"]
-                            i[class="fab fa-pied-piper-alt"]
+                            i[class="fas fa-handshake"]
                           div[class="col-11 experience-position"]
                             = postion.position
-                        div[class="row no-gutters"]
+                        div[class="row pb-2"]
                           div[class="col-1 experience-logo"]
                             i[class="far fa-calendar-alt"]
                           div[class="col-11 experience-dates"]
                             = postion.dates
                     - else
-                      div[class="row no-gutters"]
+                      div[class="row pb-2"]
                         div[class="col-1 experience-logo"]
-                          i[class="fab fa-pied-piper-alt"]
+                          i[class="fas fa-handshake"]
                         div[class="col-11 experience-position"]
                           = w_two.position
-                      div[class="row no-gutters"]
+                      div[class="row"]
                         div[class="col-1 experience-logo"]
                           i[class="far fa-calendar-alt"]
                         div[class="col-11 experience-dates"]
                           = w_two.dates
 
-                    div[class="row no-gutters experience-w-two-accomplishments"]
+                    div[class="row g-0 experience-w-two-accomplishments"]
                       ul
                         - w_two.accomplishments.each do |accomplishment|
                           li
@@ -73,20 +73,20 @@ div[class="container-fluid career-section"]
 
               div[class="row career-category-experiences"]
                 div[class="col-12"]
-                  div[class="row"]
+                  div[class="row pb-2"]
                     div[class="col-12 experience-company"]
                       = link_to(ten_ninety_nine.company, ten_ninety_nine.link, target: :_blank)
-                  div[class="row no-gutters"]
+                  div[class="row pb-2"]
                     div[class="col-1 experience-logo"]
-                      i[class="fab fa-pied-piper-alt"]
+                      i[class="fas fa-handshake"]
                     div[class="col-11 experience-position"]
                       = ten_ninety_nine.position
-                  div[class="row no-gutters"]
+                  div[class="row pb-2"]
                     div[class="col-1 experience-logo"]
                       i[class="far fa-calendar-alt"]
                     div[class="col-11 experience-dates"]
                       = ten_ninety_nine.dates
-                  div[class="row no-gutters experience-w-ten-ninety-nine-accomplishments"]
+                  div[class="row experience-w-ten-ninety-nine-accomplishments"]
                     ul
                       - ten_ninety_nine.accomplishments.each do |accomplishment|
                         li
@@ -119,105 +119,104 @@ div[class="container-fluid career-section"]
                     img[src="#{image_path('open-source-projects.jpeg')}"]
 
 div[class="container-fluid career-section"]
-  div[class="card-columns"]
-    div[class="card career-section-education"]
-      div[class="row"]
-        div[class="col-12"]
-          div[class="row d-flex flex-row career-header"]
-            div[class="career-header-title"]
-              |education
-          div[class="career-category"]
-            div[class="col-12 mx-auto explanation"]
-              - data.page['career-path'].education.sort_by { |k| k["id"] }.reverse.each do |school|
-                div[class="row career-category-education"]
-                  div[class="col-12 career-category-education-wrapper"]
-                    div[class="row"]
-                      div[class="col-12 education-title"]
-                        - if school.link
-                          = link_to(school.name, school.link, target: :_blank)
-                        - else
-                          = school.name
-                    div[class="row no-gutters"]
-                      div[class="col-1 education-logo"]
-                        i[class="fas fa-brain"]
-                      div[class="col-11 education-program"]
-                        = school.program
-                    div[class="row no-gutters"]
-                      div[class="col-1 education-logo"]
-                        i[class="fas fa-map-marker-alt"]
-                      div[class="col-11 education-location"]
-                        = school.location
-
-    div[class="card career-section-community"]
-      div[class="row"]
-        div[class="col-12"]
-          div[class="row d-flex flex-row career-header"]
-            div[class="career-header-title"]
-              |community
-          div[class="career-category"]
-            div[class="col-12 mx-auto explanation"]
-              - data.page['career-path'].community.sort_by { |k| k["id"] }.reverse.each do |community|
-                div[class="row career-category-community"]
-                  div[class="col-12 career-category-community-wrapper"]
-                    div[class="row"]
-                      div[class="col-12 community-meetup"]
-                        -if community.link
-                          = link_to(community.meetup, community.link, target: :_blank)
-                        - else
-                          = community.meetup
-                    div[class="row no-gutters"]
-                      div[class="col-1 community-logo"]
-                        i[class="fas fa-brain"]
-                      div[class="col-11 community-title"]
-                        = community.title
-                    div[class="row no-gutters"]
-                      div[class="col-1 community-logo"]
-                        i[class="far fa-calendar-alt"]
-                      div[class="col-11 community-dates"]
-                        = community.dates
-                    div[class="row no-gutters"]
-                      div[class="col-1 community-logo"]
-                        i[class="fas fa-map-marker-alt"]
-                      div[class="col-11 community-location"]
-                        = community.location
-
-    div[class="card career-section-conferences"]
-      div[class="row"]
-        div[class="col-12"]
-          div[class="row d-flex flex-row career-header"]
-            div[class="career-header-title"]
-              |conferences
-          div[class="career-category"]
-            div[class="col-12 mx-auto explanation"]
-              - data.page['career-path'].conferences.sort_by { |k| k["id"] }.reverse.each do |conference|
-                  div[class="row career-category-conferences"]
-                    div[class="col-12 career-category-conferences-wrapper"]
-                      div[class="row"]
-                        div[class="col-12 conferences-title"]
-                          - if conference.link
-                            = link_to(conference.title, conference.link, target: :_blank)
-                          - else
-                            = conference.title
-                      div[class="row no-gutters"]
-                        div[class="col-1 conferences-logo"]
-                          i[class="far fa-calendar-alt"]
-                        div[class="col-11 conferences-dates"]
-                          = conference.dates
-                      div[class="row no-gutters"]
-                        div[class="col-1 conferences-logo"]
-                          i[class="fas fa-map-marker-alt"]
-                        div[class="col-11 conferences-location"]
-                          = conference.location
-
-    div[class="card career-category-lets-connect"]
-      div[class="row"]
-        div[class="col-12"]
-          span
-            |Let's Connect!
-          = link_to(data.components.social.linkedin, target: :_blank) do
-            i[class="fas fa-mug-hot"]
-
-div[class="container-fluid"]
   div[class="row"]
-    div[class="col-12 d-flex align-contents-center career-path-embed-wrapper"]
-      embed[src="#{image_path('backgrounds/career-path.svg')}"]
+    div[class="col-12 col-lg-6"]
+      div[class="career-section-conferences"]
+        div[class="row"]
+          div[class="col-12"]
+            div[class="row d-flex flex-row career-header"]
+              div[class="career-header-title"]
+                |conferences
+            div[class="career-category"]
+              div[class="col-12 mx-auto explanation"]
+                - data.page['career-path'].conferences.sort_by { |k| k["id"] }.reverse.each do |conference|
+                    div[class="row career-category-conferences"]
+                      div[class="col-12 career-category-conferences-wrapper"]
+                        div[class="row pb-2"]
+                          div[class="col-12 conferences-title"]
+                            - if conference.link
+                              = link_to(conference.title, conference.link, target: :_blank)
+                            - else
+                              = conference.title
+                        div[class="row pb-2"]
+                          div[class="col-1 conferences-logo"]
+                            i[class="far fa-calendar-alt"]
+                          div[class="col-11 conferences-dates"]
+                            = conference.dates
+                        div[class="row"]
+                          div[class="col-1 conferences-logo"]
+                            i[class="fas fa-map-marker-alt"]
+                          div[class="col-11 conferences-location"]
+                            = conference.location
+
+    div[class="col-12 col-lg-6"]
+      div[class="career-section-education mb-4"]
+        div[class="row"]
+          div[class="col-12"]
+            div[class="row d-flex flex-row career-header"]
+              div[class="career-header-title"]
+                |education
+            div[class="career-category"]
+              div[class="col-12 mx-auto explanation"]
+                - data.page['career-path'].education.sort_by { |k| k["id"] }.reverse.each do |school|
+                  div[class="row career-category-education"]
+                    div[class="col-12 career-category-education-wrapper"]
+                      div[class="row pb-2"]
+                        div[class="col-12 education-title"]
+                          - if school.link
+                            = link_to(school.name, school.link, target: :_blank)
+                          - else
+                            = school.name
+                      div[class="row pb-2"]
+                        div[class="col-1 education-logo"]
+                          i[class="fas fa-brain"]
+                        div[class="col-11 education-program"]
+                          = school.program
+                      div[class="row pb-2"]
+                        div[class="col-1 education-logo"]
+                          i[class="fas fa-map-marker-alt"]
+                        div[class="col-11 education-location"]
+                          = school.location
+
+      div[class="career-section-community mb-4"]
+        div[class="row"]
+          div[class="col-12"]
+            div[class="row d-flex flex-row career-header"]
+              div[class="career-header-title"]
+                |community
+            div[class="career-category"]
+              div[class="col-12 mx-auto explanation"]
+                - data.page['career-path'].community.sort_by { |k| k["id"] }.reverse.each do |community|
+                  div[class="row career-category-community"]
+                    div[class="col-12 career-category-community-wrapper"]
+                      div[class="row pb-2"]
+                        div[class="col-12 community-meetup"]
+                          -if community.link
+                            = link_to(community.meetup, community.link, target: :_blank)
+                          - else
+                            = community.meetup
+                      div[class="row pb-2"]
+                        div[class="col-1 community-logo"]
+                          i[class="fas fa-brain"]
+                        div[class="col-11 community-title"]
+                          = community.title
+                      div[class="row pb-2"]
+                        div[class="col-1 community-logo"]
+                          i[class="far fa-calendar-alt"]
+                        div[class="col-11 community-dates"]
+                          = community.dates
+                      div[class="row"]
+                        div[class="col-1 community-logo"]
+                          i[class="fas fa-map-marker-alt"]
+                        div[class="col-11 community-location"]
+                          = community.location
+
+      div[class="career-category-lets-connect"]
+        div[class="row"]
+          div[class="col-12"]
+            span
+              |Let's Connect!
+            = link_to(data.components.social.linkedin, target: :_blank) do
+              i[class="fas fa-mug-hot"]
+
+

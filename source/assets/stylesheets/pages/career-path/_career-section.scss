@@ -1,7 +1,7 @@
 .career-section {
   max-width: map-get($grid-breakpoints, 'xl') !important;
   padding-top: 0;
-  padding-bottom: 0.5rem;
+  padding-bottom: 3rem;
   border: none;
 
   a {
@@ -51,7 +51,7 @@
       .fa-exclamation,
       .fa-map-marker-alt,
       .fa-calendar-alt,
-      .fa-pied-piper-alt,
+      .fa-handshake,
       .fa-coffee,
       .fa-fly,
       .fa-trophy {
@@ -59,18 +59,6 @@
         font-size: 0.6rem;
       }
 
-      .conferences-title,
-      .conferences-dates,
-      .conferences-location {
-        text-transform: capitalize;
-      }
-
-      .education-school,
-      .conferences-title,
-      .community-meetup,
-      .community-title {
-        font-size: 1.1rem;
-      }
 
       .education-program,
       .education-location,
@@ -87,6 +75,16 @@
       .product-learnings,
       .product-vision-statement {
         font-size: 1rem;
+      }
+
+      .experience-position,
+      .experience-dates,
+      .education-school,
+      .conferences-title,
+      .community-meetup,
+      .community-title {
+        padding: 0 0 0 0.5rem;
+        text-transform: capitalize;
       }
 
       .education-logo,
@@ -108,16 +106,16 @@
       .career-category-conferences-wrapper,
       .career-category-education-wrapper,
       .career-category-community-wrapper {
-        padding: 0;
+        padding: 0 0 0 1rem;
       }
 
       .experience-technologies {
-        padding: 1rem 0 0.5rem 0;
+        padding: 1rem 0 0.5rem;
 
         div {
           background: $white;
           border-radius: 1rem;
-          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+          padding: 0.25rem 0.5rem;
           margin: 0 0.5rem 0.5rem 0;
         }
 
@@ -128,7 +126,7 @@
 
       .experience-w-two-accomplishments,
       .experience-w-ten-ninety-nine-accomplishments {
-        padding: 1rem 0 1rem 0;
+        padding: 1rem 0;
 
         li:not(:last-child) {
           padding-bottom: 0.5rem;
@@ -137,7 +135,7 @@
 
       .experience-w-ten-ninety-nine-accomplishments {
         .col-12 {
-          padding: 1rem 0 1rem 0;
+          padding: 1rem 0;
         }
 
         strong {
@@ -199,7 +197,7 @@
   .career-section-conferences,
   .career-category-lets-connect {
     .career-category {
-      padding: 1rem 0 1.5rem 0;
+      padding: 1rem 0 1.5rem;
     }
   }
 
@@ -230,6 +228,7 @@
     }
 
     @include media-breakpoint-up(lg) {
+      padding: 0 0 0 1rem;
       font-size: 2rem;
 
       .fa-mug-hot {
@@ -238,29 +237,11 @@
     }
   }
 
-  .card-columns {
-    break-inside: avoid;
-    column-count: 1;
-
-    .card {
-      break-inside: avoid;
-      transform: translateZ(0);
-      background: none;
-      margin-bottom: 1rem;
-    }
-
-    @include media-breakpoint-up(sm) {
-      column-count: 2;
-
-      .career-section-education,
-      .career-section-community {
-        padding-right: 1rem;
-      }
-
-      .career-section-conferences,
-      .career-category-lets-connect {
-        padding-left: 1rem;
-      }
+  // Two column layout: conferences left, others right
+  .career-section-education,
+  .career-section-community {
+    @include media-breakpoint-up(lg) {
+      padding: 0 0 0 1rem;
     }
   }
 

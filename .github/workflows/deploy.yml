@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
         if: github.event.pull_request.merged == true
 
       # ----------------------------------------------------Ruby
@@ -19,7 +19,7 @@ jobs:
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.2
+          ruby-version: 3.4.3
         if: github.event.pull_request.merged == true
 
       - name: Ruby Version
@@ -36,19 +36,24 @@ jobs:
       # ----------------------------------------------------Node
 
       - name: Install Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          version: 10.16.3
-        if: github.event.pull_request.merged == true
-
+          node-version: 22.6.0
       - name: Node Version
         run: |
           node --version
         if: github.event.pull_request.merged == true
-
-      - name: Setup Node Dependencies
+      - name: Install Yarn
         run: |
-          npm install
+          npm install --global yarn
+        if: github.event.pull_request.merged == true
+      - name: Yarn Version
+        run: |
+          yarn --version
+        if: github.event.pull_request.merged == true
+      - name: Install Dependencies
+        run: |
+          yarn install
         if: github.event.pull_request.merged == true
 
       # ----------------------------------------------------Webpack
@@ -66,10 +71,10 @@ jobs:
 
       # ----------------------------------------------------Deploy
 
-      - name: Deploy to Github Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./build
         if: github.event.pull_request.merged == true && success()
