@@ -110,12 +110,12 @@
       }
 
       .experience-technologies {
-        padding: 1rem 0 0.5rem 0;
+        padding: 1rem 0 0.5rem;
 
         div {
           background: $white;
           border-radius: 1rem;
-          padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+          padding: 0.25rem 0.5rem;
           margin: 0 0.5rem 0.5rem 0;
         }
 
@@ -126,7 +126,7 @@
 
       .experience-w-two-accomplishments,
       .experience-w-ten-ninety-nine-accomplishments {
-        padding: 1rem 0 1rem 0;
+        padding: 1rem 0;
 
         li:not(:last-child) {
           padding-bottom: 0.5rem;
@@ -135,7 +135,7 @@
 
       .experience-w-ten-ninety-nine-accomplishments {
         .col-12 {
-          padding: 1rem 0 1rem 0;
+          padding: 1rem 0;
         }
 
         strong {
@@ -197,7 +197,7 @@
   .career-section-conferences,
   .career-category-lets-connect {
     .career-category {
-      padding: 1rem 0 1.5rem 0;
+      padding: 1rem 0 1.5rem;
     }
   }
 

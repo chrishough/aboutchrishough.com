@@ -1,5 +1,5 @@
 .family-journey-lasvegas {
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 
   @include media-breakpoint-up(xs) {
     background: url('#{$image-path}/backgrounds/skyline-lasvegas.jpg');

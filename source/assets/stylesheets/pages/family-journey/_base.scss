@@ -36,7 +36,6 @@
 
           color: $purple-darkest;
           font-size: 2rem;
-          transform: translateZ(0);
           position: absolute;
           top: 50%;
           left: 50%;
@@ -66,7 +65,7 @@
       @include media-breakpoint-up(xs) {
         @include box-shadow-all-sides();
 
-        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        padding: 1rem 1.5rem 1.5rem;
         background-color: rgba(4, 1, 5, $backdrop-opacity);
       }
 
